@@ -6,21 +6,21 @@
 | --- | --- | --- |
 | Isolated CleanupSignal implementation | Released to GitHub main | Published to `tzj410/CleanupSignal` after explicit owner approval. No ArgoSphere changes. |
 | Ten verified government project signals | Complete | Two EPA releases and EPA FY26 selection-list PDF. 10 funding selections, $15,690,876; no claimed open bids. |
-| Working intelligence website and sample briefing | Built and verified; see the delivery message for deployment status | Filters, search, project evidence dialog, local watchlist, CSV/Markdown exports and printable report. |
+| Working intelligence website and sample briefing | Live on Cloudflare Pages | Filters, search, project evidence dialog, local watchlist, CSV/Markdown exports and printable report. |
 | Automated evidence refresh/report generation | Active; first hosted run passed | Daily 11:17 UTC public-runner workflow. First run completed October 23, 2026; EPA source checks, tests, dataset validation and refreshed report commit passed. |
-| Federal procurement discovery | Adapter implemented, disconnected | Operator must place free SAM key in repository Actions secret. No key in chat or source. |
-| Public customer site | Not launched | Owner-only Sites review version; optional Cloudflare Pages Free public hosting guide provided. |
-| First customer preparation | Drafts ready | 20 researched firms, $99/month pilot, onboarding and fulfillment SOP. Actual outreach, seller/contact setup and billing are not activated. |
+| Federal procurement discovery | Secret configured; rate limited | Live SAM requests returned HTTP 429; 24-hour cooldown applied. Authentication remains unverified. |
+| Public customer site | Live | https://cleanupsignal.pages.dev/ — static Pages deployment; see DEPLOYMENT.md. |
+| First customer preparation | Drafts ready | 20 researched firms, $99/month pilot, onboarding and fulfillment SOP. Actual outreach, seller setup and billing are not activated. |
 | Three paid customers / $297 MRR | Not achieved | Commercial target, never a completed claim. |
 
 ## Verification
 
 Story: scheduled government evidence checks produce a validated public dataset and reports; the website loads that dataset, filters it, opens source-linked evidence, saves a browser-local watchlist, and exports a customer-ready draft.
 
-- Ten Python tests pass: EPA evidence matching, unknown or expired SAM deadlines, location/type filters, conservative unconfirmed status, source failure retention, incomplete pagination, schema validation and output escaping.
+- Twelve Python tests pass: EPA evidence matching, unknown or expired SAM deadlines, location/type filters, conservative unconfirmed status, source failure retention, incomplete pagination, schema validation and output escaping.
 - Four JavaScript tests pass: combined filters and empty DC state, expired/unverified bid status, CSV formula protection and source URL/HTML safety.
 - Browser confirmed ten rendered records, exact $15.69M display, MD + Cleanup filtering to one Annapolis record, evidence dialog with exact amount and no invented deadline, saved watchlist persistence after reload.
-- Live EPA refresh succeeded. Optional live SAM integration is not verified without key.
+- Live EPA refresh succeeded. SAM secret is configured; live authentication remains unverified because requests returned HTTP 429.
 - Responsive CSS includes mobile layouts; browser verification used desktop viewport only.
 - First hosted GitHub workflow passed: [run #1](https://github.com/tzj410/CleanupSignal/actions/runs/40004682558). Public customer sign-up, payment, authenticated private reports and email delivery are not implemented.
 
@@ -28,4 +28,4 @@ Story: scheduled government evidence checks produce a validated public dataset a
 
 The owner explicitly approved publication to main and activation of free daily reporting on October 23, 2026. The repository was initialized and the tested implementation released through the connected GitHub API. The first run successfully committed refreshed reports at 18:36:52 UTC.
 
-The owner provided cleanupsignal@gmail.com as the customer-facing contact address. Pilot inquiries open a prefilled email draft with a download fallback. The SAM secret is configured; live requests returned HTTP 429, so the collector applies a 24-hour cooldown and authentication remains unverified. Public customer launch, outreach and billing remain separate from this private review release.
+The owner provided cleanupsignal@gmail.com as the customer-facing contact address. Pilot inquiries open a prefilled email draft with a download fallback. The SAM secret is configured; live requests returned HTTP 429, so the collector applies a 24-hour cooldown and authentication remains unverified. The public website is live on Cloudflare Pages. Outreach, customer enrollment and billing have not started.
