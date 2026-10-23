@@ -28,4 +28,4 @@ Story: scheduled government evidence checks produce a validated public dataset a
 
 The owner explicitly approved publication to main and activation of free daily reporting on October 23, 2026. The repository was initialized and the tested implementation released through the connected GitHub API. The first run successfully committed refreshed reports at 18:36:52 UTC.
 
-Next operator inputs are the free SAM.gov API key as an Actions secret and a customer-facing CleanupSignal contact address. Public customer launch, outreach and billing remain separate from this private review release.
+The owner provided cleanupsignal@gmail.com as the customer-facing contact address. Pilot inquiries open a prefilled email draft with a download fallback. The SAM secret is configured; live requests returned HTTP 429, so the collector applies a 24-hour cooldown and authentication remains unverified. Public customer launch, outreach and billing remain separate from this private review release.
