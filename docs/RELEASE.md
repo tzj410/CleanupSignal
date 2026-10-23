@@ -18,7 +18,7 @@
 Story: scheduled government evidence checks produce a validated public dataset and reports; the website loads that dataset, filters it, opens source-linked evidence, saves a browser-local watchlist, and exports a customer-ready draft.
 
 - Twelve Python tests pass: EPA evidence matching, unknown or expired SAM deadlines, location/type filters, conservative unconfirmed status, source failure retention, incomplete pagination, schema validation and output escaping.
-- Four JavaScript tests pass: combined filters and empty DC state, expired/unverified bid status, CSV formula protection and source URL/HTML safety.
+- Five JavaScript tests pass: combined filters and empty DC state, expired/unverified bid status, CSV formula protection and source URL/HTML safety.
 - Browser confirmed ten rendered records, exact $15.69M display, MD + Cleanup filtering to one Annapolis record, evidence dialog with exact amount and no invented deadline, saved watchlist persistence after reload.
 - Live EPA refresh succeeded. SAM secret is configured; live authentication remains unverified because requests returned HTTP 429.
 - Responsive CSS includes mobile layouts; browser verification used desktop viewport only.
@@ -29,3 +29,7 @@ Story: scheduled government evidence checks produce a validated public dataset a
 The owner explicitly approved publication to main and activation of free daily reporting on October 23, 2026. The repository was initialized and the tested implementation released through the connected GitHub API. The first run successfully committed refreshed reports at 18:36:52 UTC.
 
 The owner provided cleanupsignal@gmail.com as the customer-facing contact address. Pilot inquiries open a prefilled email draft with a download fallback. The SAM secret is configured; live requests returned HTTP 429, so the collector applies a 24-hour cooldown and authentication remains unverified. The public website is live on Cloudflare Pages. Outreach, customer enrollment and billing have not started.
+
+## Contractor discovery update
+
+Added an original contractor-facing homepage, a service directory with three populated categories and nine clearly inactive coverage interests, browser-local geographic/service preferences, project matching, and Free versus proposed $99/month curated-pilot pricing. Jurisdiction selection carries into an inquiry without starting service or billing. Browser verified Maryland + Cleanup matching to one Annapolis record and pricing scope transfer. Existing source data, reporting pipeline, and ArgoSphere repositories are unchanged.

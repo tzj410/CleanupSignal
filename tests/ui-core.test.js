@@ -7,3 +7,13 @@ test('expired and unverified bids cannot display as open',()=>{assert.equal(effe
 test('combined filters find only matching public signals',()=>{assert.deepEqual(filterSignals(records,{query:'annapolis',jurisdiction:'MD',category:'Cleanup'},at).map(s=>s.id),['a']);assert.equal(filterSignals(records,{status:'open-solicitation'},at).length,0);assert.equal(filterSignals(records,{jurisdiction:'DC'},at).length,0);});
 test('CSV defuses spreadsheet formulas and reports effective status',()=>{const csv=makeCsv([{...records[1],title:'=HYPERLINK("bad")'}],at);assert.ok(csv.includes("'=HYPERLINK"));assert.ok(csv.includes('"closed"'));assert.ok(!csv.includes('"open-solicitation"'));});
 test('untrusted source text and URLs are safely rendered',()=>{assert.equal(escapeHtml('<img onerror="x">'),'&lt;img onerror=&quot;x&quot;&gt;');assert.equal(safeUrl('javascript:alert(1)'),'#');assert.equal(safeUrl('https://epa.gov.attacker.example/'),'#');assert.equal(safeUrl('https://www.epa.gov/test'),'https://www.epa.gov/test');});
+
+import {normalizeProfile,matchesProfile} from '../public/preferences.js';
+test('profile combines jurisdictions and services and rejects unknown selections',()=>{
+ const profile=normalizeProfile({regions:['MD','XX'],services:['Cleanup','Injected']});
+ assert.deepEqual(profile,{regions:['MD'],services:['Cleanup']});
+ assert.equal(matchesProfile(records[0],profile),true);
+ assert.equal(matchesProfile(records[1],profile),false);
+ assert.equal(matchesProfile(records[0],{regions:[],services:['PFAS']}),false);
+ assert.equal(matchesProfile(records[0],normalizeProfile(null)),true);
+});

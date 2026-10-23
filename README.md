@@ -7,6 +7,7 @@ Live website: **https://cleanupsignal.pages.dev/**
 ## Current release
 
 - Ten EPA FY2026 brownfield **funding selections**, $15,690,876 total (2 Maryland, 8 Virginia). These are not open bids, confirmed contract budgets or guaranteed work.
+- Contractor homepage, 12-service directory, project/bid center, browser-local project profile and matching, pricing comparison and jurisdiction scope inquiry.
 - Search, service/jurisdiction/status filters, sorting, source details, local watchlist, CSV and personalized Markdown brief export.
 - Source-health desk and browser-printable briefing. No paid API, database, AI model, account or payment service.
 - Daily GitHub Actions workflow active on `main` in public `tzj410/CleanupSignal`, scheduled for 11:17 UTC (7:17 a.m. EDT / 6:17 a.m. EST). It will not run while the repository is private. The first hosted run passed on October 23, 2026: tests, live EPA verification, data validation and refreshed report commit all succeeded.
