@@ -1,0 +1,38 @@
+name: Refresh government signals and reports
+on:
+  schedule:
+    - cron: '17 11 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'tests/**', 'data/**', '.github/workflows/reporting.yml']
+permissions:
+  contents: write
+concurrency:
+  group: reporting-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  reporting:
+    # Public GitHub-hosted standard Linux runner; no paid services or third-party actions.
+    if: github.repository == 'tzj410/CleanupSignal' && github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test parsers and safety behavior
+        run: python3 -m unittest discover -s tests -v
+      - name: Refresh public sources and generate reports
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: python3 scripts/pipeline.py
+      - name: Validate generated data
+        run: python3 scripts/pipeline.py --check
+      - name: Commit refreshed reports
+        run: |
+          git config user.name "CleanupSignal reporting"
+          git config user.email "cleanupsignal-reporting@users.noreply.github.com"
+          git add public/data public/reports
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh verified source checks and environmental project brief"
+            git push
+          fi

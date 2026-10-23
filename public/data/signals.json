@@ -1,0 +1,350 @@
+{
+  "generatedAt": "2026-10-23T18:16:02Z",
+  "sources": [
+    {
+      "id": "epa-md-2026",
+      "name": "EPA FY2026 Maryland selections",
+      "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
+      "lastChecked": "2026-10-23T18:16:02Z",
+      "status": "verified"
+    },
+    {
+      "id": "epa-va-2026",
+      "name": "EPA FY2026 Virginia selections",
+      "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "lastChecked": "2026-10-23T18:16:02Z",
+      "status": "verified"
+    },
+    {
+      "id": "sam",
+      "name": "SAM.gov opportunities API",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+      "lastChecked": "2026-10-23T18:16:02Z",
+      "status": "needs-key",
+      "note": "Free public API key required; no federal solicitation feed is connected yet."
+    }
+  ],
+  "signals": [
+    {
+      "id": "epa-2026-annapolis-dpw-cleanup",
+      "title": "Resilience Authority of Annapolis and Anne Arundel County — cleanup",
+      "agency": "Resilience Authority of Annapolis and Anne Arundel County",
+      "jurisdiction": "MD",
+      "locality": "Annapolis",
+      "category": "Cleanup",
+      "status": "funding-signal",
+      "amount": 4000000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-md-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Resilience Authority of Annapolis and Anne Arundel County",
+        "4,000,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-danville-assessment",
+      "title": "Danville — assessment",
+      "agency": "Danville",
+      "jurisdiction": "VA",
+      "locality": "Danville",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 500000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Danville",
+        "500,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-gateway-region-assessment",
+      "title": "Virginia’s Gateway Region, Inc. — assessment",
+      "agency": "Virginia’s Gateway Region, Inc.",
+      "jurisdiction": "VA",
+      "locality": "Gateway region",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 500000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Regional brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Virginia’s Gateway Region, Inc.",
+        "500,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-giles-tannery-cleanup",
+      "title": "Giles County — cleanup",
+      "agency": "Giles County",
+      "jurisdiction": "VA",
+      "locality": "Giles County",
+      "category": "Cleanup",
+      "status": "funding-signal",
+      "amount": 3693800,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Giles County",
+        "3,693,800"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-martinsville-multipurpose",
+      "title": "Martinsville — multipurpose",
+      "agency": "Martinsville",
+      "jurisdiction": "VA",
+      "locality": "Martinsville",
+      "category": "Multipurpose",
+      "status": "funding-signal",
+      "amount": 1000000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Multipurpose brownfields selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Martinsville",
+        "1,000,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-mount-rogers-assessment",
+      "title": "Mount Rogers Planning District Commission — assessment",
+      "agency": "Mount Rogers Planning District Commission",
+      "jurisdiction": "VA",
+      "locality": "Mount Rogers region",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 1500000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Regional brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Mount Rogers Planning District Commission",
+        "1,500,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-pamunkey-dump-cleanup",
+      "title": "Pamunkey Indian Tribe — cleanup",
+      "agency": "Pamunkey Indian Tribe",
+      "jurisdiction": "VA",
+      "locality": "Pamunkey Indian Reservation",
+      "category": "Cleanup",
+      "status": "funding-signal",
+      "amount": 497076,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Cleanup selection for the former Pamunkey Community Dump.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Pamunkey Indian Tribe",
+        "497,076"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-pittsylvania-assessment",
+      "title": "Pittsylvania County — assessment",
+      "agency": "Pittsylvania County",
+      "jurisdiction": "VA",
+      "locality": "Pittsylvania County",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 500000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Pittsylvania County",
+        "500,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-va-deq-assessment",
+      "title": "Virginia Department of Environmental Quality — assessment",
+      "agency": "Virginia Department of Environmental Quality",
+      "jurisdiction": "VA",
+      "locality": "Statewide",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 2000000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-va-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "State brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Virginia Department of Environmental Quality",
+        "2,000,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    },
+    {
+      "id": "epa-2026-western-md-assessment",
+      "title": "Tri-County Council for Western Maryland — assessment",
+      "agency": "Tri-County Council for Western Maryland",
+      "jurisdiction": "MD",
+      "locality": "Western Maryland",
+      "category": "Assessment",
+      "status": "funding-signal",
+      "amount": 1500000,
+      "deadline": null,
+      "announcedAt": "2026-06-24",
+      "sourceId": "epa-md-2026",
+      "sourceUrl": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
+      "sourceName": "U.S. EPA · FY2026 Brownfields selections",
+      "summary": "Regional brownfields assessment selection.",
+      "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
+      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verification": "verified",
+      "evidenceTerms": [
+        "Tri-County Council for Western Maryland",
+        "1,500,000"
+      ],
+      "sourceDocuments": [
+        {
+          "title": "EPA FY2026 selected applications list · page 4",
+          "url": "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4"
+        }
+      ],
+      "fundingStage": "selected",
+      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+    }
+  ],
+  "coverage": {
+    "DC": 0,
+    "MD": 2,
+    "VA": 8
+  },
+  "limitations": [
+    "Funding selections are not open bids, guaranteed awards, or available contract values.",
+    "DC has no verified records in the initial curated dataset.",
+    "EPA adapter rechecks these published selections; new EPA releases need editorial onboarding.",
+    "Federal solicitation discovery requires a free SAM.gov API key."
+  ]
+}

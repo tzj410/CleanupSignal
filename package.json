@@ -1,0 +1,1 @@
+{"name":"cleanupsignal","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/ui-core.test.js","check":"node --check public/app.js && node --check public/core.js"}}

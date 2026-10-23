@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+node_modules/
+.customer-data/
+.openai/*.local.json
+*.tar.gz
+.DS_Store
+dist/
