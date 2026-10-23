@@ -29,6 +29,9 @@ jobs:
         run: python3 scripts/pipeline.py
       - name: Validate generated data
         run: python3 scripts/pipeline.py --check
+      - name: Write source monitoring summary
+        if: always()
+        run: python3 scripts/monitor_summary.py
       - name: Commit refreshed reports
         run: |
           git config user.name "CleanupSignal reporting"

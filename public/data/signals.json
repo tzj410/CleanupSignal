@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:56:50Z",
+  "generatedAt": "2026-10-23T21:38:35Z",
   "sources": [
     {
       "id": "epa-md-2026",
@@ -27,6 +27,98 @@
     }
   ],
   "signals": [
+    {
+      "id": "danville-bids-4194",
+      "title": "IFB-26-27-004 AA-Demo 6 Properties Bid Tab",
+      "agency": "City of Danville",
+      "jurisdiction": "VA",
+      "locality": "Danville",
+      "category": "Demolition",
+      "status": "unconfirmed",
+      "amount": null,
+      "deadline": null,
+      "announcedAt": "",
+      "sourceId": "danville-bids",
+      "sourceName": "Danville public bid board",
+      "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4194",
+      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
+      "verifiedAt": "2026-10-23T21:38:35Z",
+      "verification": "verified",
+      "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
+      "noticeType": "Administrative posting",
+      "sourceCategory": "x Bid Results - Closed",
+      "contactText": "Related Documents:"
+    },
+    {
+      "id": "danville-bids-4232",
+      "title": "RFP-26-27-018-Wastewater Sludge Removal Dewatering Transportation and Land Application",
+      "agency": "City of Danville",
+      "jurisdiction": "VA",
+      "locality": "Danville",
+      "category": "Water",
+      "status": "unconfirmed",
+      "amount": null,
+      "deadline": null,
+      "announcedAt": "",
+      "sourceId": "danville-bids",
+      "sourceName": "Danville public bid board",
+      "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4232",
+      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
+      "verifiedAt": "2026-10-23T21:38:35Z",
+      "verification": "verified",
+      "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
+      "noticeType": "Administrative posting",
+      "sourceCategory": "x RFP Responders - Closed",
+      "contactText": "Related Documents:"
+    },
+    {
+      "id": "danville-bids-4234",
+      "title": "IFB 26-27-009 Southern Virginia Megasite at Berry Hill-McGruff Sewer Extension - Notice of Intent",
+      "agency": "City of Danville",
+      "jurisdiction": "VA",
+      "locality": "Danville",
+      "category": "Water",
+      "status": "unconfirmed",
+      "amount": null,
+      "deadline": null,
+      "announcedAt": "",
+      "sourceId": "danville-bids",
+      "sourceName": "Danville public bid board",
+      "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4234",
+      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
+      "verifiedAt": "2026-10-23T21:38:35Z",
+      "verification": "verified",
+      "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
+      "noticeType": "Administrative posting",
+      "sourceCategory": "x Bid Results - Closed",
+      "contactText": "Related Documents:"
+    },
+    {
+      "id": "danville-bids-4238",
+      "title": "IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab",
+      "agency": "City of Danville",
+      "jurisdiction": "VA",
+      "locality": "Danville",
+      "category": "Demolition",
+      "status": "unconfirmed",
+      "amount": null,
+      "deadline": null,
+      "announcedAt": "",
+      "sourceId": "danville-bids",
+      "sourceName": "Danville public bid board",
+      "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4238",
+      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
+      "verifiedAt": "2026-10-23T21:38:35Z",
+      "verification": "verified",
+      "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
+      "noticeType": "Administrative posting",
+      "sourceCategory": "x Bid Results - Closed",
+      "contactText": "Related Documents:"
+    },
     {
       "id": "epa-2026-annapolis-dpw-cleanup",
       "title": "Resilience Authority of Annapolis and Anne Arundel County — cleanup",
@@ -56,7 +148,32 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The city identifies 932 and 937 Spa Road and names Haley & Aldrich among the partners involved in obtaining the funding. This establishes prior technical involvement, not an available contract or an exclusive contractor award.",
+        "links": [
+          {
+            "title": "Maryland eMMA procurement portal",
+            "url": "https://emma.maryland.gov/"
+          },
+          {
+            "title": "City project announcement / June 25, 2026",
+            "url": "https://www.annapolis.gov/m/newsflash/Home/Detail/2166"
+          },
+          {
+            "title": "Annapolis public bid board",
+            "url": "https://www.annapolis.gov/bids.aspx"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Which services are already covered by existing technical partners, and what scope remains?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-danville-assessment",
@@ -87,7 +204,28 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          },
+          {
+            "title": "Danville public bid board",
+            "url": "https://www.danville-va.gov/bids.asp"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-gateway-region-assessment",
@@ -118,7 +256,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-giles-tannery-cleanup",
@@ -149,7 +304,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-martinsville-multipurpose",
@@ -180,7 +352,32 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The city maintains a brownfields program page with site-level assessment progress and points inquiries to Community Development. The page includes older material; it does not establish the scope or buying schedule of this FY2026 selection.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          },
+          {
+            "title": "City brownfields program and site status context",
+            "url": "https://www.martinsville-va.gov/377/Brownfields"
+          },
+          {
+            "title": "Community Development directory / department phone 276-403-5171",
+            "url": "https://www.martinsville-va.gov/m/directory/department?did=42"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-mount-rogers-assessment",
@@ -211,7 +408,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-pamunkey-dump-cleanup",
@@ -242,7 +456,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-pittsylvania-assessment",
@@ -273,7 +504,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-va-deq-assessment",
@@ -304,7 +552,24 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Virginia eVA procurement gateway",
+            "url": "https://eva.virginia.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     },
     {
       "id": "epa-2026-western-md-assessment",
@@ -335,18 +600,122 @@
         }
       ],
       "fundingStage": "selected",
-      "amountBasis": "EPA-selected grant amount; not available contractor funds"
+      "amountBasis": "EPA-selected grant amount; not available contractor funds",
+      "followUp": {
+        "stage": "Funding selected; procurement timing unconfirmed",
+        "finding": "The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.",
+        "links": [
+          {
+            "title": "Maryland eMMA procurement portal",
+            "url": "https://emma.maryland.gov/"
+          }
+        ],
+        "questions": [
+          "Who manages procurement for this funded project?",
+          "Has an environmental consultant or cleanup contractor already been selected?",
+          "What scope remains and where will future notices be published?"
+        ],
+        "reviewedAt": "2026-10-23",
+        "evidenceStatus": "Research guidance; no outreach performed"
+      }
     }
   ],
   "coverage": {
     "DC": 0,
     "MD": 2,
-    "VA": 8
+    "VA": 12
   },
   "limitations": [
     "Funding selections are not open bids, guaranteed awards, or available contract values.",
     "DC has no verified records in the initial curated dataset.",
     "EPA adapter rechecks these published selections; new EPA releases need editorial onboarding.",
     "Federal solicitation discovery requires a free SAM.gov API key."
-  ]
+  ],
+  "operations": {
+    "generatedAt": "2026-10-23T21:38:35Z",
+    "comparison": {
+      "comparedTo": "2026-10-23T19:56:50Z",
+      "newIds": [
+        "danville-bids-4194",
+        "danville-bids-4232",
+        "danville-bids-4234",
+        "danville-bids-4238"
+      ],
+      "changed": [],
+      "removedIds": []
+    },
+    "procurementSources": [
+      {
+        "id": "annapolis-bids",
+        "name": "Annapolis public bid board",
+        "url": "https://www.annapolis.gov/bids.aspx",
+        "jurisdiction": "MD",
+        "locality": "Annapolis",
+        "mode": "civic",
+        "note": "Daily public-listing scan; relevant detail pages are checked before importing notices.",
+        "lastChecked": "2026-10-23T21:38:35Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-23T21:38:35Z",
+        "listingCount": 0,
+        "matchingCount": 0,
+        "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "checkedEmpty": true,
+        "listingChanged": false
+      },
+      {
+        "id": "danville-bids",
+        "name": "Danville public bid board",
+        "url": "https://www.danville-va.gov/bids.asp",
+        "jurisdiction": "VA",
+        "locality": "Danville",
+        "mode": "civic",
+        "note": "Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
+        "lastChecked": "2026-10-23T21:38:35Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-23T21:38:35Z",
+        "listingCount": 18,
+        "matchingCount": 4,
+        "listingHash": "3107fdc18a690ed3e717a18b6dccd56743bf9e6f0d0f5dc4cd31fe8d69bad203",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "emma",
+        "name": "Maryland eMMA",
+        "url": "https://emma.maryland.gov/",
+        "jurisdiction": "MD",
+        "mode": "manual",
+        "note": "Official statewide procurement portal. Automated ingestion is not connected. Search and review current solicitations on the portal.",
+        "status": "manual",
+        "lastChecked": null
+      },
+      {
+        "id": "eva",
+        "name": "Virginia eVA",
+        "url": "https://eva.virginia.gov/",
+        "jurisdiction": "VA",
+        "mode": "manual",
+        "note": "Official statewide procurement gateway. Automated ingestion is not connected. The Open Data page describes historical procurement data, not a verified live bid feed.",
+        "status": "manual",
+        "lastChecked": null
+      },
+      {
+        "id": "anne-arundel",
+        "name": "Anne Arundel County / Harbor",
+        "url": "https://www.aacounty.org/central-services/purchasing/doing-business-county",
+        "jurisdiction": "MD",
+        "mode": "manual",
+        "note": "Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected.",
+        "status": "manual",
+        "lastChecked": null
+      }
+    ],
+    "alerts": [
+      {
+        "sourceId": "sam",
+        "message": "SAM.gov rate limit reached. Requests are paused until 2026-10-24T18:59:44Z. Prior records are retained; authentication is not yet verified."
+      }
+    ],
+    "deadlineWindowDays": 7
+  }
 }

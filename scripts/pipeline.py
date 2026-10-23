@@ -250,6 +250,12 @@ def reports(data, output=OUT):
     md=['# CleanupSignal — environmental project brief','', 'Generated: '+data['generatedAt'],'',disclaimer,'', 'Coverage: Maryland, Virginia and DC. DC may have no verified records.','', '## Source health','']
     for source in data['sources']:
         md.append('- '+source['name']+': '+source['status']+'; checked '+str(source['lastChecked'] or 'not connected'))
+    ops=data.get('operations')
+    if ops:
+        delta=ops['comparison']
+        md.extend(['','## Latest refresh','', 'Compared with: '+delta['comparedTo'],str(len(delta['newIds']))+' new records; '+str(len(delta['changed']))+' materially changed records.','New records may be administrative or closed postings; review their status.' if delta['newIds'] else 'No new records discovered in this refresh.',''])
+        md.extend('- '+s['name']+': '+s['status']+'; last attempt '+str(s.get('lastChecked') or 'manual reference only') for s in ops['procurementSources'])
+        md.extend('Attention: '+a['sourceId']+': '+str(a['message']) for a in ops['alerts'])
     md.extend(['','## Project signals',''])
     cards=[]
     for signal in data['signals']:
@@ -258,9 +264,15 @@ def reports(data, output=OUT):
         e=lambda x: html.escape(str(x or 'Not published'),quote=True)
         note_html = '<p>'+e(signal['statusNote'])+'</p>' if signal.get('statusNote') else ''
         evidence_html = ''.join('<p><a href="'+e(doc['url'])+'">'+e(doc['title'])+'</a></p>' for doc in signal.get('sourceDocuments',[]))
+        follow=signal.get('followUp')
+        if follow:
+            md.extend(['Qualification context: '+follow['finding'], *['Research link: '+link['url'] for link in follow['links']],*['Question: '+q for q in follow['questions']],''])
         cards.append('<article><h2>'+e(signal['title'])+'</h2><p>'+e(signal['jurisdiction'])+' · '+e(status_label(signal['status']))+' · '+e(signal.get('verification'))+'</p><p>'+e(signal['summary'])+'</p><p>Published selection amount: '+e(budget)+' · Bid deadline: '+e(signal['deadline'])+'</p><p>'+e(signal['nextStep'])+'</p>'+note_html+evidence_html+'<a href="'+e(signal['sourceUrl'])+'">Official government source</a></article>')
     (folder/'latest.md').write_text('\n'.join(md))
-    (folder/'latest.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CleanupSignal project brief</title><style>body{font:16px/1.6 system-ui;max-width:850px;margin:40px auto;padding:20px;color:#153d36;background:#f5f5ee}article{padding:24px;margin:24px 0;background:white;border:1px solid #ccd8d0;border-radius:12px}a{color:#176755}@media print{body{background:white}article{break-inside:avoid}}</style><h1>CleanupSignal project brief</h1><p>Generated '+html.escape(data['generatedAt'])+'</p><p>'+disclaimer+'</p><p>Source health: '+html.escape('; '.join(s['name']+': '+s['status'] for s in data['sources']))+'</p>'+''.join(cards)+'</html>')
+    ops_html=''
+    if ops:
+        ops_html='<h2>Latest refresh</h2><p>'+str(len(ops['comparison']['newIds']))+' new records; '+str(len(ops['comparison']['changed']))+' materially changed records. New records may include administrative notices.</p><p>'+html.escape('; '.join(s['name']+': '+s['status'] for s in ops['procurementSources']))+'</p>'
+    (folder/'latest.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CleanupSignal project brief</title><style>body{font:16px/1.6 system-ui;max-width:850px;margin:40px auto;padding:20px;color:#153d36;background:#f5f5ee}article{padding:24px;margin:24px 0;background:white;border:1px solid #ccd8d0;border-radius:12px}a{color:#176755}@media print{body{background:white}article{break-inside:avoid}}</style><h1>CleanupSignal project brief</h1><p>Generated '+html.escape(data['generatedAt'])+'</p><p>'+disclaimer+'</p><p>Source health: '+html.escape('; '.join(s['name']+': '+s['status'] for s in data['sources']))+'</p>'+ops_html+''.join(cards)+'</html>')
 
 
 def write_data(data):
@@ -277,6 +289,11 @@ def main():
     path=OUT/'data/signals.json'; existing=json.loads(path.read_text()) if path.exists() else seed
     if args.check: validate(existing); print('Dataset valid:',len(existing['signals']),'signals'); return
     data=existing if args.offline else refresh(existing,seed,sam_key=os.environ.get('SAM_API_KEY'))
+    if not args.offline:
+        from operations import enrich
+        registry=json.loads((ROOT/'data/procurement.json').read_text())
+        followups=json.loads((ROOT/'data/followups.json').read_text())
+        data=enrich(existing,data,registry,followups,get,data['generatedAt'])
     write_data(data)
     print('Generated',len(data['signals']),'signals;',', '.join(s['id']+': '+s['status'] for s in data['sources']))
     for source in data['sources']:

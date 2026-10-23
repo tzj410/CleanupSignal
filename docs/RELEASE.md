@@ -17,7 +17,7 @@
 
 Story: scheduled government evidence checks produce a validated public dataset and reports; the website loads that dataset, filters it, opens source-linked evidence, saves a browser-local watchlist, and exports a customer-ready draft.
 
-- Twelve Python tests pass: EPA evidence matching, unknown or expired SAM deadlines, location/type filters, conservative unconfirmed status, source failure retention, incomplete pagination, schema validation and output escaping.
+- Eighteen Python tests pass: EPA evidence matching, unknown or expired SAM deadlines, location/type filters, conservative unconfirmed status, source failure retention, incomplete pagination, schema validation and output escaping.
 - Five JavaScript tests pass: combined filters and empty DC state, expired/unverified bid status, CSV formula protection and source URL/HTML safety.
 - Browser confirmed ten rendered records, exact $15.69M display, MD + Cleanup filtering to one Annapolis record, evidence dialog with exact amount and no invented deadline, saved watchlist persistence after reload.
 - Live EPA refresh succeeded. SAM secret is configured; live authentication remains unverified because requests returned HTTP 429.
@@ -33,3 +33,9 @@ The owner provided cleanupsignal@gmail.com as the customer-facing contact addres
 ## Contractor discovery update
 
 Added an original contractor-facing homepage, a service directory with three populated categories and nine clearly inactive coverage interests, browser-local geographic/service preferences, project matching, and Free versus proposed $99/month curated-pilot pricing. Jurisdiction selection carries into an inquiry without starting service or billing. Browser verified Maryland + Cleanup matching to one Annapolis record and pricing scope transfer. Existing source data, reporting pipeline, and ArgoSphere repositories are unchanged.
+
+## State/local procurement and operating desk
+
+Two bounded public bid-board collectors (Annapolis and Danville) now supplement EPA records. Annapolis explicitly showed no open postings at the first scan. Danville supplied four relevant administrative records; conflicting open/closed labels, bid tabs, notices of intent and a responders list remain unconfirmed rather than verified open solicitations. Current dataset: 14 records, 10 funding selections, zero verified open bids.
+
+Added a state/local source directory with three manual gateway references (eMMA, eVA and Anne Arundel Harbor), daily comparisons that ignore verification-only updates, a source check ledger, visible source-failure and 48-hour dataset-age warnings, and GitHub job summaries. Added qualification research for Annapolis and Martinsville plus research questions/portal links for all ten funding selections. Browser-local follow-up stages and notes persist after reload and filter correctly. No outreach, reminder notifications or email alerting was activated.
