@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-23T18:16:02Z",
+  "generatedAt": "2026-10-23T18:36:52Z",
   "sources": [
     {
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
-      "lastChecked": "2026-10-23T18:16:02Z",
+      "lastChecked": "2026-10-23T18:36:52Z",
       "status": "verified"
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
-      "lastChecked": "2026-10-23T18:16:02Z",
+      "lastChecked": "2026-10-23T18:36:52Z",
       "status": "verified"
     },
     {
       "id": "sam",
       "name": "SAM.gov opportunities API",
       "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
-      "lastChecked": "2026-10-23T18:16:02Z",
+      "lastChecked": "2026-10-23T18:36:52Z",
       "status": "needs-key",
       "note": "Free public API key required; no federal solicitation feed is connected yet."
     }
@@ -41,7 +41,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Resilience Authority of Annapolis and Anne Arundel County",
@@ -72,7 +72,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Danville",
@@ -103,7 +103,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia’s Gateway Region, Inc.",
@@ -134,7 +134,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Giles County",
@@ -165,7 +165,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Multipurpose brownfields selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Martinsville",
@@ -196,7 +196,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Mount Rogers Planning District Commission",
@@ -227,7 +227,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Pamunkey Community Dump.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pamunkey Indian Tribe",
@@ -258,7 +258,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pittsylvania County",
@@ -289,7 +289,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "State brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia Department of Environmental Quality",
@@ -320,7 +320,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-23T18:16:02Z",
+      "verifiedAt": "2026-10-23T18:36:52Z",
       "verification": "verified",
       "evidenceTerms": [
         "Tri-County Council for Western Maryland",
