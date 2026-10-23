@@ -54,10 +54,25 @@ class PipelineTests(unittest.TestCase):
         seen=[]
         def fetch(url):
             query=parse_qs(urlparse(url).query)
+            self.assertIn(query['ncode'][0],('541620','562910'))
             page=int(query['offset'][0]); seen.append(page)
             return json.dumps({'opportunitiesData':[{}]*(1000 if page==0 else 1),'totalRecords':1001})
         self.assertEqual(p.collect_sam('fake-key',STAMP,fetch),[])
-        self.assertEqual(seen,[0,1,0,1,0,1])
+        self.assertEqual(seen,[0,1]*6)
+
+    def test_rate_limit_cooldown_does_not_request_sam(self):
+        data=copy.deepcopy(self.seed)
+        sam=next(s for s in data['sources'] if s['id']=='sam')
+        sam.update(error='source HTTP failure 429', lastChecked=STAMP, status='degraded')
+        urls=[]
+        def fetch(url):
+            urls.append(url)
+            return '<p>'+ ' '.join(' '.join(s['evidenceTerms']) for s in self.seed['signals'] if s['sourceUrl']==url)+'</p>'
+        result=p.refresh(data,self.seed,fetch=fetch,sam_key='fake',stamp='2026-10-23T17:00:00Z')
+        self.assertFalse(any('api.sam.gov' in u for u in urls))
+        source=next(s for s in result['sources'] if s['id']=='sam')
+        self.assertEqual(source['nextRetryAt'],'2026-10-24T16:00:00Z')
+        self.assertEqual(source['lastChecked'],STAMP)
 
     def test_incomplete_pagination_fails(self):
         with self.assertRaises(ValueError):

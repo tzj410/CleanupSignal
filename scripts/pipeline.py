@@ -52,7 +52,7 @@ def get(url):
                     raise ValueError('response exceeds size limit')
                 return payload.decode('utf-8')
         except HTTPError as exc:
-            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+            if exc.code not in (500, 502, 503, 504) or attempt == 2:
                 raise RuntimeError('source HTTP failure '+str(exc.code)) from None
         except (URLError, TimeoutError, OSError):
             if attempt == 2:
@@ -105,11 +105,16 @@ def collect_sam(key, stamp, fetch=get):
     """Retrieve a 90-day window. Bounded at 15 requests; incomplete pages fail closed."""
     today = dt.datetime.fromisoformat(stamp.replace('Z','+00:00')).date()
     records = {}
+    requests = 0
     for state in sorted(STATES):
+      for naics in ('541620', '562910'):
         received = 0
         for page in range(5):
+            if requests >= 15:
+                raise ValueError('SAM request budget reached; retained previous data')
             params = dict(api_key=key, postedFrom=(today-dt.timedelta(days=90)).strftime('%m/%d/%Y'),
-                          postedTo=today.strftime('%m/%d/%Y'), state=state, limit=1000, offset=page)
+                          postedTo=today.strftime('%m/%d/%Y'), state=state, ncode=naics, limit=1000, offset=page)
+            requests += 1
             response = json.loads(fetch('https://api.sam.gov/opportunities/v2/search?'+urlencode(params)))
             rows = response.get('opportunitiesData')
             total = response.get('totalRecords')
@@ -165,23 +170,38 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
             for signal in targets:
                 if signal['id'] in old: old[signal['id']]['verification'] = 'stale'
         sources[item['id']] = item
-    sam = copy.deepcopy(sources.get('sam', seed['sources'][-1])); sam['lastChecked'] = stamp
+    sam = copy.deepcopy(sources.get('sam', seed['sources'][-1]))
+    retry_at = date_time(sam.get('nextRetryAt'))
+    if not retry_at and '429' in sam.get('error', ''):
+        checked = date_time(sam.get('lastChecked'))
+        retry_at = checked + dt.timedelta(hours=24) if checked else None
+    current_time = dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))
+    cooling_down = retry_at and retry_at > current_time
     if not sam_key:
         sam['status'] = 'needs-key'
         for record in old.values():
             if record['sourceId']=='sam':
                 record['status']='unconfirmed'; record['verification']='stale'; record['statusNote']='Current source unavailable or notice absent from the latest feed; check the official notice.'
+    elif cooling_down:
+        sam['status'] = 'degraded'
+        sam['nextRetryAt'] = retry_at.isoformat().replace('+00:00','Z')
+        sam['note'] = 'SAM.gov rate limit reached. Requests are paused until '+sam['nextRetryAt']+'. Prior records are retained; authentication is not yet verified.'
     else:
+        sam['lastChecked'] = stamp
         try:
             current = collect_sam(sam_key, stamp, fetch)
             # Previously seen notices missing from the current 90-day feed cannot remain open.
             for record in old.values():
                 if record['sourceId']=='sam': record['status']='unconfirmed'; record['verification']='stale'; record['statusNote']='Current source unavailable or notice absent from the latest feed; check the official notice.'
             old.update({s['id']:s for s in current})
-            sam['status'] = 'verified'; sam.pop('error',None)
-            sam['note'] = '90-day title/NAICS filter; federal notices only. Not comprehensive coverage.'
+            sam['status'] = 'verified'; sam.pop('error',None); sam.pop('nextRetryAt',None)
+            sam['note'] = '90-day search in MD, VA and DC for NAICS 541620 and 562910; federal notices only. Not comprehensive coverage.'
         except (ValueError, RuntimeError) as exc:
             sam['status'] = 'degraded'; sam['error'] = str(exc)
+            sam['note'] = 'SAM.gov connection failed. Prior records are retained; current notices are not verified.'
+            if '429' in str(exc):
+                sam['nextRetryAt'] = (current_time + dt.timedelta(hours=24)).isoformat().replace('+00:00','Z')
+                sam['note'] = 'SAM.gov rate limit reached. Requests are paused until '+sam['nextRetryAt']+'. Authentication is not yet verified.' 
             for record in old.values():
                 if record['sourceId']=='sam':
                     record['status']='unconfirmed'; record['verification']='stale'; record['statusNote']='Current source unavailable or notice absent from the latest feed; check the official notice.'

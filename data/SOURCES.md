@@ -34,3 +34,7 @@ The scheduled GitHub workflow runs daily at 11:17 UTC on public-repository stand
 Outputs: `public/data/signals.json`, `public/reports/latest.html`, `public/reports/latest.md`, `public/reports/signals.csv`. The HTML brief is printable and links original sources. CSV cells are protected against spreadsheet formula execution; report HTML is escaped. Reports are generated for download, with no automatic email delivery or customer messages.
 
 Secondary evidence: [EPA FY2026 selected-applications PDF, page 4](https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4), independently inspected October 23, 2026. This PDF is a static secondary reference, not re-fetched by the daily HTML evidence adapter. Records carry `fundingStage: selected` and `amountBasis` explicitly; do not label them awarded.
+
+## SAM live activation check — October 23, 2026
+
+The saved repository secret was available to the runner. The live SAM request returned HTTP 429, so authentication and federal notice coverage remain unverified. The collector now pauses SAM requests for 24 hours after a rate-limit response, retains prior source-check timestamps during the pause, and avoids immediate HTTP 429 retries. It uses server-side NAICS 541620 and 562910 filters for MD, VA and DC, with correct zero-based page indices and a hard 15-request ceiling. This scoped feed is not comprehensive procurement coverage. EPA verification and report generation continue during the SAM pause.
