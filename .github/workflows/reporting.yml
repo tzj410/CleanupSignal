@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Test parsers and safety behavior
         run: python3 -m unittest discover -s tests -v
       - name: Refresh public sources and generate reports

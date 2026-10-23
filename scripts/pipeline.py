@@ -106,22 +106,22 @@ def collect_sam(key, stamp, fetch=get):
     today = dt.datetime.fromisoformat(stamp.replace('Z','+00:00')).date()
     records = {}
     for state in sorted(STATES):
-        offset = 0
+        received = 0
         for page in range(5):
             params = dict(api_key=key, postedFrom=(today-dt.timedelta(days=90)).strftime('%m/%d/%Y'),
-                          postedTo=today.strftime('%m/%d/%Y'), state=state, limit=1000, offset=offset)
+                          postedTo=today.strftime('%m/%d/%Y'), state=state, limit=1000, offset=page)
             response = json.loads(fetch('https://api.sam.gov/opportunities/v2/search?'+urlencode(params)))
             rows = response.get('opportunitiesData')
             total = response.get('totalRecords')
             if not isinstance(rows, list) or not isinstance(total, int):
                 raise ValueError('invalid SAM schema')
-            if not rows and offset < total:
+            if not rows and received < total:
                 raise ValueError('SAM returned incomplete pagination')
             for row in rows:
                 signal = sam_signal(row, stamp)
                 if signal: records[signal['id']] = signal
-            offset += len(rows)
-            if offset >= total:
+            received += len(rows)
+            if received >= total:
                 break
         else:
             raise ValueError('SAM bounded page limit reached; retained previous data')
@@ -259,5 +259,8 @@ def main():
     data=existing if args.offline else refresh(existing,seed,sam_key=os.environ.get('SAM_API_KEY'))
     write_data(data)
     print('Generated',len(data['signals']),'signals;',', '.join(s['id']+': '+s['status'] for s in data['sources']))
+    for source in data['sources']:
+        if source.get('error'):
+            print(source['id']+': '+source['error'])
 
 if __name__ == '__main__': main()

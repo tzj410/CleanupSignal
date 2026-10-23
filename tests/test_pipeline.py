@@ -49,6 +49,16 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(saved['verifiedAt'],STAMP)
         self.assertEqual(saved['verification'],'stale')
 
+    def test_sam_uses_page_index_not_record_offset(self):
+        from urllib.parse import urlparse, parse_qs
+        seen=[]
+        def fetch(url):
+            query=parse_qs(urlparse(url).query)
+            page=int(query['offset'][0]); seen.append(page)
+            return json.dumps({'opportunitiesData':[{}]*(1000 if page==0 else 1),'totalRecords':1001})
+        self.assertEqual(p.collect_sam('fake-key',STAMP,fetch),[])
+        self.assertEqual(seen,[0,1,0,1,0,1])
+
     def test_incomplete_pagination_fails(self):
         with self.assertRaises(ValueError):
             p.collect_sam('not-a-real-key',STAMP,lambda u:json.dumps({'opportunitiesData':[],'totalRecords':10}))
