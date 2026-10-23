@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-23T18:36:52Z
+Generated: 2026-10-23T18:59:44Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,9 +8,9 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-23T18:36:52Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-23T18:36:52Z
-- SAM.gov opportunities API: needs-key; checked 2026-10-23T18:36:52Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-23T18:59:44Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-23T18:59:44Z
+- SAM.gov opportunities API: degraded; checked 2026-10-23T18:59:44Z
 
 ## Project signals
 
