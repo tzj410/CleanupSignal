@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T22:40:02Z",
-  "evaluatedAt": "2026-10-24T22:40:12Z",
+  "generatedAt": "2026-10-24T22:47:09Z",
+  "evaluatedAt": "2026-10-24T22:47:20Z",
   "state": "degraded",
   "datasetFresh": true,
   "counts": {
@@ -33,7 +33,7 @@
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
       "lastSuccess": null,
       "mode": null
     },
@@ -41,7 +41,7 @@
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
       "lastSuccess": null,
       "mode": null
     },
@@ -57,16 +57,16 @@
       "id": "annapolis-bids",
       "name": "Annapolis public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "danville-bids",
       "name": "Danville public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
@@ -97,63 +97,63 @@
       "id": "dc-ocp",
       "name": "D.C. OCP public solicitations",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "dc-api"
     },
     {
       "id": "warrenton-bids",
       "name": "Warrenton public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "frederick-bids",
       "name": "Frederick County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "lynchburg-bids",
       "name": "Lynchburg public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "franklin-bids",
       "name": "Franklin County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "harford-listing",
       "name": "Harford County official open opportunities",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "harford-listing"
     },
     {
       "id": "caroline-bids",
       "name": "Caroline County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:40:02Z",
-      "lastSuccess": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastSuccess": "2026-10-24T22:47:09Z",
       "mode": "civic"
     },
     {
       "id": "fredericksburg-bids",
       "name": "Fredericksburg public bid board",
       "status": "degraded",
-      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastChecked": "2026-10-24T22:47:09Z",
       "lastSuccess": "2026-10-24T22:32:05Z",
       "mode": "civic"
     }
