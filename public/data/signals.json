@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T22:09:19Z",
+  "generatedAt": "2026-10-24T22:32:05Z",
   "sources": [
     {
       "id": "epa-md-2026",
@@ -41,12 +41,14 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4194",
       "summary": "Administrative procurement activity: IFB-26-27-004 AA-Demo 6 Properties Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov",
+      "solicitationNumber": "26-27-004",
+      "prebidMeeting": ""
     },
     {
       "id": "danville-bids-4232",
@@ -64,12 +66,14 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4232",
       "summary": "Administrative procurement activity: RFP-26-27-018-Wastewater Sludge Removal Dewatering Transportation and Land Application (Responders List)",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x RFP Responders - Closed",
-      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov",
+      "solicitationNumber": "26-27-018",
+      "prebidMeeting": ""
     },
     {
       "id": "danville-bids-4234",
@@ -87,12 +91,14 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4234",
       "summary": "Administrative procurement activity: IFB 26-27-009 Southern Virginia Megasite at Berry Hill - McGruff Creek Sewer Extension - Notice of Intent",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov",
+      "solicitationNumber": "IFB 26-27-009",
+      "prebidMeeting": ""
     },
     {
       "id": "danville-bids-4238",
@@ -110,12 +116,14 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4238",
       "summary": "Administrative procurement activity: IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov",
+      "solicitationNumber": "IFB 26-27-016",
+      "prebidMeeting": ""
     },
     {
       "id": "dc-ocp-Doc841623",
@@ -133,7 +141,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623",
       "summary": "District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -155,7 +163,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc846899",
       "summary": "District procurement notice: DCKT-FY26-Leaf Disposal Services. Market: Set Aside. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -177,7 +185,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc852234",
       "summary": "District procurement notice: DPW FY27 Stormwater Retention Credits. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -684,6 +692,78 @@
       }
     },
     {
+      "id": "harford-listing-254691",
+      "title": "Gunpowder River-Taylor Creek Maintenance Dredging 2026",
+      "solicitationNumber": "27-148",
+      "agency": "Harford County Government",
+      "jurisdiction": "MD",
+      "locality": "Harford County",
+      "category": "Water",
+      "status": "unconfirmed",
+      "amount": null,
+      "deadline": null,
+      "announcedAt": "",
+      "sourceId": "harford-listing",
+      "sourceName": "Harford County official open opportunities",
+      "sourceUrl": "https://www.harfordcountymd.gov/1540/Bid-Board-and-Results",
+      "procurementUrl": "https://harfordcountymd.bonfirehub.com/opportunities/254691",
+      "summary": " Consists of dredging of Gunpowder River, Taylor Creek, and the Rumsey Island Outfall Dredge Area. This shall include furnishing of all plant, materials, equipment, supplies, labor and transportation...",
+      "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
+      "verifiedAt": "2026-10-24T22:32:05Z",
+      "verification": "verified",
+      "verificationScope": "official-government-listing",
+      "noticeType": "County procurement listing",
+      "statusNote": "The county listing does not establish a current invitation and timezone-consistent deadline. Review the linked official portal."
+    },
+    {
+      "id": "harford-listing-255203",
+      "title": "Well Field Inspection, Maintenance, and Repair Services",
+      "solicitationNumber": "27-102",
+      "agency": "Harford County Government",
+      "jurisdiction": "MD",
+      "locality": "Harford County",
+      "category": "Monitoring",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-10-28T13:00:00-04:00",
+      "announcedAt": "",
+      "sourceId": "harford-listing",
+      "sourceName": "Harford County official open opportunities",
+      "sourceUrl": "https://www.harfordcountymd.gov/1540/Bid-Board-and-Results",
+      "procurementUrl": "https://harfordcountymd.bonfirehub.com/opportunities/255203",
+      "summary": " Well Field Inspection, Maintenance, and Repair Services Project closes Oct 28, 2026 1:00 PM EDT.",
+      "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
+      "verifiedAt": "2026-10-24T22:32:05Z",
+      "verification": "verified",
+      "verificationScope": "official-government-listing",
+      "noticeType": "County procurement listing",
+      "statusNote": "Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified."
+    },
+    {
+      "id": "harford-listing-258676",
+      "title": "Hydrovac Grit and Grease Removal Services",
+      "solicitationNumber": "27-085",
+      "agency": "Harford County Government",
+      "jurisdiction": "MD",
+      "locality": "Harford County",
+      "category": "Water",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-11-18T13:00:00-05:00",
+      "announcedAt": "",
+      "sourceId": "harford-listing",
+      "sourceName": "Harford County official open opportunities",
+      "sourceUrl": "https://www.harfordcountymd.gov/1540/Bid-Board-and-Results",
+      "procurementUrl": "https://harfordcountymd.bonfirehub.com/opportunities/258676",
+      "summary": " Provide wastewater pumping services utilizing specific vacuum equipment. Project closes Nov 18, 2026 1:00 PM EST.",
+      "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
+      "verifiedAt": "2026-10-24T22:32:05Z",
+      "verification": "verified",
+      "verificationScope": "official-government-listing",
+      "noticeType": "County procurement listing",
+      "statusNote": "Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified."
+    },
+    {
       "id": "lynchburg-bids-249",
       "title": "CSO 70 SEWER IMPROVEMENTS",
       "agency": "City of Lynchburg",
@@ -699,12 +779,14 @@
       "sourceUrl": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
       "summary": "Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-10-24T22:09:19Z",
+      "verifiedAt": "2026-10-24T22:32:05Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
       "sourceCategory": "Invitation for Bids",
-      "contactText": "william.ruberry@lynchburgva.gov"
+      "contactText": "william.ruberry@lynchburgva.gov",
+      "solicitationNumber": "2027-027",
+      "prebidMeeting": "11/03/2026 @ 10:00 A.M."
     },
     {
       "id": "sam-3f2f09ace746415db8c96a738fde61f4",
@@ -753,7 +835,7 @@
   ],
   "coverage": {
     "DC": 4,
-    "MD": 3,
+    "MD": 6,
     "VA": 13
   },
   "limitations": [
@@ -763,14 +845,51 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-10-24T22:09:19Z",
+    "generatedAt": "2026-10-24T22:32:05Z",
     "comparison": {
-      "comparedTo": "2026-10-24T22:05:50Z",
+      "comparedTo": "2026-10-24T22:09:19Z",
       "newIds": [
-        "sam-3f2f09ace746415db8c96a738fde61f4",
-        "sam-95182c8575e849afbb5c5375383bf49b"
+        "harford-listing-254691",
+        "harford-listing-255203",
+        "harford-listing-258676"
       ],
-      "changed": [],
+      "changed": [
+        {
+          "id": "danville-bids-4194",
+          "fields": [
+            "prebidMeeting",
+            "solicitationNumber"
+          ]
+        },
+        {
+          "id": "danville-bids-4232",
+          "fields": [
+            "prebidMeeting",
+            "solicitationNumber"
+          ]
+        },
+        {
+          "id": "danville-bids-4234",
+          "fields": [
+            "prebidMeeting",
+            "solicitationNumber"
+          ]
+        },
+        {
+          "id": "danville-bids-4238",
+          "fields": [
+            "prebidMeeting",
+            "solicitationNumber"
+          ]
+        },
+        {
+          "id": "lynchburg-bids-249",
+          "fields": [
+            "prebidMeeting",
+            "solicitationNumber"
+          ]
+        }
+      ],
       "removedIds": []
     },
     "procurementSources": [
@@ -782,9 +901,9 @@
         "locality": "Annapolis",
         "mode": "civic",
         "note": "Daily public-listing scan; relevant detail pages are checked before importing notices.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -799,9 +918,9 @@
         "locality": "Danville",
         "mode": "civic",
         "note": "Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 17,
         "matchingCount": 4,
         "listingHash": "622bfdeb4512334a59431dda89e6c421c0830aaaa82ba16be17825353fcbab7a",
@@ -846,9 +965,9 @@
         "locality": "Washington, DC",
         "mode": "dc-api",
         "note": "Public portal search and environmental notice details checked daily. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 20,
         "matchingCount": 3,
         "listingHash": "b97de1d1c317d0f925bec48f91104b5ab06bd271550eeb9b46162ffbd96ed49a",
@@ -863,9 +982,9 @@
         "locality": "Warrenton",
         "mode": "civic",
         "note": "Daily public-listing scan; no relevant invitations are inferred from an empty board.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -880,9 +999,9 @@
         "locality": "Frederick County",
         "mode": "civic",
         "note": "Checks this public board only. County links to other procurement platforms are not included.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -897,9 +1016,9 @@
         "locality": "Lynchburg",
         "mode": "civic",
         "note": "Daily public-listing scan; relevant notices and amendments require official review.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 5,
         "matchingCount": 1,
         "listingHash": "bf3b9a133e1f99c33858c16cc202037e8db466d66797147a23a595ad3f250d58",
@@ -914,12 +1033,64 @@
         "locality": "Franklin County",
         "mode": "civic",
         "note": "Daily public-listing scan; unrelated notices are excluded.",
-        "lastChecked": "2026-10-24T22:09:19Z",
+        "lastChecked": "2026-10-24T22:32:05Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T22:09:19Z",
+        "lastSuccess": "2026-10-24T22:32:05Z",
         "listingCount": 2,
         "matchingCount": 0,
         "listingHash": "1ae870ae1f52113851ef0af3d0c615510565930e3ba653961812efc6f15ddbd8",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "harford-listing",
+        "name": "Harford County official open opportunities",
+        "url": "https://www.harfordcountymd.gov/1540/Bid-Board-and-Results",
+        "jurisdiction": "MD",
+        "locality": "Harford County",
+        "mode": "harford-listing",
+        "note": "Checks the official county open-opportunity listing and its stated closing times. Full Bonfire documents and amendments require bidder review.",
+        "lastChecked": "2026-10-24T22:32:05Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:32:05Z",
+        "listingCount": 7,
+        "matchingCount": 3,
+        "listingHash": "03964d4e58551d4d63cd021c07c0c47a05866d36e72cba3fbfbaf54ae107bcc1",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "caroline-bids",
+        "name": "Caroline County public bid board",
+        "url": "https://www.carolinemd.org/bids.aspx",
+        "jurisdiction": "MD",
+        "locality": "Caroline County",
+        "agency": "Caroline County Government",
+        "mode": "civic",
+        "note": "Checks relevant notices on this county board; not statewide coverage.",
+        "lastChecked": "2026-10-24T22:32:05Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:32:05Z",
+        "listingCount": 1,
+        "matchingCount": 0,
+        "listingHash": "15ad66ba198b3c24e4cb8c61a8f8c29d326af974e810e9e8e64fa7a19fd4c0c4",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "fredericksburg-bids",
+        "name": "Fredericksburg public bid board",
+        "url": "https://www.fredericksburgva.gov/bids.aspx",
+        "jurisdiction": "VA",
+        "locality": "Fredericksburg",
+        "mode": "civic",
+        "note": "Checks relevant notices on the public city board; unrelated notices are excluded.",
+        "lastChecked": "2026-10-24T22:32:05Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:32:05Z",
+        "listingCount": 2,
+        "matchingCount": 0,
+        "listingHash": "23088369fa5f6299960eceefb4218fad1a9207bc05cede0df649fc171ca30bdb",
         "checkedEmpty": false,
         "listingChanged": false
       }

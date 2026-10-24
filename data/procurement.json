@@ -85,5 +85,33 @@
     "locality": "Franklin County",
     "mode": "civic",
     "note": "Daily public-listing scan; unrelated notices are excluded."
+  },
+  {
+    "id": "harford-listing",
+    "name": "Harford County official open opportunities",
+    "url": "https://www.harfordcountymd.gov/1540/Bid-Board-and-Results",
+    "jurisdiction": "MD",
+    "locality": "Harford County",
+    "mode": "harford-listing",
+    "note": "Checks the official county open-opportunity listing and its stated closing times. Full Bonfire documents and amendments require bidder review."
+  },
+  {
+    "id": "caroline-bids",
+    "name": "Caroline County public bid board",
+    "url": "https://www.carolinemd.org/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "Caroline County",
+    "agency": "Caroline County Government",
+    "mode": "civic",
+    "note": "Checks relevant notices on this county board; not statewide coverage."
+  },
+  {
+    "id": "fredericksburg-bids",
+    "name": "Fredericksburg public bid board",
+    "url": "https://www.fredericksburgva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Fredericksburg",
+    "mode": "civic",
+    "note": "Checks relevant notices on the public city board; unrelated notices are excluded."
   }
 ]

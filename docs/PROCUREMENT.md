@@ -52,3 +52,12 @@ At this release: 18 records, 4 verified open bids, 10 funding signals, and 4 unc
 ### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
 
 The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.
+
+
+## County coverage and correction update
+
+Harford County's official government page at https://www.harfordcountymd.gov/1540/Bid-Board-and-Results lists open procurement opportunities and their closing times. The collector imports only relevant scopes and government-linked Bonfire notice URLs. It rejects changed portal hosts, incomplete layouts, conflicting timezone labels and missing deadlines. It does not infer relevance from a department's name. County-listing verification is distinguished from independent verification of the full solicitation documents.
+
+New Maryland listing checks identify Hydrovac Grit and Grease Removal Services (Nov 18, 2026, 1 p.m. EST) and Well Field Inspection, Maintenance, and Repair Services (Oct 28, 2026, 1 p.m. EDT). A dredging listing without a visible closing date remains unconfirmed. The two new conventional CivicPlus collectors check Caroline County and Fredericksburg, with no environmental records imported at this refresh. eMMA/eVA remain manual; no CAPTCHA bypass or unverified statewide feed is claimed.
+
+The snapshot now has 23 records and 6 open bids. Source health includes 10 automated state/local collectors plus the three EPA/SAM sources and separately identifies three manual references. A human correction hold in `data/reviews.json` forces a suspect record to unconfirmed even if an automated scan still labels it open. The correction procedure is in SUPPORT-AND-RECOVERY.md.

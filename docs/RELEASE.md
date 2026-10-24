@@ -53,3 +53,10 @@ Development has advanced materially, but the original readiness rubric measured 
 ### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
 
 The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.
+
+
+## Public briefing, Maryland coverage and support release
+
+Sign-up/login and Stripe activation were explicitly deferred. Public features now include matched HTML/text briefing downloads, support request drafts, source-status reporting, a persistent editorial-hold mechanism and stronger email-template/delivery safeguards. The live collection exercise returned 23 records with 6 verified open bids, including two county-listed Maryland bids. The county listing is the checked evidence; full linked portal documents were not independently verified.
+
+59 parser/backend tests passed locally. Browser tests cover desktop/mobile Chromium and WebKit; local browser installation failed, so actual CI results determine browser validation. D1 returned an available recovery bookmark and a schema export restored successfully in isolation. A production database restore and real subscriber email delivery were not attempted.

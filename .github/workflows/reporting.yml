@@ -41,3 +41,6 @@ jobs:
             git commit -m "Refresh verified source checks and environmental project brief"
             git push
           fi
+
+      - name: Check critical source health
+        run: python3 scripts/check_health.py

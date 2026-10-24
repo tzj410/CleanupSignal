@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "check": "node --check public/app.js && node --check public/core.js && node --check public/contractor.js && node --check public/preferences.js && node --check public/operations.js && node --check public/data-loader.js && node --check public/report.js && node --check public/account.js && node --check public/_worker.js",
-    "build": "python3 scripts/build_worker.py && python3 scripts/build_site.py"
+    "check": "python3 scripts/check_javascript.py",
+    "build": "python3 scripts/build_worker.py && python3 scripts/build_site.py",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
   }
 }
