@@ -45,6 +45,29 @@ const plans={free:{seats:1},starter:{seats:1,monthly:19,yearly:190},team:{seats:
 function entitled(company,now=Math.floor(Date.now()/1000)){return ['active','trialing'].includes(company.subscription_status)&&company.period_end>now&&company.plan in plans&&company.plan!=='free';}
 function seats(company){return entitled(company)?plans[company.plan].seats:1;}
 
+// public-data.js
+function validPublicData(data){return data&&Array.isArray(data.signals)&&Array.isArray(data.sources)&&Number.isFinite(Date.parse(data.generatedAt))&&Date.parse(data.generatedAt)<=Date.now()+300000;}
+async function latestDataset(request,env){
+ const candidates=[],checks=[];
+ try{const response=await env.ASSETS.fetch(new Request(new URL('/data/signals.json',request.url)));if(response.ok){const data=JSON.parse(await readText(response,2000000));if(validPublicData(data))candidates.push({data,source:'deployed-fallback'});}}catch{}
+ const bucket=Math.floor(Date.now()/300000);
+ const sources=[['github-raw','https://raw.githubusercontent.com/tzj410/CleanupSignal/main/public/data/signals.json?refresh='+bucket],['github-api','https://api.github.com/repos/tzj410/CleanupSignal/contents/public/data/signals.json?ref=main']];
+ for(const [source,url] of sources){
+  try{
+   const response=await fetch(url,{signal:AbortSignal.timeout(3500),headers:{'Cache-Control':'no-cache','User-Agent':'CleanupSignal public data reader','Accept':'application/vnd.github.raw+json'},cf:{cacheTtl:60,cacheEverything:true}});
+   if(!response.ok){checks.push({source,status:response.status});await response.body?.cancel();continue;}
+   const data=JSON.parse(await readText(response,2000000));
+   if(validPublicData(data)){candidates.push({data,source});checks.push({source,status:'valid'});break;}
+   checks.push({source,status:'invalid-dataset'});
+  }catch{checks.push({source,status:'unavailable'});}
+ }
+ requireValue(candidates.length,503,'Public bid data is temporarily unavailable.');
+ const selected=candidates.sort((a,b)=>Date.parse(b.data.generatedAt)-Date.parse(a.data.generatedAt))[0];
+ // Public provenance lets operators distinguish a fresh publication from an upstream fallback.
+ return {...selected.data,publication:{source:selected.source,checkedAt:new Date().toISOString(),checks}};
+}
+async function publicSignals(request,env){return json(await latestDataset(request,env),200,{'Cache-Control':'public, max-age=30, s-maxage=60'});}
+
 // auth.js
 function authReady(env){return Boolean(env.SUPABASE_URL&&env.SUPABASE_PUBLISHABLE_KEY);}
 async function authCall(env,path,data,token,method='POST'){
@@ -191,7 +214,7 @@ async function unsubscribe(request,env){
  if(request.method==='GET')return new Response('<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width"><title>CleanupSignal email preferences</title></head><body><h1>Stop CleanupSignal alerts</h1><p>This stops bid digests and deadline reminders for your account.</p><form method="post"><button>Unsubscribe from all alerts</button></form><p><a href="/account.html">Manage account</a></p></body></html>',{headers:{'content-type':'text/html;charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; form-action 'self'; frame-ancestors 'none'"}});
  requireValue(request.method==='POST',405,'POST required.');await env.DB.prepare("UPDATE alert_settings SET frequency='off',deadlines=0,updated_at=unixepoch() WHERE user_id=?").bind(row.user_id).run();await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE user_id=? AND status IN ('pending','failed')").bind(row.user_id).run();return new Response('You are unsubscribed from CleanupSignal digests and reminders. Your account and billing are unchanged.',{headers:{'content-type':'text/plain','Cache-Control':'no-store'}});
 }
-async function datasetFor(request,env){const r=await env.ASSETS.fetch(new Request(new URL('/data/signals.json',request.url)));requireValue(r.ok,503,'Bid data unavailable.');let data=await r.json();try{const live=await fetch('https://raw.githubusercontent.com/tzj410/CleanupSignal/main/public/data/signals.json',{signal:AbortSignal.timeout(10000)});if(live.ok){const candidate=JSON.parse(await readText(live,2000000));if(Array.isArray(candidate.signals)&&Date.parse(candidate.generatedAt)>Date.parse(data.generatedAt))data=candidate;}}catch{}const age=Date.now()-Date.parse(data.generatedAt);requireValue(Number.isFinite(age)&&age>=-300000&&age<172800000&&Array.isArray(data.signals),503,'Bid data is overdue; delivery paused.');return data;}
+async function datasetFor(request,env){const data=await latestDataset(request,env);const age=Date.now()-Date.parse(data.generatedAt);requireValue(Number.isFinite(age)&&age>=-300000&&age<172800000,503,'Bid data is overdue; delivery paused.');return data;}
 async function enqueueAlerts(request,env){
  const data=await datasetFor(request,env);const date=new Date().toISOString().slice(0,10);const now=Math.floor(Date.now()/1000);
  const targets=await env.DB.prepare("SELECT m.user_id,m.email,m.company_id,a.frequency,a.deadlines,c.*,p.regions,p.services FROM members m JOIN companies c ON c.id=m.company_id JOIN alert_settings a ON a.user_id=m.user_id LEFT JOIN preferences p ON p.company_id=c.id WHERE a.frequency!='off' OR a.deadlines=1 LIMIT 1001").all();requireValue(targets.results.length<=1000,503,'Delivery batch limit reached. Split customer batches before scaling.');let queued=0;
@@ -289,6 +312,7 @@ export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
  if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
  try{
+  if(path==='/api/signals.json'&&request.method==='GET')return await publicSignals(request,env);
   if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM&&env.RESEND_WEBHOOK_SECRET),support:env.SUPPORT_ENABLED==='true',passwordless:true});
   if(!env.DB)return json({error:'Company workspace setup is pending. Public research remains available.'},503);
   if(path==='/api/email/webhook'&&request.method==='POST')return await emailWebhook(request,env);

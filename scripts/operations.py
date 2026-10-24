@@ -87,7 +87,7 @@ def collect(source,fetch,stamp):
     digest=hashlib.sha256(json.dumps(sorted(links.links.items())).encode()).hexdigest()
     return result,dict(listingCount=len(links.links),matchingCount=len(result),listingHash=digest,checkedEmpty=empty)
 
-BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp','prebidMeeting','solicitationNumber','procurementUrl','documents','amendmentNotes','requirementNotes','evidenceFingerprint']
+BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp','prebidMeeting','solicitationNumber','procurementUrl','documents','amendmentNotes','requirementNotes','evidenceFingerprint','selectionSite','selectionType','sourceDocuments']
 def compare(previous,current):
     before={s['id']:s for s in previous['signals']};after={s['id']:s for s in current['signals']}
     added=[s['id'] for s in current['signals'] if s['id'] not in before]

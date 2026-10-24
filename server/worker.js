@@ -1,3 +1,4 @@
+import {publicSignals} from './public-data.js';
 import {HttpError,json,checkOrigin} from './security.js';
 import {authReady,authRoute} from './auth.js';
 import {workspaceRoute} from './workspace.js';
@@ -9,6 +10,7 @@ export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
  if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
  try{
+  if(path==='/api/signals.json'&&request.method==='GET')return await publicSignals(request,env);
   if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM&&env.RESEND_WEBHOOK_SECRET),support:env.SUPPORT_ENABLED==='true',passwordless:true});
   if(!env.DB)return json({error:'Company workspace setup is pending. Public research remains available.'},503);
   if(path==='/api/email/webhook'&&request.method==='POST')return await emailWebhook(request,env);
