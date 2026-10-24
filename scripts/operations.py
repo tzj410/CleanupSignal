@@ -25,17 +25,31 @@ class BidLinks(HTMLParser):
             self.href=None
 
 def category(title):
-    for label,pattern in [('Abatement',r'\b(asbestos|abatement|radon|lead removal)\b'),('Demolition',r'\b(demolition|demo)\b'),('Water',r'\b(wastewater|stormwater|sewer|sludge|water treatment)\b'),('Waste',r'\b(hazardous waste|solid waste|landfill)\b'),('Cleanup',r'\b(remediation|brownfield\w*|soil cleanup)\b'),('Assessment',r'\benvironmental (assessment|consulting|engineering)\b')]:
+    for label,pattern in [('Abatement',r'\b(asbestos|abatement|radon|lead removal)\b'),('Demolition',r'\b(demolition|demo)\b'),('Water',r'\b(wastewater|stormwater|sewer|sludge|water treatment)\b'),('Waste',r'\b(hazardous waste|solid waste|landfill|leaf disposal|waste disposal|recycling)\b'),('Cleanup',r'\b(remediation|brownfield\w*|soil cleanup)\b'),('Assessment',r'\benvironmental (assessment|consulting|engineering)\b')]:
         if re.search(pattern,title,re.I):return label
     return None
 
+class CivicCells(HTMLParser):
+    # Some CivicPlus pages omit </td> on value rows. A row boundary or next cell
+    # closes the current cell, following HTML's implicit table-cell behavior.
+    def __init__(self):super().__init__();self.cells=[];self.parts=None
+    def flush(self):
+        if self.parts is not None:self.cells.append(re.sub(r'\s+',' ',html.unescape(' '.join(self.parts))).strip())
+        self.parts=None
+    def handle_starttag(self,tag,attrs):
+        if tag=='td':self.flush();self.parts=[]
+        elif tag=='tr':self.flush()
+    def handle_endtag(self,tag):
+        if tag in ['td','tr']:self.flush()
+    def handle_data(self,value):
+        if self.parts is not None:self.parts.append(value)
+
 def civic_fields(raw):
-    # CivicPlus uses adjacent cells for headings and subsequent rows for dates.
-    cells=[text(c) for c in re.findall(r'<td\b[^>]*>((?:(?!<td\b).)*?)</td>',raw,re.I|re.S)]
+    parser=CivicCells();parser.feed(raw);parser.flush();cells=parser.cells
+    headings=['Bid Title:','Bid Number:','Category:','Status:','Description:','Publication Date/Time:','Closing Date/Time:','Contact Person:','Pre-bid Meeting:']
     fields={}
     for i,c in enumerate(cells[:-1]):
-        if c in ['Bid Title:','Bid Number:','Category:','Status:','Description:','Publication Date/Time:','Closing Date/Time:','Contact Person:']:
-            fields[c.rstrip(':')]=cells[i+1]
+        if c in headings and cells[i+1] not in headings:fields[c.rstrip(':')]=cells[i+1]
     if not fields.get('Bid Title') or not fields.get('Status'):raise ValueError('Unrecognized bid detail layout')
     return fields
 
@@ -90,7 +104,12 @@ def enrich(previous,current,registry,followups,fetch,stamp):
         else:
             item.update(lastChecked=stamp,status='degraded',lastSuccess=last.get('lastSuccess'))
             try:
-                found,stats=collect(entry,fetch,stamp);item.update(stats,status='checked',lastSuccess=stamp)
+                
+                if entry['mode']=='dc-api':
+                    from dc_procurement import collect_dc
+                    found,stats=collect_dc(entry,fetch,stamp)
+                else:found,stats=collect(entry,fetch,stamp)
+                item.update(stats,status='checked',lastSuccess=stamp)
                 item['listingChanged']=bool(last.get('listingHash') and last['listingHash']!=stats['listingHash'])
                 # A record absent from the current listing cannot stay open.
                 for r in records.values():
@@ -116,3 +135,4 @@ def enrich(previous,current,registry,followups,fetch,stamp):
     ops=dict(generatedAt=stamp,comparison=delta,procurementSources=checks,alerts=alerts,deadlineWindowDays=7)
     data['operations']=ops
     return data
+

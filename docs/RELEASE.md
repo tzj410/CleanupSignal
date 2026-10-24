@@ -39,3 +39,12 @@ Added an original contractor-facing homepage, a service directory with three pop
 Two bounded public bid-board collectors (Annapolis and Danville) now supplement EPA records. Annapolis explicitly showed no open postings at the first scan. Danville supplied four relevant administrative records; conflicting open/closed labels, bid tabs, notices of intent and a responders list remain unconfirmed rather than verified open solicitations. Current dataset: 14 records, 10 funding selections, zero verified open bids.
 
 Added a state/local source directory with three manual gateway references (eMMA, eVA and Anne Arundel Harbor), daily comparisons that ignore verification-only updates, a source check ledger, visible source-failure and 48-hour dataset-age warnings, and GitHub job summaries. Added qualification research for Annapolis and Martinsville plus research questions/portal links for all ten funding selections. Browser-local follow-up stages and notes persist after reload and filter correctly. No outreach, reminder notifications or email alerting was activated.
+
+
+## October 24, 2026 — company service foundation
+
+Supersedes earlier release summaries where they describe account/payment architecture or record counts. The current implementation and exact activation blockers are documented in README.md and ACTIVATION.md.
+
+18 records; 4 verified open bids (three D.C., one Virginia). Seven automated local/D.C. sources. Public site, detail modal, filters and account-unavailable state inspected in deployed Chrome. 43 tests pass: 24 Python parser/source tests and 19 JavaScript core/backend tests. D1 schema applied and table creation verified. Stripe, auth and email behavior is tested with controlled mocks, not real customers.
+
+Development has advanced materially, but the original readiness rubric measured an operational paid business. A code-completion percentage must not be substituted for that rubric: provider activation, broader verified procurement coverage and real customer-flow testing remain blockers. This release does not claim the paid self-service business is 65% operational.

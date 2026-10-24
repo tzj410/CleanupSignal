@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-24T14:33:34Z",
+  "generatedAt": "2026-10-24T22:05:50Z",
   "sources": [
     {
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
-      "lastChecked": "2026-10-24T14:33:34Z",
+      "lastChecked": "2026-10-24T22:00:05Z",
       "status": "verified"
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
-      "lastChecked": "2026-10-24T14:33:34Z",
+      "lastChecked": "2026-10-24T22:00:05Z",
       "status": "verified"
     },
     {
@@ -37,18 +37,18 @@
       "status": "unconfirmed",
       "amount": null,
       "deadline": null,
-      "announcedAt": "",
+      "announcedAt": "2026-08-27",
       "sourceId": "danville-bids",
       "sourceName": "Danville public bid board",
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4194",
-      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "summary": "Administrative procurement activity: IFB-26-27-004 AA-Demo 6 Properties Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:05:50Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Related Documents:"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
     },
     {
       "id": "danville-bids-4232",
@@ -60,18 +60,18 @@
       "status": "unconfirmed",
       "amount": null,
       "deadline": null,
-      "announcedAt": "",
+      "announcedAt": "2026-10-16",
       "sourceId": "danville-bids",
       "sourceName": "Danville public bid board",
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4232",
-      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "summary": "Administrative procurement activity: RFP-26-27-018-Wastewater Sludge Removal Dewatering Transportation and Land Application (Responders List)",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:05:50Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x RFP Responders - Closed",
-      "contactText": "Related Documents:"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
     },
     {
       "id": "danville-bids-4234",
@@ -83,18 +83,18 @@
       "status": "unconfirmed",
       "amount": null,
       "deadline": null,
-      "announcedAt": "",
+      "announcedAt": "2026-10-19",
       "sourceId": "danville-bids",
       "sourceName": "Danville public bid board",
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4234",
-      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "summary": "Administrative procurement activity: IFB 26-27-009 Southern Virginia Megasite at Berry Hill - McGruff Creek Sewer Extension - Notice of Intent",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:05:50Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Related Documents:"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
     },
     {
       "id": "danville-bids-4238",
@@ -106,18 +106,84 @@
       "status": "unconfirmed",
       "amount": null,
       "deadline": null,
-      "announcedAt": "",
+      "announcedAt": "2026-10-22",
       "sourceId": "danville-bids",
       "sourceName": "Danville public bid board",
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4238",
-      "summary": "Administrative procurement activity: Publication Date/Time:",
+      "summary": "Administrative procurement activity: IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:05:50Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
       "sourceCategory": "x Bid Results - Closed",
-      "contactText": "Related Documents:"
+      "contactText": "Carol Henley Purchasing Director 427 Patton Street Danville, VA 24541 Phone : 434-799-6528 Option 4 Fax: 434-799-5102 E-Mail: purchasing@danvilleva.gov"
+    },
+    {
+      "id": "dc-ocp-Doc841623",
+      "title": "FY26 Parkland Stormwater Retrofits - DPR V",
+      "agency": "Energy and Environment (DOEE)",
+      "jurisdiction": "DC",
+      "locality": "Washington, DC",
+      "category": "Water",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-11-24T14:00:00-05:00",
+      "announcedAt": "2026-10-22",
+      "sourceId": "dc-ocp",
+      "sourceName": "D.C. OCP public solicitations",
+      "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623",
+      "summary": "District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
+      "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
+      "verifiedAt": "2026-10-24T22:05:50Z",
+      "verification": "verified",
+      "noticeType": "District procurement notice",
+      "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
+      "contactText": "Tracy Crump / tracy.crump@dc.gov"
+    },
+    {
+      "id": "dc-ocp-Doc846899",
+      "title": "DCKT-FY26-Leaf Disposal Services",
+      "agency": "Public Works (DPW)",
+      "jurisdiction": "DC",
+      "locality": "Washington, DC",
+      "category": "Waste",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-10-27T14:00:00-04:00",
+      "announcedAt": "2026-10-20",
+      "sourceId": "dc-ocp",
+      "sourceName": "D.C. OCP public solicitations",
+      "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc846899",
+      "summary": "District procurement notice: DCKT-FY26-Leaf Disposal Services. Market: Set Aside. Review official procurement documents, registration, eligibility and amendments.",
+      "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
+      "verifiedAt": "2026-10-24T22:05:50Z",
+      "verification": "verified",
+      "noticeType": "District procurement notice",
+      "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
+      "contactText": "Matthew Thompson / matthew.thompson@dc.gov"
+    },
+    {
+      "id": "dc-ocp-Doc852234",
+      "title": "DPW FY27 Stormwater Retention Credits",
+      "agency": "Public Works (DPW)",
+      "jurisdiction": "DC",
+      "locality": "Washington, DC",
+      "category": "Water",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-10-28T14:00:00-04:00",
+      "announcedAt": "2026-10-23",
+      "sourceId": "dc-ocp",
+      "sourceName": "D.C. OCP public solicitations",
+      "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc852234",
+      "summary": "District procurement notice: DPW FY27 Stormwater Retention Credits. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
+      "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
+      "verifiedAt": "2026-10-24T22:05:50Z",
+      "verification": "verified",
+      "noticeType": "District procurement notice",
+      "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
+      "contactText": "Matthew Thompson / matthew.thompson@dc.gov"
     },
     {
       "id": "epa-2026-annapolis-dpw-cleanup",
@@ -135,7 +201,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Resilience Authority of Annapolis and Anne Arundel County",
@@ -191,7 +257,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Danville",
@@ -243,7 +309,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia’s Gateway Region, Inc.",
@@ -291,7 +357,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Giles County",
@@ -339,7 +405,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Multipurpose brownfields selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Martinsville",
@@ -395,7 +461,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Mount Rogers Planning District Commission",
@@ -443,7 +509,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Pamunkey Community Dump.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pamunkey Indian Tribe",
@@ -491,7 +557,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pittsylvania County",
@@ -539,7 +605,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "State brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia Department of Environmental Quality",
@@ -587,7 +653,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-24T14:33:34Z",
+      "verifiedAt": "2026-10-24T22:00:05Z",
       "verification": "verified",
       "evidenceTerms": [
         "Tri-County Council for Western Maryland",
@@ -618,12 +684,35 @@
         "reviewedAt": "2026-10-23",
         "evidenceStatus": "Research guidance; no outreach performed"
       }
+    },
+    {
+      "id": "lynchburg-bids-249",
+      "title": "CSO 70 SEWER IMPROVEMENTS",
+      "agency": "City of Lynchburg",
+      "jurisdiction": "VA",
+      "locality": "Lynchburg",
+      "category": "Water",
+      "status": "open-solicitation",
+      "amount": null,
+      "deadline": "2026-12-08T15:00:00-05:00",
+      "announcedAt": "2026-10-21",
+      "sourceId": "lynchburg-bids",
+      "sourceName": "Lynchburg public bid board",
+      "sourceUrl": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
+      "summary": "Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
+      "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
+      "verifiedAt": "2026-10-24T22:05:50Z",
+      "verification": "verified",
+      "statusNote": "Review all official documents and amendments before responding.",
+      "noticeType": "Local procurement notice",
+      "sourceCategory": "Invitation for Bids",
+      "contactText": "william.ruberry@lynchburgva.gov"
     }
   ],
   "coverage": {
-    "DC": 0,
+    "DC": 3,
     "MD": 2,
-    "VA": 12
+    "VA": 13
   },
   "limitations": [
     "Funding selections are not open bids, guaranteed awards, or available contract values.",
@@ -632,11 +721,49 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-10-24T14:33:34Z",
+    "generatedAt": "2026-10-24T22:05:50Z",
     "comparison": {
-      "comparedTo": "2026-10-24T00:43:09Z",
+      "comparedTo": "2026-10-24T22:00:05Z",
       "newIds": [],
-      "changed": [],
+      "changed": [
+        {
+          "id": "danville-bids-4194",
+          "fields": [
+            "summary",
+            "contactText"
+          ]
+        },
+        {
+          "id": "danville-bids-4232",
+          "fields": [
+            "summary",
+            "contactText"
+          ]
+        },
+        {
+          "id": "danville-bids-4234",
+          "fields": [
+            "summary",
+            "contactText"
+          ]
+        },
+        {
+          "id": "danville-bids-4238",
+          "fields": [
+            "summary",
+            "contactText"
+          ]
+        },
+        {
+          "id": "lynchburg-bids-249",
+          "fields": [
+            "summary",
+            "status",
+            "deadline",
+            "contactText"
+          ]
+        }
+      ],
       "removedIds": []
     },
     "procurementSources": [
@@ -648,9 +775,9 @@
         "locality": "Annapolis",
         "mode": "civic",
         "note": "Daily public-listing scan; relevant detail pages are checked before importing notices.",
-        "lastChecked": "2026-10-24T14:33:34Z",
+        "lastChecked": "2026-10-24T22:05:50Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T14:33:34Z",
+        "lastSuccess": "2026-10-24T22:05:50Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -665,12 +792,12 @@
         "locality": "Danville",
         "mode": "civic",
         "note": "Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
-        "lastChecked": "2026-10-24T14:33:34Z",
+        "lastChecked": "2026-10-24T22:05:50Z",
         "status": "checked",
-        "lastSuccess": "2026-10-24T14:33:34Z",
-        "listingCount": 18,
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 17,
         "matchingCount": 4,
-        "listingHash": "3107fdc18a690ed3e717a18b6dccd56743bf9e6f0d0f5dc4cd31fe8d69bad203",
+        "listingHash": "622bfdeb4512334a59431dda89e6c421c0830aaaa82ba16be17825353fcbab7a",
         "checkedEmpty": false,
         "listingChanged": false
       },
@@ -703,6 +830,91 @@
         "note": "Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected.",
         "status": "manual",
         "lastChecked": null
+      },
+      {
+        "id": "dc-ocp",
+        "name": "D.C. OCP public solicitations",
+        "url": "https://contracts.ocp.dc.gov/solicitations/search",
+        "jurisdiction": "DC",
+        "locality": "Washington, DC",
+        "mode": "dc-api",
+        "note": "Public portal search and environmental notice details checked daily. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere.",
+        "lastChecked": "2026-10-24T22:05:50Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 20,
+        "matchingCount": 3,
+        "listingHash": "b97de1d1c317d0f925bec48f91104b5ab06bd271550eeb9b46162ffbd96ed49a",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "warrenton-bids",
+        "name": "Warrenton public bid board",
+        "url": "https://www.warrentonva.gov/bids.aspx",
+        "jurisdiction": "VA",
+        "locality": "Warrenton",
+        "mode": "civic",
+        "note": "Daily public-listing scan; no relevant invitations are inferred from an empty board.",
+        "lastChecked": "2026-10-24T22:05:50Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 0,
+        "matchingCount": 0,
+        "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "checkedEmpty": true,
+        "listingChanged": false
+      },
+      {
+        "id": "frederick-bids",
+        "name": "Frederick County public bid board",
+        "url": "https://www.frederickcountymd.gov/bids.aspx",
+        "jurisdiction": "MD",
+        "locality": "Frederick County",
+        "mode": "civic",
+        "note": "Checks this public board only. County links to other procurement platforms are not included.",
+        "lastChecked": "2026-10-24T22:05:50Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 0,
+        "matchingCount": 0,
+        "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "checkedEmpty": true,
+        "listingChanged": false
+      },
+      {
+        "id": "lynchburg-bids",
+        "name": "Lynchburg public bid board",
+        "url": "https://www.lynchburgva.gov/bids.aspx",
+        "jurisdiction": "VA",
+        "locality": "Lynchburg",
+        "mode": "civic",
+        "note": "Daily public-listing scan; relevant notices and amendments require official review.",
+        "lastChecked": "2026-10-24T22:05:50Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 5,
+        "matchingCount": 1,
+        "listingHash": "bf3b9a133e1f99c33858c16cc202037e8db466d66797147a23a595ad3f250d58",
+        "checkedEmpty": false,
+        "listingChanged": false
+      },
+      {
+        "id": "franklin-bids",
+        "name": "Franklin County public bid board",
+        "url": "https://www.franklincountyva.gov/bids.aspx",
+        "jurisdiction": "VA",
+        "locality": "Franklin County",
+        "mode": "civic",
+        "note": "Daily public-listing scan; unrelated notices are excluded.",
+        "lastChecked": "2026-10-24T22:05:50Z",
+        "status": "checked",
+        "lastSuccess": "2026-10-24T22:05:50Z",
+        "listingCount": 2,
+        "matchingCount": 0,
+        "listingHash": "1ae870ae1f52113851ef0af3d0c615510565930e3ba653961812efc6f15ddbd8",
+        "checkedEmpty": false,
+        "listingChanged": false
       }
     ],
     "alerts": [

@@ -27,3 +27,23 @@ Private contractor stages, notes and reminder dates stay in localStorage and loc
 ## Validation
 
 18 Python and 5 JavaScript tests pass. Tests cover failed-vs-empty listings, duplicate links, irrelevant assessment titles, administrative conflicts, expired deadlines, timezone transitions, prior-record downgrades and meaningful change comparisons. Desktop browser verified the operating desk and saved local follow-up notes after reload. Broader state feeds, mobile browser verification, private team sync and email alerts remain outside this release.
+
+
+## October 24 expansion
+
+The registry now includes six CivicPlus municipal/county boards and a D.C. public API collector, plus the three manual portal references. `scripts/dc_procurement.py` uses the public search API exposed by the OCP portal at `https://contracts.ocp.dc.gov/solicitations/search`, confirms its open-status filter, deduplicates solicitation IDs, then independently retrieves matching notice details. It checks schema, exact IDs, status and Eastern closing times. The feed does not cover all independent District agencies.
+
+Live D.C. details verified:
+
+- https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623 — parkland stormwater retrofits, November 24, 2026, 2 p.m. Eastern.
+- https://contracts.ocp.dc.gov/solicitations/details?id=Doc846899 — leaf disposal, October 27, 2026, 2 p.m. Eastern; portal market is Set Aside, so eligibility must be reviewed.
+- https://contracts.ocp.dc.gov/solicitations/details?id=Doc852234 — stormwater-retention credits, October 28, 2026, 2 p.m. Eastern.
+- https://www.lynchburgva.gov/bids.aspx?bidID=249 — CSO 70 sewer improvements, December 8, 2026, 3 p.m. Eastern. The public notice also lists a November 3 pre-bid meeting; review the official documents for whether attendance is mandatory.
+
+The CivicPlus parser now handles omitted closing `td` tags. Previously, it could misread the following heading as a description or deadline and conservatively leave a valid invitation unconfirmed. Tests cover this real markup case.
+
+Maryland eMMA presented a browser-check/CAPTCHA to this collector; eVA's linked public VBO endpoint returned HTTP 403. No bypass was attempted and neither is reported as an automated statewide feed. New municipal sources are not a substitute for statewide coverage. Municipal-only pages reporting no open notices do not prove no opportunities exist elsewhere in those jurisdictions.
+
+SAM now performs one national query per NAICS 541620/562910 and filters returned place-of-performance to MD/VA/DC. Typical first-page request count drops from six to two, with a hard ten-request pagination budget. Failed and cooldown-period SAM records cannot remain verified open. Authentication and rate-limit recovery must be confirmed by a hosted refresh that can access the existing secret.
+
+At this release: 18 records, 4 verified open bids, 10 funding signals, and 4 unconfirmed administrative records. Source failures retain the old evidence date and downgrade open status; timestamp refreshes alone are not treated as new procurement activity.

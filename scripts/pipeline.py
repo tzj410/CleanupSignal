@@ -102,18 +102,17 @@ def sam_signal(row, stamp):
 
 
 def collect_sam(key, stamp, fetch=get):
-    """Retrieve a 90-day window. Bounded at 15 requests; incomplete pages fail closed."""
+    """Retrieve a 90-day window. Bounded at 10 requests; incomplete pages fail closed."""
     today = dt.datetime.fromisoformat(stamp.replace('Z','+00:00')).date()
     records = {}
     requests = 0
-    for state in sorted(STATES):
-      for naics in ('541620', '562910'):
+    for naics in ('541620', '562910'):
         received = 0
         for page in range(5):
-            if requests >= 15:
+            if requests >= 10:
                 raise ValueError('SAM request budget reached; retained previous data')
             params = dict(api_key=key, postedFrom=(today-dt.timedelta(days=90)).strftime('%m/%d/%Y'),
-                          postedTo=today.strftime('%m/%d/%Y'), state=state, ncode=naics, limit=1000, offset=page)
+                          postedTo=today.strftime('%m/%d/%Y'), ncode=naics, limit=1000, offset=page)
             requests += 1
             response = json.loads(fetch('https://api.sam.gov/opportunities/v2/search?'+urlencode(params)))
             rows = response.get('opportunitiesData')
@@ -184,6 +183,9 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
                 record['status']='unconfirmed'; record['verification']='stale'; record['statusNote']='Current source unavailable or notice absent from the latest feed; check the official notice.'
     elif cooling_down:
         sam['status'] = 'degraded'
+        for record in old.values():
+            if record['sourceId']=='sam':
+                record.update(status='unconfirmed',verification='stale',statusNote='Source is rate limited; current status needs review.')
         sam['nextRetryAt'] = retry_at.isoformat().replace('+00:00','Z')
         sam['note'] = 'SAM.gov rate limit reached. Requests are paused until '+sam['nextRetryAt']+'. Prior records are retained; authentication is not yet verified.'
     else:
@@ -195,7 +197,7 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
                 if record['sourceId']=='sam': record['status']='unconfirmed'; record['verification']='stale'; record['statusNote']='Current source unavailable or notice absent from the latest feed; check the official notice.'
             old.update({s['id']:s for s in current})
             sam['status'] = 'verified'; sam.pop('error',None); sam.pop('nextRetryAt',None)
-            sam['note'] = '90-day search in MD, VA and DC for NAICS 541620 and 562910; federal notices only. Not comprehensive coverage.'
+            sam['note'] = '90-day national NAICS search, filtered to MD, VA and DC, for NAICS 541620 and 562910; federal notices only. Not comprehensive coverage.'
         except (ValueError, RuntimeError) as exc:
             sam['status'] = 'degraded'; sam['error'] = str(exc)
             sam['note'] = 'SAM.gov connection failed. Prior records are retained; current notices are not verified.'
@@ -301,3 +303,4 @@ def main():
             print(source['id']+': '+source['error'])
 
 if __name__ == '__main__': main()
+
