@@ -16,6 +16,7 @@ jobs:
       - run: python3 scripts/build_worker.py
       - run: npm run check && npm test
       - run: python3 scripts/pipeline.py --check
+      - run: python3 scripts/recovery_drill.py
       - name: Ensure generated Worker matches source
         run: git diff --exit-code -- public/_worker.js
   browser:

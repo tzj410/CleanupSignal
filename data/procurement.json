@@ -6,7 +6,7 @@
     "jurisdiction": "MD",
     "locality": "Annapolis",
     "mode": "civic",
-    "note": "Daily public-listing scan; relevant detail pages are checked before importing notices."
+    "note": "Hourly public-listing scan; relevant detail pages are checked before importing notices."
   },
   {
     "id": "danville-bids",
@@ -15,7 +15,7 @@
     "jurisdiction": "VA",
     "locality": "Danville",
     "mode": "civic",
-    "note": "Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids."
+    "note": "Hourly public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids."
   },
   {
     "id": "emma",
@@ -48,7 +48,7 @@
     "jurisdiction": "DC",
     "locality": "Washington, DC",
     "mode": "dc-api",
-    "note": "Public portal search and environmental notice details checked daily. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere."
+    "note": "Public portal search and environmental notice details checked hourly. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere."
   },
   {
     "id": "warrenton-bids",
@@ -57,7 +57,7 @@
     "jurisdiction": "VA",
     "locality": "Warrenton",
     "mode": "civic",
-    "note": "Daily public-listing scan; no relevant invitations are inferred from an empty board."
+    "note": "Hourly public-listing scan; no relevant invitations are inferred from an empty board."
   },
   {
     "id": "frederick-bids",
@@ -75,7 +75,7 @@
     "jurisdiction": "VA",
     "locality": "Lynchburg",
     "mode": "civic",
-    "note": "Daily public-listing scan; relevant notices and amendments require official review."
+    "note": "Hourly public-listing scan; relevant notices and amendments require official review."
   },
   {
     "id": "franklin-bids",
@@ -84,7 +84,7 @@
     "jurisdiction": "VA",
     "locality": "Franklin County",
     "mode": "civic",
-    "note": "Daily public-listing scan; unrelated notices are excluded."
+    "note": "Hourly public-listing scan; unrelated notices are excluded."
   },
   {
     "id": "harford-listing",
@@ -108,10 +108,49 @@
   {
     "id": "fredericksburg-bids",
     "name": "Fredericksburg public bid board",
-    "url": "https://www.fredericksburgva.gov/bids.aspx",
+    "url": "https://www.fredericksburgva.gov/Bids.aspx",
     "jurisdiction": "VA",
     "locality": "Fredericksburg",
     "mode": "civic",
     "note": "Checks relevant notices on the public city board; unrelated notices are excluded."
+  },
+  {
+    "id": "loudoun-bids",
+    "name": "Loudoun County public bid board",
+    "url": "https://www.loudoun.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Loudoun County",
+    "agency": "Loudoun County Government",
+    "mode": "civic",
+    "note": "Hourly public board scan, including source-stated amendments and document references. Full attachments require bidder review."
+  },
+  {
+    "id": "wicomico-bids",
+    "name": "Wicomico County public bid board",
+    "url": "https://www.wicomicocounty.org/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "Wicomico County",
+    "agency": "Wicomico County Government",
+    "mode": "civic",
+    "note": "Hourly scan of this board. An empty board does not establish that no county opportunities exist on other platforms."
+  },
+  {
+    "id": "hampton-bids",
+    "name": "Hampton public bid board",
+    "url": "https://www.hampton.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Hampton",
+    "agency": "City of Hampton",
+    "mode": "civic",
+    "note": "Hourly scan of environmental titles on this board. Other purchasing platforms and unrelated construction are outside coverage."
+  },
+  {
+    "id": "epa-discovery",
+    "name": "EPA national Brownfields selection discovery",
+    "url": "https://www.epa.gov/brownfields/brownfields-and-land-revitalization-newsroom",
+    "jurisdiction": "MD/VA/DC",
+    "mode": "epa-discovery",
+    "intervalHours": 24,
+    "note": "Daily discovery from the current-year national selection table linked by EPA. Funding selections remain early signals; no open bidding opportunity is inferred."
   }
 ]

@@ -1,0 +1,10 @@
+{
+ "name":"cleanupsignal-maintenance",
+ "main":"maintenance.js",
+ "compatibility_date":"2026-10-24",
+ "compatibility_flags":["nodejs_compat"],
+ "workers_dev":false,
+ "observability":{"enabled":true},
+ "triggers":{"crons":["31 7 * * *"]},
+ "d1_databases":[{"binding":"DB","database_name":"cleanupsignal-accounts","database_id":"2ca28e18-0a14-4421-8dc5-0b8ca7f07065"}]
+}

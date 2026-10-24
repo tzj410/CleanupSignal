@@ -89,3 +89,7 @@ The user has explicitly deferred sign-up/login activation and Stripe setup. Neit
 - Browser automation targets desktop/mobile Chromium and WebKit in CI. Local downloads failed; passing browser results must be read from the actual CI run rather than inferred from the test code.
 
 No operator emails, customer messages or payment transactions were sent during implementation. Final legal seller details and commercial refund/cancellation policies remain owner-dependent before paid launch.
+
+## Operational improvements — October 24, 2026
+
+Hourly local coverage now includes Loudoun, Wicomico and Hampton; Fredericksburg uses its working board path. Daily EPA national-table discovery can add new DMV funding selections. Listings expose document links, addenda and source-stated requirements; attachments remain subject to bidder review. Failed collectors back off without advancing verification timestamps. An independent hourly workflow maintains source incident issues. Private online support, daily retention maintenance, signed email outcome tracking and complaint/bounce suppression are implemented. Email delivery and automatic code-deployment credentials remain owner setup tasks; accounts and Stripe remain deferred. See `docs/OWNER-SETUP.md`. Recovery rehearsal: `python3 scripts/recovery_drill.py`.

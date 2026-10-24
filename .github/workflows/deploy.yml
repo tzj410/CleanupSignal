@@ -20,6 +20,15 @@ jobs:
           node-version: '24'
       - run: python3 -m unittest discover -s tests -v
       - run: python3 scripts/build_worker.py && npm run check && npm test
+      - name: Rehearse isolated full-data recovery
+        run: python3 scripts/recovery_drill.py
+      - name: Preserve the public release bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: cleanupsignal-public-release-${{ github.sha }}
+          path: public/
+          include-hidden-files: true
+          retention-days: 7
       - name: Deploy full static and API build
         env:
           CLOUDFLARE_ACCOUNT_ID: '3e68527f84aebe29967932d28ad2a2b4'

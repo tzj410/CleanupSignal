@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Repeatable Pages direct uploads, including the API Worker. Never prints credentials."""
-import argparse,base64,hashlib,json,mimetypes,os,pathlib,sys
+import argparse,base64,hashlib,json,mimetypes,os,pathlib,sys,time
 from urllib.request import Request,urlopen
 from urllib.error import HTTPError,URLError
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -31,7 +31,14 @@ def deploy(branch):
  for name,ctype in [('_worker.js','application/javascript+module'),('_routes.json','application/json'),('_headers','text/plain')]:
   parts.extend(['--'+boundary,f'Content-Disposition: form-data; name="{name}"; filename="{name}"','Content-Type: '+ctype,'',(ROOT/'public'/name).read_text()])
  parts.extend(['--'+boundary+'--','']);result=api(prefix+'/deployments',token,'\r\n'.join(parts).encode(),'multipart/form-data; boundary='+boundary)
- print('Deployment created:',result['id']);print('URL:',result['url']);print('Verify the final deployment stage before declaring success.')
+ print('Deployment created:',result['id']);print('URL:',result['url'])
+ for attempt in range(24):
+  status=api(prefix+'/deployments/'+result['id'],token);stage=status.get('latest_stage',{})
+  if stage.get('name')=='deploy' and stage.get('status')=='success':
+   print('Production deployment verified successful.');return
+  if stage.get('status') in ['failure','canceled']:raise RuntimeError('Deployment failed; inspect the Cloudflare build log before retrying')
+  time.sleep(5)
+ raise RuntimeError('Deployment verification timed out; inspect Cloudflare before declaring success')
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--branch',default='main');args=parser.parse_args()
  try:deploy(args.branch)

@@ -86,3 +86,9 @@ The main-branch refresh authenticated to SAM.gov successfully using the reduced-
 The latest user instruction defers authentication and Stripe setup. Public briefing, support and source status are usable without them. The formatted email template and safer delivery queue are implemented, but subscriber sending remains off: it still needs a verified sender, provider API key and the deferred account/paid entitlement infrastructure. No account-free subscription list or anonymous bulk-email endpoint was added.
 
 A real public matched briefing is now available at `/briefing.html`; this supersedes the earlier image-only email design preview. Source-failure monitoring and an editorial correction-hold process are operational in the code. D1 bookmark availability and an isolated schema restore were verified; production customer-data restoration was not performed.
+
+## Operational release update — October 24, 2026
+
+Read `OWNER-SETUP.md` for the remaining external inputs. Online private support is implemented and enabled for production after migration `0002_operations.sql`; sign-up/login and billing remain disabled. Signed Resend events and bounce/complaint suppression are implemented; live email sending is still unavailable without the owner’s domain/provider setup. Maintenance retention is deployed separately as a daily Worker. GitHub source incidents are maintained by an independent hourly workflow. A full-data synthetic recovery drill passes; no production restore was performed. Automated code publication still awaits the scoped GitHub Actions deployment secret.
+
+The earlier note claiming Safari could not be tested is superseded by the prior release's 20 successful desktop/mobile Chromium and WebKit scenarios. This release adds new support/evidence scenarios, with its actual hosted result recorded in the PR.
