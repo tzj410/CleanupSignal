@@ -9,3 +9,7 @@ node_modules/
 *.tar.gz
 .DS_Store
 dist/
+
+
+playwright-report/
+test-results/

@@ -25,7 +25,7 @@ class BidLinks(HTMLParser):
             self.href=None
 
 def category(title):
-    for label,pattern in [('Abatement',r'\b(asbestos|abatement|radon|lead removal)\b'),('Demolition',r'\b(demolition|demo)\b'),('Water',r'\b(wastewater|stormwater|sewer|sludge|water treatment)\b'),('Waste',r'\b(hazardous waste|solid waste|landfill|leaf disposal|waste disposal|recycling)\b'),('Cleanup',r'\b(remediation|brownfield\w*|soil cleanup)\b'),('Assessment',r'\benvironmental (assessment|consulting|engineering)\b')]:
+    for label,pattern in [('Monitoring',r'\b(well field|groundwater monitoring|monitoring wells)\b'),('PFAS',r'\bPFAS\b'),('Testing',r'\b(environmental sampling|laboratory testing)\b'),('Hygiene',r'\bindustrial hygiene\b'),('Abatement',r'\b(asbestos|abatement|radon|lead removal)\b'),('Demolition',r'\b(demolition|demo)\b'),('Water',r'\b(wastewater|stormwater|sewer|sludge|water treatment|dredging)\b'),('Waste',r'\b(hazardous waste|solid waste|landfill|leaf disposal|waste disposal|recycling)\b'),('Cleanup',r'\b(remediation|brownfield\w*|soil cleanup)\b'),('Assessment',r'\benvironmental (assessment|consulting|engineering)\b')]:
         if re.search(pattern,title,re.I):return label
     return None
 
@@ -69,7 +69,7 @@ def civic_signal(raw,url,source,stamp):
     elif f['Status'].lower()=='open' and due and not admin and not conflicting:state='open-solicitation'
     note='Administrative posting or conflicting source labels; not a verified invitation to bid.' if admin or conflicting else ('Current invitation and deadline require confirmation.' if state=='unconfirmed' else 'Review all official documents and amendments before responding.')
     bid=parse_qs(urlparse(url).query).get('bidID') or parse_qs(urlparse(url).query).get('bidid')
-    return dict(id=source['id']+'-'+bid[0],title=title[:500],agency='City of '+source['locality'],jurisdiction=source['jurisdiction'],locality=source['locality'],category=service,status=state,amount=None,deadline=due.isoformat() if due and not admin and not conflicting else None,announcedAt=posted.date().isoformat() if posted else '',sourceId=source['id'],sourceName=source['name'],sourceUrl=url,summary=('Administrative procurement activity: '+f.get('Description',title))[:650] if admin else 'Local procurement notice. '+f.get('Description',title)[:500],nextStep='Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.' if admin else 'Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.',verifiedAt=stamp,verification='verified',statusNote=note,noticeType='Administrative posting' if admin else 'Local procurement notice',sourceCategory=f.get('Category'),contactText=f.get('Contact Person','')[:800])
+    return dict(id=source['id']+'-'+bid[0],title=title[:500],agency=source.get('agency') or 'City of '+source['locality'],jurisdiction=source['jurisdiction'],locality=source['locality'],category=service,status=state,amount=None,deadline=due.isoformat() if due and not admin and not conflicting else None,announcedAt=posted.date().isoformat() if posted else '',sourceId=source['id'],sourceName=source['name'],sourceUrl=url,summary=('Administrative procurement activity: '+f.get('Description',title))[:650] if admin else 'Local procurement notice. '+f.get('Description',title)[:500],nextStep='Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.' if admin else 'Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.',verifiedAt=stamp,verification='verified',statusNote=note,noticeType='Administrative posting' if admin else 'Local procurement notice',sourceCategory=f.get('Category'),contactText=f.get('Contact Person','')[:800],solicitationNumber=f.get('Bid Number'),prebidMeeting=f.get('Pre-bid Meeting','')[:800])
 
 def collect(source,fetch,stamp):
     raw=fetch(source['url']);links=BidLinks();links.feed(raw)
@@ -85,7 +85,7 @@ def collect(source,fetch,stamp):
     digest=hashlib.sha256(json.dumps(sorted(links.links.items())).encode()).hexdigest()
     return result,dict(listingCount=len(links.links),matchingCount=len(result),listingHash=digest,checkedEmpty=empty)
 
-BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp']
+BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp','prebidMeeting','solicitationNumber','procurementUrl']
 def compare(previous,current):
     before={s['id']:s for s in previous['signals']};after={s['id']:s for s in current['signals']}
     added=[s['id'] for s in current['signals'] if s['id'] not in before]
@@ -108,6 +108,9 @@ def enrich(previous,current,registry,followups,fetch,stamp):
                 if entry['mode']=='dc-api':
                     from dc_procurement import collect_dc
                     found,stats=collect_dc(entry,fetch,stamp)
+                elif entry['mode']=='harford-listing':
+                    from harford_procurement import collect_harford
+                    found,stats=collect_harford(entry,fetch,stamp)
                 else:found,stats=collect(entry,fetch,stamp)
                 item.update(stats,status='checked',lastSuccess=stamp)
                 item['listingChanged']=bool(last.get('listingHash') and last['listingHash']!=stats['listingHash'])

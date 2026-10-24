@@ -1,6 +1,6 @@
 export const labels = {'funding-signal':'Funding signal','open-solicitation':'Open solicitation',closed:'Closed notice',unconfirmed:'Status unconfirmed'};
 export function escapeHtml(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-export function safeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&(/(^|\.)gov$/.test(u.hostname))?u.href:'#';}catch{return '#';}}
+export function safeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&(/(^|\.)gov$/.test(u.hostname)||['harfordcountymd.bonfirehub.com','www.carolinemd.org','carolinemd.org'].includes(u.hostname))?u.href:'#';}catch{return '#';}}
 export function effectiveStatus(s,at=Date.now()){if(s.status!=='open-solicitation')return s.status;if(s.verification!=='verified')return 'unconfirmed';const date=Date.parse(s.deadline);if(!Number.isFinite(date))return 'unconfirmed';if(date<=at)return 'closed';const verified=Date.parse(s.verifiedAt);if(!Number.isFinite(verified)||verified>at+300000||at-verified>172800000)return 'unconfirmed';return 'open-solicitation';}
 export function filterSignals(signals,filter={},at=Date.now()){
  const query=(filter.query||'').trim().toLocaleLowerCase();

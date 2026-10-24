@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-24T22:09:19Z
+Generated: 2026-10-24T22:32:05Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -14,20 +14,23 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Latest refresh
 
-Compared with: 2026-10-24T22:05:50Z
-2 new records; 0 materially changed records.
+Compared with: 2026-10-24T22:09:19Z
+3 new records; 5 materially changed records.
 New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-10-24T22:09:19Z
-- Danville public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Danville public bid board: checked; last attempt 2026-10-24T22:32:05Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:09:19Z
-- Warrenton public bid board: checked; last attempt 2026-10-24T22:09:19Z
-- Frederick County public bid board: checked; last attempt 2026-10-24T22:09:19Z
-- Lynchburg public bid board: checked; last attempt 2026-10-24T22:09:19Z
-- Franklin County public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:32:05Z
+- Warrenton public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Frederick County public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Lynchburg public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Franklin County public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Harford County official open opportunities: checked; last attempt 2026-10-24T22:32:05Z
+- Caroline County public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Fredericksburg public bid board: checked; last attempt 2026-10-24T22:32:05Z
 
 ## Project signals
 
@@ -360,6 +363,51 @@ Research link: https://emma.maryland.gov/
 Question: Who manages procurement for this funded project?
 Question: Has an environmental consultant or cleanup contractor already been selected?
 Question: What scope remains and where will future notices be published?
+
+### Gunpowder River-Taylor Creek Maintenance Dredging 2026
+
+MD · Current status unconfirmed · verified
+
+ Consists of dredging of Gunpowder River, Taylor Creek, and the Rumsey Island Outfall Dredge Area. This shall include furnishing of all plant, materials, equipment, supplies, labor and transportation...
+
+Published selection amount: Not stated · Bid deadline: not published
+
+Next step: Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.
+
+Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
+
+Status note: The county listing does not establish a current invitation and timezone-consistent deadline. Review the linked official portal.
+
+
+### Well Field Inspection, Maintenance, and Repair Services
+
+MD · Open solicitation · verified
+
+ Well Field Inspection, Maintenance, and Repair Services Project closes Oct 28, 2026 1:00 PM EDT.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-28T13:00:00-04:00
+
+Next step: Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.
+
+Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
+
+Status note: Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified.
+
+
+### Hydrovac Grit and Grease Removal Services
+
+MD · Open solicitation · verified
+
+ Provide wastewater pumping services utilizing specific vacuum equipment. Project closes Nov 18, 2026 1:00 PM EST.
+
+Published selection amount: Not stated · Bid deadline: 2026-11-18T13:00:00-05:00
+
+Next step: Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.
+
+Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
+
+Status note: Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified.
+
 
 ### CSO 70 SEWER IMPROVEMENTS
 

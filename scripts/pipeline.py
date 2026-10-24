@@ -225,7 +225,7 @@ def validate(data):
         assert signal['jurisdiction'] in STATES, 'invalid region'
         assert signal['status'] in {'funding-signal','open-solicitation','closed','unconfirmed'}, 'invalid status'
         host = urlparse(signal['sourceUrl']).hostname or ''
-        assert signal['sourceUrl'].startswith('https://') and (host.endswith('.gov') or host=='sam.gov'), 'non-government source'
+        assert signal['sourceUrl'].startswith('https://') and (host.endswith('.gov') or host in {'sam.gov','www.carolinemd.org','carolinemd.org'}), 'non-government source'
         assert signal['amount'] is None or isinstance(signal['amount'],(int,float)) and signal['amount'] >= 0, 'invalid amount'
         if signal['status']=='funding-signal': assert signal['deadline'] is None, 'grant signal has invented bid deadline'
         if signal['status']=='open-solicitation':
@@ -283,6 +283,8 @@ def write_data(data):
     destination=folder/'signals.json'; temp=destination.with_suffix('.tmp')
     temp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n'); temp.replace(destination)
     reports(data)
+    from source_health import write_health
+    write_health(data,OUT)
 
 
 def main():
@@ -296,6 +298,8 @@ def main():
         registry=json.loads((ROOT/'data/procurement.json').read_text())
         followups=json.loads((ROOT/'data/followups.json').read_text())
         data=enrich(existing,data,registry,followups,get,data['generatedAt'])
+    from editorial_review import apply_reviews
+    data=apply_reviews(data,json.loads((ROOT/'data/reviews.json').read_text()))
     write_data(data)
     print('Generated',len(data['signals']),'signals;',', '.join(s['id']+': '+s['status'] for s in data['sources']))
     for source in data['sources']:

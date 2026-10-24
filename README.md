@@ -10,9 +10,9 @@ The public research desk remains free. This release adds live D.C. procurement c
 
 ### Operational public research
 
-- 20 published records: 10 EPA funding selections, 4 verified open solicitations, 4 unconfirmed administrative records and 2 closed federal notices at this release's verification time.
+- 23 published records: 10 EPA funding selections, 6 verified open solicitations, 5 unconfirmed records and 2 closed federal notices at this release's verification time.
 - Verified open notices: D.C. parkland stormwater retrofits, leaf-disposal services, stormwater-retention credits, and Lynchburg CSO 70 sewer improvements. Deadlines are interpreted in America/New_York. Status is rechecked daily and becomes unconfirmed in the UI after 48 hours without verification.
-- Seven automated state/local source checks: Annapolis, Danville, Warrenton, Frederick County, Lynchburg, Franklin County and D.C. OCP. Three manual references remain: eMMA, eVA, Anne Arundel/Harbor.
+- Ten automated state/local source checks: Annapolis, Danville, Warrenton, Frederick County, Lynchburg, Franklin County, D.C. OCP, Harford County, Caroline County and Fredericksburg. Three manual references remain: eMMA, eVA, Anne Arundel/Harbor.
 - Search, filters, local watchlists, source links and downloadable reports. Funding selections are never classified as open bids.
 - SAM searches now normally use two national NAICS requests with MD/VA/DC filtering instead of six state/NAICS requests. Pagination remains bounded and HTTP 429 triggers a 24-hour pause. The October 24 hosted run successfully authenticated and collected two federal notices. Both had passed their response deadlines and are correctly labeled closed.
 
@@ -28,7 +28,7 @@ Cloudflare D1 `cleanupsignal-accounts` is provisioned with the initial schema. T
 
 ## Run and verify
 
-Python 3.11+ and Node 24 are used. There are no runtime npm dependencies.
+Python 3.11+ and Node 24 are used. There are no runtime npm dependencies. Pinned Playwright is a development-only dependency for repeatable browser tests.
 
 ```sh
 python3 scripts/build_worker.py
@@ -38,7 +38,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/pipeline.py --check
 ```
 
-43 automated tests currently cover parsing, status safety, source failures, company isolation, invitations, seats, billing state/signatures, checkout deduplication, unsubscribe and email queue retries. Provider integrations are mocked in backend tests; no successful live checkout or email delivery is claimed.
+59 automated parser/backend tests currently cover parsing, status safety, source failures, company isolation, invitations, seats, billing state/signatures, checkout deduplication, unsubscribe and email queue retries. Provider integrations are mocked in backend tests; no successful live checkout or email delivery is claimed.
 
 For the public frontend only:
 
@@ -58,6 +58,7 @@ python3 scripts/pipeline.py
 
 ## Activation and operations
 
+- [Support, corrections and recovery process](docs/SUPPORT-AND-RECOVERY.md)
 - [Exact account, Stripe and email setup](docs/ACTIVATION.md)
 - [Procurement coverage and limitations](docs/PROCUREMENT.md)
 - [Deployment, automation and rollback](docs/DEPLOYMENT.md)
@@ -72,3 +73,19 @@ Keep credentials and customer information outside this public repository. No pai
 ### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
 
 The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.
+
+
+## Public-service update — sign-up and Stripe deferred
+
+The user has explicitly deferred sign-up/login activation and Stripe setup. Neither was activated or reconfigured in this update.
+
+- `/briefing.html`: working, account-free matched briefing preview with formatted HTML and text downloads. Preferences stay in the browser. No automatic email is sent.
+- `/support.html`: support/correction/privacy request drafts with a downloadable fallback. The visitor must send the email; no server-side ticket receipt is claimed.
+- `/status.html`: live dataset freshness, real per-jurisdiction open-bid counts, manual-vs-automated source status and public coverage limitations.
+- `data/reviews.json`: editorial holds survive automatic refresh and cannot promote a notice to open.
+- `public/data/source-health.json`: aggregate source/quality monitoring and a capped daily history; no customer data.
+- Subscriber emails now have consistent formatted HTML and plain-text versions. Sending rechecks current company preferences, paid seat eligibility, withdrawn/expired notices, opt-outs and prior successful delivery. Actual sending still awaits a verified sender and provider key, as well as the deferred account/subscription setup.
+- Harford County adds Maryland wastewater and well-field opportunities. Evidence is explicitly labeled county-listing verification; full procurement documents must still be reviewed.
+- Browser automation targets desktop/mobile Chromium and WebKit in CI. Local downloads failed; passing browser results must be read from the actual CI run rather than inferred from the test code.
+
+No operator emails, customer messages or payment transactions were sent during implementation. Final legal seller details and commercial refund/cancellation policies remain owner-dependent before paid launch.

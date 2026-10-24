@@ -79,3 +79,10 @@ Provider idempotency keys prevent duplicate sends during retries within the prov
 ### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
 
 The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.
+
+
+## Current user scope: defer sign-up/login and Stripe
+
+The latest user instruction defers authentication and Stripe setup. Public briefing, support and source status are usable without them. The formatted email template and safer delivery queue are implemented, but subscriber sending remains off: it still needs a verified sender, provider API key and the deferred account/paid entitlement infrastructure. No account-free subscription list or anonymous bulk-email endpoint was added.
+
+A real public matched briefing is now available at `/briefing.html`; this supersedes the earlier image-only email design preview. Source-failure monitoring and an editorial correction-hold process are operational in the code. D1 bookmark availability and an isolated schema restore were verified; production customer-data restoration was not performed.

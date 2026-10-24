@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-10-24T22:32:05Z",
+  "evaluatedAt": "2026-10-24T22:33:16Z",
+  "state": "operational",
+  "datasetFresh": true,
+  "counts": {
+    "records": 23,
+    "verifiedOpen": 6,
+    "fundingSignals": 10,
+    "automaticSources": 13,
+    "workingAutomaticSources": 13,
+    "manualSources": 3
+  },
+  "jurisdictions": {
+    "MD": {
+      "records": 6,
+      "verifiedOpen": 2
+    },
+    "VA": {
+      "records": 13,
+      "verifiedOpen": 1
+    },
+    "DC": {
+      "records": 4,
+      "verifiedOpen": 3
+    }
+  },
+  "qualityWarnings": [],
+  "editorialHolds": [],
+  "possibleDuplicates": [],
+  "sources": [
+    {
+      "id": "epa-md-2026",
+      "name": "EPA FY2026 Maryland selections",
+      "status": "verified",
+      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastSuccess": null,
+      "mode": null
+    },
+    {
+      "id": "epa-va-2026",
+      "name": "EPA FY2026 Virginia selections",
+      "status": "verified",
+      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastSuccess": null,
+      "mode": null
+    },
+    {
+      "id": "sam",
+      "name": "SAM.gov opportunities API",
+      "status": "verified",
+      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastSuccess": null,
+      "mode": null
+    },
+    {
+      "id": "annapolis-bids",
+      "name": "Annapolis public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "danville-bids",
+      "name": "Danville public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "emma",
+      "name": "Maryland eMMA",
+      "status": "manual",
+      "lastChecked": null,
+      "lastSuccess": null,
+      "mode": "manual"
+    },
+    {
+      "id": "eva",
+      "name": "Virginia eVA",
+      "status": "manual",
+      "lastChecked": null,
+      "lastSuccess": null,
+      "mode": "manual"
+    },
+    {
+      "id": "anne-arundel",
+      "name": "Anne Arundel County / Harbor",
+      "status": "manual",
+      "lastChecked": null,
+      "lastSuccess": null,
+      "mode": "manual"
+    },
+    {
+      "id": "dc-ocp",
+      "name": "D.C. OCP public solicitations",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "dc-api"
+    },
+    {
+      "id": "warrenton-bids",
+      "name": "Warrenton public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "frederick-bids",
+      "name": "Frederick County public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "lynchburg-bids",
+      "name": "Lynchburg public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "franklin-bids",
+      "name": "Franklin County public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "harford-listing",
+      "name": "Harford County official open opportunities",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "harford-listing"
+    },
+    {
+      "id": "caroline-bids",
+      "name": "Caroline County public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    },
+    {
+      "id": "fredericksburg-bids",
+      "name": "Fredericksburg public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T22:32:05Z",
+      "lastSuccess": "2026-10-24T22:32:05Z",
+      "mode": "civic"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-24",
+      "state": "operational",
+      "verifiedOpen": 6,
+      "workingAutomaticSources": 13
+    }
+  ]
+}
