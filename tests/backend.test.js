@@ -90,3 +90,9 @@ test('public data endpoint uses latest server-side publication without accounts 
  globalThis.fetch=async()=>{throw Error('upstream unavailable');};response=await worker.fetch(request(),env);assert.equal((await response.json()).generatedAt,old.generatedAt);
  globalThis.fetch=async()=>Response.json({...fresh,generatedAt:new Date(Date.now()+86400000).toISOString()});response=await worker.fetch(request(),env);assert.equal((await response.json()).generatedAt,old.generatedAt);
 });
+
+test('public data reader retries through GitHub API after a raw-source failure',async t=>{
+ const env=setup(t),now=new Date().toISOString();env.ASSETS={fetch:async()=>Response.json({generatedAt:new Date(Date.now()-60000).toISOString(),sources:[],signals:[]})};
+ let calls=0;globalThis.fetch=async(url,options)=>{calls++;assert.equal(options.headers['User-Agent'],'CleanupSignal public data reader');return String(url).includes('raw.githubusercontent.com')?new Response('Unavailable',{status:403}):Response.json({generatedAt:now,sources:[],signals:[{id:'latest'}]});};
+ const response=await worker.fetch(new Request('https://cleanupsignal.test/api/signals.json'),env),data=await response.json();assert.equal(calls,2);assert.equal(data.generatedAt,now);assert.equal(data.publication.source,'github-api');assert.equal(data.publication.checks[0].status,403);
+});
