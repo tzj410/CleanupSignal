@@ -10,11 +10,11 @@ The public research desk remains free. This release adds live D.C. procurement c
 
 ### Operational public research
 
-- 18 published records: 10 EPA funding selections, 4 verified open solicitations and 4 unconfirmed administrative records at this release's verification time.
+- 20 published records: 10 EPA funding selections, 4 verified open solicitations, 4 unconfirmed administrative records and 2 closed federal notices at this release's verification time.
 - Verified open notices: D.C. parkland stormwater retrofits, leaf-disposal services, stormwater-retention credits, and Lynchburg CSO 70 sewer improvements. Deadlines are interpreted in America/New_York. Status is rechecked daily and becomes unconfirmed in the UI after 48 hours without verification.
 - Seven automated state/local source checks: Annapolis, Danville, Warrenton, Frederick County, Lynchburg, Franklin County and D.C. OCP. Three manual references remain: eMMA, eVA, Anne Arundel/Harbor.
 - Search, filters, local watchlists, source links and downloadable reports. Funding selections are never classified as open bids.
-- SAM searches now normally use two national NAICS requests with MD/VA/DC filtering instead of six state/NAICS requests. Pagination remains bounded and HTTP 429 triggers a 24-hour pause. This does **not** establish that the configured key has recovered; a successful hosted run is still required.
+- SAM searches now normally use two national NAICS requests with MD/VA/DC filtering instead of six state/NAICS requests. Pagination remains bounded and HTTP 429 triggers a 24-hour pause. The October 24 hosted run successfully authenticated and collected two federal notices. Both had passed their response deadlines and are correctly labeled closed.
 
 ### Implemented, awaiting provider activation
 
@@ -67,3 +67,8 @@ python3 scripts/pipeline.py
 GitHub CI tests all pushes/PRs. The evidence-refresh workflow stays daily. The alert workflow runs only when its automation secret is configured. The new Pages deployment workflow requires a scoped `CLOUDFLARE_API_TOKEN`; without it, deployment is explicitly skipped. No automatic code-deployment claim is made until that secret is installed and a run succeeds.
 
 Keep credentials and customer information outside this public repository. No paid account, subscriber enrollment, customer outreach or revenue is claimed. More verified Maryland/Virginia procurement coverage, provider activation, real end-to-end payment/email testing, mobile/Safari QA, support operations and commercial seller details remain necessary for a paid self-service launch.
+
+
+### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
+
+The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.

@@ -48,3 +48,8 @@ Supersedes earlier release summaries where they describe account/payment archite
 18 records; 4 verified open bids (three D.C., one Virginia). Seven automated local/D.C. sources. Public site, detail modal, filters and account-unavailable state inspected in deployed Chrome. 43 tests pass: 24 Python parser/source tests and 19 JavaScript core/backend tests. D1 schema applied and table creation verified. Stripe, auth and email behavior is tested with controlled mocks, not real customers.
 
 Development has advanced materially, but the original readiness rubric measured an operational paid business. A code-completion percentage must not be substituted for that rubric: provider activation, broader verified procurement coverage and real customer-flow testing remain blockers. This release does not claim the paid self-service business is 65% operational.
+
+
+### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
+
+The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.

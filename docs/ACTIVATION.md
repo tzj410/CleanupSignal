@@ -64,7 +64,7 @@ Provider idempotency keys prevent duplicate sends during retries within the prov
 - Run mobile Chrome and Safari QA. The environment could not install its local browser binaries; deployed Chrome inspection was used. No Safari pass is claimed.
 - Exercise D1 backup/recovery and manual deletion/support requests. Establish retention periods and a support process.
 - Complete seller identity, final commercial terms, business records and conversion analytics.
-- Increase verified Maryland and Virginia bid coverage; eMMA's browser check and eVA's 403 still block direct automated ingestion. SAM authentication/rate-limit recovery needs a successful hosted run.
+- Increase verified Maryland and Virginia bid coverage; eMMA's browser check and eVA's 403 still block direct automated ingestion. SAM authentication and ingestion succeeded in the October 24 hosted refresh; continue monitoring quota use and source health.
 
 ## Sources used for implementation
 
@@ -74,3 +74,8 @@ Provider idempotency keys prevent duplicate sends during retries within the prov
 - Supabase email authentication: https://supabase.com/docs/guides/auth/auth-email-passwordless
 - Stripe webhooks: https://docs.stripe.com/events/manage-webhook-endpoints
 - SAM API: https://open.gsa.gov/api/get-opportunities-public-api/
+
+
+### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
+
+The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.

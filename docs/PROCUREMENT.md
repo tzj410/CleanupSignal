@@ -47,3 +47,8 @@ Maryland eMMA presented a browser-check/CAPTCHA to this collector; eVA's linked 
 SAM now performs one national query per NAICS 541620/562910 and filters returned place-of-performance to MD/VA/DC. Typical first-page request count drops from six to two, with a hard ten-request pagination budget. Failed and cooldown-period SAM records cannot remain verified open. Authentication and rate-limit recovery must be confirmed by a hosted refresh that can access the existing secret.
 
 At this release: 18 records, 4 verified open bids, 10 funding signals, and 4 unconfirmed administrative records. Source failures retain the old evidence date and downgrade open status; timestamp refreshes alone are not treated as new procurement activity.
+
+
+### Hosted verification update — October 24, 2026, 6:09 p.m. Eastern
+
+The main-branch refresh authenticated to SAM.gov successfully using the reduced-request collector. It added two federal notices, both closed, so the current dataset is 20 records with 4 verified open solicitations. Source status is verified. Earlier statements that SAM recovery still needed confirmation are superseded by this result. The new Pages deployment workflow completed its checks but skipped automatic publishing because the scoped deployment token is missing; this release was published by direct upload.
