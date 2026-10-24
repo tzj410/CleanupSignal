@@ -13,7 +13,7 @@ Live website: **https://cleanupsignal.pages.dev/**
 - Source-health desk and browser-printable briefing. No paid API, database, AI model, account or payment service.
 - Daily GitHub Actions workflow active on `main` in public `tzj410/CleanupSignal`, scheduled for 11:17 UTC (7:17 a.m. EDT / 6:17 a.m. EST). It will not run while the repository is private. The first hosted run passed on October 23, 2026: tests, live EPA verification, data validation and refreshed report commit all succeeded.
 - SAM.gov secret configured; live requests returned HTTP 429. The adapter applies a 24-hour cooldown; authentication remains unverified. EPA refresh checks registered releases; discovering new EPA releases still requires editorial onboarding. Annapolis and Danville public bid-board scanners now inspect relevant notices daily. Maryland eMMA, Virginia eVA and Anne Arundel Harbor remain manual portal references.
-- Twenty researched prospect firms and a proposed $99/month one-month pilot. No outreach, customer enrollment, billing or subscription has occurred.
+- Twenty researched prospect firms. Proposed founding plans: Starter $19/month ($190/year, 1 recipient), Team $29/month ($290/year, 3 recipients), Business $49/month ($490/year, 8 recipients). Prices are per company and annual invoicing is not active. No outreach, customer enrollment, billing or subscription has occurred. Proposed recipient counts are for manually arranged briefings, not login seats. No automatic email delivery, checkout or annual plan processing exists.
 
 ## Run and verify
 
