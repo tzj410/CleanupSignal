@@ -1,62 +1,69 @@
 # CleanupSignal
 
-Environmental project intelligence for Maryland, Virginia and Washington, DC. A dependency-free static website, government evidence refresh pipeline, downloadable briefings, and founding-customer pilot kit.
+Environmental project intelligence for Maryland, Virginia and Washington, DC.
 
-Live website: **https://cleanupsignal.pages.dev/**
+Live website: https://cleanupsignal.pages.dev/
 
-## Current release
+## October 24, 2026 release
 
-- Four additional Danville administrative procurement records, conservatively labeled status unconfirmed; no verified new bid invitations.
-- Ten EPA FY2026 brownfield **funding selections**, $15,690,876 total (2 Maryland, 8 Virginia). These are not open bids, confirmed contract budgets or guaranteed work.
-- Contractor homepage, 12-service directory, project/bid center, browser-local project profile and matching, pricing comparison and jurisdiction scope inquiry.
-- Search, service/jurisdiction/status filters, sorting, source details, local watchlist, CSV and personalized Markdown brief export.
-- Source-health desk and browser-printable briefing. No paid API, database, AI model, account or payment service.
-- Daily GitHub Actions workflow active on `main` in public `tzj410/CleanupSignal`, scheduled for 11:17 UTC (7:17 a.m. EDT / 6:17 a.m. EST). It will not run while the repository is private. The first hosted run passed on October 23, 2026: tests, live EPA verification, data validation and refreshed report commit all succeeded.
-- SAM.gov secret configured; live requests returned HTTP 429. The adapter applies a 24-hour cooldown; authentication remains unverified. EPA refresh checks registered releases; discovering new EPA releases still requires editorial onboarding. Annapolis and Danville public bid-board scanners now inspect relevant notices daily. Maryland eMMA, Virginia eVA and Anne Arundel Harbor remain manual portal references.
-- Twenty researched prospect firms. Proposed founding plans: Starter $19/month ($190/year, 1 recipient), Team $29/month ($290/year, 3 recipients), Business $49/month ($490/year, 8 recipients). Prices are per company and annual invoicing is not active. No outreach, customer enrollment, billing or subscription has occurred. Proposed recipient counts are for manually arranged briefings, not login seats. No automatic email delivery, checkout or annual plan processing exists.
+The public research desk remains free. This release adds live D.C. procurement collection and the server-side foundation for company accounts, subscriptions and opted-in alerts. **Implemented code is not the same as an activated subscription business.**
+
+### Operational public research
+
+- 18 published records: 10 EPA funding selections, 4 verified open solicitations and 4 unconfirmed administrative records at this release's verification time.
+- Verified open notices: D.C. parkland stormwater retrofits, leaf-disposal services, stormwater-retention credits, and Lynchburg CSO 70 sewer improvements. Deadlines are interpreted in America/New_York. Status is rechecked daily and becomes unconfirmed in the UI after 48 hours without verification.
+- Seven automated state/local source checks: Annapolis, Danville, Warrenton, Frederick County, Lynchburg, Franklin County and D.C. OCP. Three manual references remain: eMMA, eVA, Anne Arundel/Harbor.
+- Search, filters, local watchlists, source links and downloadable reports. Funding selections are never classified as open bids.
+- SAM searches now normally use two national NAICS requests with MD/VA/DC filtering instead of six state/NAICS requests. Pagination remains bounded and HTTP 429 triggers a 24-hour pause. This does **not** establish that the configured key has recovered; a successful hosted run is still required.
+
+### Implemented, awaiting provider activation
+
+- Passwordless managed email authentication, verification and recovery integration; secure HttpOnly/SameSite cookies. A separate CleanupSignal auth project is required. ArgoSphere was not modified.
+- Private company workspaces, shared preferences and watchlists, company notes, member removal and one-use invitations. Server/SQL enforcement of 1/3/8 plan seats includes pending invitation reservations and downgrade suspension.
+- Stripe monthly/yearly checkout, company billing portal and signature-verified, deduplicated webhooks. Prices: $19/$190 Starter, $29/$290 Team, $49/$490 Business. Checkout stays disabled until configured and deliberately enabled.
+- Daily/weekly matched bid digests, 3-day bid-deadline reminders, per-user consent and unsubscribe, bounded retries, delivery history and provider idempotency. No emails have been sent by this release.
+- Privacy notice and preview service/billing policy. Commercial seller identity and final policies still need completion before collecting payments.
+
+Cloudflare D1 `cleanupsignal-accounts` is provisioned with the initial schema. The API Worker and static files deploy together. `/api/config` reports whether auth, billing and email are actually configured; unavailable capabilities fail closed and the interface explains their status.
 
 ## Run and verify
 
-Serve `public/` with any static HTTP server (Python 3 example):
+Python 3.11+ and Node 24 are used. There are no runtime npm dependencies.
+
+```sh
+python3 scripts/build_worker.py
+npm run check
+npm test
+python3 -m unittest discover -s tests -v
+python3 scripts/pipeline.py --check
+```
+
+43 automated tests currently cover parsing, status safety, source failures, company isolation, invitations, seats, billing state/signatures, checkout deduplication, unsubscribe and email queue retries. Provider integrations are mocked in backend tests; no successful live checkout or email delivery is claimed.
+
+For the public frontend only:
 
 ```sh
 python3 -m http.server 8000 --directory public
 ```
 
-Open http://localhost:8000. There are no dependencies to install. Node 20+ and Python 3.11+ are sufficient for checks:
+A static server does not execute the account API. Use Pages Functions/Workers for the complete runtime. Build output is generated by `npm run build`; edit `server/` and rebuild rather than editing `public/_worker.js` directly.
 
-```sh
-node --test tests/ui-core.test.js
-node --check public/app.js
-node --check public/report.js
-python3 -m unittest discover -s tests -v
-python3 scripts/pipeline.py --check
-python3 scripts/pipeline.py --offline
-```
-
-Live refresh (bounded public EPA requests and optional SAM requests):
+Live research refresh:
 
 ```sh
 python3 scripts/pipeline.py
 ```
 
-The UI loads the newest valid dataset between its bundled snapshot and `tzj410/CleanupSignal/main/public/data/signals.json` on GitHub. This allows the hosted website to receive daily data after main is activated, without separate site deployments. If GitHub is unavailable it retains the bundled snapshot and shows its date, with an overdue warning after 48 hours. The HTML report uses the same loader; downloadable Markdown and CSV are generated from the displayed dataset. Static exports in `public/reports/` represent their stamped generation time.
+`SAM_API_KEY` is supplied only in the hosted reporting workflow. The frontend selects the newest valid public snapshot between its bundle and GitHub main. Reports carry their generation date.
 
-## Deployment and operations
+## Activation and operations
 
-- [Live Cloudflare deployment](docs/DEPLOYMENT.md)
-- [State/local collection, follow-up evidence and monitoring](docs/PROCUREMENT.md)
-- [Source register and limitations](data/SOURCES.md)
-- [Free-only deployment and SAM setup](docs/FREE-DEPLOYMENT.md)
-- [Pilot offer and customer readiness](docs/PILOT-LAUNCH.md)
-- [Manual fulfillment and corrections SOP](docs/OPERATIONS.md)
-- [20 researched prospects](docs/PROSPECTS.md)
-- [Release status and verification](docs/RELEASE.md)
+- [Exact account, Stripe and email setup](docs/ACTIVATION.md)
+- [Procurement coverage and limitations](docs/PROCUREMENT.md)
+- [Deployment, automation and rollback](docs/DEPLOYMENT.md)
+- [Manual pilot operating process](docs/OPERATIONS.md)
+- [Research prospect list](docs/PROSPECTS.md)
 
-`public/` can deploy directly to Cloudflare Pages Free, framework None, no build command. Its `_headers` declares security headers. Sites uses `python3 scripts/build_site.py` to copy `public/` into its supported `dist/` output directory. No existing ArgoSphere repository or service is used.
+GitHub CI tests all pushes/PRs. The evidence-refresh workflow stays daily. The alert workflow runs only when its automation secret is configured. The new Pages deployment workflow requires a scoped `CLOUDFLARE_API_TOKEN`; without it, deployment is explicitly skipped. No automatic code-deployment claim is made until that secret is installed and a run succeeds.
 
-## Privacy and commercial limits
-
-All records and reports in this repository are public government information. Watchlists stay in the browser, are not authenticated or synced, and are not a paid-content gate. The pilot form prepares an email to the owner-provided contact address, cleanupsignal@gmail.com, with a local download fallback. Visitors review and send the email themselves; the site does not transmit inquiries to a backend or start subscriptions. Confirmed seller identity, reviewed service terms, delivery channel and a manually authorized invoicing process are needed before taking paying customers. Keep actual customer details outside this public repository, in a private tracker. Never commit credentials or customer reports.
-
-This is a working evidence-backed MVP, not comprehensive procurement coverage. DC is not populated yet; no customer pipeline or revenue is claimed. Do not label funding selections as open solicitations or available contractor funds. Review official amendments, dates and contractor status before every customer brief.
+Keep credentials and customer information outside this public repository. No paid account, subscriber enrollment, customer outreach or revenue is claimed. More verified Maryland/Virginia procurement coverage, provider activation, real end-to-end payment/email testing, mobile/Safari QA, support operations and commercial seller details remain necessary for a paid self-service launch.

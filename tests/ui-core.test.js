@@ -32,5 +32,6 @@ test('founding plan prices and recipient limits remain consistent in public HTML
  assert.ok(html.includes('id="pilotBilling"')&&html.includes('id="pilotTeamSize"'));
  assert.ok(app.includes('selectedPricing()'));
  assert.ok(![html,contractor,app].some(text=>text.includes('$99')));
- assert.ok(html.includes('No paid account system, checkout, automatic alerts, or annual billing is active'));
+ assert.ok(html.includes('Checkout and automated delivery stay unavailable until their providers are connected'));
 });
+

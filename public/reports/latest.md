@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-24T14:33:34Z
+Generated: 2026-10-24T22:05:50Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,21 +8,26 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-24T14:33:34Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-24T14:33:34Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:00:05Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:00:05Z
 - SAM.gov opportunities API: degraded; checked 2026-10-23T18:59:44Z
 
 ## Latest refresh
 
-Compared with: 2026-10-24T00:43:09Z
-0 new records; 0 materially changed records.
+Compared with: 2026-10-24T22:00:05Z
+0 new records; 5 materially changed records.
 No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-10-24T14:33:34Z
-- Danville public bid board: checked; last attempt 2026-10-24T14:33:34Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T22:05:50Z
+- Danville public bid board: checked; last attempt 2026-10-24T22:05:50Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
+- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:05:50Z
+- Warrenton public bid board: checked; last attempt 2026-10-24T22:05:50Z
+- Frederick County public bid board: checked; last attempt 2026-10-24T22:05:50Z
+- Lynchburg public bid board: checked; last attempt 2026-10-24T22:05:50Z
+- Franklin County public bid board: checked; last attempt 2026-10-24T22:05:50Z
 Attention: sam: SAM.gov rate limit reached. Requests are paused until 2026-10-24T18:59:44Z. Prior records are retained; authentication is not yet verified.
 
 ## Project signals
@@ -31,7 +36,7 @@ Attention: sam: SAM.gov rate limit reached. Requests are paused until 2026-10-24
 
 VA · Current status unconfirmed · verified
 
-Administrative procurement activity: Publication Date/Time:
+Administrative procurement activity: IFB-26-27-004 AA-Demo 6 Properties Bid Tab
 
 Published selection amount: Not stated · Bid deadline: not published
 
@@ -46,7 +51,7 @@ Status note: Administrative posting or conflicting source labels; not a verified
 
 VA · Current status unconfirmed · verified
 
-Administrative procurement activity: Publication Date/Time:
+Administrative procurement activity: RFP-26-27-018-Wastewater Sludge Removal Dewatering Transportation and Land Application (Responders List)
 
 Published selection amount: Not stated · Bid deadline: not published
 
@@ -61,7 +66,7 @@ Status note: Administrative posting or conflicting source labels; not a verified
 
 VA · Current status unconfirmed · verified
 
-Administrative procurement activity: Publication Date/Time:
+Administrative procurement activity: IFB 26-27-009 Southern Virginia Megasite at Berry Hill - McGruff Creek Sewer Extension - Notice of Intent
 
 Published selection amount: Not stated · Bid deadline: not published
 
@@ -76,7 +81,7 @@ Status note: Administrative posting or conflicting source labels; not a verified
 
 VA · Current status unconfirmed · verified
 
-Administrative procurement activity: Publication Date/Time:
+Administrative procurement activity: IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab
 
 Published selection amount: Not stated · Bid deadline: not published
 
@@ -85,6 +90,51 @@ Next step: Confirm current procurement status and remaining scope with the purch
 Source: https://www.danville-va.gov/bids.aspx?bidID=4238
 
 Status note: Administrative posting or conflicting source labels; not a verified invitation to bid.
+
+
+### FY26 Parkland Stormwater Retrofits - DPR V
+
+DC · Open solicitation · verified
+
+District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.
+
+Published selection amount: Not stated · Bid deadline: 2026-11-24T14:00:00-05:00
+
+Next step: Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.
+
+Source: https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623
+
+Status note: Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.
+
+
+### DCKT-FY26-Leaf Disposal Services
+
+DC · Open solicitation · verified
+
+District procurement notice: DCKT-FY26-Leaf Disposal Services. Market: Set Aside. Review official procurement documents, registration, eligibility and amendments.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-27T14:00:00-04:00
+
+Next step: Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.
+
+Source: https://contracts.ocp.dc.gov/solicitations/details?id=Doc846899
+
+Status note: Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.
+
+
+### DPW FY27 Stormwater Retention Credits
+
+DC · Open solicitation · verified
+
+District procurement notice: DPW FY27 Stormwater Retention Credits. Market: Open. Review official procurement documents, registration, eligibility and amendments.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-28T14:00:00-04:00
+
+Next step: Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.
+
+Source: https://contracts.ocp.dc.gov/solicitations/details?id=Doc852234
+
+Status note: Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.
 
 
 ### Resilience Authority of Annapolis and Anne Arundel County — cleanup
@@ -311,3 +361,18 @@ Research link: https://emma.maryland.gov/
 Question: Who manages procurement for this funded project?
 Question: Has an environmental consultant or cleanup contractor already been selected?
 Question: What scope remains and where will future notices be published?
+
+### CSO 70 SEWER IMPROVEMENTS
+
+VA · Open solicitation · verified
+
+Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online
+
+Published selection amount: Not stated · Bid deadline: 2026-12-08T15:00:00-05:00
+
+Next step: Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.
+
+Source: https://www.lynchburgva.gov/bids.aspx?bidID=249
+
+Status note: Review all official documents and amendments before responding.
+

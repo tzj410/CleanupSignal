@@ -1,0 +1,26 @@
+name: Deliver opted-in company bid alerts
+on:
+  schedule:
+    - cron: '47 12,18 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: subscriber-alerts
+  cancel-in-progress: false
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Run bounded delivery queue
+        env:
+          AUTOMATION_TOKEN: ${{ secrets.CLEANUPSIGNAL_AUTOMATION_TOKEN }}
+        run: |
+          if [ -z "$AUTOMATION_TOKEN" ]; then
+            echo 'Email automation is not activated: missing automation secret.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          curl --fail-with-body --silent --show-error --max-time 240 \
+            -X POST https://cleanupsignal.pages.dev/api/jobs/alerts \
+            -H "Authorization: Bearer $AUTOMATION_TOKEN" >> "$GITHUB_STEP_SUMMARY"

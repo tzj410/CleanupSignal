@@ -1,27 +1,34 @@
-# Cloudflare deployment — October 23, 2026
+# Cloudflare deployment
 
-Live website: https://cleanupsignal.pages.dev/
+Website: https://cleanupsignal.pages.dev/
 
-- Provider: Cloudflare Pages, static direct upload, no Functions.
-- Project: `cleanupsignal` (`0a1810e4-4707-4489-9c5d-4df58b609e66`).
-- Account: `3e68527f84aebe29967932d28ad2a2b4`.
-- Production deployment: `a7f77e21-2fad-43b3-b562-731588f61d5e`.
-- Deployed source: `tzj410/CleanupSignal` commit `96d54b04f3fa47f2f214d3474269cbe431e91a5b`, `public/`.
-- Cloudflare reported deployment success at 19:36:48 UTC.
-- Free static hosting only; no paid upgrade, purchased domain, database or paid service was added.
+Project `cleanupsignal`, account `3e68527f84aebe29967932d28ad2a2b4`. Existing static-only deployments remain available in deployment history.
 
-## Updates
+## October 24 account-capable build
 
-The daily GitHub Actions evidence refresh remains active. The dashboard and printable report select the latest valid dataset from the bundled snapshot and public GitHub main, so data updates do not require a Pages code deployment. Bundled static report files retain their stamped generation date.
+- Static public assets plus `public/_worker.js` and `_routes.json` for `/api/*`.
+- D1 binding `DB`: `cleanupsignal-accounts`, ID `2ca28e18-0a14-4421-8dc5-0b8ca7f07065`.
+- Initial schema is in `migrations/0001_accounts.sql` and has been applied to that separate CleanupSignal database.
+- Authentication, Stripe and email variables are not supplied. Billing is disabled. The public site stays usable and company sign-in reports pending setup.
+- Pages production and preview use fail-closed behavior for Function failures.
 
-Automatic code deployments are not configured. Creating a Git-connected Pages project returned HTTP 401 with a Cloudflare Git installation error. This release uses direct upload instead. A future GitHub integration must authorize only CleanupSignal; no ArgoSphere repository may be modified. Until then, changed website code needs another direct upload.
+## Repeatable direct upload
 
-## Verification
+Set `CLOUDFLARE_ACCOUNT_ID` and a scoped `CLOUDFLARE_API_TOKEN` in a protected deployment environment. Do not commit tokens. Then:
 
-The public dashboard rendered ten records, $15.69M in announced funding selections and zero verified open solicitations. The pilot inquiry page displays cleanupsignal@gmail.com, the proposed $99/month pilot, an email-draft button and download fallback. No inquiry was sent. Cloudflare confirms `uses_functions: false`.
+```sh
+python3 scripts/build_worker.py
+npm run check && npm test
+python3 -m unittest discover -s tests -v
+python3 scripts/deploy_pages.py --branch main
+```
 
-The shell environment could not independently fetch the public Pages URL (HTTP 403); the cloud browser loaded it successfully. Browser verification used a desktop viewport.
+The script obtains a temporary upload token, uploads changed assets, and includes the API Worker, routes and security headers in the deployment. It prints the deployment URL and ID without credentials. Creating a deployment is not proof it succeeded: verify the final deploy stage, rendered public pages, `/api/config` and the account availability message.
 
-## Remaining launch work
+`.github/workflows/deploy.yml` uses this same build/upload process after relevant main pushes, including data updates. It explicitly skips publishing if the Cloudflare token is missing. Automatic deployment is **not activated** merely by adding this workflow.
 
-SAM.gov remains rate limited; its configured secret has not yet been authenticated successfully. Seller identity, agreed service terms, delivery arrangements and a manually authorized invoicing process remain necessary before accepting paying customers. No customer outreach, enrollment or billing has occurred.
+## Rollback
+
+In the Cloudflare Pages project's deployment list, select the preceding known-good production deployment and use Rollback. Keep the recorded deployment ID for each release. Rolling back files does not roll back D1 schema or customer data. Initial migrations are additive; later changes must preserve compatibility with the preceding Worker so rollback remains possible. Never delete or recreate the customer database to roll back application code.
+
+Before customers enroll, isolate preview data from production, test D1 restoration, verify email and billing callbacks, and complete the checks in [ACTIVATION.md](ACTIVATION.md). Chrome rendered the deployed release preview; local Chromium/WebKit downloads were unavailable, so no mobile/Safari pass is claimed.

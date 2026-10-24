@@ -1,7 +1,89 @@
 [
- {"id":"annapolis-bids","name":"Annapolis public bid board","url":"https://www.annapolis.gov/bids.aspx","jurisdiction":"MD","locality":"Annapolis","mode":"civic","note":"Daily public-listing scan; relevant detail pages are checked before importing notices."},
- {"id":"danville-bids","name":"Danville public bid board","url":"https://www.danville-va.gov/bids.asp","jurisdiction":"VA","locality":"Danville","mode":"civic","note":"Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids."},
- {"id":"emma","name":"Maryland eMMA","url":"https://emma.maryland.gov/","jurisdiction":"MD","mode":"manual","note":"Official statewide procurement portal. Automated ingestion is not connected. Search and review current solicitations on the portal."},
- {"id":"eva","name":"Virginia eVA","url":"https://eva.virginia.gov/","jurisdiction":"VA","mode":"manual","note":"Official statewide procurement gateway. Automated ingestion is not connected. The Open Data page describes historical procurement data, not a verified live bid feed."},
- {"id":"anne-arundel","name":"Anne Arundel County / Harbor","url":"https://www.aacounty.org/central-services/purchasing/doing-business-county","jurisdiction":"MD","mode":"manual","note":"Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected."}
+  {
+    "id": "annapolis-bids",
+    "name": "Annapolis public bid board",
+    "url": "https://www.annapolis.gov/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "Annapolis",
+    "mode": "civic",
+    "note": "Daily public-listing scan; relevant detail pages are checked before importing notices."
+  },
+  {
+    "id": "danville-bids",
+    "name": "Danville public bid board",
+    "url": "https://www.danville-va.gov/bids.asp",
+    "jurisdiction": "VA",
+    "locality": "Danville",
+    "mode": "civic",
+    "note": "Daily public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids."
+  },
+  {
+    "id": "emma",
+    "name": "Maryland eMMA",
+    "url": "https://emma.maryland.gov/",
+    "jurisdiction": "MD",
+    "mode": "manual",
+    "note": "Official statewide procurement portal. Automated ingestion is not connected. Search and review current solicitations on the portal."
+  },
+  {
+    "id": "eva",
+    "name": "Virginia eVA",
+    "url": "https://eva.virginia.gov/",
+    "jurisdiction": "VA",
+    "mode": "manual",
+    "note": "Official statewide procurement gateway. Automated ingestion is not connected. The Open Data page describes historical procurement data, not a verified live bid feed."
+  },
+  {
+    "id": "anne-arundel",
+    "name": "Anne Arundel County / Harbor",
+    "url": "https://www.aacounty.org/central-services/purchasing/doing-business-county",
+    "jurisdiction": "MD",
+    "mode": "manual",
+    "note": "Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected."
+  },
+  {
+    "id": "dc-ocp",
+    "name": "D.C. OCP public solicitations",
+    "url": "https://contracts.ocp.dc.gov/solicitations/search",
+    "jurisdiction": "DC",
+    "locality": "Washington, DC",
+    "mode": "dc-api",
+    "note": "Public portal search and environmental notice details checked daily. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere."
+  },
+  {
+    "id": "warrenton-bids",
+    "name": "Warrenton public bid board",
+    "url": "https://www.warrentonva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Warrenton",
+    "mode": "civic",
+    "note": "Daily public-listing scan; no relevant invitations are inferred from an empty board."
+  },
+  {
+    "id": "frederick-bids",
+    "name": "Frederick County public bid board",
+    "url": "https://www.frederickcountymd.gov/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "Frederick County",
+    "mode": "civic",
+    "note": "Checks this public board only. County links to other procurement platforms are not included."
+  },
+  {
+    "id": "lynchburg-bids",
+    "name": "Lynchburg public bid board",
+    "url": "https://www.lynchburgva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Lynchburg",
+    "mode": "civic",
+    "note": "Daily public-listing scan; relevant notices and amendments require official review."
+  },
+  {
+    "id": "franklin-bids",
+    "name": "Franklin County public bid board",
+    "url": "https://www.franklincountyva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Franklin County",
+    "mode": "civic",
+    "note": "Daily public-listing scan; unrelated notices are excluded."
+  }
 ]

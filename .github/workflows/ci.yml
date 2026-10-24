@@ -1,0 +1,20 @@
+name: Verify CleanupSignal
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 scripts/build_worker.py
+      - run: npm run check && npm test
+      - run: python3 scripts/pipeline.py --check
+      - name: Ensure generated Worker matches source
+        run: git diff --exit-code -- public/_worker.js

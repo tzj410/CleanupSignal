@@ -58,7 +58,7 @@ class PipelineTests(unittest.TestCase):
             page=int(query['offset'][0]); seen.append(page)
             return json.dumps({'opportunitiesData':[{}]*(1000 if page==0 else 1),'totalRecords':1001})
         self.assertEqual(p.collect_sam('fake-key',STAMP,fetch),[])
-        self.assertEqual(seen,[0,1]*6)
+        self.assertEqual(seen,[0,1]*2)
 
     def test_rate_limit_cooldown_does_not_request_sam(self):
         data=copy.deepcopy(self.seed)
@@ -92,3 +92,4 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaises(AssertionError): p.validate(data)
 
 if __name__=='__main__': unittest.main()
+

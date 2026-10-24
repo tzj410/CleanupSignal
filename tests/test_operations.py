@@ -35,3 +35,12 @@ class OperationsTests(unittest.TestCase):
   current['signals'][0]['deadline']='2026-11-01T20:00:00Z'
   self.assertEqual(o.compare(prev,current)['changed'],[{'id':'a','fields':['deadline']}])
 if __name__=='__main__':unittest.main()
+
+
+class MalformedCivicTests(unittest.TestCase):
+ def test_missing_closing_cells_preserve_dates_and_description(self):
+  from operations import civic_fields
+  raw='<table><tr><td>Bid Title:</td><td>Sewer improvements</td></tr><tr><td>Status:</td><td>Open</td></tr><tr><td>Description:</td></tr><tr><td>Official sewer scope</tr><tr><td>Closing Date/Time:</td></tr><tr><td>12/8/2026 3:00 PM</tr></table>'
+  fields=civic_fields(raw)
+  self.assertEqual(fields['Description'],'Official sewer scope')
+  self.assertEqual(fields['Closing Date/Time'],'12/8/2026 3:00 PM')

@@ -1,0 +1,8 @@
+{
+  "name": "cleanupsignal",
+  "pages_build_output_dir": "public",
+  "compatibility_date": "2026-10-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [{"binding":"DB","database_name":"cleanupsignal-accounts","database_id":"2ca28e18-0a14-4421-8dc5-0b8ca7f07065","migrations_dir":"migrations"}],
+  "vars": {"BILLING_ENABLED":"false","APP_ORIGIN":"https://cleanupsignal.pages.dev"}
+}
