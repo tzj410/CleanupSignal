@@ -5,3 +5,29 @@
 @media(max-width:800px){.home-hero{grid-template-columns:1fr;padding:30px 24px;gap:28px}.home-hero h1{font-size:45px}.hero-evidence{box-shadow:7px 7px 0 #0e2c28}.marketing-view main{padding:20px 18px 0}.proof-strip{flex-wrap:wrap;padding:20px}.steps-grid,.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.steps-grid article:last-child{grid-column:1/-1}.pricing-grid,.scope-builder{grid-template-columns:1fr}.scope-builder{padding:24px}.topbar nav{gap:18px;overflow-x:auto;white-space:nowrap}.topbar nav a{flex-shrink:0;font-size:12px}.topbar>.button{font-size:10px}.topbar .brand{font-size:20px}.split-heading{display:block}.split-heading>a{display:inline-block;margin-top:10px}.section-heading{margin-top:40px}.section-heading h2{font-size:28px}.check-grid{grid-template-columns:1fr}.profile-form{padding:18px}.plan-card{padding:28px}}
 @media(max-width:500px){.steps-grid,.category-grid{grid-template-columns:1fr}.home-hero h1{font-size:38px}.hero-copy{font-size:14px}.proof-strip{display:grid;gap:12px}.home-hero .toolbar{gap:16px}.hero-evidence{padding:22px}.plan-price{font-size:45px}.plan-price span{font-size:12px}.value-banner{padding:26px}.value-banner .button{white-space:normal;text-align:center}.topbar{gap:12px;padding-left:15px;padding-right:15px}.brandmark{width:25px;margin-right:6px}.topbar .brand{font-size:19px}}
 .brief-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:25px 0 15px}.brief-summary>div{background:white;padding:20px}.brief-summary strong{display:block;font-size:32px;font-weight:500}.brief-summary span,.quiet{font-size:12px;color:var(--muted)}.brief-items{list-style:none;padding:0;margin:0}.brief-items li{padding:10px 0;border-bottom:1px solid var(--line)}.brief-items span{display:block;color:var(--muted);font-size:10px}.brief-items .text-button{text-align:left;font-size:12px}.health-banner{padding:25px;background:#e7eedc;border:1px solid #c7d4b5;margin:25px 0}.health-banner.attention{background:#f4eddf;border-color:#e2d2b4}.health-banner p{font-size:12px;margin-bottom:5px}.table-scroll{overflow-x:auto;margin:20px 0}.monitor-table{border-collapse:collapse;width:100%;background:white;font-size:11px}.monitor-table th,.monitor-table td{padding:13px;text-align:left;border:1px solid var(--line)}.monitor-table th{background:#eaf0e2}.followup-detail{border-top:1px solid var(--line);padding-top:25px;margin-top:30px}.followup-detail li{font-size:12px;margin:9px 0}.followup-detail form{padding:20px;background:white;border:1px solid var(--line);margin-top:25px}.followup-detail label{display:block;font-size:12px;margin:12px 0}.followup-detail input,.followup-detail select,.followup-detail textarea{display:block;width:100%;padding:9px;border:1px solid var(--line);color:var(--ink);background:var(--paper);margin-top:5px}.toolbar select{padding:8px;border:1px solid var(--line);background:white;color:var(--ink);max-width:100%}#reportSummary .info-grid{margin-bottom:0}@media(max-width:600px){.brief-summary{grid-template-columns:1fr}.brief-summary>div{display:flex;align-items:center;gap:20px}.brief-summary strong{font-size:26px}.monitor-table{min-width:620px}.source header{flex-wrap:wrap}.followup-detail form{padding:15px}}
+
+
+/* Founding plan comparison and accessible billing period switch */
+.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.billing-switch{display:flex;align-items:center;gap:3px;width:max-content;max-width:100%;padding:4px;margin:25px 0 6px;background:#e5ebdf;border:1px solid var(--line);border-radius:8px}
+.billing-switch button{border:0;border-radius:6px;background:transparent;color:var(--green);padding:12px 17px;font:inherit;font-size:13px;font-weight:650;cursor:pointer}
+.billing-switch button[aria-pressed="true"]{background:var(--green);color:white;box-shadow:0 2px 6px #10282026}
+.billing-switch button span{font-size:10px;margin-left:7px;color:#467453;font-weight:650}
+.billing-switch button[aria-pressed="true"] span{color:#def2be}
+.billing-switch button:focus-visible,.plan-card a:focus-visible{outline:3px solid #83aa65;outline-offset:3px}
+.plan-card{min-width:0}
+.plan-card .plan-price{display:flex;align-items:baseline;flex-wrap:wrap;letter-spacing:-1.5px}
+.plan-card .plan-price .price-value{font-size:inherit;letter-spacing:inherit;margin:0}
+.plan-card .plan-price .price-period{font-size:14px;letter-spacing:0;margin-left:7px}
+.plan-card .price-note{font-size:11px;min-height:16px;margin:5px 0 0;color:var(--muted)}
+.plan-card .seat-limit{padding:10px 12px;background:#edf1e6;border-left:3px solid #8da96f;color:#193e36;font-size:12px;line-height:1.5;width:100%;box-sizing:border-box}
+.plan-card .seat-limit strong{display:block}
+.plan-card.featured .seat-limit{background:#375a4e;border-left-color:var(--lime);color:#fff}
+.plan-card.featured .price-note{color:#d6e3ce}
+.pricing-disclosure{font-size:12px;line-height:1.8;color:var(--muted);max-width:1050px;margin:4px 0 34px}
+.plan-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pilot-form select{display:block;width:100%;border:1px solid var(--line);padding:11px 9px;margin-top:5px;border-radius:2px;background:#fafbf7;color:var(--ink);font:inherit}
+.pilot-form label small{display:block;font-size:10px;line-height:1.6;margin-top:5px;color:var(--muted)}
+@media(max-width:900px){.pilot-grid{grid-template-columns:1fr}}
+@media(max-width:800px){.pricing-grid{grid-template-columns:1fr}}
+@media(max-width:500px){.billing-switch{width:100%;box-sizing:border-box}.billing-switch button{flex:1;padding:10px 6px;font-size:12px}.billing-switch button span{display:block;margin:2px 0 0}.plan-form-row{grid-template-columns:1fr}}
