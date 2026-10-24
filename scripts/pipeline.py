@@ -176,6 +176,9 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
         retry_at = checked + dt.timedelta(hours=24) if checked else None
     current_time = dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))
     cooling_down = retry_at and retry_at > current_time
+    checked = date_time(sam.get('lastChecked'))
+    recently_verified = (sam.get('status') == 'verified' and checked
+                         and dt.timedelta(0) <= current_time - checked < dt.timedelta(hours=24))
     if not sam_key:
         sam['status'] = 'needs-key'
         for record in old.values():
@@ -188,6 +191,10 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
                 record.update(status='unconfirmed',verification='stale',statusNote='Source is rate limited; current status needs review.')
         sam['nextRetryAt'] = retry_at.isoformat().replace('+00:00','Z')
         sam['note'] = 'SAM.gov rate limit reached. Requests are paused until '+sam['nextRetryAt']+'. Prior records are retained; authentication is not yet verified.'
+    elif recently_verified:
+        # Hourly local checks must not consume the federal API's daily budget.
+        # Preserve the actual evidence timestamp; expire() still closes passed deadlines.
+        sam['note'] = 'Federal discovery runs at most once every 24 hours; last successful check '+sam['lastChecked']+'. Local and D.C. sources run hourly. Coverage: NAICS 541620 and 562910 in MD, VA and DC.'
     else:
         sam['lastChecked'] = stamp
         try:

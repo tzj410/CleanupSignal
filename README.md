@@ -65,7 +65,7 @@ python3 scripts/pipeline.py
 - [Manual pilot operating process](docs/OPERATIONS.md)
 - [Research prospect list](docs/PROSPECTS.md)
 
-GitHub CI tests all pushes/PRs. The evidence-refresh workflow stays daily. The alert workflow runs only when its automation secret is configured. The new Pages deployment workflow requires a scoped `CLOUDFLARE_API_TOKEN`; without it, deployment is explicitly skipped. No automatic code-deployment claim is made until that secret is installed and a run succeeds.
+GitHub CI tests all pushes/PRs. Local and D.C. source checks are scheduled hourly at minute 17 (UTC). SAM.gov successful discovery is reused for 24 hours to protect the federal request budget; 429 responses retain their 24-hour cooldown. GitHub scheduling can be delayed, and open pages require reloading to show newly published data. EPA checks revalidate known selections rather than discovering every new grant. The alert workflow runs only when its automation secret is configured. The new Pages deployment workflow requires a scoped `CLOUDFLARE_API_TOKEN`; without it, deployment is explicitly skipped. No automatic code-deployment claim is made until that secret is installed and a run succeeds.
 
 Keep credentials and customer information outside this public repository. No paid account, subscriber enrollment, customer outreach or revenue is claimed. More verified Maryland/Virginia procurement coverage, provider activation, real end-to-end payment/email testing, mobile/Safari QA, support operations and commercial seller details remain necessary for a paid self-service launch.
 

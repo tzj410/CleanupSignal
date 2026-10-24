@@ -49,6 +49,36 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(saved['verifiedAt'],STAMP)
         self.assertEqual(saved['verification'],'stale')
 
+    def test_hourly_refresh_preserves_daily_federal_evidence(self):
+        for elapsed, expected_requests, expected_status in [
+            ('2026-10-23T17:00:00Z', 0, 'open-solicitation'),
+            ('2026-10-24T16:00:00Z', 2, None),
+        ]:
+            with self.subTest(elapsed=elapsed):
+                data=copy.deepcopy(self.seed)
+                data['signals'].append(p.sam_signal(self.sam(),STAMP))
+                sam=next(s for s in data['sources'] if s['id']=='sam')
+                sam.update(status='verified',lastChecked=STAMP)
+                urls=[]
+                def fetch(url):
+                    urls.append(url)
+                    return json.dumps({'opportunitiesData':[], 'totalRecords':0}) if 'api.sam.gov' in url else ''
+                result=p.refresh(data,self.seed,fetch=fetch,sam_key='fake',stamp=elapsed)
+                self.assertEqual(sum('api.sam.gov' in u for u in urls),expected_requests)
+                if expected_status:
+                    record=next(s for s in result['signals'] if s['sourceId']=='sam')
+                    self.assertEqual(record['verifiedAt'],STAMP)
+                    self.assertEqual(record['status'],expected_status)
+                    source=next(s for s in result['sources'] if s['id']=='sam')
+                    self.assertEqual(source['lastChecked'],STAMP)
+
+    def test_cached_federal_notice_still_expires(self):
+        data=copy.deepcopy(self.seed)
+        data['signals'].append(p.sam_signal(self.sam(responseDeadLine='2026-10-23T16:30:00Z'),STAMP))
+        next(s for s in data['sources'] if s['id']=='sam').update(status='verified',lastChecked=STAMP)
+        result=p.refresh(data,self.seed,fetch=lambda u:'',sam_key='fake',stamp='2026-10-23T17:00:00Z')
+        self.assertEqual(next(s for s in result['signals'] if s['sourceId']=='sam')['status'],'closed')
+
     def test_sam_uses_page_index_not_record_offset(self):
         from urllib.parse import urlparse, parse_qs
         seen=[]
