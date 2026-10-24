@@ -1,6 +1,6 @@
 # CleanupSignal pilot launch kit
 
-Prepared October 23, 2026. Product: environmental project intelligence for Maryland, Virginia, and Washington, DC. Proposed offer: **$99 for one month**, manually invoiced only after explicit acceptance; target **three paying customers / $297 monthly revenue**. This is a target, not achieved revenue.
+Prepared October 23, 2026. Product: environmental project intelligence for Maryland, Virginia, and Washington, DC. Proposed founding offers: **Starter $19/month or $190/year (1 recipient)**; **Team $29/month or $290/year (up to 3 recipients)**; **Business $49/month or $490/year (up to 8 recipients)**. These are proposed per-company prices, not active subscriptions. Annual billing, accounts, team login seats and automatic delivery are not implemented. Example target **three Team-plan customers / $87 monthly gross revenue**; not achieved revenue. This is a target, not achieved revenue.
 
 ## What the customer buys
 
@@ -24,7 +24,7 @@ Check implementation and deployment evidence against this table. These requireme
 
 Score 0–2 per dimension: relevant service match; MD/VA/DC delivery reach; named person responsible for business development; current pain discovering government work; budget and willingness to review a sample. Prioritize 7+/10. Require service/geography scores above zero. Company size and purchasing intent remain unverified unless established directly.
 
-Ask: Which counties/states? Which services and exclusions? Prime contractor or subcontractor? Relevant NAICS codes and verified certifications? Minimum/maximum practical project size? Federal registration and state procurement readiness? Who monitors bids now, and how much time does that take? What would make a weekly report useful? Which report examples would you pursue? Preferred delivery day and business contact? Do you authorize a one-month $99 pilot with the stated scope?
+Ask: Which counties/states? Which services and exclusions? Prime contractor or subcontractor? Relevant NAICS codes and verified certifications? Minimum/maximum practical project size? Federal registration and state procurement readiness? Who monitors bids now, and how much time does that take? What would make a weekly report useful? Which report examples would you pursue? Preferred delivery day and business contact? Which proposed plan and number of named briefing recipients would fit your firm? Would you consider a one-month trial of the agreed, manually delivered service at that plan's monthly rate?
 
 ## Outreach draft — do not send automatically
 
@@ -34,7 +34,7 @@ Hello [Name],
 
 I’m Taha, building CleanupSignal for environmental firms working in Maryland, Virginia, and DC. I saw that [Firm] provides [service supported by its website]. We organize government project announcements and procurement notices into a source-linked shortlist, and clearly label early funding signals separately from open bids.
 
-Would you be willing to review a sample matched to your services? The proposed one-month pilot is $99 and includes a weekly reviewed shortlist. I’d first like to understand whether it helps you find relevant work or saves research time.
+Would you be willing to review a sample matched to your services? Founding pricing starts at a proposed $19/month for one briefing recipient, with Team at $29/month for up to three recipients. The brief's exact coverage and delivery would be agreed before any invoice. I’d first like to understand whether it helps you find relevant work or saves research time.
 
 Best,
 Taha
@@ -44,4 +44,8 @@ Use only a verified public business contact route. Personalize one factual sente
 
 ## Four-week learning plan
 
-Week 1: review the top five prospect sites and invite feedback once sender/contact setup is approved. Week 2: show tailored samples and record rejected leads and reasons. Week 3: offer up to three one-month pilots with explicit scope and manual invoices. Week 4: measure relevant items per report, hours saved as reported by the customer, actions taken, correction rate, and willingness to renew. Continue only if delivery quality supports the promise. Payment collection and customer outreach are separate actions; neither is performed by this kit.
+Week 1: review the top five prospect sites and invite feedback once sender/contact setup is approved. Week 2: show tailored samples and record rejected leads and reasons. Week 3: offer up to three one-month introductory plans with explicit scope, recipient limits and manual invoices only after agreement. Week 4: measure relevant items per report, hours saved as reported by the customer, actions taken, correction rate, and willingness to renew. Continue only if delivery quality supports the promise. Payment collection and customer outreach are separate actions; neither is performed by this kit.
+
+## Pricing integrity
+
+Free public tools have no seat limit and do not require login. Proposed paid recipient counts govern the distribution of manually arranged reports, not accounts or access control. The website includes a monthly/yearly comparison toggle, and a plan/recipient-count inquiry. The toggle does not authorize charges or commit CleanupSignal to fulfill unlimited custom research. Only promise service after validating source coverage, production capacity, payment terms and delivery processes. Do not accept prepaid annual payments until the annual service arrangement is operational and documented.
