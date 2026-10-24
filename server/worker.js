@@ -2,18 +2,22 @@ import {HttpError,json,checkOrigin} from './security.js';
 import {authReady,authRoute} from './auth.js';
 import {workspaceRoute} from './workspace.js';
 import {billingReady,billingRoute,webhook} from './billing.js';
+import {submitSupport} from './support.js';
+import {emailWebhook} from './email-events.js';
 import {automation,unsubscribe,deliveryStatus} from './alerts.js';
 export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
  if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
  try{
-  if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM),passwordless:true});
+  if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM&&env.RESEND_WEBHOOK_SECRET),support:env.SUPPORT_ENABLED==='true',passwordless:true});
   if(!env.DB)return json({error:'Company workspace setup is pending. Public research remains available.'},503);
+  if(path==='/api/email/webhook'&&request.method==='POST')return await emailWebhook(request,env);
   if(path==='/api/billing/webhook'&&request.method==='POST')return await webhook(request,env);
   if(path==='/api/jobs/alerts'&&request.method==='POST')return await automation(request,env);
   if(path==='/api/unsubscribe')return await unsubscribe(request,env);
   if(!['GET','POST','PUT','DELETE'].includes(request.method))return json({error:'Method not allowed.'},405);
   if(request.method!=='GET')checkOrigin(request);
+  if(path==='/api/support'&&request.method==='POST')return await submitSupport(request,env);
   if(path.startsWith('/api/auth/')&&request.method==='POST')return await authRoute(request,env,path.split('/').pop());
   if(['/api/billing/checkout','/api/billing/portal'].includes(path)&&request.method==='POST')return await billingRoute(request,env,path);
   if(path==='/api/deliveries'&&request.method==='GET')return await deliveryStatus(request,env);

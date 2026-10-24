@@ -1,8 +1,9 @@
-"""Bounded state/local listing collection and auditable daily report comparisons."""
+"""Bounded state/local listing collection and auditable refresh report comparisons."""
 import copy, datetime as dt, hashlib, html, json, re
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, parse_qs
 from zoneinfo import ZoneInfo
+from procurement_details import enrich_details
 
 class Plain(HTMLParser):
     def __init__(self): super().__init__(); self.parts=[]
@@ -69,7 +70,8 @@ def civic_signal(raw,url,source,stamp):
     elif f['Status'].lower()=='open' and due and not admin and not conflicting:state='open-solicitation'
     note='Administrative posting or conflicting source labels; not a verified invitation to bid.' if admin or conflicting else ('Current invitation and deadline require confirmation.' if state=='unconfirmed' else 'Review all official documents and amendments before responding.')
     bid=parse_qs(urlparse(url).query).get('bidID') or parse_qs(urlparse(url).query).get('bidid')
-    return dict(id=source['id']+'-'+bid[0],title=title[:500],agency=source.get('agency') or 'City of '+source['locality'],jurisdiction=source['jurisdiction'],locality=source['locality'],category=service,status=state,amount=None,deadline=due.isoformat() if due and not admin and not conflicting else None,announcedAt=posted.date().isoformat() if posted else '',sourceId=source['id'],sourceName=source['name'],sourceUrl=url,summary=('Administrative procurement activity: '+f.get('Description',title))[:650] if admin else 'Local procurement notice. '+f.get('Description',title)[:500],nextStep='Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.' if admin else 'Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.',verifiedAt=stamp,verification='verified',statusNote=note,noticeType='Administrative posting' if admin else 'Local procurement notice',sourceCategory=f.get('Category'),contactText=f.get('Contact Person','')[:800],solicitationNumber=f.get('Bid Number'),prebidMeeting=f.get('Pre-bid Meeting','')[:800])
+    record = dict(id=source['id']+'-'+bid[0],title=title[:500],agency=source.get('agency') or 'City of '+source['locality'],jurisdiction=source['jurisdiction'],locality=source['locality'],category=service,status=state,amount=None,deadline=due.isoformat() if due and not admin and not conflicting else None,announcedAt=posted.date().isoformat() if posted else '',sourceId=source['id'],sourceName=source['name'],sourceUrl=url,summary=('Administrative procurement activity: '+f.get('Description',title))[:650] if admin else 'Local procurement notice. '+f.get('Description',title)[:500],nextStep='Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.' if admin else 'Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.',verifiedAt=stamp,verification='verified',statusNote=note,noticeType='Administrative posting' if admin else 'Local procurement notice',sourceCategory=f.get('Category'),contactText=f.get('Contact Person','')[:800],solicitationNumber=f.get('Bid Number'),prebidMeeting=f.get('Pre-bid Meeting','')[:800])
+    return enrich_details(record,raw,f.get('Description',''))
 
 def collect(source,fetch,stamp):
     raw=fetch(source['url']);links=BidLinks();links.feed(raw)
@@ -85,7 +87,7 @@ def collect(source,fetch,stamp):
     digest=hashlib.sha256(json.dumps(sorted(links.links.items())).encode()).hexdigest()
     return result,dict(listingCount=len(links.links),matchingCount=len(result),listingHash=digest,checkedEmpty=empty)
 
-BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp','prebidMeeting','solicitationNumber','procurementUrl']
+BUSINESS_FIELDS=['title','summary','status','deadline','amount','sourceUrl','nextStep','sourceCategory','contactText','followUp','prebidMeeting','solicitationNumber','procurementUrl','documents','amendmentNotes','requirementNotes','evidenceFingerprint']
 def compare(previous,current):
     before={s['id']:s for s in previous['signals']};after={s['id']:s for s in current['signals']}
     added=[s['id'] for s in current['signals'] if s['id'] not in before]
@@ -102,17 +104,31 @@ def enrich(previous,current,registry,followups,fetch,stamp):
         item=copy.deepcopy(entry);last=prior.get(item['id'],{})
         if item['mode']=='manual':item.update(status='manual',lastChecked=None)
         else:
+            if entry.get('intervalHours') and last.get('status')=='checked' and last.get('lastSuccess') and dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))-dt.datetime.fromisoformat(last['lastSuccess'].replace('Z','+00:00'))<dt.timedelta(hours=entry['intervalHours']):
+                item.update({k:v for k,v in last.items() if k not in ['note','url','name']})
+                item['scheduledReuse']=True
+                checks.append(item)
+                continue
+            retry=last.get('nextRetryAt')
+            if retry and dt.datetime.fromisoformat(retry.replace('Z','+00:00'))>dt.datetime.fromisoformat(stamp.replace('Z','+00:00')):
+                item.update({k:last[k] for k in ['lastChecked','lastSuccess','nextRetryAt','consecutiveFailures','error'] if k in last})
+                item.update(status='degraded',retryPaused=True)
+                checks.append(item)
+                continue
             item.update(lastChecked=stamp,status='degraded',lastSuccess=last.get('lastSuccess'))
             try:
                 
                 if entry['mode']=='dc-api':
                     from dc_procurement import collect_dc
                     found,stats=collect_dc(entry,fetch,stamp)
+                elif entry['mode']=='epa-discovery':
+                    from epa_discovery import collect_epa
+                    found,stats=collect_epa(entry,fetch,stamp,list(records.values()))
                 elif entry['mode']=='harford-listing':
                     from harford_procurement import collect_harford
                     found,stats=collect_harford(entry,fetch,stamp)
                 else:found,stats=collect(entry,fetch,stamp)
-                item.update(stats,status='checked',lastSuccess=stamp)
+                item.update(stats,status='checked',lastSuccess=stamp,consecutiveFailures=0)
                 item['listingChanged']=bool(last.get('listingHash') and last['listingHash']!=stats['listingHash'])
                 # A record absent from the current listing cannot stay open.
                 for r in records.values():
@@ -120,6 +136,9 @@ def enrich(previous,current,registry,followups,fetch,stamp):
                 records.update({r['id']:r for r in found})
             except (ValueError,RuntimeError) as exc:
                 item['error']=str(exc)
+                item['consecutiveFailures']=min(last.get('consecutiveFailures',0)+1,20)
+                delay=min(6,2**min(item['consecutiveFailures']-1,3))
+                item['nextRetryAt']=(dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))+dt.timedelta(hours=delay)).isoformat().replace('+00:00','Z')
                 for r in records.values():
                     if r['sourceId']==entry['id']:r.update(status='unconfirmed',verification='stale',statusNote='Latest source check failed. Current bid status is unconfirmed.')
         checks.append(item)

@@ -44,3 +44,17 @@ class MalformedCivicTests(unittest.TestCase):
   fields=civic_fields(raw)
   self.assertEqual(fields['Description'],'Official sewer scope')
   self.assertEqual(fields['Closing Date/Time'],'12/8/2026 3:00 PM')
+
+class BackoffTests(unittest.TestCase):
+ def test_failed_board_backs_off_and_retains_unconfirmed_records(self):
+  from operations import enrich
+  source={'id':'board','name':'Board','url':'https://example.gov/bids.aspx','jurisdiction':'MD','locality':'County','mode':'civic'}
+  data={'generatedAt':'2026-10-24T20:00:00Z','signals':[{'id':'board-1','sourceId':'board','jurisdiction':'MD','status':'open-solicitation','verification':'verified'}],'sources':[]}
+  def fail(url):raise RuntimeError('source HTTP failure 403')
+  failed=enrich(data,data,[source],{},fail,'2026-10-24T21:00:00Z')
+  self.assertEqual(failed['signals'][0]['status'],'unconfirmed')
+  self.assertEqual(failed['operations']['procurementSources'][0]['consecutiveFailures'],1)
+  def unexpected(url):raise AssertionError('Request should be paused')
+  paused=enrich(failed,failed,[source],{},unexpected,'2026-10-24T21:30:00Z')
+  self.assertTrue(paused['operations']['procurementSources'][0]['retryPaused'])
+  self.assertEqual(paused['operations']['procurementSources'][0]['lastChecked'],'2026-10-24T21:00:00Z')

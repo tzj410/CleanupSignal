@@ -49,3 +49,17 @@ Never place SQL dumps, signed export URLs, email payloads or customer backups in
 Before real customers enroll, rehearse a full data export/import in a separate non-production database, verify row counts and membership isolation, and document the recovery point and recovery time. A code rollback does not restore the database.
 
 Source: https://developers.cloudflare.com/d1/reference/time-travel/ and https://developers.cloudflare.com/d1/best-practices/import-export-data/
+
+## Operations release — October 24, 2026
+
+This supersedes the draft-only support description above. `/support` now offers an online private request queue in D1, in addition to the existing mail draft and text-download fallbacks. Submission requires contact email and description, same-origin JSON, an enabled server configuration, and trusted Cloudflare IP metadata. Salted hourly IP keys enforce five requests per IP per hour; a transactional insert caps the entire service at 200 requests daily. The public API has no support-list or ticket-read endpoint. A random reference identifies a successful save; no email acknowledgement or response time is promised.
+
+Operators review `support_requests` through the authenticated Cloudflare D1 console. Use parameterized SQL in a private session to select pending requests and update `status` to `investigating` or `resolved`, setting `updated_at=unixepoch()`. Do not copy requester addresses/messages into public issues. Respond through the support mailbox after investigation; technical storage is not a promise that every request is already resolved.
+
+`cleanupsignal-maintenance` is deployed with a daily `31 7 * * *` UTC cron, a private D1 binding and no public route. It removes open requests after 90 days and resolved requests 30 days after their last update, cleans operational retention records, and writes a private publication-freshness check. The schedule was configured, and the maintenance logic is covered by a database test; the first scheduled execution is not claimed until observed.
+
+The independent hourly `monitor.yml` workflow opens one public `source-monitor` issue per failed collector or dataset older than three hours, and closes it after recovery. Only public source metadata is included. GitHub controls whether the owner receives email/push notifications. Direct email paging remains unconfigured.
+
+A **full** export of the existing production database (13 application tables, zero rows at export time) was restored to isolated SQLite successfully. Separately, `scripts/recovery_drill.py` exported and restored all 17 application tables with eight synthetic company/member/preference/watchlist/support/delivery rows. Full table checksums, foreign keys and restored seat triggers passed. This is a pre-enrollment rehearsal, not a restore of live customer data. Production was never rolled back. Cloudflare Time Travel remains the provider backup mechanism; an encrypted off-account customer backup destination has not been selected.
+
+Run `python3 scripts/recovery_drill.py --private-export PRIVATE_SQL_PATH` for a private export rehearsal. Never commit a dump or place it under `public/`. Recovery point for an actual incident must be selected from available provider bookmarks; this rehearsal does not establish a production recovery-time SLA.

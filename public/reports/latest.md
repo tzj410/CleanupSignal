@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-24T22:47:09Z
+Generated: 2026-10-24T23:06:54Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,30 +8,33 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:47:09Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:47:09Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-24T23:06:54Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-24T23:06:54Z
 - SAM.gov opportunities API: verified; checked 2026-10-24T22:40:02Z
 
 ## Latest refresh
 
-Compared with: 2026-10-24T22:40:02Z
-0 new records; 0 materially changed records.
-No new records discovered in this refresh.
+Compared with: 2026-10-24T22:47:09Z
+1 new records; 8 materially changed records.
+New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Danville public bid board: checked; last attempt 2026-10-24T22:47:09Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Danville public bid board: checked; last attempt 2026-10-24T23:06:54Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:47:09Z
-- Warrenton public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Frederick County public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Lynchburg public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Franklin County public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Harford County official open opportunities: checked; last attempt 2026-10-24T22:47:09Z
-- Caroline County public bid board: checked; last attempt 2026-10-24T22:47:09Z
-- Fredericksburg public bid board: degraded; last attempt 2026-10-24T22:47:09Z
-Attention: fredericksburg-bids: source HTTP failure 403
+- D.C. OCP public solicitations: checked; last attempt 2026-10-24T23:06:54Z
+- Warrenton public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Frederick County public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Lynchburg public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Franklin County public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Harford County official open opportunities: checked; last attempt 2026-10-24T23:06:54Z
+- Caroline County public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Fredericksburg public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Loudoun County public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Wicomico County public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- Hampton public bid board: checked; last attempt 2026-10-24T23:06:54Z
+- EPA national Brownfields selection discovery: checked; last attempt 2026-10-24T23:06:54Z
 
 ## Project signals
 
@@ -155,6 +158,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-gr
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The city identifies 932 and 937 Spa Road and names Haley & Aldrich among the partners involved in obtaining the funding. This establishes prior technical involvement, not an available contract or an exclusive contractor award.
 Research link: https://emma.maryland.gov/
@@ -179,6 +183,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -202,6 +207,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -224,6 +230,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -246,6 +253,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The city maintains a brownfields program page with site-level assessment progress and points inquiries to Community Development. The page includes older material; it does not establish the scope or buying schedule of this FY2026 selection.
 Research link: https://eva.virginia.gov/
@@ -270,6 +278,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -292,6 +301,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -314,6 +324,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -336,6 +347,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfie
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://eva.virginia.gov/
@@ -358,6 +370,7 @@ Source: https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-gr
 Status note: None
 
 Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf#page=4
+Secondary evidence: https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf
 
 Qualification context: The funding selection identifies project activity. An available contract, remaining scope and buying schedule have not been established.
 Research link: https://emma.maryland.gov/
@@ -408,6 +421,21 @@ Next step: Open the county-linked Bonfire notice and review full scope, amendmen
 Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
 
 Status note: Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified.
+
+
+### MD1745 Stormwater Pond Retrofit, RFQ 715024
+
+VA · Open solicitation · verified
+
+Local procurement notice. The intent of this Invitation for Bid (IFB) is for the County of Loudoun, Virginia (County) to obtain the services of a qualified General Contractor to perform the Work to retrofit and convert Stormwater Facility MD1745 from a Level I Wet Pond to Wetlands within the property identified as County PIN# 045-17-3780 off of Executive Drive in Sterling (the “Project”). The Work includes removal, hauling, and disposal of accumulated sediment, vegetation and earthwork; installation of one (1) sediment f
+
+Published selection amount: Not stated · Bid deadline: 2026-10-30T16:00:00-04:00
+
+Next step: Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.
+
+Source: https://www.loudoun.gov/bids.aspx?bidID=1111
+
+Status note: Review all official documents and amendments before responding.
 
 
 ### CSO 70 SEWER IMPROVEMENTS

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-24T22:47:09Z",
-  "evaluatedAt": "2026-10-24T22:47:20Z",
-  "state": "degraded",
+  "generatedAt": "2026-10-24T23:06:54Z",
+  "evaluatedAt": "2026-10-24T23:10:35Z",
+  "state": "operational",
   "datasetFresh": true,
   "counts": {
-    "records": 23,
-    "verifiedOpen": 6,
+    "records": 24,
+    "verifiedOpen": 7,
     "fundingSignals": 10,
-    "automaticSources": 13,
-    "workingAutomaticSources": 12,
+    "automaticSources": 17,
+    "workingAutomaticSources": 17,
     "manualSources": 3
   },
   "jurisdictions": {
@@ -17,8 +17,8 @@
       "verifiedOpen": 2
     },
     "VA": {
-      "records": 13,
-      "verifiedOpen": 1
+      "records": 14,
+      "verifiedOpen": 2
     },
     "DC": {
       "records": 4,
@@ -33,17 +33,25 @@
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastChecked": "2026-10-24T23:06:54Z",
       "lastSuccess": null,
-      "mode": null
+      "mode": null,
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:47:09Z",
+      "lastChecked": "2026-10-24T23:06:54Z",
       "lastSuccess": null,
-      "mode": null
+      "mode": null,
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "sam",
@@ -51,23 +59,35 @@
       "status": "verified",
       "lastChecked": "2026-10-24T22:40:02Z",
       "lastSuccess": null,
-      "mode": null
+      "mode": null,
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "annapolis-bids",
       "name": "Annapolis public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "danville-bids",
       "name": "Danville public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "emma",
@@ -75,7 +95,11 @@
       "status": "manual",
       "lastChecked": null,
       "lastSuccess": null,
-      "mode": "manual"
+      "mode": "manual",
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "eva",
@@ -83,7 +107,11 @@
       "status": "manual",
       "lastChecked": null,
       "lastSuccess": null,
-      "mode": "manual"
+      "mode": "manual",
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "anne-arundel",
@@ -91,79 +119,163 @@
       "status": "manual",
       "lastChecked": null,
       "lastSuccess": null,
-      "mode": "manual"
+      "mode": "manual",
+      "consecutiveFailures": null,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "dc-ocp",
       "name": "D.C. OCP public solicitations",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "dc-api"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "dc-api",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "warrenton-bids",
       "name": "Warrenton public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "frederick-bids",
       "name": "Frederick County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "lynchburg-bids",
       "name": "Lynchburg public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "franklin-bids",
       "name": "Franklin County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "harford-listing",
       "name": "Harford County official open opportunities",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "harford-listing"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "harford-listing",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "caroline-bids",
       "name": "Caroline County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:47:09Z",
-      "mode": "civic"
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     },
     {
       "id": "fredericksburg-bids",
       "name": "Fredericksburg public bid board",
-      "status": "degraded",
-      "lastChecked": "2026-10-24T22:47:09Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
-      "mode": "civic"
+      "status": "checked",
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
+    },
+    {
+      "id": "loudoun-bids",
+      "name": "Loudoun County public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
+    },
+    {
+      "id": "wicomico-bids",
+      "name": "Wicomico County public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
+    },
+    {
+      "id": "hampton-bids",
+      "name": "Hampton public bid board",
+      "status": "checked",
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "civic",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
+    },
+    {
+      "id": "epa-discovery",
+      "name": "EPA national Brownfields selection discovery",
+      "status": "checked",
+      "lastChecked": "2026-10-24T23:06:54Z",
+      "lastSuccess": "2026-10-24T23:06:54Z",
+      "mode": "epa-discovery",
+      "consecutiveFailures": 0,
+      "nextRetryAt": null,
+      "retryPaused": null,
+      "scheduledReuse": null
     }
   ],
   "history": [
     {
       "date": "2026-10-24",
-      "state": "degraded",
-      "verifiedOpen": 6,
-      "workingAutomaticSources": 12
+      "state": "operational",
+      "verifiedOpen": 7,
+      "workingAutomaticSources": 17
     }
   ]
 }

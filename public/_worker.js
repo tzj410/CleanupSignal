@@ -8,12 +8,12 @@ function briefMatches(signals,profile,at=Date.now()){
 function briefDate(value){const date=new Date(value);return Number.isNaN(date.valueOf())?'Not published':date.toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/New_York',timeZoneName:'short'});}
 function renderBriefing({signals,datasetAt,profileLabel='Your selected services and locations',workspaceUrl='',unsubscribeUrl='',preview=false,at=Date.now()}){
  const e=briefEscape;const list=signals.slice(0,50);const soon=list.filter(s=>Date.parse(s.deadline)-at<=7*86400000).length;
- const cards=list.map(s=>`<tr><td style="padding:20px;border-bottom:1px solid #dce3dd"><div style="font-size:11px;letter-spacing:1px;color:#556d65">${e(s.category)} · ${e(s.jurisdiction)}</div><h2 style="font-size:19px;margin:8px 0;color:#173e34">${e(s.title)}</h2><p style="margin:6px 0">${e(s.agency)}</p><p style="margin:6px 0"><strong>Deadline:</strong> ${e(briefDate(s.deadline))}</p>${s.prebidMeeting?`<p style="margin:6px 0"><strong>Pre-bid meeting:</strong> ${e(s.prebidMeeting)}. Check whether attendance is mandatory.</p>`:''}<p style="margin:6px 0">${e(s.summary||'Review the official scope and procurement documents.')}</p>${s.statusNote?`<p style="font-size:12px;color:#52675e">${e(s.statusNote)}</p>`:''}<p style="font-size:12px;color:#52675e">Source checked ${e(briefDate(s.verifiedAt))}</p><a href="${e(briefLink(s.sourceUrl))}" style="color:#17644c;font-weight:bold">View official evidence ↗</a>${s.procurementUrl?` · <a href="${e(briefLink(s.procurementUrl))}" style="color:#17644c">County-linked bid portal ↗</a>`:''}</td></tr>`).join('');
+ const cards=list.map(s=>`<tr><td style="padding:20px;border-bottom:1px solid #dce3dd"><div style="font-size:11px;letter-spacing:1px;color:#556d65">${e(s.category)} · ${e(s.jurisdiction)}</div><h2 style="font-size:19px;margin:8px 0;color:#173e34">${e(s.title)}</h2><p style="margin:6px 0">${e(s.agency)}</p><p style="margin:6px 0"><strong>Deadline:</strong> ${e(briefDate(s.deadline))}</p>${s.prebidMeeting?`<p style="margin:6px 0"><strong>Pre-bid meeting:</strong> ${e(s.prebidMeeting)}. Check whether attendance is mandatory.</p>`:''}<p style="margin:6px 0">${e(s.summary||'Review the official scope and procurement documents.')}</p>${s.amendmentNotes?.length?`<p><strong>Amendment notes:</strong> ${e(s.amendmentNotes.join(" "))}</p>`:""}${s.requirementNotes?.length?`<p><strong>Requirements stated by source:</strong> ${e(s.requirementNotes.join(" "))}</p>`:""}${s.statusNote?`<p style="font-size:12px;color:#52675e">${e(s.statusNote)}</p>`:''}<p style="font-size:12px;color:#52675e">Source checked ${e(briefDate(s.verifiedAt))}</p><a href="${e(briefLink(s.sourceUrl))}" style="color:#17644c;font-weight:bold">View official evidence ↗</a>${s.procurementUrl?` · <a href="${e(briefLink(s.procurementUrl))}" style="color:#17644c">County-linked bid portal ↗</a>`:''}</td></tr>`).join('');
  // Only same-origin HTTPS application URLs; user-supplied HTML/URLs never pass through.
  function appLink(value){try{const u=new URL(value);return u.protocol==='https:'&&/^[a-z0-9-]+\.cleanupsignal\.pages\.dev$|^cleanupsignal\.pages\.dev$/.test(u.hostname)?e(u.href):'';}catch{return '';}}
  const workspace=appLink(workspaceUrl),unsubscribe=appLink(unsubscribeUrl);
  const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CleanupSignal bid briefing</title></head><body style="margin:0;padding:20px;background:#f2f5f1;font:15px/1.55 Arial,sans-serif;color:#263d34"><table role="presentation" style="width:100%;max-width:740px;margin:auto;border-collapse:collapse;background:#fff"><tr><td style="padding:24px;background:#163d33;color:white;font-size:25px;font-weight:bold">Cleanup<span style="color:#d8e9ae">Signal</span><div style="font-size:11px;font-weight:normal;letter-spacing:2px">MATCHED BID BRIEFING</div></td></tr><tr><td style="padding:24px"><h1 style="font-size:28px;margin:0 0 8px">Your next opportunities, in one place.</h1><p>${e(profileLabel)}</p><p><strong>${list.length} matching open ${list.length===1?'bid':'bids'}</strong> · ${soon} deadlines within 7 days</p><p style="font-size:12px;color:#52675e">Dataset: ${e(briefDate(datasetAt))}${preview?' · Preview generated from the current public dataset; no email has been sent.':''}</p>${list.length?'':'<p>No verified open bids match these preferences right now. This does not mean there are no opportunities in the region. We do not substitute grants or expired notices for actionable bids.</p>'}</td></tr>${cards}<tr><td style="padding:24px;font-size:12px;color:#52675e">Official documents control scope, eligibility, mandatory meetings and amendments. Coverage is incomplete. Funding announcements are not included as open bids.${workspace?`<p><a href="${workspace}">Open company workspace</a></p>`:''}${unsubscribe?`<p><a href="${unsubscribe}">Unsubscribe from bid alerts</a></p>`:''}${preview?'<p>Delivery is awaiting a verified sender. This preview is not a subscription or delivery confirmation.</p>':''}</td></tr></table></body></html>`;
- const text=['CleanupSignal — matched bid briefing',profileLabel,'Dataset: '+briefDate(datasetAt),`${list.length} matching open bids; ${soon} deadlines within 7 days`,'',...list.flatMap(s=>[s.title,s.agency,s.jurisdiction+' / '+s.category,'Deadline: '+briefDate(s.deadline),...(s.prebidMeeting?['Pre-bid meeting: '+s.prebidMeeting]:[]),s.summary,s.statusNote||'',briefLink(s.sourceUrl),...(s.procurementUrl?[briefLink(s.procurementUrl)]:[]),'']),'Official documents control scope, eligibility, meetings and amendments.',...(workspace?['Company workspace: '+workspaceUrl]:[]),...(unsubscribe?['Unsubscribe: '+unsubscribeUrl]:[]),...(preview?['Preview only. No email has been sent.']:[])].join('\n');
+ const text=['CleanupSignal — matched bid briefing',profileLabel,'Dataset: '+briefDate(datasetAt),`${list.length} matching open bids; ${soon} deadlines within 7 days`,'',...list.flatMap(s=>[s.title,s.agency,s.jurisdiction+' / '+s.category,'Deadline: '+briefDate(s.deadline),...(s.prebidMeeting?['Pre-bid meeting: '+s.prebidMeeting]:[]),s.summary,...(s.amendmentNotes||[]),...(s.requirementNotes||[]),s.statusNote||'',briefLink(s.sourceUrl),...(s.procurementUrl?[briefLink(s.procurementUrl)]:[]),'']),'Official documents control scope, eligibility, meetings and amendments.',...(workspace?['Company workspace: '+workspaceUrl]:[]),...(unsubscribe?['Unsubscribe: '+unsubscribeUrl]:[]),...(preview?['Preview only. No email has been sent.']:[])].join('\n');
  return {html,text,count:list.length,soon};
 }
 
@@ -202,22 +202,22 @@ async function enqueueAlerts(request,env){
   const kinds=[];
   if(target.frequency==='daily'||target.frequency==='weekly'&&(!recent||now-recent.sent_at>=604800))kinds.push(['digest',bids]);
   if(target.deadlines)kinds.push(['deadline',bids.filter(s=>Date.parse(s.deadline)-Date.now()<=3*86400000)]);
-  for(const [kind,records] of kinds){const items=[];for(const s of records){const fingerprint=kind==='deadline'?await hash(s.id+':deadline:'+s.deadline):await hash(s.id+':'+s.title+':'+s.deadline+':'+s.summary);if(!fingerprints.has(fingerprint))items.push({fingerprint,signal:s});}
+  for(const [kind,records] of kinds){const items=[];for(const s of records){const fingerprint=kind==='deadline'?await hash(s.id+':deadline:'+s.deadline):await hash(s.id+':'+s.title+':'+s.deadline+':'+s.summary+':'+(s.evidenceFingerprint||''));if(!fingerprints.has(fingerprint))items.push({fingerprint,signal:s});}
    if(!items.length)continue;const token=randomToken();const id=await hash(target.user_id+':'+kind+':'+date);const payload={email:target.email,items:items.slice(0,50),datasetAt:data.generatedAt,unsubscribe:new URL('/api/unsubscribe?token='+token,request.url).href};
    const result=await env.DB.batch([env.DB.prepare('INSERT INTO unsubscribe_tokens(token_hash,user_id,expires_at) VALUES(?,?,unixepoch()+31536000)').bind(await hash(token),target.user_id),env.DB.prepare('INSERT OR IGNORE INTO deliveries(id,user_id,kind,payload) VALUES(?,?,?,?)').bind(id,target.user_id,kind,JSON.stringify(payload))]);queued+=result[1].meta.changes;
   }
  }
  return {queued};
 }
-async function deliverAlerts(env,latest){requireValue(env.RESEND_API_KEY&&env.EMAIL_FROM,503,'Email delivery awaits a verified sender and API key.');
+async function deliverAlerts(env,latest){requireValue(env.RESEND_API_KEY&&env.EMAIL_FROM&&env.RESEND_WEBHOOK_SECRET,503,'Email delivery awaits a verified sender, API key and signed event endpoint.');
  const pending=await env.DB.prepare("SELECT * FROM deliveries WHERE (status IN ('pending','failed') OR (status='sending' AND lease_until<unixepoch())) AND attempts<4 AND created_at>unixepoch()-82800 ORDER BY created_at LIMIT 20").all();let sent=0,failed=0;
  for(const job of pending.results){const claim=await env.DB.prepare("UPDATE deliveries SET status='sending',attempts=attempts+1,lease_until=unixepoch()+600 WHERE id=? AND (status IN ('pending','failed') OR (status='sending' AND lease_until<unixepoch())) RETURNING id").bind(job.id).first();if(!claim)continue;
-  try{const target=await env.DB.prepare('SELECT c.*,m.company_id,m.user_id,a.frequency,a.deadlines,p.regions,p.services FROM members m JOIN companies c ON c.id=m.company_id JOIN alert_settings a ON a.user_id=m.user_id LEFT JOIN preferences p ON p.company_id=c.id WHERE m.user_id=?').bind(job.user_id).first();
-   const payload=JSON.parse(job.payload);if(!target||!entitled(target)||(job.kind==='digest'?target.frequency==='off':!target.deadlines)){await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE id=?").bind(job.id).run();continue;}
+  try{const target=await env.DB.prepare('SELECT c.*,m.company_id,m.user_id,m.email,a.frequency,a.deadlines,p.regions,p.services FROM members m JOIN companies c ON c.id=m.company_id JOIN alert_settings a ON a.user_id=m.user_id LEFT JOIN preferences p ON p.company_id=c.id WHERE m.user_id=?').bind(job.user_id).first();
+   const payload=JSON.parse(job.payload);const suppressed=await env.DB.prepare('SELECT email_hash FROM email_suppressions WHERE email_hash=?').bind(await hash(String(payload.email).trim().toLowerCase())).first();if(suppressed||target&&target.email.toLowerCase()!==String(payload.email).toLowerCase()||!target||!entitled(target)||(job.kind==='digest'?target.frequency==='off':!target.deadlines)){await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE id=?").bind(job.id).run();continue;}
    // Recheck the dataset immediately before delivery. Do not email withdrawn/expired notices.
    const membersNow=await env.DB.prepare("SELECT user_id FROM members WHERE company_id=? ORDER BY CASE role WHEN 'owner' THEN 0 ELSE 1 END,created_at,user_id LIMIT ?").bind(target.company_id,({starter:1,team:3,business:8})[target.plan]).all();if(!membersNow.results.some(m=>m.user_id===job.user_id)){await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE id=?").bind(job.id).run();continue;}
    const delivered=await env.DB.prepare('SELECT fingerprint FROM delivered_items WHERE user_id=?').bind(job.user_id).all();const seenNow=new Set(delivered.results.map(x=>x.fingerprint));
-   const current=new Map(matchingBids(latest.signals,{regions:JSON.parse(target.regions||'[]'),services:JSON.parse(target.services||'[]')}).map(s=>[s.id,s]));const valid=payload.items.filter(i=>{const s=current.get(i.signal.id);return !seenNow.has(i.fingerprint)&&s&&s.deadline===i.signal.deadline&&s.title===i.signal.title&&s.summary===i.signal.summary;});if(!valid.length){await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE id=?").bind(job.id).run();continue;}
+   const current=new Map(matchingBids(latest.signals,{regions:JSON.parse(target.regions||'[]'),services:JSON.parse(target.services||'[]')}).map(s=>[s.id,s]));const valid=payload.items.filter(i=>{const s=current.get(i.signal.id);return !seenNow.has(i.fingerprint)&&s&&s.deadline===i.signal.deadline&&s.title===i.signal.title&&s.summary===i.signal.summary&&s.evidenceFingerprint===i.signal.evidenceFingerprint;});if(!valid.length){await env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE id=?").bind(job.id).run();continue;}
    const {html,text}=renderBriefing({signals:valid.map(i=>current.get(i.signal.id)),datasetAt:latest.generatedAt||payload.datasetAt,workspaceUrl:new URL('/account.html',payload.unsubscribe).href,unsubscribeUrl:payload.unsubscribe});
    const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json','Idempotency-Key':job.id},body:JSON.stringify({from:env.EMAIL_FROM,to:[payload.email],subject:job.kind==='deadline'?'CleanupSignal: bid deadlines within 3 days':'CleanupSignal: your matched open bids',text,html,headers:{'List-Unsubscribe':'<'+payload.unsubscribe+'>','List-Unsubscribe-Post':'List-Unsubscribe=One-Click'}}),signal:AbortSignal.timeout(15000)});
    if(!response.ok){await response.body?.cancel();throw new Error('Email provider rejected delivery.');}const result=await response.json();
@@ -234,18 +234,70 @@ async function automation(request,env){
 }
 async function deliveryStatus(request,env){const {user,company}=await workspaceFor(request,env);const rows=await env.DB.prepare('SELECT kind,status,attempts,created_at,sent_at,last_error FROM deliveries WHERE user_id=? ORDER BY created_at DESC LIMIT 20').bind(user.id).all();return json({deliveries:rows.results,company:company.name});}
 
+// support.js
+const categories=['Incorrect project or deadline','Source outage or missing coverage','Website problem or accessibility','Privacy, correction or deletion request','General question'];
+async function submitSupport(request,env){
+ requireValue(env.SUPPORT_ENABLED==='true'&&env.SUPPORT_SALT,503,'Online support is not configured. Please use the email or download option.');
+ const body=await bodyJson(request);
+ requireValue(!body.website,400,'Request rejected.');
+ const email=String(body.email||'').trim().toLowerCase(),message=String(body.message||'').trim(),reference=String(body.record||'').trim();
+ requireValue(categories.includes(body.type)&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)&&email.length<=254&&message.length>=10&&message.length<=4000&&reference.length<=500,400,'Provide a valid contact email, request type and a description of 10–4,000 characters.');
+ const ip=request.headers.get('CF-Connecting-IP');requireValue(ip,503,'Please use the email option while online support is unavailable.');
+ const window=Math.floor(Date.now()/3600000),key='support:'+await hash(env.SUPPORT_SALT+':'+window+':'+ip);
+ // Conditional upsert reserves capacity atomically, including concurrent requests.
+ const quota=await env.DB.prepare('INSERT INTO rate_limits(key,window,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET count=count+1 WHERE count<5 RETURNING count').bind(key,window*60).first();
+ requireValue(quota,429,'Too many requests. Please wait an hour or email support.');
+ const id='CS-'+crypto.randomUUID();
+ const inserted=await env.DB.prepare("INSERT INTO support_requests(id,category,email,record_reference,message) SELECT ?,?,?,?,? WHERE (SELECT count(*) FROM support_requests WHERE created_at>unixepoch()-86400)<200 RETURNING id").bind(id,body.type,email,reference,message).first();
+ requireValue(inserted,503,'Online support is at capacity. Please email support instead.');
+ return json({id,message:'Your request has been saved for operator review. Keep this reference. No confirmation email has been sent.'},201);
+}
+
+// email-events.js
+async function verifyEmailSignature(raw,headers,secret,now=Math.floor(Date.now()/1000)){
+ try{
+  const id=headers.get('svix-id')||'',stamp=headers.get('svix-timestamp')||'',signatures=headers.get('svix-signature')||'';
+  if(!secret?.startsWith('whsec_')||!id||id.length>200||!/^\d+$/.test(stamp)||Math.abs(now-Number(stamp))>300)return false;
+  const key=await crypto.subtle.importKey('raw',Uint8Array.from(atob(secret.slice(6)),c=>c.charCodeAt(0)),{name:'HMAC',hash:'SHA-256'},false,['verify']);
+  for(const sig of signatures.split(' ').slice(0,10))if(sig.startsWith('v1,')&&await crypto.subtle.verify('HMAC',key,Uint8Array.from(atob(sig.slice(3)),c=>c.charCodeAt(0)),new TextEncoder().encode(id+'.'+stamp+'.'+raw)))return true;
+ }catch{}
+ return false;
+}
+async function emailWebhook(request,env){
+ requireValue(env.RESEND_WEBHOOK_SECRET,503,'Email event verification is not configured.');
+ const raw=await readText(request,65536);requireValue(await verifyEmailSignature(raw,request.headers,env.RESEND_WEBHOOK_SECRET),400,'Invalid email event signature.');
+ let event;try{event=JSON.parse(raw);}catch{requireValue(false,400,'Invalid event.');}
+ const accepted=['email.delivered','email.bounced','email.complained','email.delivery_delayed','email.failed'];
+ if(!accepted.includes(event.type))return json({received:true,ignored:true});
+ const id=request.headers.get('svix-id');if(await env.DB.prepare('SELECT id FROM email_events WHERE id=?').bind(id).first())return json({received:true,duplicate:true});
+ requireValue(typeof event.data?.email_id==='string'&&event.data.email_id.length<=200,400,'Missing email reference.');
+ const job=await env.DB.prepare('SELECT id,user_id,payload FROM deliveries WHERE provider_id=?').bind(event.data.email_id).first();
+ // Let the provider retry an event that raced ahead of the delivery acknowledgement.
+ requireValue(job,503,'Delivery acknowledgement pending.');
+ const statements=[env.DB.prepare('INSERT OR IGNORE INTO email_events(id,delivery_id,event_type) VALUES(?,?,?)').bind(id,job.id,event.type)];
+ if(['email.bounced','email.complained'].includes(event.type)){
+  const email=String(JSON.parse(job.payload).email).trim().toLowerCase();
+  statements.push(env.DB.prepare('INSERT OR IGNORE INTO email_suppressions(email_hash,reason) VALUES(?,?)').bind(await hash(email),event.type));
+  statements.push(env.DB.prepare("UPDATE alert_settings SET frequency='off',deadlines=0,updated_at=unixepoch() WHERE user_id=? AND EXISTS(SELECT 1 FROM members WHERE user_id=? AND lower(email)=?)").bind(job.user_id,job.user_id,email));
+  statements.push(env.DB.prepare("UPDATE deliveries SET status='cancelled' WHERE user_id=? AND status IN ('pending','failed')").bind(job.user_id));
+ }
+ await env.DB.batch(statements);return json({received:true});
+}
+
 // worker.js
 export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
  if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
  try{
-  if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM),passwordless:true});
+  if(path==='/api/config'&&request.method==='GET')return json({accounts:Boolean(env.DB)&&authReady(env),billing:billingReady(env),email:Boolean(env.RESEND_API_KEY&&env.EMAIL_FROM&&env.RESEND_WEBHOOK_SECRET),support:env.SUPPORT_ENABLED==='true',passwordless:true});
   if(!env.DB)return json({error:'Company workspace setup is pending. Public research remains available.'},503);
+  if(path==='/api/email/webhook'&&request.method==='POST')return await emailWebhook(request,env);
   if(path==='/api/billing/webhook'&&request.method==='POST')return await webhook(request,env);
   if(path==='/api/jobs/alerts'&&request.method==='POST')return await automation(request,env);
   if(path==='/api/unsubscribe')return await unsubscribe(request,env);
   if(!['GET','POST','PUT','DELETE'].includes(request.method))return json({error:'Method not allowed.'},405);
   if(request.method!=='GET')checkOrigin(request);
+  if(path==='/api/support'&&request.method==='POST')return await submitSupport(request,env);
   if(path.startsWith('/api/auth/')&&request.method==='POST')return await authRoute(request,env,path.split('/').pop());
   if(['/api/billing/checkout','/api/billing/portal'].includes(path)&&request.method==='POST')return await billingRoute(request,env,path);
   if(path==='/api/deliveries'&&request.method==='GET')return await deliveryStatus(request,env);

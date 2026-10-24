@@ -6,6 +6,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from operations import category, local_date
+from procurement_details import enrich_details
 BASE='https://contracts.ocp.dc.gov'
 def search_post(url,payload):
  try:
@@ -33,7 +34,8 @@ def dc_signal(row,source,stamp):
  if str(row['status']).lower() in ['closed','awarded','cancelled','canceled'] or deadline and deadline<=current:status='closed'
  elif str(row['status']).lower()=='open' and deadline and not admin:status='open-solicitation'
  contact=row.get('specialist') or row.get('contractingOfficer') or {}
- return dict(id='dc-ocp-'+id,title=title,agency='; '.join(row['agencyNames']),jurisdiction='DC',locality='Washington, DC',category=service,status=status,amount=None,deadline=deadline.isoformat() if deadline and not admin else None,announcedAt=announced,sourceId=source['id'],sourceName=source['name'],sourceUrl=BASE+'/solicitations/details?'+urlencode({'id':id}),summary='District procurement notice: '+title+'. '+('Market: '+str(row.get('marketType'))+'. ' if row.get('marketType') else '')+'Review official procurement documents, registration, eligibility and amendments.',nextStep='Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.',verifiedAt=stamp,verification='verified',noticeType='Administrative inquiry' if admin else 'District procurement notice',statusNote='Not an invitation to bid.' if admin else 'Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.',contactText=' / '.join(str(contact.get(k) or '') for k in ['name','email','phone']).strip(' /'))
+ record = dict(id='dc-ocp-'+id,title=title,agency='; '.join(row['agencyNames']),jurisdiction='DC',locality='Washington, DC',category=service,status=status,amount=None,deadline=deadline.isoformat() if deadline and not admin else None,announcedAt=announced,sourceId=source['id'],sourceName=source['name'],sourceUrl=BASE+'/solicitations/details?'+urlencode({'id':id}),summary='District procurement notice: '+title+'. '+('Market: '+str(row.get('marketType'))+'. ' if row.get('marketType') else '')+'Review official procurement documents, registration, eligibility and amendments.',nextStep='Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.',verifiedAt=stamp,verification='verified',noticeType='Administrative inquiry' if admin else 'District procurement notice',statusNote='Not an invitation to bid.' if admin else 'Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.',contactText=' / '.join(str(contact.get(k) or '') for k in ['name','email','phone']).strip(' /'),solicitationNumber=id)
+ return enrich_details(record,description=title,market=row.get('marketType'))
 
 def collect_dc(source,fetch,stamp,post=search_post):
  response=json.loads(post(BASE+'/api/solicitations/search',{'FilterBy':[{'id':0,'name':'Type','value':0},{'id':1,'name':'Status','value':'Open'}],'OrderBy':[]}))

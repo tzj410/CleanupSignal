@@ -1,0 +1,27 @@
+name: Monitor source incidents independently
+on:
+  schedule:
+    - cron: '47 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/monitor_incidents.py', '.github/workflows/monitor.yml']
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: source-incidents
+  cancel-in-progress: false
+jobs:
+  monitor:
+    if: github.repository == 'tzj410/CleanupSignal'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Open new incidents and close recovered sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/monitor_incidents.py

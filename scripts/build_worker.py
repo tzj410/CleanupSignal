@@ -5,7 +5,7 @@ import re
 root=Path(__file__).resolve().parents[1]
 parts=[]
 parts.append(re.sub(r'\bexport (?=async |function |class |const )','',(root/'public'/'briefing-core.js').read_text()))
-for name in ['security','auth','workspace','billing','alerts','worker']:
+for name in ['security','auth','workspace','billing','alerts','support','email-events','worker']:
  s=(root/'server'/f'{name}.js').read_text()
  s=re.sub(r'^import .*?;\n','',s,flags=re.M)
  if name!='worker':s=re.sub(r'\bexport (?=async |function |class |const )','',s)
