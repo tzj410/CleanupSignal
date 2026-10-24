@@ -79,3 +79,14 @@ test('daily maintenance removes overdue requests but retains current tickets and
  const result=await maintain(env);assert.equal(result.supportRemoved,2);assert.equal(result.state,'operational');assert.equal((await env.DB.prepare('SELECT count(*) AS n FROM support_requests').first()).n,1);
  assert.equal((await env.DB.prepare("SELECT state FROM operator_checks WHERE id='daily-maintenance'").first()).state,'operational');
 });
+
+test('public data endpoint uses latest server-side publication without accounts and falls back safely',async t=>{
+ const env=setup(t);delete env.SUPABASE_URL;delete env.DB;
+ const old={generatedAt:new Date(Date.now()-3600000).toISOString(),sources:[],signals:[]},fresh={...old,generatedAt:new Date().toISOString(),signals:[{id:'new-public-notice'}]};
+ env.ASSETS={fetch:async()=>Response.json(old)};let source;
+ globalThis.fetch=async url=>{source=String(url);return Response.json(fresh);};
+ const request=()=>new Request('https://cleanupsignal.test/api/signals.json');let response=await worker.fetch(request(),env);
+ assert.equal(response.status,200);assert.equal((await response.json()).signals[0].id,'new-public-notice');assert.match(source,/\?refresh=\d+$/);assert.match(response.headers.get('cache-control'),/max-age=30/);
+ globalThis.fetch=async()=>{throw Error('upstream unavailable');};response=await worker.fetch(request(),env);assert.equal((await response.json()).generatedAt,old.generatedAt);
+ globalThis.fetch=async()=>Response.json({...fresh,generatedAt:new Date(Date.now()+86400000).toISOString()});response=await worker.fetch(request(),env);assert.equal((await response.json()).generatedAt,old.generatedAt);
+});
