@@ -17,3 +17,20 @@ test('profile combines jurisdictions and services and rejects unknown selections
  assert.equal(matchesProfile(records[0],{regions:[],services:['PFAS']}),false);
  assert.equal(matchesProfile(records[0],normalizeProfile(null)),true);
 });
+
+import {readFileSync} from 'node:fs';
+test('founding plan prices and recipient limits remain consistent in public HTML and JS',()=>{
+ const html=readFileSync(new URL('../public/index.html',import.meta.url),'utf8');
+ const contractor=readFileSync(new URL('../public/contractor.js',import.meta.url),'utf8');
+ const app=readFileSync(new URL('../public/app.js',import.meta.url),'utf8');
+ for(const [id,monthly,yearly,seats] of [['starter',19,190,1],['team',29,290,3],['business',49,490,8]]){
+  assert.ok(html.includes('data-plan-tier="'+id+'" data-monthly="'+monthly+'" data-yearly="'+yearly+'"'));
+  assert.ok(contractor.includes(id+':{title:'));
+  assert.ok(contractor.includes('monthly:'+monthly+',yearly:'+yearly+',seats:'+seats));
+  assert.equal(monthly*10,yearly);
+ }
+ assert.ok(html.includes('id="pilotBilling"')&&html.includes('id="pilotTeamSize"'));
+ assert.ok(app.includes('selectedPricing()'));
+ assert.ok(![html,contractor,app].some(text=>text.includes('$99')));
+ assert.ok(html.includes('No paid account system, checkout, automatic alerts, or annual billing is active'));
+});
