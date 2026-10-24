@@ -1,5 +1,5 @@
 import {initOperations,renderOperations,followupHtml,followupSummary} from './operations.js';
-import {initContractor,renderCategories,currentProfile,inquiryScope} from './contractor.js';
+import {initContractor,renderCategories,currentProfile,inquiryScope,selectedPricing} from './contractor.js';
 import {matchesProfile,profileDescription} from './preferences.js';
 import {labels,escapeHtml as e,safeUrl,effectiveStatus,filterSignals,makeCsv} from './core.js';
 const $=s=>document.querySelector(s);
@@ -27,8 +27,19 @@ $('#closeDetail').addEventListener('click',()=>$('#detail').close());$('#detail'
 $('#exportCsv').addEventListener('click',()=>download('cleanupsignal-filtered-signals.csv',makeCsv(visible),'text/csv;charset=utf-8'));
 $('#exportBrief').addEventListener('click',()=>{const records=dataset.signals.filter(s=>saved.has(s.id));const text=['# CleanupSignal — Your project watchlist','',`Exported ${new Date().toISOString()}`,`Dataset generated ${dataset.generatedAt}`,'','Funding signals are grant selections, not open bids or available contract values.','',...records.flatMap(s=>[`## ${s.title}`,'',`${s.jurisdiction} / ${s.category} / ${labels[effectiveStatus(s)]}`,s.summary,`Selection amount: ${s.amount==null?'Not stated':s.amount}`,`Deadline: ${s.deadline||'Not published'}`,`Last verified: ${s.verifiedAt} (${s.verification})`,`Next step: ${s.nextStep}`,`Official source: ${s.sourceUrl}`,followupSummary(s.id),''])].join('\n');download('cleanupsignal-watchlist.md',text,'text/markdown');});
 $('#clearSaved').addEventListener('click',()=>{saved.clear();saveState();toast('Watchlist cleared on this browser.');});
-function pilotInquiryText(){const f=new FormData($('#pilotForm'));return `CleanupSignal pilot inquiry\n\nName: ${f.get('name')}\nFirm: ${f.get('firm')}\nWork email: ${f.get('email')}\nServices and coverage: ${f.get('needs')}\n\n${inquiryScope()}\n\nInterested in the proposed $99/month one-firm pilot. Scope, start date, weekly delivery and cancellation terms must be agreed before service or billing.\n\nNo subscription has been created and no payment is authorized.\n`;}
-$('#pilotForm').addEventListener('submit',event=>{event.preventDefault();const text=pilotInquiryText();$('#pilotResult').textContent='Your email app should open a draft to cleanupsignal@gmail.com. Review and send it there. If it does not open, download the inquiry and email it to that address. Nothing is sent automatically.';window.location.href='mailto:cleanupsignal@gmail.com?subject='+encodeURIComponent('CleanupSignal founding pilot inquiry')+'&body='+encodeURIComponent(text);});
+function pilotInquiryText(){
+ const f=new FormData($('#pilotForm'));
+ const p=selectedPricing();
+ const rate='$'+p.price+'/'+(p.period==='yearly'?'year':'month');
+ return 'CleanupSignal founding plan inquiry\n\n'
+  +'Name: '+f.get('name')+'\nFirm: '+f.get('firm')+'\nWork email: '+f.get('email')
+  +'\nServices and coverage: '+f.get('needs')+'\n\n'+inquiryScope()
+  +'\n\nProposed plan: '+p.title+'\nBilling preference: '+p.period
+  +'\nProposed price: '+rate+'\nNamed briefing recipient limit: '+p.seats
+  +'\nRequested recipients: '+p.recipients
+  +'\n\nThis is an inquiry, not an order. Coverage, pricing, delivery, cancellation, invoicing and any annual term require separate written agreement before service or billing.\n\nNo subscription has been created and no payment is authorized.\n';
+}
+$('#pilotForm').addEventListener('submit',event=>{event.preventDefault();const text=pilotInquiryText();$('#pilotResult').textContent='Your email app should open a draft to cleanupsignal@gmail.com. Review and send it there. If it does not open, download the inquiry and email it to that address. Nothing is sent automatically.';window.location.href='mailto:cleanupsignal@gmail.com?subject='+encodeURIComponent('CleanupSignal founding plan inquiry')+'&body='+encodeURIComponent(text);});
 $('#downloadInquiry').addEventListener('click',()=>{if(!$('#pilotForm').reportValidity())return;download('cleanupsignal-pilot-inquiry.txt',pilotInquiryText());$('#pilotResult').textContent='Draft downloaded. Email it to cleanupsignal@gmail.com to make an inquiry. Nothing has been sent or subscribed.';});
 $('#downloadReport').addEventListener('click',()=>download('cleanupsignal-latest-brief.md',markdownReport(dataset),'text/markdown'));
 $('#downloadReportCsv').addEventListener('click',()=>download('cleanupsignal-signals.csv',makeCsv(dataset.signals),'text/csv;charset=utf-8'));
