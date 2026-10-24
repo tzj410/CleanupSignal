@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-24T22:32:05Z
+Generated: 2026-10-24T22:40:02Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,29 +8,30 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:09:19Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:09:19Z
-- SAM.gov opportunities API: verified; checked 2026-10-24T22:09:19Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:40:02Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:40:02Z
+- SAM.gov opportunities API: verified; checked 2026-10-24T22:40:02Z
 
 ## Latest refresh
 
-Compared with: 2026-10-24T22:09:19Z
-3 new records; 5 materially changed records.
-New records may be administrative or closed postings; review their status.
+Compared with: 2026-10-24T22:32:05Z
+0 new records; 0 materially changed records.
+No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Danville public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Danville public bid board: checked; last attempt 2026-10-24T22:40:02Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:32:05Z
-- Warrenton public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Frederick County public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Lynchburg public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Franklin County public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Harford County official open opportunities: checked; last attempt 2026-10-24T22:32:05Z
-- Caroline County public bid board: checked; last attempt 2026-10-24T22:32:05Z
-- Fredericksburg public bid board: checked; last attempt 2026-10-24T22:32:05Z
+- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:40:02Z
+- Warrenton public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Frederick County public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Lynchburg public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Franklin County public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Harford County official open opportunities: checked; last attempt 2026-10-24T22:40:02Z
+- Caroline County public bid board: checked; last attempt 2026-10-24T22:40:02Z
+- Fredericksburg public bid board: degraded; last attempt 2026-10-24T22:40:02Z
+Attention: fredericksburg-bids: source HTTP failure 403
 
 ## Project signals
 

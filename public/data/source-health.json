@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-24T22:32:05Z",
-  "evaluatedAt": "2026-10-24T22:33:16Z",
-  "state": "operational",
+  "generatedAt": "2026-10-24T22:40:02Z",
+  "evaluatedAt": "2026-10-24T22:40:12Z",
+  "state": "degraded",
   "datasetFresh": true,
   "counts": {
     "records": 23,
     "verifiedOpen": 6,
     "fundingSignals": 10,
     "automaticSources": 13,
-    "workingAutomaticSources": 13,
+    "workingAutomaticSources": 12,
     "manualSources": 3
   },
   "jurisdictions": {
@@ -33,7 +33,7 @@
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
       "lastSuccess": null,
       "mode": null
     },
@@ -41,7 +41,7 @@
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
       "lastSuccess": null,
       "mode": null
     },
@@ -49,7 +49,7 @@
       "id": "sam",
       "name": "SAM.gov opportunities API",
       "status": "verified",
-      "lastChecked": "2026-10-24T22:09:19Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
       "lastSuccess": null,
       "mode": null
     },
@@ -57,16 +57,16 @@
       "id": "annapolis-bids",
       "name": "Annapolis public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "danville-bids",
       "name": "Danville public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
@@ -97,63 +97,63 @@
       "id": "dc-ocp",
       "name": "D.C. OCP public solicitations",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "dc-api"
     },
     {
       "id": "warrenton-bids",
       "name": "Warrenton public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "frederick-bids",
       "name": "Frederick County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "lynchburg-bids",
       "name": "Lynchburg public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "franklin-bids",
       "name": "Franklin County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "harford-listing",
       "name": "Harford County official open opportunities",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "harford-listing"
     },
     {
       "id": "caroline-bids",
       "name": "Caroline County public bid board",
       "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
-      "lastSuccess": "2026-10-24T22:32:05Z",
+      "lastChecked": "2026-10-24T22:40:02Z",
+      "lastSuccess": "2026-10-24T22:40:02Z",
       "mode": "civic"
     },
     {
       "id": "fredericksburg-bids",
       "name": "Fredericksburg public bid board",
-      "status": "checked",
-      "lastChecked": "2026-10-24T22:32:05Z",
+      "status": "degraded",
+      "lastChecked": "2026-10-24T22:40:02Z",
       "lastSuccess": "2026-10-24T22:32:05Z",
       "mode": "civic"
     }
@@ -161,9 +161,9 @@
   "history": [
     {
       "date": "2026-10-24",
-      "state": "operational",
+      "state": "degraded",
       "verifiedOpen": 6,
-      "workingAutomaticSources": 13
+      "workingAutomaticSources": 12
     }
   ]
 }
