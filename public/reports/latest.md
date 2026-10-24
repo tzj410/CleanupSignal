@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-23T21:43:04Z
+Generated: 2026-10-24T00:43:09Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,18 +8,18 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-23T21:43:04Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-23T21:43:04Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-24T00:43:09Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-24T00:43:09Z
 - SAM.gov opportunities API: degraded; checked 2026-10-23T18:59:44Z
 
 ## Latest refresh
 
-Compared with: 2026-10-23T21:38:35Z
+Compared with: 2026-10-23T21:43:04Z
 0 new records; 0 materially changed records.
 No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-10-23T21:43:04Z
-- Danville public bid board: checked; last attempt 2026-10-23T21:43:04Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T00:43:09Z
+- Danville public bid board: checked; last attempt 2026-10-24T00:43:09Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
