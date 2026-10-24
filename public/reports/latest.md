@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-24T22:05:50Z
+Generated: 2026-10-24T22:09:19Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,27 +8,26 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:00:05Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:00:05Z
-- SAM.gov opportunities API: degraded; checked 2026-10-23T18:59:44Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-24T22:09:19Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-24T22:09:19Z
+- SAM.gov opportunities API: verified; checked 2026-10-24T22:09:19Z
 
 ## Latest refresh
 
-Compared with: 2026-10-24T22:00:05Z
-0 new records; 5 materially changed records.
-No new records discovered in this refresh.
+Compared with: 2026-10-24T22:05:50Z
+2 new records; 0 materially changed records.
+New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-10-24T22:05:50Z
-- Danville public bid board: checked; last attempt 2026-10-24T22:05:50Z
+- Annapolis public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- Danville public bid board: checked; last attempt 2026-10-24T22:09:19Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:05:50Z
-- Warrenton public bid board: checked; last attempt 2026-10-24T22:05:50Z
-- Frederick County public bid board: checked; last attempt 2026-10-24T22:05:50Z
-- Lynchburg public bid board: checked; last attempt 2026-10-24T22:05:50Z
-- Franklin County public bid board: checked; last attempt 2026-10-24T22:05:50Z
-Attention: sam: SAM.gov rate limit reached. Requests are paused until 2026-10-24T18:59:44Z. Prior records are retained; authentication is not yet verified.
+- D.C. OCP public solicitations: checked; last attempt 2026-10-24T22:09:19Z
+- Warrenton public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- Frederick County public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- Lynchburg public bid board: checked; last attempt 2026-10-24T22:09:19Z
+- Franklin County public bid board: checked; last attempt 2026-10-24T22:09:19Z
 
 ## Project signals
 
@@ -375,4 +374,34 @@ Next step: Review the official scope, eligibility, site visits, attachments and 
 Source: https://www.lynchburgva.gov/bids.aspx?bidID=249
 
 Status note: Review all official documents and amendments before responding.
+
+
+### Environmental, Health and Safety (EHS) Services
+
+DC · Closed or deadline passed · verified
+
+Federal environmental notice. Review the official scope, amendments, eligibility and attachments.
+
+Published selection amount: Not stated · Bid deadline: 2026-08-03T17:00:00-04:00
+
+Next step: Confirm all dates, requirements and current notice status on SAM.gov before acting.
+
+Source: https://sam.gov/opp/3f2f09ace746415db8c96a738fde61f4/view
+
+Status note: None
+
+
+### Decontamination, Demilitarization and Demolition Technical and Operational Support
+
+MD · Closed or deadline passed · verified
+
+Federal environmental notice. Review the official scope, amendments, eligibility and attachments.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-19T15:00:00-04:00
+
+Next step: Confirm all dates, requirements and current notice status on SAM.gov before acting.
+
+Source: https://sam.gov/opp/95182c8575e849afbb5c5375383bf49b/view
+
+Status note: None
 
