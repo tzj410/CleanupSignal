@@ -20,8 +20,9 @@ def enrich_details(record,raw='',description='',market=''):
   if not (re.search(r'\.pdf(?:$|\?)|/DocumentCenter/(?:View|Home)|/DocumentView\.aspx',p.path+'?'+p.query,re.I) or re.search(r'addend|attachment|bid document|specification',title,re.I)):continue
   if url in seen:continue
   seen.add(url);docs.append({'title':title[:200] or 'Official document','url':url})
+ description=re.sub(r'For security reasons, you must enable JavaScript to view this E-mail address\.', '',description,flags=re.I)
  description=re.sub(r'\s+',' ',description).strip()[:12000]
- sentences=re.split(r'(?<=[.!?])\s+|(?=Addendum:)',description)
+ sentences=re.split(r'(?<=[.!?])(?<!A\.M\.)(?<!P\.M\.)(?<!a\.m\.)(?<!p\.m\.)\s+|(?=Addendum:)',description)
  amendments=[s[:1200] for s in sentences if re.search(r'\b(addend\w*|amendment\w*)\b',s,re.I)][:8]
  requirements=[s[:1200] for s in sentences if re.search(r'\b(must|mandatory|required|eligib\w*|license\w*|certif\w*|set.aside|small business|bond\w*)\b',s,re.I)][:8]
  if market:requirements.insert(0,'Official market designation: '+str(market)[:300]+'. Review the portal for eligibility conditions.')
