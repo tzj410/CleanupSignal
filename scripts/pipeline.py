@@ -223,12 +223,14 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
 
 def validate(data):
     assert isinstance(data['signals'],list) and data['sources'], 'missing dataset'
-    seen=set()
+    seen=set();record_ids={r['id'] for r in data['signals']}
     for signal in data['signals']:
         for key in ['id','title','agency','jurisdiction','locality','category','status','amount','deadline','announcedAt','sourceUrl','sourceName','summary','nextStep','verifiedAt']:
             assert key in signal, 'missing '+key
         assert signal['id'] not in seen, 'duplicate id'
         seen.add(signal['id'])
+        if signal.get('duplicateOf'):assert signal['duplicateOf'] in record_ids and signal['duplicateOf']!=signal['id'], 'invalid duplicate reference'
+        if 'serviceTags' in signal:assert isinstance(signal['serviceTags'],list) and all(isinstance(t,str) and len(t)<80 for t in signal['serviceTags']), 'invalid service tags'
         assert signal['jurisdiction'] in STATES, 'invalid region'
         assert signal['status'] in {'funding-signal','open-solicitation','closed','unconfirmed'}, 'invalid status'
         host = urlparse(signal['sourceUrl']).hostname or ''

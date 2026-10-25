@@ -66,3 +66,13 @@ class AuthorityIdentityTests(unittest.TestCase):
  def test_a_city_and_county_with_the_same_name_and_bid_number_are_not_collapsed(self):
   one=bid();two=copy.deepcopy(one);two.update(id='two',agency='County of Example',sourceUrl='https://county.example.gov/bids.aspx?bidID=2')
   data=group_duplicates({'signals':[one,two]});self.assertEqual(data['operations']['duplicateGroups'],[])
+
+class AmendmentDeadlineTests(unittest.TestCase):
+ def test_conflicting_explicit_amendment_pauses_open_status_without_overwriting_date(self):
+  r=bid();r['documents']=[{'title':'Addendum 2','url':'https://example.gov/addendum.pdf'}]
+  result=analyze_documents({'signals':[]},{'signals':[r]},STAMP,lambda u:b'PDF',lambda raw:('The bid closing date is extended to November 20, 2026 at 3:00 PM.',1))
+  row=result['signals'][0];self.assertEqual(row['status'],'unconfirmed');self.assertEqual(row['deadline'],r['deadline']);self.assertTrue(row['documentDeadlineReview'])
+ def test_amendment_matching_the_listing_does_not_pause_it(self):
+  from document_analysis import amendment_deadline_review
+  docs=[{'status':'extracted','title':'Addendum 1','url':'https://example.gov/doc.pdf','excerpts':{'deadlineReferences':[{'page':1,'text':'The bid closing date is extended to November 19, 2026 at 3:00 PM.'}]}}]
+  self.assertEqual(amendment_deadline_review(docs,'2026-11-19T15:00:00-05:00'),[])

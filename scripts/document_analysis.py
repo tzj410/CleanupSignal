@@ -51,6 +51,33 @@ def excerpts(value):
     if not any(x['page']==page and x['text']==nearby for x in results[name]):results[name].append({'page':page,'text':nearby})
  return results
 
+def amendment_deadline_review(analyses,deadline):
+ """Explicit amendment statements can pause a listing, never invent a new deadline."""
+ from zoneinfo import ZoneInfo
+ findings=[]
+ try:current=dt.datetime.fromisoformat(str(deadline).replace('Z','+00:00')).astimezone(ZoneInfo('America/New_York'))
+ except ValueError:current=None
+ statement=r'\b(?:bid|proposal)s?\b.{0,55}?(?:due|closing|opening|receipt).{0,65}?\b(?:extended|changed|rescheduled|revised)\b.{0,25}?\bto\b(.{0,180})'
+ for doc in analyses:
+  if doc.get('status')!='extracted' or not re.search(r'addend|amend',doc.get('title',''),re.I):continue
+  for item in doc.get('excerpts',{}).get('deadlineReferences',[]):
+   m=re.search(statement,item['text'],re.I)
+   if not m:continue
+   target=m[1];date_match=re.search(r'([A-Za-z]+\s+\d{1,2},?\s+\d{4}|\d{1,2}/\d{1,2}/\d{4})',target)
+   parsed=None;kind='unparsed'
+   if date_match:
+    for fmt in ['%B %d %Y','%b %d %Y','%m/%d/%Y']:
+     try:parsed=dt.datetime.strptime(date_match[1].replace(',',''),fmt);kind='date';break
+     except ValueError:pass
+    time_match=re.search(r'\b(\d{1,2}:\d{2})\s*([AP])\.?M\.?',target,re.I)
+    if parsed and time_match:
+     try:
+      clock=dt.datetime.strptime(time_match[1]+' '+time_match[2].upper()+'M','%I:%M %p');parsed=parsed.replace(hour=clock.hour,minute=clock.minute,tzinfo=ZoneInfo('America/New_York'));kind='datetime'
+     except ValueError:pass
+   agrees=bool(current and parsed and (current==parsed if kind=='datetime' else current.date()==parsed.date()))
+   if not agrees:findings.append({'url':doc['url'],'page':item['page'],'text':item['text'],'statedValue':parsed.isoformat() if parsed else 'Requires manual interpretation'})
+ return findings[:3]
+
 def selected_docs(record):
  docs=record.get('documents',[]);addenda=[d for d in docs if re.search(r'addend|amendment',d.get('title',''),re.I)]
  def num(d):
@@ -102,6 +129,9 @@ def analyze_documents(previous,data,stamp,fetch_pdf=read_pdf,extract=extract_pdf
     analyses.append(result)
     before_hash=(before.get('sha256') or before.get('lastKnownSha256')) if before else None
     if before_hash and result.get('status')=='extracted' and before_hash!=result.get('sha256'):changes.append({'kind':'document-content-changed','title':doc.get('title'),'url':doc['url'],'textChanged':(before.get('textSha256') or before.get('lastKnownTextSha256'))!=result.get('textSha256')})
+   review=amendment_deadline_review(analyses,row.get('deadline'))
+   if review:
+    row.update(documentDeadlineReview=review,status='unconfirmed',verification='needs-review',statusNote='An official amendment contains changed deadline language that does not agree with the listing, or cannot be safely interpreted. Review the linked amendment before bidding.')
    row['documentAnalysis']=analyses;read=sum(d.get('status')=='extracted' for d in analyses)
    row['documentCoverage']={'linked':len(row.get('documents',[])),'selected':len(plans[row['id']]),'extracted':read,'maximumPagesPerPDF':LIMIT_PAGES,'checkedAt':stamp}
    row['documentReview']=f'{read} of {len(row.get("documents",[]))} linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.'
@@ -113,6 +143,6 @@ def analyze_documents(previous,data,stamp,fetch_pdf=read_pdf,extract=extract_pdf
   row['documentChanges']=changes;row['changeHistory']=history[-12:]
   # Match on source evidence, not retrieval timestamps, so routine scans do not trigger alerts.
   material={k:row.get(k) for k in ['title','summary','deadline','status','officialDescription','documents','amendmentNotes','requirementNotes','prebidMeeting','prebidAttendance']}
-  material['documentText']={d['url']:d.get('textSha256') for d in row.get('documentAnalysis',[]) if d.get('status')=='extracted'}
+  material['documentText']={d['url']:(d.get('textSha256') or d.get('lastKnownTextSha256')) for d in row.get('documentAnalysis',[]) if d.get('textSha256') or d.get('lastKnownTextSha256')}
   row['evidenceFingerprint']=hashlib.sha256(json.dumps(material,sort_keys=True).encode()).hexdigest()
  return data
