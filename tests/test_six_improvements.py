@@ -76,3 +76,13 @@ class AmendmentDeadlineTests(unittest.TestCase):
   from document_analysis import amendment_deadline_review
   docs=[{'status':'extracted','title':'Addendum 1','url':'https://example.gov/doc.pdf','excerpts':{'deadlineReferences':[{'page':1,'text':'The bid closing date is extended to November 19, 2026 at 3:00 PM.'}]}}]
   self.assertEqual(amendment_deadline_review(docs,'2026-11-19T15:00:00-05:00'),[])
+
+class DocumentEvidenceSelectionTests(unittest.TestCase):
+ def test_actual_work_scope_ranks_above_generic_scope_cross_references(self):
+  value='The scope of work is attached.\n\nSee scope of work for details.\n\nScope of work applies.\fPROJECT\nThe work shall include removal of existing lead paint.\nContainment and safe disposal are required.'
+  selected=excerpts(value)['scope'];self.assertEqual(selected[0]['page'],2);self.assertIn('removal of existing lead paint',selected[0]['text'])
+
+class ScopeFormNoiseTests(unittest.TestCase):
+ def test_reference_forms_and_table_of_contents_do_not_outrank_work_instructions(self):
+  value='Project Description, Location and Year Completed\n\nSCOPE OF WORK....................4\fSCOPE OF WORK\nThe Contractor shall furnish all labor and containment.\nThe project includes lead paint removal.'
+  result=excerpts(value)['scope'];self.assertEqual(result[0]['page'],2);self.assertIn('lead paint removal',result[0]['text']);self.assertTrue(all('........' not in e['text'] for e in result))

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T04:15:29Z",
+  "generatedAt": "2026-10-25T04:30:04Z",
   "sources": [
     {
       "id": "epa-md-2026",
@@ -254,7 +254,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -305,7 +305,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -356,7 +356,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -1117,7 +1117,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
       "documentChanges": [],
@@ -1162,7 +1162,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
       "documentChanges": [],
@@ -1256,8 +1256,9 @@
         {
           "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
           "title": "RFQ 715024 (PDF)",
-          "checkedAt": "2026-10-25T04:15:29Z",
+          "checkedAt": "2026-10-25T04:30:04Z",
           "status": "extracted",
+          "analysisVersion": 2,
           "sha256": "5d69257f5d1ca1ab4dbb9627209b6cbf6eebba38c05f9b175446daf15a039f81",
           "textSha256": "26b95abddb87c49b108d8fa8368800679578c46ed360f0cb9f1751bf82070362",
           "pageCount": 35,
@@ -1288,14 +1289,6 @@
             ],
             "eligibility": [
               {
-                "page": 3,
-                "text": "3.0 PREVAILING WAGE RATES ............................................................................................................... 4 4.0 BIDDER MINIMUM QUALIFICATIONS ................................................................................................ 6 5.0 SPECIFICATIONS ................................................................................................................................. 7 6.0 GENERAL CONDITIONS OF THE CONSTRUCTION CONTRACT ....................................................8 7.0 DISCREPANCIES ................................................................................................................................. 8"
-              },
-              {
-                "page": 6,
-                "text": "4.0 BIDDER MINIMUM QUALIFICATIONS Bidders must demonstrate that they have the resources and capability to provide the materials and services as described herein. All Bidders must submit the documentation and information indicated below with their bid. Failure to provide any"
-              },
-              {
                 "page": 6,
                 "text": "• Registered Commonwealth of Virginia Contractor: Class A. Include a copy of the Class A Contractors license in your bid. 4.4 Verification of Bonding Capability. Bidder shall include in their bid a letter from a surety or insurance company (with a Best’s Financial Strength Rating of A- or better and Financial Size Category VII or higher by A.M. Best Co.)"
               },
@@ -1306,16 +1299,20 @@
               {
                 "page": 11,
                 "text": "become binding on the parties upon the execution of the Contract: A. A performance bond satisfactory to the County, executed by a surety company authorized to do business in Virginia with a A.M. Best’s Financial Strength Rating of at least A- or better and in a financial size of category VII or higher, or otherwise secured in a manner satisfactory to the County, for the faithful"
+              },
+              {
+                "page": 12,
+                "text": "ALTERNATIVE FORMS In lieu of a payment or performance bond, the Contractor may furnish a certified check or cash escrow in the face amount required for the bond. If approved by the County Attorney, a Contractor may furnish a personal bond, property bond, or bank or savings and loan association's letter of credit on certain designated funds in the face"
+              },
+              {
+                "page": 12,
+                "text": "savings and loan association's letter of credit on certain designated funds in the face amount required for the payment or performance bond. Approval shall be granted only upon the determination that the alternative form of security proffered affords the same protection to the County equivalent to the corporate surety bond."
               }
             ],
             "meetings": [
               {
                 "page": 1,
                 "text": "transfer tool. B. Pre-Bid Conference An optional Pre-Bid Conference will be held virtually on October 6, 2026, at 11:00 a.m. to provide clarification on the Project requirements and expectations outlined in this solicitation."
-              },
-              {
-                "page": 1,
-                "text": "B. Pre-Bid Conference An optional Pre-Bid Conference will be held virtually on October 6, 2026, at 11:00 a.m. to provide clarification on the Project requirements and expectations outlined in this solicitation. See the Microsoft Teams log in information provided below. Bidders may not"
               },
               {
                 "page": 1,
@@ -1328,28 +1325,32 @@
               {
                 "page": 19,
                 "text": "Contracting Officer at Beth.Cioni@loudoun.gov with the subject line, “Register for IFB RFQ 715024 Site Visit.” Please include the name of the firm, name(s) of representative(s) who will attend, and contact information. During the visit, County staff may be able to offer clarification on solicitation requirements and address general questions related to the drawings,"
+              },
+              {
+                "page": 19,
+                "text": "thoroughly and consider all relevant factors when preparing their bids. Please note: Any information provided during the site visit is for informational purposes only and shall not be binding. Oral statements or instructions shall not constitute an amendment to the solicitation. Material questions or clarifications that may affect the scope, pricing, or interpretation of the"
               }
             ],
             "submission": [
               {
-                "page": 4,
-                "text": "It is the County's intent that this IFB permits competition. It shall be the Bidder's (i.e. any entity submitting a bid in response to this IFB) responsibility to advise the Purchasing Agent in writing if any language, requirement, specification, etc., or any combination thereof, inadvertently restricts or limits the requirements stated in this IFB to a single source. Such notification must be received by the Purchasing Agent"
-              },
-              {
-                "page": 7,
-                "text": "A. Minimum Experience Requirements The General Contractor submitting a bid must demonstrate successful experience constructing pond, wetland, or stormwater management projects of similar size, scope, and complexity to the Work described in this IFB. Demonstration of this experience shall be by means of"
-              },
-              {
-                "page": 14,
-                "text": "22.1 Preparation and Submission of Bids A. Before submitting a bid, read the ENTIRE solicitation including the Contract Terms and Conditions. Failure to read any part of this solicitation will not relieve a Bidder of the Contractual obligations. B. Pricing must be submitted on IFB Pricing Page only. Include other"
-              },
-              {
-                "page": 14,
-                "text": "electronic response to this solicitation as provided in the instructions below. If the County receives both an online electronic submission and a physical (hard copy) submission for the same solicitation, then the online electronic bid shall take precedence over the physical (hard copy) submission, unless the Bidder specifically states otherwise in"
-              },
-              {
                 "page": 14,
                 "text": "F. Instructions for Submitting a Physical (Hard Copy) Bids 1. All physical (hard copy) bids must be submitted to the Division of Procurement in a sealed container. The face of the sealed container shall indicate the IFB number, time and date of opening, the title of the IFB, the name of the firm, and the firm’s"
+              },
+              {
+                "page": 14,
+                "text": "complete return address. 2. Physical (Hard Copy) bids may be submitted via one of the following options:  US Mail to:"
+              },
+              {
+                "page": 15,
+                "text": "UPS/FedEx should allow at least an additional twenty-four (24) hours in the delivery process to ensure bids are received on time. Overnight delivery does not guarantee that the bid will be delivered to the appropriate location prior to the Acceptance Date and Time."
+              },
+              {
+                "page": 15,
+                "text": "https://ebsprdext.loudoun.gov/OA_HTML/AppsLocalLogin.jsp. Faxed and/or e-mailed bids will not be accepted. 2. Registration and access to iSupplier is free. iSupplier registration is MANDATORY to submit an online electronic response. To learn more and register, please visit"
+              },
+              {
+                "page": 17,
+                "text": "H. Bids must be received by the Division of Procurement prior to 4:00 p.m., Eastern Time on the date specified on the cover of the IFB. Time can be verified by visiting https://www.time.gov. Requests for extensions of this time and date will not be granted, unless deemed to be in the"
               }
             ],
             "deadlineReferences": [
@@ -1370,8 +1371,8 @@
                 "text": "are received by 4:00 p.m. on October 14, 2026. It is the responsibility of all Bidders to ensure that they have received all Addendums and to include signed copies with their bid. Addendums can be downloaded from www.loudoun.gov/procurement. A. Changes to this solicitation that do not affect the scope, price, timing,"
               },
               {
-                "page": 19,
-                "text": "solicitation must be submitted in writing to the Contracting Officer by the deadline specified in Section 22.2 herein. Only written addenda issued by the County shall modify, interpret, or clarify the solicitation. Questions received after the deadline will not be considered unless the County, in its sole discretion, determines that a response is in its best interest. It is therefore in"
+                "page": 20,
+                "text": "corporate document authorizing him/her to sign be submitted with bid. 22.9 Withdrawal of Construction Contract Bid Due to Error A Bidder for a construction Contract may withdraw its bid from consideration if the price bid was substantially lower than the other bids due solely to a mistake therein, provided the bid was submitted in good faith, and the mistake was a"
               }
             ]
           }
@@ -1379,8 +1380,9 @@
         {
           "url": "https://www.loudoun.gov/DocumentCenter/View/222785",
           "title": "Addendum 1 (PDF)",
-          "checkedAt": "2026-10-25T04:15:29Z",
+          "checkedAt": "2026-10-25T04:30:04Z",
           "status": "extracted",
+          "analysisVersion": 2,
           "sha256": "124a3d8283cb5005f26f2ab0ab541ccc7a30307622ff0dde5f0debfe12765091",
           "textSha256": "509c88207a6cdf52cfab352d3b9b996047ba4341c58fa5453f90d3ca036707c5",
           "pageCount": 7,
@@ -1404,10 +1406,6 @@
                 "text": "Q6. If contractors are unable to attend the scheduled County-led Site Visit, are we allowed to visit site at on our own? Do we need to notify anyone? A6. Yes. Bidders who are unable to attend the County-led site visit may visit the site on their own, and advance notice to the County is not required. There is no public access to the"
               },
               {
-                "page": 2,
-                "text": "visit site at on our own? Do we need to notify anyone? A6. Yes. Bidders who are unable to attend the County-led site visit may visit the site on their own, and advance notice to the County is not required. There is no public access to the County parcel. Bidders must access the site only through the designated laydown area shown on the plans, which is located on private property. Bidders shall not enter any other"
-              },
-              {
                 "page": 7,
                 "text": "demands, actions (regardless of the merits thereof) and damages of whatever nature arising out of or resulting from its site visit and any associated work, including jurisdictional labor disputes or other labor troubles that may occur during the performance of the Work. Site investigation work shall be conducted between 9:00 a.m. to 5:00 p.m., Monday through Friday. The Bidders is responsible for:"
               }
@@ -1422,7 +1420,7 @@
         "selected": 2,
         "extracted": 2,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -1480,7 +1478,7 @@
         {
           "url": "https://www.lynchburgva.gov/DocumentCenter/View/8089",
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS",
-          "checkedAt": "2026-10-25T04:15:29Z",
+          "checkedAt": "2026-10-25T04:30:04Z",
           "status": "needs-review",
           "note": "Document exceeds the 6 MB extraction limit",
           "lastKnownSha256": null,
@@ -1492,7 +1490,7 @@
         "selected": 1,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -1563,8 +1561,9 @@
         {
           "url": "https://www.salemva.gov/DocumentCenter/View/12664",
           "title": "ITB 2027-020 City Hall Fire Escape Painting",
-          "checkedAt": "2026-10-25T04:15:29Z",
+          "checkedAt": "2026-10-25T04:30:04Z",
           "status": "extracted",
+          "analysisVersion": 2,
           "sha256": "06723f1024906bf1ea1f7af53b1038155d667081ce9c9740555e6907167e1712",
           "textSha256": "741540baf63e76aaafe7e1273e1fdb495ec5d1551f1a7fa238e5ed2e9d138dbf",
           "pageCount": 21,
@@ -1573,24 +1572,20 @@
           "excerpts": {
             "scope": [
               {
-                "page": 2,
-                "text": "114 North Broad Street, in accordance with the requirements set forth in this Invitation to Bid (ITB). All work must conform to the Specifications / Scope of Work, Compliance Checklist, and Bid Form, which are attached hereto and incorporated herein. The City of Salem, Virginia, and its officers, employees, and agents shall not be responsible for the premature opening of any bid envelope or package that is not properly sealed and clearly marked in accordance with the"
+                "page": 4,
+                "text": "III. SPECIFICATIONS / SCOPE OF WORK The successful Bidder (the “Contractor”) shall furnish all labor, supervision, materials, equipment, access equipment, containment, testing, transportation, and waste disposal necessary to complete the work described below. The project includes lead-based paint removal and surface preparation"
               },
               {
-                "page": 3,
-                "text": "II. BACKGROUND ............................................................................................................... 4 III. SPECIFICATIONS / SCOPE OF WORK.......................................................................... 4 A. General Requirements ................................................................................................ 4 B. Lead-Based Paint Removal and Surface Preparation ................................................. 5 C. Priming and Painting ................................................................................................... 6"
+                "page": 2,
+                "text": "114 North Broad Street, in accordance with the requirements set forth in this Invitation to Bid (ITB). All work must conform to the Specifications / Scope of Work, Compliance Checklist, and Bid Form, which are attached hereto and incorporated herein. The City of Salem, Virginia, and its officers, employees, and agents shall not be responsible for the premature opening of any bid envelope or package that is not properly sealed and clearly marked in accordance with the"
               },
               {
                 "page": 4,
                 "text": "24153. This Invitation to Bid (ITB) is issued to establish a contract through competitive sealed bidding for the work described in the Specifications / Scope of Work and priced on the Bid Form. The purpose of this ITB is to obtain the best value for the City through competitive pricing from a qualified Contractor that will perform the work safely, in compliance with all applicable lead-based paint regulations, and with minimal disruption to City Hall operations."
               },
               {
-                "page": 4,
-                "text": "bidding for the work described in the Specifications / Scope of Work and priced on the Bid Form. The purpose of this ITB is to obtain the best value for the City through competitive pricing from a qualified Contractor that will perform the work safely, in compliance with all applicable lead-based paint regulations, and with minimal disruption to City Hall operations."
-              },
-              {
-                "page": 4,
-                "text": "III. SPECIFICATIONS / SCOPE OF WORK The successful Bidder (the “Contractor”) shall furnish all labor, supervision, materials, equipment, access equipment, containment, testing, transportation, and waste disposal necessary to complete the work described below. The project includes lead-based paint removal and surface preparation"
+                "page": 19,
+                "text": "Owner / Agency Contact Name, Phone & Project Description, Location & Year Email Completed  1."
               }
             ],
             "eligibility": [
@@ -1611,30 +1606,30 @@
                 "text": "Contractor Licensing: The Contractor shall hold and maintain throughout the contract a valid Virginia contractor license of the appropriate class and specialty in accordance with Title 54.1, Chapter 11 of the Code of Virginia, together with all lead-related licenses and certifications required for the work. Lapse of any required license or certification shall be grounds for termination. Lead-Based Paint Compliance: The Contractor assumes full responsibility for compliance with all"
               },
               {
-                "page": 14,
-                "text": "Chapter 11 of the Code of Virginia, together with all lead-related licenses and certifications required for the work. Lapse of any required license or certification shall be grounds for termination. Lead-Based Paint Compliance: The Contractor assumes full responsibility for compliance with all laws and regulations governing work involving lead-based paint, including worker protection, containment, cleanup, and waste disposal. Any fines, penalties, or cleanup costs resulting from the"
+                "page": 20,
+                "text": "Bidder holds a valid Virginia contractor license of the appropriate class and specialty for the work.  Bidder holds, or will hold prior to commencing work, all lead-related firm"
               }
             ],
             "meetings": [
-              {
-                "page": 1,
-                "text": "Pre-Bid Conference: MANDATORY – Wednesday, October 28, 2026, 10:00 A.M. (Local Time), Salem City Hall, 114 North Broad Street. Registration required by 3:00 P.M., Tuesday, October 27, 2026, by email to bkdenton@salemva.gov (see Section III.A.2)"
-              },
               {
                 "page": 4,
                 "text": "treads, platform, railings, and supports, and the associated exterior door and trim. 2. Mandatory Pre-Bid Meeting and Site Verification. A MANDATORY pre-bid meeting will be held on Wednesday, October 28, 2026, at 10:00 a.m. (local time) at Salem City Hall, 114 North Broad Street, Salem, Virginia 24153, and will include a walk-through of the north and south fire escapes. All interested parties must register for the pre-bid meeting no later"
               },
               {
                 "page": 4,
-                "text": "114 North Broad Street, Salem, Virginia 24153, and will include a walk-through of the north and south fire escapes. All interested parties must register for the pre-bid meeting no later than 3:00 p.m. (local time) on Tuesday, October 27, 2026, by emailing Benjamin Denton at bkdenton@salemva.gov, providing the company name, attendee name(s), telephone number, and email address. Attendance at the pre-bid meeting is a prerequisite for"
-              },
-              {
-                "page": 4,
-                "text": "bkdenton@salemva.gov, providing the company name, attendee name(s), telephone number, and email address. Attendance at the pre-bid meeting is a prerequisite for submitting a bid. Bids will be accepted only from Bidders who were represented at the mandatory pre-bid meeting, as documented on the City’s sign-in sheet; bids from"
-              },
-              {
-                "page": 4,
                 "text": "submitting a bid. Bids will be accepted only from Bidders who were represented at the mandatory pre-bid meeting, as documented on the City’s sign-in sheet; bids from  City of Salem Purchasing Department Page 4"
+              },
+              {
+                "page": 9,
+                "text": "instructions carry no weight; only written addenda are binding. 11. Attendance at the MANDATORY pre-bid meeting on Wednesday, October 28, 2026, at 10:00 a.m. is a prerequisite for submitting a bid. Bidders must register no later than 3:00 p.m. on Tuesday, October 27, 2026, by emailing bkdenton@salemva.gov. See Section III.A.2."
+              },
+              {
+                "page": 21,
+                "text": "Bidder was represented at the mandatory pre-bid meeting held Wednesday, October 28, 2026, at 10:00 a.m. at Salem City Hall.  Work will be sequenced and coordinated with repairs by others as"
+              },
+              {
+                "page": 1,
+                "text": "Pre-Bid Conference: MANDATORY – Wednesday, October 28, 2026, 10:00 A.M. (Local Time), Salem City Hall, 114 North Broad Street. Registration required by 3:00 P.M., Tuesday, October 27, 2026, by email to bkdenton@salemva.gov (see Section III.A.2)"
               }
             ],
             "submission": [
@@ -1647,23 +1642,19 @@
                 "text": "I. PURPOSE The City of Salem, Virginia, is soliciting sealed bids from qualified, properly licensed Contractors to safely remove the existing lead-based paint from, and to prime and repaint, the exterior steel fire escapes and associated doors and trim at Salem City Hall, 114 North Broad Street, Salem, Virginia 24153. This Invitation to Bid (ITB) is issued to establish a contract through competitive sealed"
               },
               {
-                "page": 4,
-                "text": "number, and email address. Attendance at the pre-bid meeting is a prerequisite for submitting a bid. Bids will be accepted only from Bidders who were represented at the mandatory pre-bid meeting, as documented on the City’s sign-in sheet; bids from  City of Salem Purchasing Department Page 4"
-              },
-              {
-                "page": 5,
-                "text": "binding unless confirmed by written addendum. Bidders are responsible for examining the site and verifying all specifications, dimensions, and conditions before submitting a bid. No additional compensation will be allowed for conditions that could have been determined by examination of the site. No additional site visits will be scheduled. All questions regarding this ITB must be submitted in writing to the Purchasing Department as set forth in Section"
+                "page": 9,
+                "text": "A. General Requirements 1. Bids must be received by hand delivery, mail, or electronic submission through eVA at www.eva.virginia.gov no later than 3:00 p.m. (local time) on Thursday, November 19, 2026. Electronic submission through eVA is preferred. 2. All Bids received will be publicly opened and read aloud for the information of Bidders and"
               },
               {
                 "page": 9,
-                "text": "A. General Requirements 1. Bids must be received by hand delivery, mail, or electronic submission through eVA at www.eva.virginia.gov no later than 3:00 p.m. (local time) on Thursday, November 19, 2026. Electronic submission through eVA is preferred. 2. All Bids received will be publicly opened and read aloud for the information of Bidders and"
+                "text": "issues, or internet outages. Timely submission is the Bidder’s sole responsibility. 6. Bids submitted via facsimile or email will not be accepted. 7. If submitting a paper response, bids must be signed in ink by an authorized officer. Any erasures or corrections must be initialed in ink. 8. Late bids will not be considered and will be marked “Late” and retained unopened."
+              },
+              {
+                "page": 11,
+                "text": "Upon award, the City will notify all Bidders in writing. A notice of award will be posted on the City of Salem Purchasing website at https://www.salemva.gov/Bids.aspx. All materials submitted become the property of the City and are subject to public inspection under the Virginia Freedom of Information Act. If your bid contains proprietary information, note it on Attachment A – Proprietary Information Form, in accordance with §2.2-4342 of the Code of Virginia."
               }
             ],
             "deadlineReferences": [
-              {
-                "page": 1,
-                "text": "Questions Deadline: Wednesday, November 4, 2026, 5:00 P.M. (Local Time)  Bids Due: Thursday, November 19, 2026, 3:00 P.M. (Local Time)"
-              },
               {
                 "page": 1,
                 "text": "Bids Due: Thursday, November 19, 2026, 3:00 P.M. (Local Time)  Public Bid Opening: Thursday, November 19, 2026, 3:05 P.M. (Local Time)"
@@ -1671,10 +1662,6 @@
               {
                 "page": 9,
                 "text": "A. General Requirements 1. Bids must be received by hand delivery, mail, or electronic submission through eVA at www.eva.virginia.gov no later than 3:00 p.m. (local time) on Thursday, November 19, 2026. Electronic submission through eVA is preferred. 2. All Bids received will be publicly opened and read aloud for the information of Bidders and"
-              },
-              {
-                "page": 9,
-                "text": "Electronic submission through eVA is preferred. 2. All Bids received will be publicly opened and read aloud for the information of Bidders and other interested parties at 3:05 p.m. (local time) on Thursday, November 19, 2026, in City Hall Council Chambers, 114 North Broad Street, Salem, Virginia 24153. Interested parties may attend in person or virtually. A link to view the bid opening online may be requested by"
               }
             ]
           }
@@ -1685,7 +1672,7 @@
         "selected": 1,
         "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-25T04:15:29Z"
+        "checkedAt": "2026-10-25T04:30:04Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -1955,7 +1942,7 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-10-25T04:15:29Z",
+    "generatedAt": "2026-10-25T04:30:04Z",
     "comparison": {
       "comparedTo": "2026-10-25T01:13:19Z",
       "newIds": [

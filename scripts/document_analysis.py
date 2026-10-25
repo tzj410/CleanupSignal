@@ -31,24 +31,37 @@ def extract_pdf(raw):
  except (subprocess.SubprocessError,OSError):raise RuntimeError('PDF extraction failed or timed out') from None
 
 PATTERNS={
- 'scope':r'\b(scope of work|work includes|work shall|project consists|services include|project description|purpose of this)\b',
+ 'scope':r'\b(scope of work|work includes|work shall|project consists|project includes|services include|shall furnish|project description|purpose of this)\b',
  'eligibility':r'\b(must hold|required license|contractor.{0,25}(license|certification)|bid bond|performance bond|qualifications|eligible bidders|set.aside)\b',
  'meetings':r'\b(pre.bid|pre.proposal|site (visit|tour)|mandatory meeting)\b',
  'submission':r'\b(submit.{0,35}(bid|proposal)|sealed bids|bids.{0,45}(received|submitted)|electronic submission|faxed|emailed bids)\b',
  'deadlineReferences':r'\b(deadline|bid.{0,30}(due|received)|closing date|extended to|date.{0,20}extended)\b'}
 
 def excerpts(value):
- results={k:[] for k in PATTERNS}
+ candidates={k:[] for k in PATTERNS}
+ strong={
+  'scope':r'\b(work (?:shall )?include|work consists|services include|project consists|project includes|shall furnish)\b',
+  'eligibility':r'\b(must hold|contractor.{0,25}(license|certification)|bid bond|performance bond)\b',
+  'meetings':r'\b(mandatory pre.bid|pre.bid meeting.{0,25}(held|scheduled)|site tour.{0,25}(held|scheduled))\b',
+  'submission':r'\b(sealed bids|bids.{0,35}(received|submitted)|faxed|emailed bids)\b',
+  'deadlineReferences':r'\b(closing date|bid.{0,35}(due|received|extended)|extended to)\b'}
  for page,part in enumerate(value.split('\f'),1):
-  # Keep nearby wrapped lines together and retain original page evidence.
   lines=part.splitlines()
   for i,line in enumerate(lines):
    clean=re.sub(r'\s+',' ',line).strip()
-   if not clean:continue
+   if not clean or re.search(r'\.{4,}',clean):continue
    for name,pattern in PATTERNS.items():
-    if len(results[name])>=5 or not re.search(pattern,clean,re.I):continue
-    nearby=' '.join(re.sub(r'\s+',' ',x).strip() for x in lines[max(0,i-1):i+4]).strip()[:900]
-    if not any(x['page']==page and x['text']==nearby for x in results[name]):results[name].append({'page':page,'text':nearby})
+    if len(candidates[name])>=100 or not re.search(pattern,clean,re.I):continue
+    nearby=' '.join(re.sub(r'\s+',' ',x).strip() for x in lines[max(0,i-1):i+4] if '....' not in x).strip()[:900]
+    candidates[name].append({'page':page,'text':nearby,'line':i,'score':0 if re.search(strong[name],nearby if name=='scope' else clean,re.I) else 1})
+ results={k:[] for k in PATTERNS}
+ for name,items in candidates.items():
+  chosen=[]
+  for item in sorted(items,key=lambda q:(q['score'],q['page'],q['line'])):
+   if any(q['page']==item['page'] and abs(q['line']-item['line'])<=3 for q in chosen):continue
+   chosen.append(item)
+   if len(chosen)==5:break
+  results[name]=[{k:q[k] for k in ['page','text']} for q in chosen]
  return results
 
 def amendment_deadline_review(analyses,deadline):
@@ -102,13 +115,13 @@ def analyze_documents(previous,data,stamp,fetch_pdf=read_pdf,extract=extract_pdf
    p=urlparse(doc['url'])
    if p.scheme!='https' or p.hostname not in approved or p.username or p.password:continue
    prior=cache.get(doc['url']);fresh=False
-   try:fresh=bool(prior and now-dt.datetime.fromisoformat(prior['checkedAt'].replace('Z','+00:00'))<dt.timedelta(minutes=50))
+   try:fresh=bool(prior and prior.get('analysisVersion')==2 and now-dt.datetime.fromisoformat(prior['checkedAt'].replace('Z','+00:00'))<dt.timedelta(minutes=50))
    except (KeyError,ValueError):pass
    if not fresh and doc['url'] not in jobs and len(jobs)<LIMIT_REQUESTS:jobs[doc['url']]=doc
  def run(item):
   url,doc=item;result={'url':url,'title':doc.get('title','Official PDF'),'checkedAt':stamp}
   try:
-   raw=fetch_pdf(url);value,pages=extract(raw);result.update(status='extracted',sha256=hashlib.sha256(raw).hexdigest(),textSha256=hashlib.sha256(value.encode()).hexdigest(),pageCount=pages,pagesRead=min(pages or LIMIT_PAGES,LIMIT_PAGES),truncated=bool(pages and pages>LIMIT_PAGES) or len(value)>=250000,excerpts=excerpts(value))
+   raw=fetch_pdf(url);value,pages=extract(raw);result.update(status='extracted',analysisVersion=2,sha256=hashlib.sha256(raw).hexdigest(),textSha256=hashlib.sha256(value.encode()).hexdigest(),pageCount=pages,pagesRead=min(pages or LIMIT_PAGES,LIMIT_PAGES),truncated=bool(pages and pages>LIMIT_PAGES) or len(value)>=250000,excerpts=excerpts(value))
   except (ValueError,RuntimeError) as e:result.update(status='needs-review',note=str(e))
   return url,result
  with ThreadPoolExecutor(max_workers=3) as pool:current=dict(pool.map(run,jobs.items()))
