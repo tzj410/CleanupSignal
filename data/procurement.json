@@ -23,7 +23,12 @@
     "url": "https://emma.maryland.gov/",
     "jurisdiction": "MD",
     "mode": "manual",
-    "note": "Official statewide procurement portal. Automated ingestion is not connected. Search and review current solicitations on the portal."
+    "note": "Official statewide procurement portal. Automated ingestion is not connected. Search and review current solicitations on the portal. County-owned feeds and boards add partial coverage; full statewide access remains unresolved.",
+    "agencyMirrors": [
+      "montgomery-open-data",
+      "laplata-bids",
+      "qac-bids"
+    ]
   },
   {
     "id": "eva",
@@ -31,7 +36,11 @@
     "url": "https://eva.virginia.gov/",
     "jurisdiction": "VA",
     "mode": "manual",
-    "note": "Official statewide procurement gateway. Automated ingestion is not connected. The Open Data page describes historical procurement data, not a verified live bid feed."
+    "note": "Official statewide procurement gateway. Automated ingestion is not connected. The Open Data page describes historical procurement data, not a verified live bid feed. The approved alternative implemented here is collection from issuer-owned mirrors (UOSA and Salem), not an authenticated statewide scrape.",
+    "agencyMirrors": [
+      "uosa-table",
+      "salem-bids"
+    ]
   },
   {
     "id": "anne-arundel",
@@ -39,7 +48,8 @@
     "url": "https://www.aacounty.org/central-services/purchasing/doing-business-county",
     "jurisdiction": "MD",
     "mode": "manual",
-    "note": "Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected."
+    "note": "Use Bid Opportunities (Harbor) on this county page. Harbor replaced the previous system for solicitations after July 6, 2026. No automated ingestion is connected. Official viewing guide requires Harbor login and MFA; no sanctioned public feed was identified. Municipal sources are not a substitute for county-wide coverage.",
+    "accessGuide": "https://www.aacounty.org/harbor-support/system-help/sourcing-procurement/viewing-active-solicitations"
   },
   {
     "id": "dc-ocp",
@@ -152,5 +162,63 @@
     "mode": "epa-discovery",
     "intervalHours": 24,
     "note": "Daily discovery from the current-year national selection table linked by EPA. Funding selections remain early signals; no open bidding opportunity is inferred."
+  },
+  {
+    "id": "montgomery-open-data",
+    "name": "Montgomery County official active-solicitation feed",
+    "url": "https://data.montgomerycountymd.gov/Government/Solicitations/eeq6-nnwe",
+    "jurisdiction": "MD",
+    "locality": "Montgomery County",
+    "mode": "montgomery-open-data",
+    "note": "Hourly read of the official active-solicitation open-data API. Date-only closing fields never establish verified open-bid status."
+  },
+  {
+    "id": "uosa-table",
+    "name": "Upper Occoquan Service Authority solicitations",
+    "url": "https://uosa.org/current-solicitations/",
+    "jurisdiction": "VA",
+    "locality": "Northern Virginia",
+    "mode": "uosa-table",
+    "note": "Hourly public authority mirror of its eVA solicitations. Only the current table is scanned; expired dates remain closed."
+  },
+  {
+    "id": "salem-bids",
+    "name": "Salem public bid board",
+    "url": "https://www.salemva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Salem",
+    "agency": "City of Salem",
+    "mode": "civic",
+    "note": "Hourly official bid-board scan, with explicit receipt deadlines from source prose when the summary closing field is generic."
+  },
+  {
+    "id": "laplata-bids",
+    "name": "Town of La Plata public bid board",
+    "url": "https://www.townoflaplata.org/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "La Plata",
+    "agency": "Town of La Plata",
+    "mode": "civic",
+    "note": "Hourly town-owned listing scan; this does not replace eMMA coverage."
+  },
+  {
+    "id": "qac-bids",
+    "name": "Queen Anne\u2019s County public bid board",
+    "url": "https://www.qac.org/bids.aspx",
+    "jurisdiction": "MD",
+    "locality": "Queen Anne\u2019s County",
+    "agency": "Queen Anne\u2019s County Government",
+    "mode": "civic",
+    "note": "Hourly official county listing scan; only relevant environmental titles are followed."
+  },
+  {
+    "id": "suffolk-bids",
+    "name": "Suffolk public bid board",
+    "url": "https://www.suffolkva.us/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Suffolk",
+    "agency": "City of Suffolk",
+    "mode": "civic",
+    "note": "Hourly public city board scan; absence of matching notices is not comprehensive city procurement coverage."
   }
 ]

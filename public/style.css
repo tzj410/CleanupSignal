@@ -34,3 +34,10 @@
 
 
 .topbar a[href='/account.html']{color:#e2edc4;border-color:#829993;white-space:nowrap}.topbar a[href='/account.html']:hover{background:#284b43}
+
+/* Source evidence stays readable on narrow screens and inside project dialogs. */
+#detailContent details{margin:14px 0;padding:12px;border:1px solid #dce3dd;border-radius:8px}
+#detailContent summary{cursor:pointer;font-weight:600;overflow-wrap:anywhere}
+#detailContent blockquote{margin:12px 0;padding:10px 14px;border-left:3px solid #74937d;background:#f4f6f1;overflow-wrap:anywhere}
+#detailContent blockquote p{margin:0 0 5px}
+#detailContent cite{font-size:12px;font-style:normal;color:#52675e}

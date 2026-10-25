@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-25T01:13:19Z
+Generated: 2026-10-25T04:15:29Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,35 +8,39 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-25T01:13:19Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-25T01:13:19Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-25T04:15:29Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-25T04:15:29Z
 - SAM.gov opportunities API: verified; checked 2026-10-24T22:40:02Z
 
 ## Latest refresh
 
-Compared with: 2026-10-24T23:21:11Z
-0 new records; 0 materially changed records.
-No new records discovered in this refresh.
+Compared with: 2026-10-25T01:13:19Z
+4 new records; 22 materially changed records.
+New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Danville public bid board: checked; last attempt 2026-10-25T01:13:19Z
+- Annapolis public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Danville public bid board: checked; last attempt 2026-10-25T04:15:29Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-25T01:13:19Z
-- Warrenton public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Frederick County public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Lynchburg public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Franklin County public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Harford County official open opportunities: checked; last attempt 2026-10-25T01:13:19Z
-- Caroline County public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Fredericksburg public bid board: degraded; last attempt 2026-10-25T01:13:19Z
-- Loudoun County public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Wicomico County public bid board: checked; last attempt 2026-10-25T01:13:19Z
-- Hampton public bid board: degraded; last attempt 2026-10-25T01:13:19Z
+- D.C. OCP public solicitations: checked; last attempt 2026-10-25T04:15:29Z
+- Warrenton public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Frederick County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Lynchburg public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Franklin County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Harford County official open opportunities: checked; last attempt 2026-10-25T04:15:29Z
+- Caroline County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Fredericksburg public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Loudoun County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Wicomico County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Hampton public bid board: checked; last attempt 2026-10-25T04:15:29Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-10-24T23:06:54Z
-Attention: fredericksburg-bids: source HTTP failure 403
-Attention: hampton-bids: source HTTP failure 403
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-10-25T04:15:29Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-10-25T04:15:29Z
+- Salem public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Town of La Plata public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Queen Anne’s County public bid board: checked; last attempt 2026-10-25T04:15:29Z
+- Suffolk public bid board: checked; last attempt 2026-10-25T04:15:29Z
 
 ## Project signals
 
@@ -455,6 +459,21 @@ Source: https://www.lynchburgva.gov/bids.aspx?bidID=249
 Status note: Review all official documents and amendments before responding.
 
 
+### City Hall Fire Escape Lead Paint Removal and Painting
+
+VA · Open solicitation · verified
+
+Local procurement notice. CITY OF SALEM, VIRGINIA CITY OF SALEM — PURCHASING DEPARTMENT 114 N. Broad Street Salem, Virginia 24153 CITY HALL FIRE ESCAPE LEAD PAINT REMOVAL AND PAINTING LEGAL NOTICE / INVITATION TO BID General Notice City of Salem (Owner) is requesting Bids for the following: City Hall Fire Escape Lead Paint Removal and Painting (ITB #2027-020). Sealed Bids for this Invitation to Bid will be received at the Salem Purchasing Department located at 114 N. Broad Street, Salem, VA 24153, until Thursday, Novembe
+
+Published selection amount: Not stated · Bid deadline: 2026-11-19T15:00:00-05:00
+
+Next step: Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.
+
+Source: https://www.salemva.gov/bids.aspx?bidID=95
+
+Status note: Review all official documents and amendments before responding.
+
+
 ### Environmental, Health and Safety (EHS) Services
 
 DC · Closed or deadline passed · verified
@@ -483,4 +502,49 @@ Next step: Confirm all dates, requirements and current notice status on SAM.gov 
 Source: https://sam.gov/opp/95182c8575e849afbb5c5375383bf49b/view
 
 Status note: None
+
+
+### L2 GAC
+
+VA · Closed or deadline passed · verified
+
+Wastewater authority public procurement listing: L2 GAC. Review the source-listed solicitation and all addenda.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-08T14:00:00-04:00
+
+Next step: Confirm current status and documents on the authority page and eVA before bidding.
+
+Source: https://uosa.org/current-solicitations/#27-01
+
+Status note: Official authority listing; expired dates remain closed even when the source still says Issued.
+
+
+### P2NR+
+
+VA · Closed or deadline passed · verified
+
+Wastewater authority public procurement listing: P2NR+. Review the source-listed solicitation and all addenda.
+
+Published selection amount: Not stated · Bid deadline: 2026-10-22T14:00:00-04:00
+
+Next step: Confirm current status and documents on the authority page and eVA before bidding.
+
+Source: https://uosa.org/current-solicitations/#27-02
+
+Status note: Official authority listing; expired dates remain closed even when the source still says Issued.
+
+
+### Yorkshire Park Interceptor Upgrade
+
+VA · Closed or deadline passed · verified
+
+Wastewater authority public procurement listing: Yorkshire Park Interceptor Upgrade. Review the source-listed solicitation and all addenda.
+
+Published selection amount: Not stated · Bid deadline: 2026-09-09T14:00:00-04:00
+
+Next step: Confirm current status and documents on the authority page and eVA before bidding.
+
+Source: https://uosa.org/current-solicitations/#27-04
+
+Status note: Official authority listing; expired dates remain closed even when the source still says Issued.
 

@@ -1,3 +1,4 @@
+import {startLiveUpdates,liveStatusElement} from './live-data.js';
 import {loadData} from './data-loader.js';
 import {regions,services,normalizeProfile,profileDescription} from './preferences.js';
 import {briefEscape,briefMatches,renderBriefing} from './briefing-core.js';
@@ -9,4 +10,5 @@ $('#briefingForm').addEventListener('submit',event=>{event.preventDefault();cons
 function download(name,text,type){if(!output)return;const url=URL.createObjectURL(new Blob([text],{type}));const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 $('#downloadEmailHtml').addEventListener('click',()=>download('cleanupsignal-bid-briefing.html',output.html,'text/html;charset=utf-8'));
 $('#downloadEmailText').addEventListener('click',()=>download('cleanupsignal-bid-briefing.txt',output.text,'text/plain;charset=utf-8'));
-try{data=await loadData();render();}catch{$('#briefingStatus').textContent='The briefing could not load. Please try again or contact support. No email was sent.';}
+const liveStatus=liveStatusElement($('#briefingStatus'));
+try{data=await loadData();render();startLiveUpdates({initial:data,onData:next=>{data=next;render();liveStatus.textContent='Briefing updated from the newest publication. Your preferences are preserved.';},onError:()=>{liveStatus.textContent='Update check failed; the last available briefing remains visible.';}});}catch{$('#briefingStatus').textContent='The briefing could not load. Please try again or contact support. No email was sent.';}
