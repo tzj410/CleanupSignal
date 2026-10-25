@@ -97,7 +97,7 @@ def sam_signal(row, stamp):
                 sourceId='sam', sourceName='SAM.gov', sourceUrl='https://sam.gov/opp/'+id+'/view',
                 summary='Federal environmental notice. Review the official scope, amendments, eligibility and attachments.',
                 nextStep='Confirm all dates, requirements and current notice status on SAM.gov before acting.', verifiedAt=stamp, verification='verified',
-                noticeType=row.get('type'), naicsCode=code,
+                noticeType=row.get('type'), naicsCode=code,solicitationNumber=str(row.get('solicitationNumber') or '')[:100],
                 statusNote='Open status cannot be confirmed; review the official notice.' if status == 'unconfirmed' else None)
 
 
@@ -223,16 +223,18 @@ def refresh(existing, seed, fetch=get, sam_key=None, stamp=None):
 
 def validate(data):
     assert isinstance(data['signals'],list) and data['sources'], 'missing dataset'
-    seen=set()
+    seen=set();record_ids={r['id'] for r in data['signals']}
     for signal in data['signals']:
         for key in ['id','title','agency','jurisdiction','locality','category','status','amount','deadline','announcedAt','sourceUrl','sourceName','summary','nextStep','verifiedAt']:
             assert key in signal, 'missing '+key
         assert signal['id'] not in seen, 'duplicate id'
         seen.add(signal['id'])
+        if signal.get('duplicateOf'):assert signal['duplicateOf'] in record_ids and signal['duplicateOf']!=signal['id'], 'invalid duplicate reference'
+        if 'serviceTags' in signal:assert isinstance(signal['serviceTags'],list) and all(isinstance(t,str) and len(t)<80 for t in signal['serviceTags']), 'invalid service tags'
         assert signal['jurisdiction'] in STATES, 'invalid region'
         assert signal['status'] in {'funding-signal','open-solicitation','closed','unconfirmed'}, 'invalid status'
         host = urlparse(signal['sourceUrl']).hostname or ''
-        assert signal['sourceUrl'].startswith('https://') and (host.endswith('.gov') or host in {'sam.gov','www.carolinemd.org','carolinemd.org'}), 'non-government source'
+        assert signal['sourceUrl'].startswith('https://') and (host.endswith('.gov') or host in {'sam.gov','www.carolinemd.org','carolinemd.org','uosa.org','www.townoflaplata.org','www.qac.org','www.suffolkva.us'}), 'non-government source'
         assert signal['amount'] is None or isinstance(signal['amount'],(int,float)) and signal['amount'] >= 0, 'invalid amount'
         if signal['status']=='funding-signal': assert signal['deadline'] is None, 'grant signal has invented bid deadline'
         if signal['status']=='open-solicitation':
@@ -305,6 +307,15 @@ def main():
         registry=json.loads((ROOT/'data/procurement.json').read_text())
         followups=json.loads((ROOT/'data/followups.json').read_text())
         data=enrich(existing,data,registry,followups,get,data['generatedAt'])
+    if not args.offline:
+        from document_analysis import analyze_documents
+        from service_tags import tag_record
+        from record_identity import group_duplicates
+        from operations import compare
+        data=analyze_documents(existing,data,data['generatedAt'])
+        data['signals']=[tag_record(r) for r in data['signals']]
+        data=group_duplicates(data)
+        data['operations']['comparison']=compare(existing,data)
     from editorial_review import apply_reviews
     data=apply_reviews(data,json.loads((ROOT/'data/reviews.json').read_text()))
     write_data(data)

@@ -14,5 +14,6 @@ export const services=[
  ['GIS','GIS & environmental engineering','Mapping, design and technical consulting interests.']
 ];
 export function normalizeProfile(value){return {regions:regions.map(r=>r[0]).filter(k=>Array.isArray(value?.regions)&&value.regions.includes(k)),services:services.map(s=>s[0]).filter(k=>Array.isArray(value?.services)&&value.services.includes(k))};}
-export function matchesProfile(signal,profile){return (!profile.regions.length||profile.regions.includes(signal.jurisdiction))&&(!profile.services.length||profile.services.includes(signal.category));}
+export function matchesProfile(signal,profile){return !signal.duplicateOf&&(!profile.regions.length||profile.regions.includes(signal.jurisdiction))&&(!profile.services.length||(signal.serviceTags||[signal.category]).some(service=>profile.services.includes(service)));}
 export function profileDescription(profile){return `${profile.regions.length?profile.regions.join(', '):'All pilot jurisdictions'}; ${profile.services.length?services.filter(s=>profile.services.includes(s[0])).map(s=>s[1]).join(', '):'All published service categories'}`;}
+

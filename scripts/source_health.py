@@ -13,7 +13,7 @@ def health_summary(data,at=None):
  automatic=[s for s in sources if s.get('mode')!='manual'];working=[s for s in automatic if s.get('status') in ['verified','checked']]
  bids=[];warnings=[];groups={}
  for s in data.get('signals',[]):
-  if s.get('status')=='open-solicitation':
+  if s.get('status')=='open-solicitation' and not s.get('duplicateOf'):
    due=date(s.get('deadline'));verified=date(s.get('verifiedAt'))
    if fresh and due and due>current and verified and -300<=(current-verified).total_seconds()<=172800 and s.get('verification')=='verified':bids.append(s)
    else:warnings.append({'recordId':s.get('id'),'reason':'Published open status is not actionable at the report time'})

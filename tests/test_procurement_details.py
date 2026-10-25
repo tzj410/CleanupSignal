@@ -14,3 +14,6 @@ class DetailsTests(unittest.TestCase):
   a=enrich_details({'sourceUrl':'https://county.gov/bid'},description='Addendum #1 issued.')
   b=enrich_details({'sourceUrl':'https://county.gov/bid'},description='Addendum #2 issued.')
   self.assertNotEqual(a['evidenceFingerprint'],b['evidenceFingerprint'])
+ def test_contact_script_placeholder_is_not_a_requirement_and_am_pm_keeps_its_date(self):
+  r=enrich_details({'sourceUrl':'https://county.gov/bid'},description='For security reasons, you must enable JavaScript to view this E-mail address. Contractors must register by 3:00 P.M. on Tuesday, October 27, 2026. A mandatory pre-bid meeting begins at 10:00 A.M. on Wednesday, October 28, 2026.')
+  self.assertEqual(len(r['requirementNotes']),2);self.assertIn('October 27, 2026',r['requirementNotes'][0]);self.assertIn('October 28, 2026',r['requirementNotes'][1]);self.assertNotIn('JavaScript',' '.join(r['requirementNotes']))

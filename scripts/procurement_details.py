@@ -20,8 +20,9 @@ def enrich_details(record,raw='',description='',market=''):
   if not (re.search(r'\.pdf(?:$|\?)|/DocumentCenter/(?:View|Home)|/DocumentView\.aspx',p.path+'?'+p.query,re.I) or re.search(r'addend|attachment|bid document|specification',title,re.I)):continue
   if url in seen:continue
   seen.add(url);docs.append({'title':title[:200] or 'Official document','url':url})
+ description=re.sub(r'For security reasons, you must enable JavaScript to view this E-mail address\.', '',description,flags=re.I)
  description=re.sub(r'\s+',' ',description).strip()[:12000]
- sentences=re.split(r'(?<=[.!?])\s+|(?=Addendum:)',description)
+ sentences=re.split(r'(?<=[.!?])(?<!A\.M\.)(?<!P\.M\.)(?<!a\.m\.)(?<!p\.m\.)\s+|(?=Addendum:)',description)
  amendments=[s[:1200] for s in sentences if re.search(r'\b(addend\w*|amendment\w*)\b',s,re.I)][:8]
  requirements=[s[:1200] for s in sentences if re.search(r'\b(must|mandatory|required|eligib\w*|license\w*|certif\w*|set.aside|small business|bond\w*)\b',s,re.I)][:8]
  if market:requirements.insert(0,'Official market designation: '+str(market)[:300]+'. Review the portal for eligibility conditions.')
@@ -34,3 +35,14 @@ def enrich_details(record,raw='',description='',market=''):
  record.update(officialDescription=description,documents=docs[:20],amendmentNotes=amendments,requirementNotes=requirements[:8],prebidAttendance=attendance,documentReview='Linked documents have not been independently read or checked for later amendments.')
  record['evidenceFingerprint']=hashlib.sha256(json.dumps({k:record.get(k) for k in ['title','deadline','status','officialDescription','documents','amendmentNotes','requirementNotes','prebidMeeting','prebidAttendance']},sort_keys=True).encode()).hexdigest()
  return record
+
+
+def prose_deadline(description):
+ """Only the explicit bid-receipt sentence, never a meeting or bid-opening date."""
+ import datetime as dt
+ from zoneinfo import ZoneInfo
+ pattern=r'\bbids?\b.{0,160}?\b(?:will be|must be) received\b.{0,450}?\buntil\s+(?:(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+)?([A-Za-z]+\s+\d{1,2},\s+\d{4}),?\s+at\s+(\d{1,2}:\d{2})\s*([AP])\.?M\.?'
+ matches=list(re.finditer(pattern,description or '',re.I))
+ if len(matches)!=1:return None
+ try:return dt.datetime.strptime(matches[0][1]+' '+matches[0][2]+' '+matches[0][3].upper()+'M','%B %d, %Y %I:%M %p').replace(tzinfo=ZoneInfo('America/New_York'))
+ except ValueError:return None

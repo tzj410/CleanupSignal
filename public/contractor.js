@@ -11,7 +11,7 @@ export function inquiryScope(){return inquiryRegions.length?`Requested research 
 function updateInquiry(){$('#inquiryScope').textContent=inquiryScope();}
 function fillProfile(){for(const el of $('#profileForm').querySelectorAll('input[type=checkbox]'))el.checked=profile[el.name].includes(el.value);}
 export function renderCategories(signals){
- const tile=([id,title,description])=>{const count=signals.filter(s=>s.category===id).length;return `<article class="category-card"><span class="category-symbol" aria-hidden="true">${id==='Assessment'?'◎':id==='Cleanup'?'↗':id==='Multipurpose'?'▦':'+'}</span><span class="tag ${count?'open':''}">${count?`${count} PUBLISHED SIGNAL${count===1?'':'S'}`:'COVERAGE NOT YET ACTIVE'}</span><h3>${e(title)}</h3><p>${e(description)}</p>${count?`<a href="#dashboard" data-category="${e(id)}">Browse ${count} signals ↗</a>`:`<a href="#profile" data-interest="${e(id)}">Add research interest ↗</a>`}</article>`;};
+ const tile=([id,title,description])=>{const count=signals.filter(s=>!s.duplicateOf&&(s.serviceTags||[s.category]).includes(id)).length;return `<article class="category-card"><span class="category-symbol" aria-hidden="true">${id==='Assessment'?'◎':id==='Cleanup'?'↗':id==='Multipurpose'?'▦':'+'}</span><span class="tag ${count?'open':''}">${count?`${count} PUBLISHED SIGNAL${count===1?'':'S'}`:'COVERAGE NOT YET ACTIVE'}</span><h3>${e(title)}</h3><p>${e(description)}</p>${count?`<a href="#dashboard" data-category="${e(id)}">Browse ${count} signals ↗</a>`:`<a href="#profile" data-interest="${e(id)}">Add research interest ↗</a>`}</article>`;};
  $('#homeCategories').innerHTML=services.slice(0,3).map(tile).join('');$('#categoryDirectory').innerHTML=services.map(tile).join('');$('#homeTotal').textContent=signals.length;
 }
 export function initContractor({applyCategory,profileChanged}){
@@ -60,3 +60,4 @@ export function initContractor({applyCategory,profileChanged}){
  updatePricing();
  $('#useQuote').addEventListener('click',()=>{inquiryRegions=quote();updateInquiry();location.hash='pilot';});
 }
+

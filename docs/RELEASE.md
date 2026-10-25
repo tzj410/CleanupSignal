@@ -68,3 +68,11 @@ PR #3 added procurement discovery/evidence, private support, signed email events
 A follow-up adds `/api/signals.json`, which reads the current public GitHub dataset on the server with a bounded cache key, selects the newest valid dataset and falls back to the deployed public copy. Browser tools no longer need a cross-origin GitHub request to receive new listings. Dataset freshness and source failures remain visible. New published data does not require a code deployment; an already-open browser page still needs reloading. Hourly source scheduling can be delayed and does not guarantee instant discovery.
 
 Hosted follow-up verification: the server data endpoint retrieved the newer `2026-10-24T23:13:15Z` main-branch dataset from GitHub while the deployed asset was still `2026-10-24T23:06:54Z`. A public provenance field distinguishes upstream success from fallback. This confirms that new data can reach the site without redeploying the static dataset.
+
+## Six procurement improvements — October 25, 2026
+
+Adds six official-source collectors; a documented issuer-mirror approach for portions of the blocked statewide feeds; bounded PDF evidence extraction; same-URL document hashes and amendment history; shared multi-service matching and conservative duplicate grouping; and five-minute publication checks on visible board, briefing and status pages.
+
+Incoming data preserves board filters and saved projects. Project-detail dialogs defer application until closed, protecting notes that are being edited. Hidden pages pause polling. Failed checks retain the last dataset and retry rather than clearing results. New publications can be shown automatically, but upstream collection is still scheduled hourly and GitHub scheduling may be delayed; this is not instant source detection.
+
+Authentication, Stripe and customer pilot work remain deferred. No customer enrollment or email activation is included.
