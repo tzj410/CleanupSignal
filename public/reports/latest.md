@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-26T00:43:43Z
+Generated: 2026-10-26T01:14:00Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,40 +8,40 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-26T00:43:43Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-26T00:43:43Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-26T01:14:00Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-26T01:14:00Z
 - SAM.gov opportunities API: verified; checked 2026-10-26T00:43:43Z
 
 ## Latest refresh
 
-Compared with: 2026-10-25T22:35:39Z
-0 new records; 2 materially changed records.
+Compared with: 2026-10-26T00:43:43Z
+0 new records; 0 materially changed records.
 No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Danville public bid board: checked; last attempt 2026-10-26T00:43:43Z
+- Annapolis public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Danville public bid board: checked; last attempt 2026-10-26T01:14:00Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-26T00:43:43Z
-- Warrenton public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Frederick County public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Lynchburg public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Franklin County public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Harford County official open opportunities: checked; last attempt 2026-10-26T00:43:43Z
-- Caroline County public bid board: checked; last attempt 2026-10-26T00:43:43Z
+- D.C. OCP public solicitations: checked; last attempt 2026-10-26T01:14:00Z
+- Warrenton public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Frederick County public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Lynchburg public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Franklin County public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Harford County official open opportunities: checked; last attempt 2026-10-26T01:14:00Z
+- Caroline County public bid board: checked; last attempt 2026-10-26T01:14:00Z
 - Fredericksburg public bid board: degraded; last attempt 2026-10-25T22:35:39Z
-- Loudoun County public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Wicomico County public bid board: checked; last attempt 2026-10-26T00:43:43Z
+- Loudoun County public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Wicomico County public bid board: checked; last attempt 2026-10-26T01:14:00Z
 - Hampton public bid board: degraded; last attempt 2026-10-25T22:35:39Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-10-26T00:43:43Z
-- Montgomery County official active-solicitation feed: checked; last attempt 2026-10-26T00:43:43Z
-- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-10-26T00:43:43Z
-- Salem public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Town of La Plata public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Queen Anne’s County public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Suffolk public bid board: checked; last attempt 2026-10-26T00:43:43Z
-- Falls Church public bid board: checked; last attempt 2026-10-26T00:43:43Z
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-10-26T01:14:00Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-10-26T01:14:00Z
+- Salem public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Town of La Plata public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Queen Anne’s County public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Suffolk public bid board: checked; last attempt 2026-10-26T01:14:00Z
+- Falls Church public bid board: checked; last attempt 2026-10-26T01:14:00Z
 Attention: fredericksburg-bids: source HTTP failure 403
 Attention: hampton-bids: source HTTP failure 403
 
