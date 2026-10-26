@@ -58,3 +58,15 @@ class BackoffTests(unittest.TestCase):
   paused=enrich(failed,failed,[source],{},unexpected,'2026-10-24T21:30:00Z')
   self.assertTrue(paused['operations']['procurementSources'][0]['retryPaused'])
   self.assertEqual(paused['operations']['procurementSources'][0]['lastChecked'],'2026-10-24T21:00:00Z')
+
+class ParallelCollectorTests(unittest.TestCase):
+ def test_independent_sources_overlap_and_results_keep_registry_order(self):
+  import threading
+  barrier=threading.Barrier(2)
+  sources=[dict(SOURCE,id='first'),dict(SOURCE,id='second')]
+  previous={'generatedAt':STAMP,'signals':[],'sources':[]}
+  def fetch(url):barrier.wait(timeout=3);return 'There are no open bid postings at this time.'
+  data=o.enrich(previous,previous,sources,{},fetch,STAMP)
+  checks=data['operations']['procurementSources']
+  self.assertEqual([s['id'] for s in checks],['first','second'])
+  self.assertTrue(all(s['status']=='checked' and 'collectionDurationMs' in s for s in checks))

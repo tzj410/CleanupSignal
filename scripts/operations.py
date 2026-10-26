@@ -1,5 +1,6 @@
 """Bounded state/local listing collection and auditable refresh report comparisons."""
-import copy, datetime as dt, hashlib, html, json, re
+import copy, datetime as dt, hashlib, html, json, re, time
+from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, parse_qs
 from zoneinfo import ZoneInfo
@@ -106,55 +107,75 @@ def compare(previous,current):
 
 def enrich(previous,current,registry,followups,fetch,stamp):
     data=copy.deepcopy(current);oldops=previous.get('operations',{});prior={s['id']:s for s in oldops.get('procurementSources',[])};records={s['id']:s for s in data['signals']};checks=[]
-    for entry in registry:
-        print('Checking public source: '+entry['id'],flush=True)
-        item=copy.deepcopy(entry);last=prior.get(item['id'],{})
-        if item['mode']=='manual':item.update(status='manual',lastChecked=None)
-        else:
-            if entry.get('intervalHours') and last.get('status')=='checked' and last.get('lastSuccess') and dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))-dt.datetime.fromisoformat(last['lastSuccess'].replace('Z','+00:00'))<dt.timedelta(hours=entry['intervalHours']):
-                item.update({k:v for k,v in last.items() if k not in ['note','url','name']})
-                item['scheduledReuse']=True
-                checks.append(item)
-                continue
-            retry=last.get('nextRetryAt')
-            if retry and dt.datetime.fromisoformat(retry.replace('Z','+00:00'))>dt.datetime.fromisoformat(stamp.replace('Z','+00:00')):
-                item.update({k:last[k] for k in ['lastChecked','lastSuccess','nextRetryAt','consecutiveFailures','error'] if k in last})
-                item.update(status='degraded',retryPaused=True)
-                checks.append(item)
-                continue
-            item.update(lastChecked=stamp,status='degraded',lastSuccess=last.get('lastSuccess'))
-            try:
+    def run(entry):
+        started=time.monotonic()
+        mode=entry['mode']
+        if mode=='montgomery-open-data':
+            from additional_sources import collect_montgomery
+            result=collect_montgomery(entry,fetch,stamp)
+        elif mode=='uosa-table':
+            from additional_sources import collect_uosa
+            result=collect_uosa(entry,fetch,stamp)
+        elif mode=='dc-api':
+            from dc_procurement import collect_dc
+            result=collect_dc(entry,fetch,stamp)
+        elif mode=='epa-discovery':
+            from epa_discovery import collect_epa
+            result=collect_epa(entry,fetch,stamp,snapshot)
+        elif mode=='harford-listing':
+            from harford_procurement import collect_harford
+            result=collect_harford(entry,fetch,stamp)
+        else:result=collect(entry,fetch,stamp)
+        found,stats=result
+        return found,{**stats,'collectionDurationMs':round((time.monotonic()-started)*1000)}
+    current_time=dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))
+    def eligible(entry):
+        last=prior.get(entry['id'],{})
+        if entry['mode']=='manual':return False
+        if entry.get('intervalHours') and last.get('status')=='checked' and last.get('lastSuccess') and current_time-dt.datetime.fromisoformat(last['lastSuccess'].replace('Z','+00:00'))<dt.timedelta(hours=entry['intervalHours']):return False
+        retry=last.get('nextRetryAt')
+        return not retry or dt.datetime.fromisoformat(retry.replace('Z','+00:00'))<=current_time
+    # Sources are independent; apply their results in registry order after bounded parallel I/O.
+    snapshot=copy.deepcopy(list(records.values()))
+    pool=ThreadPoolExecutor(max_workers=4)
+    jobs={entry['id']:pool.submit(run,entry) for entry in registry if eligible(entry)}
+    try:
+        for entry in registry:
+            print('Checking public source: '+entry['id'],flush=True)
+            item=copy.deepcopy(entry);last=prior.get(item['id'],{})
+            if item['mode']=='manual':item.update(status='manual',lastChecked=None)
+            else:
+                if entry.get('intervalHours') and last.get('status')=='checked' and last.get('lastSuccess') and dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))-dt.datetime.fromisoformat(last['lastSuccess'].replace('Z','+00:00'))<dt.timedelta(hours=entry['intervalHours']):
+                    item.update({k:v for k,v in last.items() if k not in ['note','url','name']})
+                    item['scheduledReuse']=True
+                    checks.append(item)
+                    continue
+                retry=last.get('nextRetryAt')
+                if retry and dt.datetime.fromisoformat(retry.replace('Z','+00:00'))>dt.datetime.fromisoformat(stamp.replace('Z','+00:00')):
+                    item.update({k:last[k] for k in ['lastChecked','lastSuccess','nextRetryAt','consecutiveFailures','error'] if k in last})
+                    item.update(status='degraded',retryPaused=True)
+                    checks.append(item)
+                    continue
+                item.update(lastChecked=stamp,status='degraded',lastSuccess=last.get('lastSuccess'))
+                try:
                 
-                if entry['mode']=='montgomery-open-data':
-                    from additional_sources import collect_montgomery
-                    found,stats=collect_montgomery(entry,fetch,stamp)
-                elif entry['mode']=='uosa-table':
-                    from additional_sources import collect_uosa
-                    found,stats=collect_uosa(entry,fetch,stamp)
-                elif entry['mode']=='dc-api':
-                    from dc_procurement import collect_dc
-                    found,stats=collect_dc(entry,fetch,stamp)
-                elif entry['mode']=='epa-discovery':
-                    from epa_discovery import collect_epa
-                    found,stats=collect_epa(entry,fetch,stamp,list(records.values()))
-                elif entry['mode']=='harford-listing':
-                    from harford_procurement import collect_harford
-                    found,stats=collect_harford(entry,fetch,stamp)
-                else:found,stats=collect(entry,fetch,stamp)
-                item.update(stats,status='checked',lastSuccess=stamp,consecutiveFailures=0)
-                item['listingChanged']=bool(last.get('listingHash') and last['listingHash']!=stats['listingHash'])
-                # A record absent from the current listing cannot stay open.
-                for r in records.values():
-                    if r['sourceId']==entry['id']:r.update(status='unconfirmed',verification='stale',statusNote='No longer present on the checked listing; verify current status at the source.')
-                records.update({r['id']:r for r in found})
-            except (ValueError,RuntimeError) as exc:
-                item['error']=str(exc)
-                item['consecutiveFailures']=min(last.get('consecutiveFailures',0)+1,20)
-                delay=min(6,2**min(item['consecutiveFailures']-1,3))
-                item['nextRetryAt']=(dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))+dt.timedelta(hours=delay)).isoformat().replace('+00:00','Z')
-                for r in records.values():
-                    if r['sourceId']==entry['id']:r.update(status='unconfirmed',verification='stale',statusNote='Latest source check failed. Current bid status is unconfirmed.')
-        checks.append(item)
+                    found,stats=jobs[entry['id']].result()
+                    item.update(stats,status='checked',lastSuccess=stamp,consecutiveFailures=0)
+                    item['listingChanged']=bool(last.get('listingHash') and last['listingHash']!=stats['listingHash'])
+                    # A record absent from the current listing cannot stay open.
+                    for r in records.values():
+                        if r['sourceId']==entry['id']:r.update(status='unconfirmed',verification='stale',statusNote='No longer present on the checked listing; verify current status at the source.')
+                    records.update({r['id']:r for r in found})
+                except (ValueError,RuntimeError) as exc:
+                    item['error']=str(exc)
+                    item['consecutiveFailures']=min(last.get('consecutiveFailures',0)+1,20)
+                    delay=min(6,2**min(item['consecutiveFailures']-1,3))
+                    item['nextRetryAt']=(dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))+dt.timedelta(hours=delay)).isoformat().replace('+00:00','Z')
+                    for r in records.values():
+                        if r['sourceId']==entry['id']:r.update(status='unconfirmed',verification='stale',statusNote='Latest source check failed. Current bid status is unconfirmed.')
+            checks.append(item)
+    finally:
+        pool.shutdown(wait=True)
     for id,follow in followups.items():
         if id in records:records[id]['followUp']=copy.deepcopy(follow)
     data['signals']=sorted(records.values(),key=lambda s:s['id'])

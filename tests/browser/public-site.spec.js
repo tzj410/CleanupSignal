@@ -20,3 +20,15 @@ test('incoming publication waits for project details to close and keeps an unsav
 test('PDF evidence shows page references and exact-source excerpts in project details',async({page})=>{
  const data=fixture();data.signals[0].documentAnalysis=[{title:'Official IFB',url:'https://example.gov/ifb.pdf',status:'extracted',checkedAt:data.generatedAt,pageCount:12,pagesRead:12,excerpts:{scope:[{page:2,text:'The work includes wastewater pumping and disposal.'}],eligibility:[{page:4,text:'The contractor must hold the required license.'}]}}];data.signals[0].documentReview='One selected PDF was read.';await page.route('**/signals.json',route=>route.fulfill({json:data}));await page.goto('/#dashboard');await page.getByRole('button',{name:'County wastewater pumping',exact:true}).click();await page.getByText('Official IFB · Text extracted',{exact:true}).click();await expect(page.locator('#detailContent')).toContainText('PDF page 2');await expect(page.locator('#detailContent')).toContainText('The contractor must hold the required license.');
 });
+
+test('profile capacity and designations persist and explain unresolved bid requirements',async({page})=>{
+ const data=fixture();data.signals[0].requiredBusinessCertifications=[{id:'MBE'}];data.signals[0].qualificationChecklist=[{id:'bonds',title:'Bonding and insurance',state:'needs-review',evidence:[]}];
+ await page.route('**/signals.json',route=>route.fulfill({json:data}));
+ await page.goto('/#profile');await page.getByLabel('Maximum contract value ($)',{exact:true}).fill('100000');await page.locator('#profileRegions input[value="MD"]').check();await page.locator('#profileServices input[value="Water"]').check();
+ await page.getByRole('button',{name:'Save profile on this browser'}).click();await page.reload();await expect(page.getByLabel('Maximum contract value ($)',{exact:true})).toHaveValue('100000');
+ await page.getByRole('link',{name:'View projects matching this profile'}).click();await expect(page.locator('#resultCount')).toHaveText('1');await expect(page.locator('#signals')).toContainText('Source requires MBE');await expect(page.locator('#signals')).toContainText('Contract value is not verified');
+ await page.getByRole('button',{name:'County wastewater pumping',exact:true}).click();await expect(page.locator('#detailContent')).toContainText('Bonding and insurance · Needs manual review');await page.getByText('Bonding and insurance · Needs manual review',{exact:true}).click();await expect(page.locator('#detailContent')).toContainText('absence of evidence does not establish that it is optional');
+});
+test('invalid contract capacity leaves the saved profile unchanged',async({page})=>{
+ await page.goto('/#profile');await page.getByLabel('Minimum contract value ($)',{exact:true}).fill('200000');await page.getByLabel('Maximum contract value ($)',{exact:true}).fill('100000');await page.getByRole('button',{name:'Save profile on this browser'}).click();await expect(page.locator('#profileResult')).toContainText('Maximum contract value must be at least the minimum');
+});

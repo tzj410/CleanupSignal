@@ -76,3 +76,15 @@ Adds six official-source collectors; a documented issuer-mirror approach for por
 Incoming data preserves board filters and saved projects. Project-detail dialogs defer application until closed, protecting notes that are being edited. Hidden pages pause polling. Failed checks retain the last dataset and retry rather than clearing results. New publications can be shown automatically, but upstream collection is still scheduled hourly and GitHub scheduling may be delayed; this is not instant source detection.
 
 Authentication, Stripe and customer pilot work remain deferred. No customer enrollment or email activation is included.
+
+## Core product readiness improvements — October 25, 2026
+
+Adds browser-local contract-capacity preferences, self-reported business designations and fit explanations. Published contract values can exclude projects outside capacity; missing values remain visible, and grant selections never substitute for contract values. The current feeds often omit contract values. Certification flags require explicit source wording and prompt review; they do not certify a company's eligibility or silently suppress opportunities. Board and public briefing use the same matching function.
+
+Each record now has six source-linked review sections: scope, eligibility, bonds/insurance, meetings, submission and amendments. A section distinguishes evidence found from manual review needed. PDF evidence retains page references. Extraction includes insurance and payment bonds. Previously cached PDFs cannot bypass host approval or be presented as current when the extraction budget prevents a recheck.
+
+Independent procurement sources run with four bounded concurrent workers, preserving deterministic registry order and existing backoff/status safeguards. Successful scans record duration. Source health now checks the age of each collector's last success independently of dataset publication, with schedule-aware windows for daily sources. Missing, future or overdue check timestamps cannot count as healthy. Adds the verified Falls Church city board; its initial check had no relevant environmental notices. This does not establish broader statewide coverage or additional open bids.
+
+The deployment workflow can run after successful main-branch reporting, because commits from GitHub's built-in token do not trigger ordinary push workflows. It now runs desktop/mobile Chromium and WebKit checks before publishing. Deployment remains conditional on the scoped Cloudflare Pages token. No login, billing or email-provider activation is included.
+
+Validation: parser, matching, template, backend and monitoring tests; JavaScript syntax; generated Worker build; dataset validation; isolated recovery drill. Browser cases cover persistent capacity preferences, eligibility review and invalid ranges. Local browser installation returned corrupt downloads, so browser execution must be confirmed in GitHub CI. Customer validation, statewide restricted-source access, Hampton/Fredericksburg HTTP 403 restrictions, provider activation and deployment credentials remain unresolved external work.
