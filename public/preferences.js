@@ -37,7 +37,7 @@ export function profileFit(signal,value){
  if(signal.prebidAttendance==='mandatory')review.push('Mandatory meeting: confirm attendance and whether the meeting has passed');
  if(signal.status==='funding-signal')review.push('Funding announcement; this is not an invitation to bid');
  if(signal.status==='open-solicitation'&&!(signal.requiredBusinessCertifications||[]).length)review.push('Business eligibility is not fully established by the available evidence');
- return {matches:!mismatches.length,reasons,review,mismatches,rank:reasons.length-review.length};
+ return {matches:!mismatches.length,reasons,review,mismatches,rank:reasons.length*10-review.length-mismatches.length*100};
 }
 export function matchesProfile(signal,profile){return profileFit(signal,profile).matches;}
 export function profileDescription(value){const profile=normalizeProfile(value);return `${profile.regions.length?profile.regions.join(', '):'All pilot jurisdictions'}; ${profile.services.length?services.filter(s=>profile.services.includes(s[0])).map(s=>s[1]).join(', '):'All published service categories'}${profile.minContractValue||profile.maxContractValue?`; contract capacity $${profile.minContractValue||0}–${profile.maxContractValue?'$'+profile.maxContractValue:'no maximum'} (unknown values retained)`:''}${profile.certifications?.length?'; self-reported designations: '+profile.certifications.join(', '):''}`;}

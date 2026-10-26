@@ -37,3 +37,8 @@ test('checklist escapes source excerpts and unsafe URLs',()=>{
  const html=evidenceHtml({qualificationChecklist:[{title:'Bonds',state:'evidence-found',evidence:[{text:'<script>bad</script>',url:'javascript:alert(1)',page:2}]}]});
  assert.ok(!html.includes('<script>'));assert.ok(!html.includes('javascript:'));assert.ok(html.includes('PDF page 2'));
 });
+
+test('fit sorting keeps a matching bid with unknown budget above an out-of-region bid',()=>{
+ const profile={regions:['MD'],services:['Cleanup'],maxContractValue:100000};
+ assert.ok(profileFit(bid,profile).rank>profileFit({...bid,jurisdiction:'VA',contractValue:50000},profile).rank);
+});
