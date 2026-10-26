@@ -4,7 +4,10 @@ from pathlib import Path
 import re
 root=Path(__file__).resolve().parents[1]
 parts=[]
-parts.append(re.sub(r'\bexport (?=async |function |class |const )','',(root/'public'/'briefing-core.js').read_text()))
+for module in ['preferences','briefing-core']:
+ s=(root/'public'/f'{module}.js').read_text()
+ s=re.sub(r'^import .*?;\n','',s,flags=re.M)
+ parts.append(re.sub(r'\bexport (?=async |function |class |const )','',s))
 for name in ['security','public-data','auth','workspace','billing','alerts','support','email-events','worker']:
  s=(root/'server'/f'{name}.js').read_text()
  s=re.sub(r'^import .*?;\n','',s,flags=re.M)

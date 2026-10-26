@@ -44,3 +44,11 @@ Use customer details only for agreed delivery, billing administration, and suppo
 ## Billing boundary
 
 Billing is not integrated. No payment account, paid subscription, transaction, invoice send, or charge has been initiated. Payment processors may charge transaction fees even without a monthly plan, so enabling one would require a new owner decision. The owner can first agree a manual invoice and payment method with each pilot; do not publish bank details or collect cards in this repository.
+
+### Collector speed and freshness
+
+Procurement collection uses up to four independent source workers. Each source retains its existing bounded detail requests, backoff and conservative failure status. `collectionDurationMs` measures a successful scan; it is not publication-to-discovery latency. The hourly schedule is unchanged and does not guarantee immediate detection.
+
+`source-health.json` reports per-source evidence age, expected interval, freshness and scan duration. Hourly sources become overdue after three hours without a success; daily sources after 49 hours. Dataset generation alone cannot reset source evidence age. Missing timestamps do not count as successful evidence. The independent incident monitor includes overdue source checks.
+
+After reporting completes on main, the deploy workflow tests the latest main tree, preserves a release bundle and publishes if a scoped Pages token exists. This avoids relying on a push event from the reporting workflow's built-in GitHub token. If the token is absent, the workflow explicitly reports that publishing was skipped. The public live-data endpoint remains the fallback for fresh data independently of static redeployment.

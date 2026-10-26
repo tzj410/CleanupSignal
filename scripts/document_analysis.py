@@ -32,7 +32,7 @@ def extract_pdf(raw):
 
 PATTERNS={
  'scope':r'\b(scope of work|work includes|work shall|project consists|project includes|services include|shall furnish|project description|purpose of this)\b',
- 'eligibility':r'\b(must hold|required license|contractor.{0,25}(license|certification)|bid bond|performance bond|qualifications|eligible bidders|set.aside)\b',
+ 'eligibility':r'\b(must hold|required license|contractor.{0,25}(license|certification)|bid bond|performance bond|payment bond|insurance|surety|qualifications|eligible bidders|set.aside)\b',
  'meetings':r'\b(pre.bid|pre.proposal|site (visit|tour)|mandatory meeting)\b',
  'submission':r'\b(submit.{0,35}(bid|proposal)|sealed bids|bids.{0,45}(received|submitted)|electronic submission|faxed|emailed bids)\b',
  'deadlineReferences':r'\b(deadline|bid.{0,30}(due|received)|closing date|extended to|date.{0,20}extended)\b'}
@@ -115,13 +115,13 @@ def analyze_documents(previous,data,stamp,fetch_pdf=read_pdf,extract=extract_pdf
    p=urlparse(doc['url'])
    if p.scheme!='https' or p.hostname not in approved or p.username or p.password:continue
    prior=cache.get(doc['url']);fresh=False
-   try:fresh=bool(prior and prior.get('analysisVersion')==2 and now-dt.datetime.fromisoformat(prior['checkedAt'].replace('Z','+00:00'))<dt.timedelta(minutes=50))
+   try:fresh=bool(prior and prior.get('analysisVersion')==3 and dt.timedelta(0)<=now-dt.datetime.fromisoformat(prior['checkedAt'].replace('Z','+00:00'))<dt.timedelta(minutes=50))
    except (KeyError,ValueError):pass
    if not fresh and doc['url'] not in jobs and len(jobs)<LIMIT_REQUESTS:jobs[doc['url']]=doc
  def run(item):
   url,doc=item;result={'url':url,'title':doc.get('title','Official PDF'),'checkedAt':stamp}
   try:
-   raw=fetch_pdf(url);value,pages=extract(raw);result.update(status='extracted',analysisVersion=2,sha256=hashlib.sha256(raw).hexdigest(),textSha256=hashlib.sha256(value.encode()).hexdigest(),pageCount=pages,pagesRead=min(pages or LIMIT_PAGES,LIMIT_PAGES),truncated=bool(pages and pages>LIMIT_PAGES) or len(value)>=250000,excerpts=excerpts(value))
+   raw=fetch_pdf(url);value,pages=extract(raw);result.update(status='extracted',analysisVersion=3,sha256=hashlib.sha256(raw).hexdigest(),textSha256=hashlib.sha256(value.encode()).hexdigest(),pageCount=pages,pagesRead=min(pages or LIMIT_PAGES,LIMIT_PAGES),truncated=bool(pages and pages>LIMIT_PAGES) or len(value)>=250000,excerpts=excerpts(value))
   except (ValueError,RuntimeError) as e:result.update(status='needs-review',note=str(e))
   return url,result
  with ThreadPoolExecutor(max_workers=3) as pool:current=dict(pool.map(run,jobs.items()))
@@ -135,7 +135,12 @@ def analyze_documents(previous,data,stamp,fetch_pdf=read_pdf,extract=extract_pdf
    prior_docs={d['url']:d for d in prior.get('documents',[])};old_analysis={d['url']:d for d in prior.get('documentAnalysis',[])}
    analyses=[]
    for doc in plans[row['id']]:
-    result=current.get(doc['url']) or cache.get(doc['url']) or {'url':doc['url'],'title':doc.get('title'),'status':'not-checked','note':'Extraction request budget reached or document host not approved.'}
+    cached=cache.get(doc['url']);parsed=urlparse(doc['url']);allowed=parsed.scheme=='https' and parsed.hostname in {urlparse(row['sourceUrl']).hostname,row.get('documentHost')} and not parsed.username and not parsed.password
+    fresh=False
+    try:fresh=bool(cached and cached.get('analysisVersion')==3 and dt.timedelta(0)<=now-dt.datetime.fromisoformat(cached['checkedAt'].replace('Z','+00:00'))<dt.timedelta(minutes=50))
+    except (KeyError,ValueError):pass
+    result=current.get(doc['url']) if allowed else None
+    result=result or (cached if allowed and fresh else None) or {'url':doc['url'],'title':doc.get('title'),'status':'not-checked','note':'Extraction request budget reached or document host not approved.'}
     result=copy.deepcopy(result);before=old_analysis.get(doc['url'])
     if before and result.get('status')!='extracted':
      result['lastKnownSha256']=before.get('sha256') or before.get('lastKnownSha256');result['lastKnownTextSha256']=before.get('textSha256') or before.get('lastKnownTextSha256')

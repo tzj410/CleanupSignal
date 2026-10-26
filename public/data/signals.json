@@ -71,7 +71,46 @@
           "field": "title",
           "phrase": "Demo"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "danville-bids-4232",
@@ -119,7 +158,46 @@
           "field": "title",
           "phrase": "Wastewater"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "danville-bids-4234",
@@ -167,7 +245,46 @@
           "field": "title",
           "phrase": "Sewer"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "danville-bids-4238",
@@ -215,7 +332,46 @@
           "field": "title",
           "phrase": "Demo"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "dc-ocp-Doc841623",
@@ -266,7 +422,46 @@
           "field": "title",
           "phrase": "Stormwater"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "dc-ocp-Doc846899",
@@ -317,7 +512,46 @@
           "field": "title",
           "phrase": "Leaf Disposal"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "dc-ocp-Doc852234",
@@ -368,7 +602,46 @@
           "field": "title",
           "phrase": "Stormwater"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-annapolis-dpw-cleanup",
@@ -438,7 +711,46 @@
       "serviceTags": [
         "Cleanup"
       ],
-      "serviceEvidence": {}
+      "serviceEvidence": {},
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-danville-assessment",
@@ -510,7 +822,46 @@
           "field": "scope",
           "phrase": "Brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-gateway-region-assessment",
@@ -578,7 +929,46 @@
           "field": "scope",
           "phrase": "brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-giles-tannery-cleanup",
@@ -640,7 +1030,46 @@
       "serviceTags": [
         "Cleanup"
       ],
-      "serviceEvidence": {}
+      "serviceEvidence": {},
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-martinsville-multipurpose",
@@ -716,7 +1145,46 @@
           "field": "scope",
           "phrase": "brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-mount-rogers-assessment",
@@ -784,7 +1252,46 @@
           "field": "scope",
           "phrase": "brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-pamunkey-dump-cleanup",
@@ -846,7 +1353,46 @@
       "serviceTags": [
         "Cleanup"
       ],
-      "serviceEvidence": {}
+      "serviceEvidence": {},
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-pittsylvania-assessment",
@@ -914,7 +1460,46 @@
           "field": "scope",
           "phrase": "Brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-va-deq-assessment",
@@ -982,7 +1567,46 @@
           "field": "scope",
           "phrase": "brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "epa-2026-western-md-assessment",
@@ -1050,7 +1674,46 @@
           "field": "scope",
           "phrase": "brownfields"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "harford-listing-254691",
@@ -1086,7 +1749,46 @@
           "field": "title",
           "phrase": "Dredging"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "harford-listing-255203",
@@ -1131,7 +1833,46 @@
           "field": "title",
           "phrase": "Well Field"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "harford-listing-258676",
@@ -1176,7 +1917,46 @@
           "field": "scope",
           "phrase": "wastewater"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "loudoun-bids-1111",
@@ -1432,7 +2212,156 @@
           "field": "title",
           "phrase": "Stormwater"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "The Work includes removal, hauling, and disposal of accumulated sediment, vegetation and earthwork; installation of one (1) sediment forebay, one (1) plunge pool and one (1) deep plunge pool at the existing inflows; construction of three (3) wetland cells with intercell berms and one (1) flow channel through the wetland cells; and installation of landscape plantings.",
+              "url": "https://www.loudoun.gov/bids.aspx?bidID=1111",
+              "origin": "listing"
+            },
+            {
+              "text": "the property identified as County PIN# 045-17-3780 off of Executive Drive in Sterling (the “Project”). The Work includes removal, hauling, and disposal of accumulated sediment, vegetation and earthwork; installation of one (1) sediment forebay, one (1) plunge pool and one (1) deep plunge pool at the existing inflows; construction of three (3) wetland cells with intercell berms and one (1) flow channel through the wetland cells;",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 4,
+              "origin": "pdf"
+            },
+            {
+              "text": "• Any penalties assessed (e.g., liquidated damages) • Project description that includes a summary sufficient to demonstrate relevance to the scope of this Project • Owner contact information • Architect/Engineer contact information",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 7,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "• Registered Commonwealth of Virginia Contractor: Class A. Include a copy of the Class A Contractors license in your bid. 4.4 Verification of Bonding Capability. Bidder shall include in their bid a letter from a surety or insurance company (with a Best’s Financial Strength Rating of A- or better and Financial Size Category VII or higher by A.M. Best Co.)",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 6,
+              "origin": "pdf"
+            },
+            {
+              "text": "Financial Strength Rating [rating] and Financial Size Category [Size Category] is capable of obtaining 100% Performance Bond and 100% Labor and Materials Payment Bond in the amount of the anticipated cost of construction, and said bonds will cover the Project and any warranty periods as provided for in the Contract Documents on behalf of the Contractor, in the event that such",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 6,
+              "origin": "pdf"
+            },
+            {
+              "text": "become binding on the parties upon the execution of the Contract: A. A performance bond satisfactory to the County, executed by a surety company authorized to do business in Virginia with a A.M. Best’s Financial Strength Rating of at least A- or better and in a financial size of category VII or higher, or otherwise secured in a manner satisfactory to the County, for the faithful",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 11,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "• Registered Commonwealth of Virginia Contractor: Class A. Include a copy of the Class A Contractors license in your bid. 4.4 Verification of Bonding Capability. Bidder shall include in their bid a letter from a surety or insurance company (with a Best’s Financial Strength Rating of A- or better and Financial Size Category VII or higher by A.M. Best Co.)",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 6,
+              "origin": "pdf"
+            },
+            {
+              "text": "Financial Strength Rating [rating] and Financial Size Category [Size Category] is capable of obtaining 100% Performance Bond and 100% Labor and Materials Payment Bond in the amount of the anticipated cost of construction, and said bonds will cover the Project and any warranty periods as provided for in the Contract Documents on behalf of the Contractor, in the event that such",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 6,
+              "origin": "pdf"
+            },
+            {
+              "text": "become binding on the parties upon the execution of the Contract: A. A performance bond satisfactory to the County, executed by a surety company authorized to do business in Virginia with a A.M. Best’s Financial Strength Rating of at least A- or better and in a financial size of category VII or higher, or otherwise secured in a manner satisfactory to the County, for the faithful",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 11,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Pre-Bid Conference: An optional Pre-Bid Conference will be held virtually on October 6, 2026, at 11:00 a.m.",
+              "url": "https://www.loudoun.gov/bids.aspx?bidID=1111",
+              "origin": "listing"
+            },
+            {
+              "text": "October 6, 2026 @ 11:00 a.m.",
+              "url": "https://www.loudoun.gov/bids.aspx?bidID=1111",
+              "origin": "listing"
+            },
+            {
+              "text": "transfer tool. B. Pre-Bid Conference An optional Pre-Bid Conference will be held virtually on October 6, 2026, at 11:00 a.m. to provide clarification on the Project requirements and expectations outlined in this solicitation.",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 1,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "specified in the Questions and Inquiries section above. Bids containing any exceptions to the Specifications/Scope of Work or Terms and Conditions or submitting additional terms and conditions shall be deemed non-responsive and rejected. Exceptions or additions proposed after bid submission by the successful Bidder shall not be accepted.",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 18,
+              "origin": "pdf"
+            },
+            {
+              "text": "F. Instructions for Submitting a Physical (Hard Copy) Bids 1. All physical (hard copy) bids must be submitted to the Division of Procurement in a sealed container. The face of the sealed container shall indicate the IFB number, time and date of opening, the title of the IFB, the name of the firm, and the firm’s",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 14,
+              "origin": "pdf"
+            },
+            {
+              "text": "complete return address. 2. Physical (Hard Copy) bids may be submitted via one of the following options:  US Mail to:",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 14,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Addendum: Addendum #1 Changes and/or Additions issued on October 21, 2026.",
+              "url": "https://www.loudoun.gov/bids.aspx?bidID=1111",
+              "origin": "listing"
+            },
+            {
+              "text": "thoroughly and consider all relevant factors when preparing their bids. Please note: Any information provided during the site visit is for informational purposes only and shall not be binding. Oral statements or instructions shall not constitute an amendment to the solicitation. Material questions or clarifications that may affect the scope, pricing, or interpretation of the",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 19,
+              "origin": "pdf"
+            },
+            {
+              "text": "are received by 4:00 p.m. on October 14, 2026. It is the responsibility of all Bidders to ensure that they have received all Addendums and to include signed copies with their bid. Addendums can be downloaded from www.loudoun.gov/procurement. A. Changes to this solicitation that do not affect the scope, price, timing,",
+              "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
+              "page": 17,
+              "origin": "pdf"
+            }
+          ]
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "lynchburg-bids-249",
@@ -1502,7 +2431,68 @@
           "field": "title",
           "phrase": "SEWER"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online.",
+              "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
+              "origin": "listing"
+            },
+            {
+              "text": "11/03/2026 @ 10:00 A.M.",
+              "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online.",
+              "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
+              "origin": "listing"
+            },
+            {
+              "text": "Submit Online",
+              "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "salem-bids-95",
@@ -1694,7 +2684,129 @@
           "field": "scope",
           "phrase": "waste disposal"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Repairs to the broken steps and platform on the north side fire escape will be performed by others after paint removal in those areas, and the Contractor shall sequence its work and remobilize as described in the Scope of Work.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "III. SPECIFICATIONS / SCOPE OF WORK The successful Bidder (the “Contractor”) shall furnish all labor, supervision, materials, equipment, access equipment, containment, testing, transportation, and waste disposal necessary to complete the work described below. The project includes lead-based paint removal and surface preparation",
+              "url": "https://www.salemva.gov/DocumentCenter/View/12664",
+              "page": 4,
+              "origin": "pdf"
+            },
+            {
+              "text": "OSHA. 5. Certifications. The Contractor shall furnish copies of all current licenses and certifications applicable to the work, including lead-related firm and worker/supervisor certifications, to the City upon award and prior to commencing work. 6. Access Equipment. The Contractor shall provide all ladders, scaffolding, lifts, and other",
+              "url": "https://www.salemva.gov/DocumentCenter/View/12664",
+              "page": 5,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Bidders must hold a valid Virginia contractor license of the appropriate class and specialty for the work at the time of bid submission, as required by Title 54.1, Chapter 11 of the Code of Virginia, and the Contractor must hold all lead-related licenses and certifications required for the work.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "For all further requirements regarding bid submittal, qualifications, evaluation, and contract award, refer to Invitation to Bid #2027-020, which is included in the Solicitation Documents.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "VA Contractor License Class / #: Specialty:",
+              "url": "https://www.salemva.gov/DocumentCenter/View/12664",
+              "page": 2,
+              "origin": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Mandatory Pre-Bid Meeting A MANDATORY pre-bid meeting, including a walk-through of the north and south fire escapes, will be held at 10:00 A.M.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "Bids will be accepted only from Bidders who were represented at the mandatory pre-bid meeting, as documented on the City’s sign-in sheet.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "10-28-2026 at 10:00 AM",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Sealed Bids for this Invitation to Bid will be received at the Salem Purchasing Department located at 114 N.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "Electronic submission through eVA is preferred.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "Bidders must hold a valid Virginia contractor license of the appropriate class and specialty for the work at the time of bid submission, as required by Title 54.1, Chapter 11 of the Code of Virginia, and the Contractor must hold all lead-related licenses and certifications required for the work.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "The designated website will be updated periodically with addenda and other information relevant to submitting a Bid for the ITB.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "All official notifications, addenda, and other Solicitation Documents will be offered only through the designated website.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            },
+            {
+              "text": "The City will not be responsible for Solicitation Documents, including addenda, if any, obtained from sources other than the designated website.",
+              "url": "https://www.salemva.gov/bids.aspx?bidID=95",
+              "origin": "listing"
+            }
+          ]
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "sam-3f2f09ace746415db8c96a738fde61f4",
@@ -1729,7 +2841,46 @@
       },
       "documentChanges": [],
       "changeHistory": [],
-      "evidenceFingerprint": "bf8da69a268a08576a34bea4d1667c26132f65bb6e330300955c4265688aa829"
+      "evidenceFingerprint": "bf8da69a268a08576a34bea4d1667c26132f65bb6e330300955c4265688aa829",
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "sam-95182c8575e849afbb5c5375383bf49b",
@@ -1769,7 +2920,46 @@
       },
       "documentChanges": [],
       "changeHistory": [],
-      "evidenceFingerprint": "909d5845f9ac71e1f85c81724b286d3f81d22724dc6e890b89b0d15ad05f7823"
+      "evidenceFingerprint": "909d5845f9ac71e1f85c81724b286d3f81d22724dc6e890b89b0d15ad05f7823",
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "uosa-27-01",
@@ -1824,7 +3014,52 @@
       "serviceTags": [
         "Water"
       ],
-      "serviceEvidence": {}
+      "serviceEvidence": {},
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "9/17/2026 10:00 AM",
+              "url": "https://uosa.org/current-solicitations/#27-01",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "uosa-27-02",
@@ -1875,7 +3110,52 @@
       "serviceTags": [
         "Water"
       ],
-      "serviceEvidence": {}
+      "serviceEvidence": {},
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "9/22/2026 10:00 PM",
+              "url": "https://uosa.org/current-solicitations/#27-02",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     },
     {
       "id": "uosa-27-04",
@@ -1931,7 +3211,52 @@
           "field": "title",
           "phrase": "Interceptor Upgrade"
         }
-      }
+      },
+      "qualificationChecklist": [
+        {
+          "id": "scope",
+          "title": "Scope and deliverables",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "eligibility",
+          "title": "Licenses and eligibility",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "bonds",
+          "title": "Bonding and insurance",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "meetings",
+          "title": "Pre-bid meetings and site visits",
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "8/20/2026 10:00 AM",
+              "url": "https://uosa.org/current-solicitations/#27-04",
+              "origin": "listing"
+            }
+          ]
+        },
+        {
+          "id": "submission",
+          "title": "Submission instructions",
+          "state": "needs-review",
+          "evidence": []
+        },
+        {
+          "id": "amendments",
+          "title": "Amendments and deadline changes",
+          "state": "needs-review",
+          "evidence": []
+        }
+      ],
+      "requiredBusinessCertifications": []
     }
   ],
   "coverage": {

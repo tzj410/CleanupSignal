@@ -41,3 +41,5 @@
 #detailContent blockquote{margin:12px 0;padding:10px 14px;border-left:3px solid #74937d;background:#f4f6f1;overflow-wrap:anywhere}
 #detailContent blockquote p{margin:0 0 5px}
 #detailContent cite{font-size:12px;font-style:normal;color:#52675e}
+
+.fit-note{margin:12px 0;padding:12px;border-left:3px solid #517e65;background:#f3f6ef;font-size:13px}.fit-note p{margin:5px 0}.profile-form input[type=number]{display:block;max-width:100%;padding:10px;border:1px solid #9cae9e;border-radius:4px}

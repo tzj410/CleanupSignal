@@ -2,15 +2,16 @@
 """Maintain one public GitHub issue per source incident. No customer data or secrets."""
 import json,os,pathlib,datetime as dt
 from urllib.request import Request,urlopen
+from source_health import source_freshness
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 REPO='tzj410/CleanupSignal';LABEL='source-monitor'
 def incidents(data,at=None):
  now=at or dt.datetime.now(dt.timezone.utc);items={}
  try:age=(now-dt.datetime.fromisoformat(data['generatedAt'].replace('Z','+00:00'))).total_seconds()
  except (KeyError,ValueError):age=float('inf')
- if age>10800:items['refresh-overdue']='No dataset has been published within the three-hour monitoring window. Inspect scheduled reporting runs.'
+ if age>10800 or age< -300:items['refresh-overdue']='No dataset has been published within the three-hour monitoring window. Inspect scheduled reporting runs.'
  for s in data.get('sources',[])+data.get('operations',{}).get('procurementSources',[]):
-  if s.get('mode')!='manual' and s.get('status') in ['degraded','needs-key']:
+  if s.get('mode')!='manual' and (s.get('status') in ['degraded','needs-key'] or not source_freshness(s,now)['fresh']):
    items[s['id']]=s['name']+' requires attention. Review the source status and collector logs. Current notices from this source must not be treated as verified.'
  return items
 

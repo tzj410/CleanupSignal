@@ -220,5 +220,15 @@
     "agency": "City of Suffolk",
     "mode": "civic",
     "note": "Hourly public city board scan; absence of matching notices is not comprehensive city procurement coverage."
+  },
+  {
+    "id": "fallschurch-bids",
+    "name": "Falls Church public bid board",
+    "url": "https://www.fallschurchva.gov/bids.aspx",
+    "jurisdiction": "VA",
+    "locality": "Falls Church",
+    "agency": "City of Falls Church",
+    "mode": "civic",
+    "note": "Hourly city-owned board scan; environmental titles are followed to official detail pages. No matching notice was present during the initial check. This is partial city coverage, not an eVA replacement."
   }
 ]

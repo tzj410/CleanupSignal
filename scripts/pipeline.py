@@ -316,6 +316,8 @@ def main():
         data['signals']=[tag_record(r) for r in data['signals']]
         data=group_duplicates(data)
         data['operations']['comparison']=compare(existing,data)
+    from qualification import qualification_checklist
+    data['signals']=[qualification_checklist(r) for r in data['signals']]
     from editorial_review import apply_reviews
     data=apply_reviews(data,json.loads((ROOT/'data/reviews.json').read_text()))
     write_data(data)
