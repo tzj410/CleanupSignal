@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-28T16:41:09Z",
+  "generatedAt": "2026-10-28T21:40:51Z",
   "sources": [
     {
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
-      "lastChecked": "2026-10-28T16:41:09Z",
+      "lastChecked": "2026-10-28T21:40:51Z",
       "status": "verified"
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
-      "lastChecked": "2026-10-28T16:41:09Z",
+      "lastChecked": "2026-10-28T21:40:51Z",
       "status": "verified"
     },
     {
@@ -41,7 +41,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4194",
       "summary": "Administrative procurement activity: IFB-26-27-004 AA-Demo 6 Properties Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -128,7 +128,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4232",
       "summary": "Administrative procurement activity: RFP-26-27-018-Wastewater Sludge Removal Dewatering Transportation and Land Application (Responders List)",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -215,7 +215,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4234",
       "summary": "Administrative procurement activity: IFB 26-27-009 Southern Virginia Megasite at Berry Hill - McGruff Creek Sewer Extension - Notice of Intent",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -302,7 +302,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4238",
       "summary": "Administrative procurement activity: IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -389,7 +389,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623",
       "summary": "District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -410,7 +410,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
+        "checkedAt": "2026-10-28T21:40:51Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -565,7 +565,7 @@
       "jurisdiction": "DC",
       "locality": "Washington, DC",
       "category": "Water",
-      "status": "open-solicitation",
+      "status": "closed",
       "amount": null,
       "deadline": "2026-10-28T14:00:00-04:00",
       "announcedAt": "2026-10-23",
@@ -574,7 +574,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc852234",
       "summary": "District procurement notice: DPW FY27 Stormwater Retention Credits. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -587,18 +587,23 @@
         "Official market designation: Open. Review the portal for eligibility conditions."
       ],
       "prebidAttendance": "not-stated",
-      "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
-      "evidenceFingerprint": "5d1cfe2f039eece88efd709080c2a402fd696b2a347df1ee740ada80b169c533",
-      "documentAnalysis": [],
-      "documentCoverage": {
-        "linked": 0,
-        "selected": 0,
-        "extracted": 0,
-        "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
-      },
-      "documentChanges": [],
-      "changeHistory": [],
+      "documentReview": "Linked documents have not been independently read or checked for later amendments.",
+      "evidenceFingerprint": "a656b2ee0fab6d66793dbf48ec07b9070e3b51b4453b9d2a541922a4da22edb0",
+      "documentChanges": [
+        {
+          "kind": "status-changed",
+          "before": "open-solicitation",
+          "after": "closed"
+        }
+      ],
+      "changeHistory": [
+        {
+          "at": "2026-10-28T21:40:51Z",
+          "kind": "status-changed",
+          "before": "open-solicitation",
+          "after": "closed"
+        }
+      ],
       "serviceTags": [
         "Water"
       ],
@@ -664,7 +669,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Resilience Authority of Annapolis and Anne Arundel County",
@@ -773,7 +778,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Danville",
@@ -884,7 +889,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia’s Gateway Region, Inc.",
@@ -991,7 +996,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Giles County",
@@ -1092,7 +1097,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Multipurpose brownfields selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Martinsville",
@@ -1207,7 +1212,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Mount Rogers Planning District Commission",
@@ -1314,7 +1319,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Pamunkey Community Dump.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pamunkey Indian Tribe",
@@ -1415,7 +1420,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pittsylvania County",
@@ -1522,7 +1527,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "State brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia Department of Environmental Quality",
@@ -1629,7 +1634,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "evidenceTerms": [
         "Tri-County Council for Western Maryland",
@@ -1739,10 +1744,10 @@
       "summary": " Consists of dredging of Gunpowder River, Taylor Creek, and the Rumsey Island Outfall Dredge Area. This shall include furnishing of all plant, materials, equipment, supplies, labor and transportation...",
       "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
       "verifiedAt": "2026-10-28T16:41:09Z",
-      "verification": "verified",
+      "verification": "stale",
       "verificationScope": "official-government-listing",
       "noticeType": "County procurement listing",
-      "statusNote": "The county listing does not establish a current invitation and timezone-consistent deadline. Review the linked official portal.",
+      "statusNote": "No longer present on the checked listing; verify current status at the source.",
       "documentChanges": [],
       "changeHistory": [],
       "evidenceFingerprint": "18e7360c4a65536c22ca67feda5842aff1c3ea96ec8ff9db5416dab8fa9aa6f3",
@@ -1803,7 +1808,7 @@
       "jurisdiction": "MD",
       "locality": "Harford County",
       "category": "Monitoring",
-      "status": "open-solicitation",
+      "status": "unconfirmed",
       "amount": null,
       "deadline": "2026-10-28T13:00:00-04:00",
       "announcedAt": "",
@@ -1814,10 +1819,10 @@
       "summary": " Well Field Inspection, Maintenance, and Repair Services Project closes Oct 28, 2026 1:00 PM EDT.",
       "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
       "verifiedAt": "2026-10-28T16:41:09Z",
-      "verification": "verified",
+      "verification": "stale",
       "verificationScope": "official-government-listing",
       "noticeType": "County procurement listing",
-      "statusNote": "Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified.",
+      "statusNote": "No longer present on the checked listing; verify current status at the source.",
       "documentAnalysis": [],
       "documentCoverage": {
         "linked": 0,
@@ -1827,9 +1832,22 @@
         "checkedAt": "2026-10-28T16:41:09Z"
       },
       "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
-      "documentChanges": [],
-      "changeHistory": [],
-      "evidenceFingerprint": "6b1380725a095afa56a3cef259104b0c77190afad62eea79dba113dabd345f1b",
+      "documentChanges": [
+        {
+          "kind": "status-changed",
+          "before": "open-solicitation",
+          "after": "unconfirmed"
+        }
+      ],
+      "changeHistory": [
+        {
+          "at": "2026-10-28T21:40:51Z",
+          "kind": "status-changed",
+          "before": "open-solicitation",
+          "after": "unconfirmed"
+        }
+      ],
+      "evidenceFingerprint": "4891105e116276a456cfcc0577e9f971365b8e1f356bf57a4eeac39ceee23bc9",
       "serviceTags": [
         "Monitoring"
       ],
@@ -1897,7 +1915,7 @@
       "procurementUrl": "https://harfordcountymd.bonfirehub.com/opportunities/258676",
       "summary": " Provide wastewater pumping services utilizing specific vacuum equipment. Project closes Nov 18, 2026 1:00 PM EST.",
       "nextStep": "Open the county-linked Bonfire notice and review full scope, amendments, eligibility and mandatory meetings before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "verificationScope": "official-government-listing",
       "noticeType": "County procurement listing",
@@ -1908,7 +1926,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
+        "checkedAt": "2026-10-28T21:40:51Z"
       },
       "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
       "documentChanges": [],
@@ -1979,7 +1997,7 @@
       "sourceUrl": "https://www.loudoun.gov/bids.aspx?bidID=1111",
       "summary": "Local procurement notice. The intent of this Invitation for Bid (IFB) is for the County of Loudoun, Virginia (County) to obtain the services of a qualified General Contractor to perform the Work to retrofit and convert Stormwater Facility MD1745 from a Level I Wet Pond to Wetlands within the property identified as County PIN# 045-17-3780 off of Executive Drive in Sterling (the “Project”). The Work includes removal, hauling, and disposal of accumulated sediment, vegetation and earthwork; installation of one (1) sediment f",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -2041,7 +2059,7 @@
         {
           "url": "https://www.loudoun.gov/DocumentCenter/View/222429",
           "title": "RFQ 715024 (PDF)",
-          "checkedAt": "2026-10-28T16:41:09Z",
+          "checkedAt": "2026-10-28T21:40:51Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "5d69257f5d1ca1ab4dbb9627209b6cbf6eebba38c05f9b175446daf15a039f81",
@@ -2165,7 +2183,7 @@
         {
           "url": "https://www.loudoun.gov/DocumentCenter/View/222785",
           "title": "Addendum 1 (PDF)",
-          "checkedAt": "2026-10-28T16:41:09Z",
+          "checkedAt": "2026-10-28T21:40:51Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "124a3d8283cb5005f26f2ab0ab541ccc7a30307622ff0dde5f0debfe12765091",
@@ -2205,7 +2223,7 @@
         "selected": 2,
         "extracted": 2,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
+        "checkedAt": "2026-10-28T21:40:51Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -2384,7 +2402,7 @@
       "sourceUrl": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
       "summary": "Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -2412,7 +2430,7 @@
         {
           "url": "https://www.lynchburgva.gov/DocumentCenter/View/8089",
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS",
-          "checkedAt": "2026-10-28T16:41:09Z",
+          "checkedAt": "2026-10-28T21:40:51Z",
           "status": "needs-review",
           "note": "Document exceeds the 6 MB extraction limit",
           "lastKnownSha256": null,
@@ -2424,7 +2442,7 @@
         "selected": 1,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
+        "checkedAt": "2026-10-28T21:40:51Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -2515,7 +2533,7 @@
       "sourceUrl": "https://www.salemva.gov/bids.aspx?bidID=95",
       "summary": "Local procurement notice. CITY OF SALEM, VIRGINIA CITY OF SALEM — PURCHASING DEPARTMENT 114 N. Broad Street Salem, Virginia 24153 CITY HALL FIRE ESCAPE LEAD PAINT REMOVAL AND PAINTING LEGAL NOTICE / INVITATION TO BID General Notice City of Salem (Owner) is requesting Bids for the following: City Hall Fire Escape Lead Paint Removal and Painting (ITB #2027-020). Sealed Bids for this Invitation to Bid will be received at the Salem Purchasing Department located at 114 N. Broad Street, Salem, VA 24153, until Thursday, Novembe",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -2557,7 +2575,7 @@
         {
           "url": "https://www.salemva.gov/DocumentCenter/View/12664",
           "title": "ITB 2027-020 City Hall Fire Escape Painting",
-          "checkedAt": "2026-10-28T16:41:09Z",
+          "checkedAt": "2026-10-28T21:40:51Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "06723f1024906bf1ea1f7af53b1038155d667081ce9c9740555e6907167e1712",
@@ -2672,7 +2690,7 @@
         "selected": 1,
         "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-10-28T16:41:09Z"
+        "checkedAt": "2026-10-28T21:40:51Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -2990,7 +3008,7 @@
       "sourceUrl": "https://uosa.org/current-solicitations/#27-01",
       "summary": "Wastewater authority public procurement listing: L2 GAC. Review the source-listed solicitation and all addenda.",
       "nextStep": "Confirm current status and documents on the authority page and eVA before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "solicitationNumber": "27-01",
       "prebidMeeting": "9/17/2026 10:00 AM",
@@ -3081,16 +3099,16 @@
       "jurisdiction": "VA",
       "locality": "Centreville / Northern Virginia",
       "category": "Water",
-      "status": "closed",
+      "status": "open-solicitation",
       "amount": null,
-      "deadline": "2026-10-22T14:00:00-04:00",
+      "deadline": "2026-11-04T14:00:00-05:00",
       "announcedAt": "2026-08-24",
       "sourceId": "uosa-table",
       "sourceName": "Upper Occoquan Service Authority solicitations",
       "sourceUrl": "https://uosa.org/current-solicitations/#27-02",
       "summary": "Wastewater authority public procurement listing: P2NR+. Review the source-listed solicitation and all addenda.",
       "nextStep": "Confirm current status and documents on the authority page and eVA before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "solicitationNumber": "27-02",
       "prebidMeeting": "9/22/2026 10:00 PM",
@@ -3120,15 +3138,271 @@
       "amendmentNotes": [],
       "requirementNotes": [],
       "prebidAttendance": "not-stated",
-      "documentReview": "Linked documents have not been independently read or checked for later amendments.",
-      "evidenceFingerprint": "242e7223b92e5721876498c6011392768adb82ed6e9f5ce82e3cfb2d9e6a2309",
-      "documentChanges": [],
+      "documentReview": "3 of 4 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
+      "evidenceFingerprint": "b607f14d4351633c24fb7acd3a93c127a120f0466b18e8a5ad86a3a7867e6580",
+      "documentAnalysis": [
+        {
+          "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+          "title": "IFB",
+          "checkedAt": "2026-10-28T21:40:51Z",
+          "status": "extracted",
+          "analysisVersion": 3,
+          "sha256": "9391f2294be4936e55021fd8788e589b0bb9676476f37a6162bdba2814311e03",
+          "textSha256": "ab8194f68d8808c9137a221a72c246b12b64247ed1d9a28c90c914836e95fddb",
+          "pageCount": 177,
+          "pagesRead": 80,
+          "truncated": true,
+          "excerpts": {
+            "scope": [
+              {
+                "page": 5,
+                "text": "complementary Renewal and Replacement (R/R) improvements at the Millard H. Robbins, Jr. Regional Water Reclamation Plant (RWRP). Major work includes replacement of eight (8) screw pumps at Primary Effluent Lift Stations (PELS) 55/1 and 55/2; upgrade of two (2) RAS pumps and increased pumping capacity at RAS Pump Station 9/1; and cyclone/settleability improvements at Selector Basins 56/1–"
+              },
+              {
+                "page": 5,
+                "text": "An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite to submitting a bid, Bidders who intend to submit a bid are encouraged to attend. Please"
+              },
+              {
+                "page": 37,
+                "text": "3. Date completed: 4. Project description:"
+              },
+              {
+                "page": 38,
+                "text": "3. Date completed: 4. Project description:"
+              },
+              {
+                "page": 39,
+                "text": "3. Date completed: 4. Project description:"
+              }
+            ],
+            "eligibility": [
+              {
+                "page": 7,
+                "text": "responsive, responsible Bidder to sign the Contract and provide acceptable insurance certificate(s) and, if required, Performance Bond and Payment Bond, the Owner may award the Contract to the next lowest responsive, responsible Bidder. The rights are reserved by the Owner to (i) reject all Bids; (ii) reject any Bid not conforming in all material respects to the Invitation to Bid and to the intent and purpose of the Contract"
+              },
+              {
+                "page": 14,
+                "text": "2) Signed copy of all Addenda or acknowledgment on Bid form. 3) Bid Bond B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at"
+              },
+              {
+                "page": 17,
+                "text": "A. Any Bid in excess of $100,000 shall be accompanied by cash, a certified check in form acceptable to Owner, or a Bid Bond issued by a Surety authorized to issue such bonds in the Commonwealth of Virginia, in the amount of five percent (5%) of the lump sum Bid submitted. The obligee or payee of the Bid Security shall be the Upper Occoquan Service Authority. This Bid Security shall be given as a"
+              },
+              {
+                "page": 17,
+                "text": "execute the attached Contract and furnish properly executed insurance certificates, Performance Bond and Payment Bond in the full amount of the Contract Price within the time specified. The date of the Bid Security shall be the date of bid opening, or the Surety shall otherwise certify that a Bid Security executed prior to the date of Bid opening is effective at the time of the Bid opening. If Bidder is a"
+              },
+              {
+                "page": 17,
+                "text": "B. If the Bidder provides the Bid Security in the form of a Bid Bond issued by a Surety, the Bidder shall use the Bid Bond form bound herewith. The Attorney-in-Fact who executes such bond on behalf of the Surety must attach a notarized copy of its power-of-attorney in compliance with applicable Virginia"
+              }
+            ],
+            "meetings": [
+              {
+                "page": 5,
+                "text": "Pre-Bid Meeting and Site Tour An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite"
+              },
+              {
+                "page": 5,
+                "text": "contact purchasing@uosa.org to confirm your attendance. The site visit is not mandatory and is not a pre-requisite for submitting bids. However, failure to attend the site visit will not relieve the Bidder from the responsibility for ascertaining conditions at the site and claims as a result of failure to visit the job site will not be considered by UOSA. All Bidders shall submit questions in writing by the"
+              },
+              {
+                "page": 6,
+                "text": "bid document. Pre-Bid Site Visit: Bidder’s access to visit the project site can be facilitated upon written request submitted to Purchasing office. Questions and Communications"
+              }
+            ],
+            "submission": [
+              {
+                "page": 4,
+                "text": "Deadline for Questions: 15 calendar days prior to deadline for receiving Bid Bids Must be Received On or Before: 2:00 PM, local time, on October 22, 2026, at UOSA’s Administration Building F at, 14631 Compton Road, Centreville, VA 20121-2506 Electronically via http://eva.virginia.gov or seal envelop. Refer to"
+              },
+              {
+                "page": 4,
+                "text": "The Upper Occoquan Service Authority (UOSA) invites qualified contractors to submit sealed Bids for the project known as “Phase 2 Nitrogen Removal Plus Other Interim Process Improvements”, and also by the name “UOSA Contract P2NR+.” Sealed Bids addressed will be received at the office of the Upper Occoquan Service Authority at the date and time given above. The sealed Bids then will be publicly opened and read aloud."
+              },
+              {
+                "page": 13,
+                "text": "corporation or a member of a partnership, a notarized power-of-attorney must be on file with the Owner prior to opening of Bids or be submitted with the Bid, otherwise the Bid will be regarded as not properly authorized and not responsive.  10. STATE AND LOCAL SALES AND USE TAXES"
+              },
+              {
+                "page": 14,
+                "text": "A. All Bids must be submitted not later than the time prescribed, at the place, and in the manner set forth in the Invitation to Bid and in these Instructions to Bidders. Bids must be made on the Bid Form. Each Bid must be submitted in a sealed envelope (unless submitted electronically via eVA), so marked as to indicate the"
+              },
+              {
+                "page": 14,
+                "text": "B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at http://eva.virginia.gov. Vendors who are interested in submitting their bids electronically are encouraged to register on eVA by clicking Register Now link"
+              }
+            ],
+            "deadlineReferences": [
+              {
+                "page": 4,
+                "text": "Deadline for Questions: 15 calendar days prior to deadline for receiving Bid Bids Must be Received On or Before: 2:00 PM, local time, on October 22, 2026, at UOSA’s Administration Building F at, 14631 Compton Road, Centreville, VA 20121-2506 Electronically via http://eva.virginia.gov or seal envelop. Refer to"
+              },
+              {
+                "page": 4,
+                "text": "information assume complete responsibility in the event that they do not receive communications prior to the closing date. Introduction The Upper Occoquan Service Authority (UOSA) invites qualified contractors to submit sealed Bids for the project known as “Phase 2 Nitrogen Removal Plus Other Interim"
+              },
+              {
+                "page": 4,
+                "text": "date and time given above. The sealed Bids then will be publicly opened and read aloud. The Owner will read only the Base Bid amount written in words. Any Bid received after the date and time specified will not be considered. The procurement process and the performance of the Contract shall be governed by the provisions of the Virginia Public Procurement Act (VPPA)."
+              },
+              {
+                "page": 15,
+                "text": "then open the electronic Bids. All Bids shall be entered on the official Bid Tab for that project. UOSA shall not indicate if the Bid was received electronically or hard copy on the Bid Tab. All Bids (hard copy and electronic) that were accepted and opened will be reviewed for responsiveness and responsibility (as defined by the Virginia Public Procurement Act) for final award of the"
+              },
+              {
+                "page": 15,
+                "text": "until such time that the electronic bids may be retrieved. Any physical format bids received will be opened and recorded and electronic bids will be added to the bid tab when they become available. Once all bids have been received, they will be reviewed for responsiveness and responsibility for final award of the IFB."
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://uosa.org/wp-content/uploads/2026/10/UOSA-IFB-27-02-Addendum-3-Letter.pdf",
+          "title": "Addendum #3",
+          "checkedAt": "2026-10-28T21:40:51Z",
+          "status": "extracted",
+          "analysisVersion": 3,
+          "sha256": "fdd4db806c354e31fb9e194cb9aebc4adb8b8b643f659eb2b424897592b51bbf",
+          "textSha256": "f0e58e6080e9d6b7cdd4ea0ed71d37ee69049834bad71fa34d07e246edd57329",
+          "pageCount": 14,
+          "pagesRead": 14,
+          "truncated": false,
+          "excerpts": {
+            "scope": [],
+            "eligibility": [],
+            "meetings": [
+              {
+                "page": 8,
+                "text": "Additional Pre-Bid Request for Information and Clarification, P2NR+ Pursuant to the Instructions to Bidders, Article 1.B, the following interpretations and clarifications are being offered in response to questions from potential bidders and other interested parties. These responses are intended to clarify, not change, the terms, conditions, and scope of the Work. 10/26/2026"
+              }
+            ],
+            "submission": [],
+            "deadlineReferences": []
+          }
+        },
+        {
+          "url": "https://uosa.org/wp-content/uploads/2026/10/UOSA-IFB-27-02-Addendum-2-Letter.pdf",
+          "title": "Addendum #2",
+          "checkedAt": "2026-10-28T21:40:51Z",
+          "status": "extracted",
+          "analysisVersion": 3,
+          "sha256": "da7add48ca10628c821dd2b5884262a0efc35aa201a4c39cea82b4676cbed05d",
+          "textSha256": "8127cdfaf6d0f099ce7ef13ff847d7f346bb2224d7b2f46c2770622e7a4548b6",
+          "pageCount": 41,
+          "pagesRead": 41,
+          "truncated": false,
+          "excerpts": {
+            "scope": [
+              {
+                "page": 28,
+                "text": "RFI-021 Referencing DWG SP-22, please clarify scope at the There is no scope of work associated with this call out. This callout will be removed per a following callout: “Top of pipe 2” SPD (PVC) EL = forthcoming addendum 200.03” RFI-022 Referencing DWGs 6-M-02 and 6-M-04, please clarify Detail 2 on drawing 6-M-02 will be modified per forthcoming addendum and will identify"
+              }
+            ],
+            "eligibility": [
+              {
+                "page": 39,
+                "text": "documents, including the completed bid form, Bidder’s Qualifications, Appendices A-D, acknowledgment of addenda, and the bid bond. Failure to submit any required bid form element or any other required documentation may result in the bid being deemed non-responsive."
+              },
+              {
+                "page": 8,
+                "text": "A. Qualifications: Calculations required for design data shall be stamped by a registered civil or structural engineer licensed in the Commonwealth of Virginia."
+              },
+              {
+                "page": 29,
+                "text": "RFI-036 For Appendix D, the projects submitted for the Final Project Value would be used for each referenced project for the qualification of the Qualifications of Bidders, requests both original and bidders final contract value for each referenced project. Please confirm that the project's final contract value may be used to meet the minimum construction contract"
+              }
+            ],
+            "meetings": [
+              {
+                "page": 1,
+                "text": "2. Interpreta ons and Clariﬁca ons 3. Minutes of the Pre-bid Conference 4. Sign-In Sheet for the Pre-Bid Conference"
+              },
+              {
+                "page": 26,
+                "text": "Pre-Bid Request for Information and Clarification, P2NR+ Pursuant to the Instructions to Bidders, Article 1.B, the following interpretations and clarifications are being offered in response to questions from potential bidders and other interested parties. These responses are intended to clarify, not change, the terms, conditions, and scope of the Work. Octobor 19, 2026"
+              },
+              {
+                "page": 30,
+                "text": "costs. RFI-055 Can the sign-in sheet from the site visit be shared? Pre-Bid Sign-in sheet will be attached with forthcoming addenda.  RFI-056 Please provide the manufacturer(s) of the existing The majority of existing electrical equipment and panels associated with the P2NR+ Project electrical equipment (switchgear, switchboards, are Square D products."
+              },
+              {
+                "page": 35,
+                "text": "RFI-118 Request that the pre-bid sign in sheet be made See response to question RFI-055. available in addendum. RFI-119 Section 40 42 13 identifies 2W spray-water piping as Refer to the responses to questions RFI-015 and RFI-022 above. requiring heat tracing and references Section 40 05 33,"
+              },
+              {
+                "page": 37,
+                "text": "PRE-BID CONFERENCE"
+              }
+            ],
+            "submission": [
+              {
+                "page": 38,
+                "text": "The deadline for bid submission is Thursday, October 22, 2026, at 2:00 PM. Bids may be submitted electronically via eVA, sent by mail, or hand- delivered to the receptionist in the Administration Building. The bid opening will also take place in the Administration Building."
+              },
+              {
+                "page": 33,
+                "text": "those requiring factory testing. Please also advise of obtaining this information directly from manufacturers and suppliers and incorporating it the submittal leadtimes. into its bid and project schedule.  RFI-102 Please confirm if there are any Hazardous Materials Refer to the Report of Site and Existing Conditions information dated August 2026 provided known at the site and if a HazMat Survey is required for with the Bid Documents. Refer to response to RFI 039 above."
+              },
+              {
+                "page": 39,
+                "text": "Bid Submission: By submitting a bid, the bidder represents that it has exercised due diligence in reviewing the IFB and all project requirements and specifications."
+              },
+              {
+                "page": 39,
+                "text": "Appendices A-D, acknowledgment of addenda, and the bid bond. Failure to submit any required bid form element or any other required documentation may result in the bid being deemed non-responsive.  4. Purpose of the Project:"
+              }
+            ],
+            "deadlineReferences": [
+              {
+                "page": 32,
+                "text": "complete subcontractor and supplier pricing, we kindly request the bid due date deadline to be extended by two weeks along with the deadline to ask bidders questions."
+              },
+              {
+                "page": 38,
+                "text": "The deadline for questions is Wednesday, October 7, 2026. All questions received in writing by this deadline will be addressed in an addendum. The deadline for bid submission is Thursday, October 22, 2026, at 2:00 PM. Bids may be submitted electronically via eVA, sent by mail, or hand-"
+              }
+            ]
+          }
+        }
+      ],
+      "documentCoverage": {
+        "linked": 4,
+        "selected": 3,
+        "extracted": 3,
+        "maximumPagesPerPDF": 80,
+        "checkedAt": "2026-10-28T21:40:51Z"
+      },
+      "documentChanges": [
+        {
+          "kind": "deadline-changed",
+          "before": "2026-10-22T14:00:00-04:00",
+          "after": "2026-11-04T14:00:00-05:00"
+        },
+        {
+          "kind": "status-changed",
+          "before": "closed",
+          "after": "open-solicitation"
+        }
+      ],
       "changeHistory": [
         {
           "at": "2026-10-27T22:58:25Z",
           "kind": "document-added",
           "title": "Addendum #3",
           "url": "https://uosa.org/wp-content/uploads/2026/10/UOSA-IFB-27-02-Addendum-3-Letter.pdf"
+        },
+        {
+          "at": "2026-10-28T21:40:51Z",
+          "kind": "deadline-changed",
+          "before": "2026-10-22T14:00:00-04:00",
+          "after": "2026-11-04T14:00:00-05:00"
+        },
+        {
+          "at": "2026-10-28T21:40:51Z",
+          "kind": "status-changed",
+          "before": "closed",
+          "after": "open-solicitation"
         }
       ],
       "serviceTags": [
@@ -3139,20 +3413,77 @@
         {
           "id": "scope",
           "title": "Scope and deliverables",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "complementary Renewal and Replacement (R/R) improvements at the Millard H. Robbins, Jr. Regional Water Reclamation Plant (RWRP). Major work includes replacement of eight (8) screw pumps at Primary Effluent Lift Stations (PELS) 55/1 and 55/2; upgrade of two (2) RAS pumps and increased pumping capacity at RAS Pump Station 9/1; and cyclone/settleability improvements at Selector Basins 56/1–",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
+            },
+            {
+              "text": "An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite to submitting a bid, Bidders who intend to submit a bid are encouraged to attend. Please",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
+            },
+            {
+              "text": "3. Date completed: 4. Project description:",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 37,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "eligibility",
           "title": "Licenses and eligibility",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "responsive, responsible Bidder to sign the Contract and provide acceptable insurance certificate(s) and, if required, Performance Bond and Payment Bond, the Owner may award the Contract to the next lowest responsive, responsible Bidder. The rights are reserved by the Owner to (i) reject all Bids; (ii) reject any Bid not conforming in all material respects to the Invitation to Bid and to the intent and purpose of the Contract",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 7,
+              "origin": "pdf"
+            },
+            {
+              "text": "2) Signed copy of all Addenda or acknowledgment on Bid form. 3) Bid Bond B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 14,
+              "origin": "pdf"
+            },
+            {
+              "text": "A. Any Bid in excess of $100,000 shall be accompanied by cash, a certified check in form acceptable to Owner, or a Bid Bond issued by a Surety authorized to issue such bonds in the Commonwealth of Virginia, in the amount of five percent (5%) of the lump sum Bid submitted. The obligee or payee of the Bid Security shall be the Upper Occoquan Service Authority. This Bid Security shall be given as a",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 17,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "bonds",
           "title": "Bonding and insurance",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "responsive, responsible Bidder to sign the Contract and provide acceptable insurance certificate(s) and, if required, Performance Bond and Payment Bond, the Owner may award the Contract to the next lowest responsive, responsible Bidder. The rights are reserved by the Owner to (i) reject all Bids; (ii) reject any Bid not conforming in all material respects to the Invitation to Bid and to the intent and purpose of the Contract",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 7,
+              "origin": "pdf"
+            },
+            {
+              "text": "2) Signed copy of all Addenda or acknowledgment on Bid form. 3) Bid Bond B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 14,
+              "origin": "pdf"
+            },
+            {
+              "text": "A. Any Bid in excess of $100,000 shall be accompanied by cash, a certified check in form acceptable to Owner, or a Bid Bond issued by a Surety authorized to issue such bonds in the Commonwealth of Virginia, in the amount of five percent (5%) of the lump sum Bid submitted. The obligee or payee of the Bid Security shall be the Upper Occoquan Service Authority. This Bid Security shall be given as a",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 17,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "meetings",
@@ -3163,20 +3494,70 @@
               "text": "9/22/2026 10:00 PM",
               "url": "https://uosa.org/current-solicitations/#27-02",
               "origin": "listing"
+            },
+            {
+              "text": "An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite to submitting a bid, Bidders who intend to submit a bid are encouraged to attend. Please",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
+            },
+            {
+              "text": "Pre-Bid Meeting and Site Tour An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
             }
           ]
         },
         {
           "id": "submission",
           "title": "Submission instructions",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "An optional pre-bid meeting and site tour will be held at the time and date specified on the cover page of this Invitation for Bid ( IFB). The purpose of this meeting is to allow potential Bidders an opportunity to present questions and obtain clarification relative to any facet of this solicitation. While attendance at this meeting will not be a prerequisite to submitting a bid, Bidders who intend to submit a bid are encouraged to attend. Please",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
+            },
+            {
+              "text": "2) Signed copy of all Addenda or acknowledgment on Bid form. 3) Bid Bond B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 14,
+              "origin": "pdf"
+            },
+            {
+              "text": "contact purchasing@uosa.org to confirm your attendance. The site visit is not mandatory and is not a pre-requisite for submitting bids. However, failure to attend the site visit will not relieve the Bidder from the responsibility for ascertaining conditions at the site and claims as a result of failure to visit the job site will not be considered by UOSA. All Bidders shall submit questions in writing by the",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 5,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "amendments",
           "title": "Amendments and deadline changes",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "2) Signed copy of all Addenda or acknowledgment on Bid form. 3) Bid Bond B. Electronic Bid Submission - In accordance with the Virginia Public Procurement Act 2.2-4303.A (effective January 1, 2025), Bids may also be submitted electronically via eVA, Virginia’s online electronic procurement system at",
+              "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
+              "page": 14,
+              "origin": "pdf"
+            },
+            {
+              "text": "RFI-021 Referencing DWG SP-22, please clarify scope at the There is no scope of work associated with this call out. This callout will be removed per a following callout: “Top of pipe 2” SPD (PVC) EL = forthcoming addendum 200.03” RFI-022 Referencing DWGs 6-M-02 and 6-M-04, please clarify Detail 2 on drawing 6-M-02 will be modified per forthcoming addendum and will identify",
+              "url": "https://uosa.org/wp-content/uploads/2026/10/UOSA-IFB-27-02-Addendum-2-Letter.pdf",
+              "page": 28,
+              "origin": "pdf"
+            },
+            {
+              "text": "documents, including the completed bid form, Bidder’s Qualifications, Appendices A-D, acknowledgment of addenda, and the bid bond. Failure to submit any required bid form element or any other required documentation may result in the bid being deemed non-responsive.",
+              "url": "https://uosa.org/wp-content/uploads/2026/10/UOSA-IFB-27-02-Addendum-2-Letter.pdf",
+              "page": 39,
+              "origin": "pdf"
+            }
+          ]
         }
       ],
       "requiredBusinessCertifications": []
@@ -3197,7 +3578,7 @@
       "sourceUrl": "https://uosa.org/current-solicitations/#27-04",
       "summary": "Wastewater authority public procurement listing: Yorkshire Park Interceptor Upgrade. Review the source-listed solicitation and all addenda.",
       "nextStep": "Confirm current status and documents on the authority page and eVA before bidding.",
-      "verifiedAt": "2026-10-28T16:41:09Z",
+      "verifiedAt": "2026-10-28T21:40:51Z",
       "verification": "verified",
       "solicitationNumber": "27-04",
       "prebidMeeting": "8/20/2026 10:00 AM",
@@ -3295,11 +3676,34 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-10-28T16:41:09Z",
+    "generatedAt": "2026-10-28T21:40:51Z",
     "comparison": {
-      "comparedTo": "2026-10-28T09:43:42Z",
+      "comparedTo": "2026-10-28T16:41:09Z",
       "newIds": [],
-      "changed": [],
+      "changed": [
+        {
+          "id": "dc-ocp-Doc852234",
+          "fields": [
+            "status",
+            "evidenceFingerprint"
+          ]
+        },
+        {
+          "id": "harford-listing-255203",
+          "fields": [
+            "status",
+            "evidenceFingerprint"
+          ]
+        },
+        {
+          "id": "uosa-27-02",
+          "fields": [
+            "status",
+            "deadline",
+            "evidenceFingerprint"
+          ]
+        }
+      ],
       "removedIds": []
     },
     "procurementSources": [
@@ -3311,14 +3715,14 @@
         "locality": "Annapolis",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant detail pages are checked before importing notices.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 1085,
+        "collectionDurationMs": 787,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3330,14 +3734,14 @@
         "locality": "Danville",
         "mode": "civic",
         "note": "Hourly public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
-        "listingCount": 18,
+        "lastSuccess": "2026-10-28T21:40:51Z",
+        "listingCount": 21,
         "matchingCount": 4,
-        "listingHash": "c6c33b4bac6cf99f11a170f57506051b9ecf8cc2ab59d9ce447d74dbe92c3cfe",
+        "listingHash": "c698ed081199dae6c82aca39c8eb8dbfc79d204153226ee2bb69f35b92383ceb",
         "checkedEmpty": false,
-        "collectionDurationMs": 4551,
+        "collectionDurationMs": 3624,
         "consecutiveFailures": 0,
         "listingChanged": true
       },
@@ -3389,14 +3793,14 @@
         "locality": "Washington, DC",
         "mode": "dc-api",
         "note": "Public portal search and environmental notice details checked hourly. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
-        "listingCount": 15,
+        "lastSuccess": "2026-10-28T21:40:51Z",
+        "listingCount": 17,
         "matchingCount": 2,
-        "listingHash": "76db1db8facce7703926b4ca2dbb573824d1205bd4c7757092a0fdcc9809c68f",
+        "listingHash": "ac43663dd2ce8fa02f79d6b4a3d4244315654ecbaf772d35fb977d63ac1ecc23",
         "checkedEmpty": false,
-        "collectionDurationMs": 643,
+        "collectionDurationMs": 1080,
         "consecutiveFailures": 0,
         "listingChanged": true
       },
@@ -3408,14 +3812,14 @@
         "locality": "Warrenton",
         "mode": "civic",
         "note": "Hourly public-listing scan; no relevant invitations are inferred from an empty board.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 480,
+        "collectionDurationMs": 688,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3427,14 +3831,14 @@
         "locality": "Frederick County",
         "mode": "civic",
         "note": "Checks this public board only. County links to other procurement platforms are not included.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 1079,
+        "collectionDurationMs": 1054,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3446,16 +3850,16 @@
         "locality": "Lynchburg",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant notices and amendments require official review.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 6,
         "matchingCount": 1,
         "listingHash": "4b72b4781a0c012d0634b9dcf2af020c468d5b42a5b204b96a7dd23344dffb5f",
         "checkedEmpty": false,
-        "collectionDurationMs": 1028,
+        "collectionDurationMs": 1100,
         "consecutiveFailures": 0,
-        "listingChanged": true
+        "listingChanged": false
       },
       {
         "id": "franklin-bids",
@@ -3465,14 +3869,14 @@
         "locality": "Franklin County",
         "mode": "civic",
         "note": "Hourly public-listing scan; unrelated notices are excluded.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 2,
         "matchingCount": 0,
         "listingHash": "1ae870ae1f52113851ef0af3d0c615510565930e3ba653961812efc6f15ddbd8",
         "checkedEmpty": false,
-        "collectionDurationMs": 511,
+        "collectionDurationMs": 588,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3484,16 +3888,16 @@
         "locality": "Harford County",
         "mode": "harford-listing",
         "note": "Checks the official county open-opportunity listing and its stated closing times. Full Bonfire documents and amendments require bidder review.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
-        "listingCount": 7,
-        "matchingCount": 3,
-        "listingHash": "03964d4e58551d4d63cd021c07c0c47a05866d36e72cba3fbfbaf54ae107bcc1",
+        "lastSuccess": "2026-10-28T21:40:51Z",
+        "listingCount": 5,
+        "matchingCount": 1,
+        "listingHash": "eeace24dbe47989f3db8b7512259bb00ad252c33c452a35c73f3444450b12bed",
         "checkedEmpty": false,
-        "collectionDurationMs": 607,
+        "collectionDurationMs": 1216,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "caroline-bids",
@@ -3504,16 +3908,16 @@
         "agency": "Caroline County Government",
         "mode": "civic",
         "note": "Checks relevant notices on this county board; not statewide coverage.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
-        "listingCount": 1,
+        "lastSuccess": "2026-10-28T21:40:51Z",
+        "listingCount": 2,
         "matchingCount": 0,
-        "listingHash": "15ad66ba198b3c24e4cb8c61a8f8c29d326af974e810e9e8e64fa7a19fd4c0c4",
+        "listingHash": "457498345c0c3c3ae2abf4bd79a7af581d62aa99da4f2f4a5b7e410d4432c0de",
         "checkedEmpty": false,
-        "collectionDurationMs": 727,
+        "collectionDurationMs": 879,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "fredericksburg-bids",
@@ -3524,11 +3928,12 @@
         "mode": "civic",
         "note": "Checks relevant notices on the public city board; unrelated notices are excluded.",
         "lastChecked": "2026-10-28T16:41:09Z",
-        "status": "degraded",
         "lastSuccess": "2026-10-25T04:15:29Z",
-        "error": "source HTTP failure 403",
+        "nextRetryAt": "2026-10-28T22:41:09Z",
         "consecutiveFailures": 13,
-        "nextRetryAt": "2026-10-28T22:41:09Z"
+        "error": "source HTTP failure 403",
+        "status": "degraded",
+        "retryPaused": true
       },
       {
         "id": "loudoun-bids",
@@ -3539,14 +3944,14 @@
         "agency": "Loudoun County Government",
         "mode": "civic",
         "note": "Hourly public board scan, including source-stated amendments and document references. Full attachments require bidder review.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 11,
         "matchingCount": 1,
         "listingHash": "e86c8ae06eeb0fd3b94ecb0bdb7f476614fd6fc1a5cb0bbfcf3b34ba4f6058f8",
         "checkedEmpty": false,
-        "collectionDurationMs": 1221,
+        "collectionDurationMs": 1362,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3559,14 +3964,14 @@
         "agency": "Wicomico County Government",
         "mode": "civic",
         "note": "Hourly scan of this board. An empty board does not establish that no county opportunities exist on other platforms.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 556,
+        "collectionDurationMs": 991,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3580,11 +3985,12 @@
         "mode": "civic",
         "note": "Hourly scan of environmental titles on this board. Other purchasing platforms and unrelated construction are outside coverage.",
         "lastChecked": "2026-10-28T16:41:09Z",
-        "status": "degraded",
         "lastSuccess": "2026-10-25T04:15:29Z",
-        "error": "source HTTP failure 403",
+        "nextRetryAt": "2026-10-28T22:41:09Z",
         "consecutiveFailures": 13,
-        "nextRetryAt": "2026-10-28T22:41:09Z"
+        "error": "source HTTP failure 403",
+        "status": "degraded",
+        "retryPaused": true
       },
       {
         "id": "epa-discovery",
@@ -3617,14 +4023,14 @@
         "locality": "Montgomery County",
         "mode": "montgomery-open-data",
         "note": "Hourly read of the official active-solicitation open-data API. Date-only closing fields never establish verified open-bid status.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 24,
         "matchingCount": 0,
         "listingHash": "9eac27454f5c4159da9a8e92e89a6be395687b232898f3ddf6768d8dafe71d62",
         "checkedEmpty": false,
-        "collectionDurationMs": 345,
+        "collectionDurationMs": 834,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3636,16 +4042,16 @@
         "locality": "Northern Virginia",
         "mode": "uosa-table",
         "note": "Hourly public authority mirror of its eVA solicitations. Only the current table is scanned; expired dates remain closed.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 4,
         "matchingCount": 3,
-        "listingHash": "ac068b9b4a16dea82d94dd19962d03f5274900b688b6f97c898078156f597481",
+        "listingHash": "87e50cff433ad2d0c8813d7f5fe20f1a24831c893474e2ace1f2e5a0b5d16d59",
         "checkedEmpty": false,
-        "collectionDurationMs": 310,
+        "collectionDurationMs": 892,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "salem-bids",
@@ -3656,14 +4062,14 @@
         "agency": "City of Salem",
         "mode": "civic",
         "note": "Hourly official bid-board scan, with explicit receipt deadlines from source prose when the summary closing field is generic.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 7,
         "matchingCount": 1,
         "listingHash": "3a12e365e954974c16d8cfcabe69659451e7dd296fe08a5b10ae9e0d0aa69b24",
         "checkedEmpty": false,
-        "collectionDurationMs": 923,
+        "collectionDurationMs": 3306,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3676,14 +4082,14 @@
         "agency": "Town of La Plata",
         "mode": "civic",
         "note": "Hourly town-owned listing scan; this does not replace eMMA coverage.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 788,
+        "collectionDurationMs": 790,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3696,14 +4102,14 @@
         "agency": "Queen Anne’s County Government",
         "mode": "civic",
         "note": "Hourly official county listing scan; only relevant environmental titles are followed.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 1,
         "matchingCount": 0,
         "listingHash": "15de2947576d447a1dd9af50ff3f8af777923a5d30256f9fd55516e0ed547125",
         "checkedEmpty": false,
-        "collectionDurationMs": 598,
+        "collectionDurationMs": 872,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3716,14 +4122,14 @@
         "agency": "City of Suffolk",
         "mode": "civic",
         "note": "Hourly public city board scan; absence of matching notices is not comprehensive city procurement coverage.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 3,
         "matchingCount": 0,
         "listingHash": "87af47413012bf36cf88af13820920147cb4d9ae4037e0cd756b0e2a41e42725",
         "checkedEmpty": false,
-        "collectionDurationMs": 563,
+        "collectionDurationMs": 692,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -3736,14 +4142,14 @@
         "agency": "City of Falls Church",
         "mode": "civic",
         "note": "Hourly city-owned board scan; environmental titles are followed to official detail pages. No matching notice was present during the initial check. This is partial city coverage, not an eVA replacement.",
-        "lastChecked": "2026-10-28T16:41:09Z",
+        "lastChecked": "2026-10-28T21:40:51Z",
         "status": "checked",
-        "lastSuccess": "2026-10-28T16:41:09Z",
+        "lastSuccess": "2026-10-28T21:40:51Z",
         "listingCount": 1,
         "matchingCount": 0,
         "listingHash": "df14c7b4478bbdeb67eaeacd2ff66ee4a2da41225b1ffe922ee8ef5aeedf1f9d",
         "checkedEmpty": false,
-        "collectionDurationMs": 766,
+        "collectionDurationMs": 860,
         "consecutiveFailures": 0,
         "listingChanged": false
       }
