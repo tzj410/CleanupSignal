@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-10-29T16:10:21Z
+Generated: 2026-10-29T21:10:10Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,40 +8,40 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-10-29T16:10:21Z
-- EPA FY2026 Virginia selections: verified; checked 2026-10-29T16:10:21Z
+- EPA FY2026 Maryland selections: verified; checked 2026-10-29T21:10:10Z
+- EPA FY2026 Virginia selections: verified; checked 2026-10-29T21:10:10Z
 - SAM.gov opportunities API: verified; checked 2026-10-29T16:10:21Z
 
 ## Latest refresh
 
-Compared with: 2026-10-29T08:33:13Z
+Compared with: 2026-10-29T16:10:21Z
 0 new records; 0 materially changed records.
 No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Danville public bid board: checked; last attempt 2026-10-29T16:10:21Z
+- Annapolis public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Danville public bid board: checked; last attempt 2026-10-29T21:10:10Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-10-29T16:10:21Z
-- Warrenton public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Frederick County public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Lynchburg public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Franklin County public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Harford County official open opportunities: checked; last attempt 2026-10-29T16:10:21Z
-- Caroline County public bid board: checked; last attempt 2026-10-29T16:10:21Z
+- D.C. OCP public solicitations: checked; last attempt 2026-10-29T21:10:10Z
+- Warrenton public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Frederick County public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Lynchburg public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Franklin County public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Harford County official open opportunities: checked; last attempt 2026-10-29T21:10:10Z
+- Caroline County public bid board: checked; last attempt 2026-10-29T21:10:10Z
 - Fredericksburg public bid board: degraded; last attempt 2026-10-29T16:10:21Z
-- Loudoun County public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Wicomico County public bid board: checked; last attempt 2026-10-29T16:10:21Z
+- Loudoun County public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Wicomico County public bid board: checked; last attempt 2026-10-29T21:10:10Z
 - Hampton public bid board: degraded; last attempt 2026-10-29T16:10:21Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-10-29T16:10:21Z
-- Montgomery County official active-solicitation feed: checked; last attempt 2026-10-29T16:10:21Z
-- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-10-29T16:10:21Z
-- Salem public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Town of La Plata public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Queen Anne’s County public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Suffolk public bid board: checked; last attempt 2026-10-29T16:10:21Z
-- Falls Church public bid board: checked; last attempt 2026-10-29T16:10:21Z
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-10-29T21:10:10Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-10-29T21:10:10Z
+- Salem public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Town of La Plata public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Queen Anne’s County public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Suffolk public bid board: checked; last attempt 2026-10-29T21:10:10Z
+- Falls Church public bid board: checked; last attempt 2026-10-29T21:10:10Z
 Attention: fredericksburg-bids: source HTTP failure 403
 Attention: hampton-bids: source HTTP failure 403
 
@@ -79,7 +79,7 @@ Status note: Administrative posting or conflicting source labels; not a verified
 
 ### IFB 26-27-009 Southern Virginia Megasite at Berry Hill-McGruff Sewer Extension - Notice of Intent
 
-VA · Current status unconfirmed · verified
+VA · Current status unconfirmed · stale
 
 Administrative procurement activity: IFB 26-27-009 Southern Virginia Megasite at Berry Hill - McGruff Creek Sewer Extension - Notice of Intent
 
@@ -89,7 +89,7 @@ Next step: Confirm current procurement status and remaining scope with the purch
 
 Source: https://www.danville-va.gov/bids.aspx?bidID=4234
 
-Status note: Administrative posting or conflicting source labels; not a verified invitation to bid.
+Status note: No longer present on the checked listing; verify current status at the source.
 
 
 ### IFB 26-27-016 AA-Demo - 8 Properties - Bid Tab
