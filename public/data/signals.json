@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-08T19:45:38Z",
+  "generatedAt": "2026-11-08T23:45:53Z",
   "sources": [
     {
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
-      "lastChecked": "2026-11-08T19:45:38Z",
+      "lastChecked": "2026-11-08T23:45:53Z",
       "status": "verified"
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
-      "lastChecked": "2026-11-08T19:45:38Z",
+      "lastChecked": "2026-11-08T23:45:53Z",
       "status": "verified"
     },
     {
       "id": "sam",
       "name": "SAM.gov opportunities API",
       "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
-      "lastChecked": "2026-11-07T20:55:19Z",
+      "lastChecked": "2026-11-08T23:45:53Z",
       "status": "verified",
-      "note": "Federal discovery runs at most once every 24 hours; last successful check 2026-11-07T20:55:19Z. Local and D.C. sources run hourly. Coverage: NAICS 541620 and 562910 in MD, VA and DC."
+      "note": "90-day national NAICS search, filtered to MD, VA and DC, for NAICS 541620 and 562910; federal notices only. Not comprehensive coverage."
     }
   ],
   "signals": [
@@ -506,13 +506,7 @@
         "maximumPagesPerPDF": 80,
         "checkedAt": "2026-11-08T15:15:46Z"
       },
-      "documentChanges": [
-        {
-          "kind": "status-changed",
-          "before": "open-solicitation",
-          "after": "unconfirmed"
-        }
-      ],
+      "documentChanges": [],
       "changeHistory": [
         {
           "at": "2026-11-07T10:16:12Z",
@@ -717,7 +711,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623",
       "summary": "District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -738,7 +732,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-08T19:45:38Z"
+        "checkedAt": "2026-11-08T23:45:53Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -997,7 +991,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Resilience Authority of Annapolis and Anne Arundel County",
@@ -1106,7 +1100,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Danville",
@@ -1217,7 +1211,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia’s Gateway Region, Inc.",
@@ -1324,7 +1318,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Giles County",
@@ -1425,7 +1419,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Multipurpose brownfields selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Martinsville",
@@ -1540,7 +1534,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Mount Rogers Planning District Commission",
@@ -1647,7 +1641,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Pamunkey Community Dump.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pamunkey Indian Tribe",
@@ -1748,7 +1742,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pittsylvania County",
@@ -1855,7 +1849,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "State brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia Department of Environmental Quality",
@@ -1962,7 +1956,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "evidenceTerms": [
         "Tri-County Council for Western Maryland",
@@ -2251,13 +2245,7 @@
         "checkedAt": "2026-11-08T15:15:46Z"
       },
       "documentReview": "0 of 0 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
-      "documentChanges": [
-        {
-          "kind": "status-changed",
-          "before": "open-solicitation",
-          "after": "unconfirmed"
-        }
-      ],
+      "documentChanges": [],
       "changeHistory": [
         {
           "at": "2026-11-07T10:16:12Z",
@@ -2768,7 +2756,7 @@
       "sourceUrl": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
       "summary": "Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -2796,7 +2784,7 @@
         {
           "url": "https://www.lynchburgva.gov/DocumentCenter/View/8089",
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS",
-          "checkedAt": "2026-11-08T19:45:38Z",
+          "checkedAt": "2026-11-08T23:45:53Z",
           "status": "needs-review",
           "note": "Document exceeds the 6 MB extraction limit",
           "lastKnownSha256": null,
@@ -2808,7 +2796,7 @@
         "selected": 1,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-08T19:45:38Z"
+        "checkedAt": "2026-11-08T23:45:53Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -3058,13 +3046,7 @@
         "maximumPagesPerPDF": 80,
         "checkedAt": "2026-11-08T15:15:46Z"
       },
-      "documentChanges": [
-        {
-          "kind": "status-changed",
-          "before": "open-solicitation",
-          "after": "unconfirmed"
-        }
-      ],
+      "documentChanges": [],
       "changeHistory": [
         {
           "at": "2026-11-07T10:16:12Z",
@@ -3525,7 +3507,7 @@
       "sourceUrl": "https://uosa.org/current-solicitations/#27-02",
       "summary": "Wastewater authority public procurement listing: P2NR+. Review the source-listed solicitation and all addenda.",
       "nextStep": "Confirm current status and documents on the authority page and eVA before bidding.",
-      "verifiedAt": "2026-11-08T19:45:38Z",
+      "verifiedAt": "2026-11-08T23:45:53Z",
       "verification": "verified",
       "solicitationNumber": "27-02",
       "prebidMeeting": "9/22/2026 10:00 PM",
@@ -4095,33 +4077,11 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-11-08T19:45:38Z",
+    "generatedAt": "2026-11-08T23:45:53Z",
     "comparison": {
-      "comparedTo": "2026-11-08T15:15:46Z",
+      "comparedTo": "2026-11-08T19:45:38Z",
       "newIds": [],
-      "changed": [
-        {
-          "id": "danville-bids-4259",
-          "fields": [
-            "status",
-            "evidenceFingerprint"
-          ]
-        },
-        {
-          "id": "harford-listing-258676",
-          "fields": [
-            "status",
-            "evidenceFingerprint"
-          ]
-        },
-        {
-          "id": "salem-bids-95",
-          "fields": [
-            "status",
-            "evidenceFingerprint"
-          ]
-        }
-      ],
+      "changed": [],
       "removedIds": []
     },
     "procurementSources": [
@@ -4133,12 +4093,12 @@
         "locality": "Annapolis",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant detail pages are checked before importing notices.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "danville-bids",
@@ -4148,12 +4108,12 @@
         "locality": "Danville",
         "mode": "civic",
         "note": "Hourly public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "emma",
@@ -4203,14 +4163,14 @@
         "locality": "Washington, DC",
         "mode": "dc-api",
         "note": "Public portal search and environmental notice details checked hourly. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 14,
         "matchingCount": 1,
         "listingHash": "956f7fc7ee9f7898dc8fea8291a770c83db18cb90eb83dd3b8bcb11b4dedcce5",
         "checkedEmpty": false,
-        "collectionDurationMs": 395,
+        "collectionDurationMs": 624,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4222,12 +4182,12 @@
         "locality": "Warrenton",
         "mode": "civic",
         "note": "Hourly public-listing scan; no relevant invitations are inferred from an empty board.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "frederick-bids",
@@ -4237,12 +4197,12 @@
         "locality": "Frederick County",
         "mode": "civic",
         "note": "Checks this public board only. County links to other procurement platforms are not included.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "lynchburg-bids",
@@ -4252,14 +4212,14 @@
         "locality": "Lynchburg",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant notices and amendments require official review.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 7,
         "matchingCount": 1,
         "listingHash": "f3d41e4ab94db84b625702b0752ff6db08eb96905ada2978c201488b64d8de01",
         "checkedEmpty": false,
-        "collectionDurationMs": 655,
+        "collectionDurationMs": 701,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4271,12 +4231,12 @@
         "locality": "Franklin County",
         "mode": "civic",
         "note": "Hourly public-listing scan; unrelated notices are excluded.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "harford-listing",
@@ -4286,12 +4246,12 @@
         "locality": "Harford County",
         "mode": "harford-listing",
         "note": "Checks the official county open-opportunity listing and its stated closing times. Full Bonfire documents and amendments require bidder review.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "caroline-bids",
@@ -4302,12 +4262,12 @@
         "agency": "Caroline County Government",
         "mode": "civic",
         "note": "Checks relevant notices on this county board; not statewide coverage.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "fredericksburg-bids",
@@ -4317,13 +4277,12 @@
         "locality": "Fredericksburg",
         "mode": "civic",
         "note": "Checks relevant notices on the public city board; unrelated notices are excluded.",
-        "lastChecked": "2026-11-08T15:15:46Z",
-        "lastSuccess": "2026-10-25T04:15:29Z",
-        "nextRetryAt": "2026-11-08T21:15:46Z",
-        "consecutiveFailures": 20,
-        "error": "source HTTP failure 403",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
-        "retryPaused": true
+        "lastSuccess": "2026-10-25T04:15:29Z",
+        "error": "source HTTP failure 403",
+        "consecutiveFailures": 20,
+        "nextRetryAt": "2026-11-09T05:45:53Z"
       },
       {
         "id": "loudoun-bids",
@@ -4334,14 +4293,14 @@
         "agency": "Loudoun County Government",
         "mode": "civic",
         "note": "Hourly public board scan, including source-stated amendments and document references. Full attachments require bidder review.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 11,
         "matchingCount": 0,
         "listingHash": "b205d8bb386682e3a21bb74c431fe190dc6df77ab326c0f4d8d909ace6d04853",
         "checkedEmpty": false,
-        "collectionDurationMs": 486,
+        "collectionDurationMs": 824,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4354,12 +4313,12 @@
         "agency": "Wicomico County Government",
         "mode": "civic",
         "note": "Hourly scan of this board. An empty board does not establish that no county opportunities exist on other platforms.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "hampton-bids",
@@ -4370,13 +4329,12 @@
         "agency": "City of Hampton",
         "mode": "civic",
         "note": "Hourly scan of environmental titles on this board. Other purchasing platforms and unrelated construction are outside coverage.",
-        "lastChecked": "2026-11-08T15:15:46Z",
-        "lastSuccess": "2026-10-25T04:15:29Z",
-        "nextRetryAt": "2026-11-08T21:15:46Z",
-        "consecutiveFailures": 20,
-        "error": "source HTTP failure 403",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
-        "retryPaused": true
+        "lastSuccess": "2026-10-25T04:15:29Z",
+        "error": "source HTTP failure 403",
+        "consecutiveFailures": 20,
+        "nextRetryAt": "2026-11-09T05:45:53Z"
       },
       {
         "id": "epa-discovery",
@@ -4386,9 +4344,9 @@
         "mode": "epa-discovery",
         "intervalHours": 24,
         "note": "Daily discovery from the current-year national selection table linked by EPA. Funding selections remain early signals; no open bidding opportunity is inferred.",
-        "lastChecked": "2026-11-07T20:55:19Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-07T20:55:19Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 10,
         "matchingCount": 10,
         "listingHash": "0470bcdff9976a7e3a57e1555eabe9f43f17ff2173ada2963b7e7f4e814113b0",
@@ -4396,10 +4354,9 @@
         "selectionDocuments": [
           "https://www.epa.gov/system/files/documents/2026-06/fy26-mac-rlf-supp-funding-selections.pdf"
         ],
-        "collectionDurationMs": 1341,
+        "collectionDurationMs": 1664,
         "consecutiveFailures": 0,
-        "listingChanged": false,
-        "scheduledReuse": true
+        "listingChanged": false
       },
       {
         "id": "montgomery-open-data",
@@ -4409,14 +4366,14 @@
         "locality": "Montgomery County",
         "mode": "montgomery-open-data",
         "note": "Hourly read of the official active-solicitation open-data API. Date-only closing fields never establish verified open-bid status.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 23,
         "matchingCount": 0,
         "listingHash": "7578e180ae021ea3de1cc40f18a69ec38c569ca7a9a5fbe4927ba27f53ee5be4",
         "checkedEmpty": false,
-        "collectionDurationMs": 399,
+        "collectionDurationMs": 1627,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4428,14 +4385,14 @@
         "locality": "Northern Virginia",
         "mode": "uosa-table",
         "note": "Hourly public authority mirror of its eVA solicitations. Only the current table is scanned; expired dates remain closed.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 1,
         "matchingCount": 1,
         "listingHash": "e5fa68c508e02a13bf9f255c4aaf1e7ee4625bee6d274ed184afd06ee865366f",
         "checkedEmpty": false,
-        "collectionDurationMs": 255,
+        "collectionDurationMs": 482,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4448,12 +4405,12 @@
         "agency": "City of Salem",
         "mode": "civic",
         "note": "Hourly official bid-board scan, with explicit receipt deadlines from source prose when the summary closing field is generic.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "laplata-bids",
@@ -4464,12 +4421,12 @@
         "agency": "Town of La Plata",
         "mode": "civic",
         "note": "Hourly town-owned listing scan; this does not replace eMMA coverage.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "qac-bids",
@@ -4480,12 +4437,12 @@
         "agency": "Queen Anne’s County Government",
         "mode": "civic",
         "note": "Hourly official county listing scan; only relevant environmental titles are followed.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       },
       {
         "id": "suffolk-bids",
@@ -4496,14 +4453,14 @@
         "agency": "City of Suffolk",
         "mode": "civic",
         "note": "Hourly public city board scan; absence of matching notices is not comprehensive city procurement coverage.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "checked",
-        "lastSuccess": "2026-11-08T19:45:38Z",
+        "lastSuccess": "2026-11-08T23:45:53Z",
         "listingCount": 4,
         "matchingCount": 0,
         "listingHash": "d1ba2e957963ec6b7d0a2dddb3a05fcec9b703cc464530f90d08b0fe3f49e3d1",
         "checkedEmpty": false,
-        "collectionDurationMs": 471,
+        "collectionDurationMs": 677,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4516,12 +4473,12 @@
         "agency": "City of Falls Church",
         "mode": "civic",
         "note": "Hourly city-owned board scan; environmental titles are followed to official detail pages. No matching notice was present during the initial check. This is partial city coverage, not an eVA replacement.",
-        "lastChecked": "2026-11-08T19:45:38Z",
+        "lastChecked": "2026-11-08T23:45:53Z",
         "status": "degraded",
         "lastSuccess": "2026-11-08T15:15:46Z",
         "error": "source network failure",
-        "consecutiveFailures": 1,
-        "nextRetryAt": "2026-11-08T20:45:38Z"
+        "consecutiveFailures": 2,
+        "nextRetryAt": "2026-11-09T01:45:53Z"
       }
     ],
     "alerts": [
