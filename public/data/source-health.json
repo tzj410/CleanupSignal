@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T17:53:09Z",
-  "evaluatedAt": "2026-11-10T17:53:18Z",
+  "generatedAt": "2026-11-10T23:25:34Z",
+  "evaluatedAt": "2026-11-10T23:25:39Z",
   "state": "degraded",
   "datasetFresh": true,
   "counts": {
@@ -31,7 +31,7 @@
   "possibleDuplicates": [],
   "sources": [
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -39,7 +39,7 @@
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "status": "verified",
-      "lastChecked": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
       "lastSuccess": null,
       "mode": null,
       "consecutiveFailures": null,
@@ -49,7 +49,7 @@
       "collectionDurationMs": null
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -57,7 +57,7 @@
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "status": "verified",
-      "lastChecked": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
       "lastSuccess": null,
       "mode": null,
       "consecutiveFailures": null,
@@ -69,7 +69,7 @@
     {
       "lastSuccessfulCheck": "2026-11-10T01:36:51Z",
       "fresh": true,
-      "ageMinutes": 976,
+      "ageMinutes": 1309,
       "expectedIntervalHours": 24,
       "overdueAfterHours": 49.0,
       "id": "sam",
@@ -85,7 +85,7 @@
       "collectionDurationMs": null
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -93,17 +93,17 @@
       "id": "annapolis-bids",
       "name": "Annapolis public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 579
+      "collectionDurationMs": 950
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -111,14 +111,14 @@
       "id": "danville-bids",
       "name": "Danville public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 2903
+      "collectionDurationMs": 2242
     },
     {
       "lastSuccessfulCheck": null,
@@ -175,7 +175,7 @@
       "collectionDurationMs": null
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -183,17 +183,17 @@
       "id": "dc-ocp",
       "name": "D.C. OCP public solicitations",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "dc-api",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 378
+      "collectionDurationMs": 513
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -201,17 +201,17 @@
       "id": "warrenton-bids",
       "name": "Warrenton public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 508
+      "collectionDurationMs": 579
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -219,17 +219,17 @@
       "id": "frederick-bids",
       "name": "Frederick County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 823
+      "collectionDurationMs": 733
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -237,17 +237,17 @@
       "id": "lynchburg-bids",
       "name": "Lynchburg public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 1213
+      "collectionDurationMs": 1095
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -255,17 +255,17 @@
       "id": "franklin-bids",
       "name": "Franklin County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 849
+      "collectionDurationMs": 614
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -273,17 +273,17 @@
       "id": "harford-listing",
       "name": "Harford County official open opportunities",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "harford-listing",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 679
+      "collectionDurationMs": 903
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -291,19 +291,19 @@
       "id": "caroline-bids",
       "name": "Caroline County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 753
+      "collectionDurationMs": 732
     },
     {
       "lastSuccessfulCheck": "2026-10-25T04:15:29Z",
       "fresh": false,
-      "ageMinutes": 23858,
+      "ageMinutes": 24190,
       "expectedIntervalHours": 1,
       "overdueAfterHours": 3.0,
       "id": "fredericksburg-bids",
@@ -314,12 +314,12 @@
       "mode": "civic",
       "consecutiveFailures": 20,
       "nextRetryAt": "2026-11-10T23:53:09Z",
-      "retryPaused": null,
+      "retryPaused": true,
       "scheduledReuse": null,
       "collectionDurationMs": null
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -327,17 +327,17 @@
       "id": "loudoun-bids",
       "name": "Loudoun County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 571
+      "collectionDurationMs": 631
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -345,19 +345,19 @@
       "id": "wicomico-bids",
       "name": "Wicomico County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 943
+      "collectionDurationMs": 592
     },
     {
       "lastSuccessfulCheck": "2026-10-25T04:15:29Z",
       "fresh": false,
-      "ageMinutes": 23858,
+      "ageMinutes": 24190,
       "expectedIntervalHours": 1,
       "overdueAfterHours": 3.0,
       "id": "hampton-bids",
@@ -368,14 +368,14 @@
       "mode": "civic",
       "consecutiveFailures": 20,
       "nextRetryAt": "2026-11-10T23:53:09Z",
-      "retryPaused": null,
+      "retryPaused": true,
       "scheduledReuse": null,
       "collectionDurationMs": null
     },
     {
       "lastSuccessfulCheck": "2026-11-10T01:36:51Z",
       "fresh": true,
-      "ageMinutes": 976,
+      "ageMinutes": 1309,
       "expectedIntervalHours": 24,
       "overdueAfterHours": 49.0,
       "id": "epa-discovery",
@@ -391,7 +391,7 @@
       "collectionDurationMs": 777
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -399,17 +399,17 @@
       "id": "montgomery-open-data",
       "name": "Montgomery County official active-solicitation feed",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "montgomery-open-data",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 451
+      "collectionDurationMs": 431
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -417,17 +417,17 @@
       "id": "uosa-table",
       "name": "Upper Occoquan Service Authority solicitations",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "uosa-table",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 213
+      "collectionDurationMs": 309
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -435,17 +435,17 @@
       "id": "salem-bids",
       "name": "Salem public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 2106
+      "collectionDurationMs": 855
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -453,17 +453,17 @@
       "id": "laplata-bids",
       "name": "Town of La Plata public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 544
+      "collectionDurationMs": 579
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -471,17 +471,17 @@
       "id": "qac-bids",
       "name": "Queen Anne\u2019s County public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 654
+      "collectionDurationMs": 637
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -489,17 +489,17 @@
       "id": "suffolk-bids",
       "name": "Suffolk public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 657
+      "collectionDurationMs": 621
     },
     {
-      "lastSuccessfulCheck": "2026-11-10T17:53:09Z",
+      "lastSuccessfulCheck": "2026-11-10T23:25:34Z",
       "fresh": true,
       "ageMinutes": 0,
       "expectedIntervalHours": 1,
@@ -507,14 +507,14 @@
       "id": "fallschurch-bids",
       "name": "Falls Church public bid board",
       "status": "checked",
-      "lastChecked": "2026-11-10T17:53:09Z",
-      "lastSuccess": "2026-11-10T17:53:09Z",
+      "lastChecked": "2026-11-10T23:25:34Z",
+      "lastSuccess": "2026-11-10T23:25:34Z",
       "mode": "civic",
       "consecutiveFailures": 0,
       "nextRetryAt": null,
       "retryPaused": null,
       "scheduledReuse": null,
-      "collectionDurationMs": 1007
+      "collectionDurationMs": 798
     }
   ],
   "history": [
