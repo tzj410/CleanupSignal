@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-11-12T11:19:00Z
+Generated: 2026-11-12T19:57:38Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,41 +8,40 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-11-12T11:19:00Z
-- EPA FY2026 Virginia selections: verified; checked 2026-11-12T11:19:00Z
+- EPA FY2026 Maryland selections: verified; checked 2026-11-12T19:57:38Z
+- EPA FY2026 Virginia selections: verified; checked 2026-11-12T19:57:38Z
 - SAM.gov opportunities API: verified; checked 2026-11-12T11:19:00Z
 
 ## Latest refresh
 
-Compared with: 2026-11-12T03:03:47Z
-0 new records; 1 materially changed records.
-No new records discovered in this refresh.
+Compared with: 2026-11-12T11:19:00Z
+1 new records; 2 materially changed records.
+New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Danville public bid board: checked; last attempt 2026-11-12T11:19:00Z
+- Annapolis public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Danville public bid board: checked; last attempt 2026-11-12T19:57:38Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-11-12T11:19:00Z
-- Warrenton public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Frederick County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Lynchburg public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Franklin County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Harford County official open opportunities: degraded; last attempt 2026-11-12T11:19:00Z
-- Caroline County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Fredericksburg public bid board: degraded; last attempt 2026-11-12T11:19:00Z
-- Loudoun County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Wicomico County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Hampton public bid board: degraded; last attempt 2026-11-12T11:19:00Z
+- D.C. OCP public solicitations: checked; last attempt 2026-11-12T19:57:38Z
+- Warrenton public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Frederick County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Lynchburg public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Franklin County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Harford County official open opportunities: checked; last attempt 2026-11-12T19:57:38Z
+- Caroline County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Fredericksburg public bid board: degraded; last attempt 2026-11-12T19:57:38Z
+- Loudoun County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Wicomico County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Hampton public bid board: degraded; last attempt 2026-11-12T19:57:38Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-11-12T11:19:00Z
-- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-12T11:19:00Z
-- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-12T11:19:00Z
-- Salem public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Town of La Plata public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Queen Anne’s County public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Suffolk public bid board: checked; last attempt 2026-11-12T11:19:00Z
-- Falls Church public bid board: checked; last attempt 2026-11-12T11:19:00Z
-Attention: harford-listing: source network failure
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-12T19:57:38Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-12T19:57:38Z
+- Salem public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Town of La Plata public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Queen Anne’s County public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Suffolk public bid board: checked; last attempt 2026-11-12T19:57:38Z
+- Falls Church public bid board: checked; last attempt 2026-11-12T19:57:38Z
 Attention: fredericksburg-bids: source HTTP failure 403
 Attention: hampton-bids: source HTTP failure 403
 
@@ -121,6 +120,21 @@ Next step: Review the official scope, eligibility, site visits, attachments and 
 Source: https://www.danville-va.gov/bids.aspx?bidID=4259
 
 Status note: Review all official documents and amendments before responding.
+
+
+### IFB 26-27-016 "Asbestos Abatement and Demolition - 8 Properties" - NOI
+
+VA · Current status unconfirmed · verified
+
+Administrative procurement activity: IFB 26-27-016 "Asnestos Abatement and Demolition - 8 Properties" Notice of Intent
+
+Published selection amount: Not stated · Bid deadline: not published
+
+Next step: Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.
+
+Source: https://www.danville-va.gov/bids.aspx?bidID=4263
+
+Status note: Administrative posting or conflicting source labels; not a verified invitation to bid.
 
 
 ### FY26 Parkland Stormwater Retrofits - DPR V
@@ -415,7 +429,7 @@ Next step: Open the county-linked Bonfire notice and review full scope, amendmen
 
 Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
 
-Status note: Latest source check failed. Current bid status is unconfirmed.
+Status note: No longer present on the checked listing; verify current status at the source.
 
 
 ### Well Field Inspection, Maintenance, and Repair Services
@@ -430,12 +444,12 @@ Next step: Open the county-linked Bonfire notice and review full scope, amendmen
 
 Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
 
-Status note: Latest source check failed. Current bid status is unconfirmed.
+Status note: No longer present on the checked listing; verify current status at the source.
 
 
 ### Hydrovac Grit and Grease Removal Services
 
-MD · Current status unconfirmed · stale
+MD · Open solicitation · verified
 
  Provide wastewater pumping services utilizing specific vacuum equipment. Project closes Nov 18, 2026 1:00 PM EST.
 
@@ -445,7 +459,7 @@ Next step: Open the county-linked Bonfire notice and review full scope, amendmen
 
 Source: https://www.harfordcountymd.gov/1540/Bid-Board-and-Results
 
-Status note: Latest source check failed. Current bid status is unconfirmed.
+Status note: Listed under Open Contract Opportunities by Harford County. Closing date checked on the county listing; linked portal documents have not been independently verified.
 
 
 ### MD1745 Stormwater Pond Retrofit, RFQ 715024
