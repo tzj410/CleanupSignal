@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-11-13T01:07:16Z
+Generated: 2026-11-13T08:02:16Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,42 +8,47 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-11-13T01:07:16Z
-- EPA FY2026 Virginia selections: verified; checked 2026-11-13T01:07:16Z
+- EPA FY2026 Maryland selections: verified; checked 2026-11-13T08:02:16Z
+- EPA FY2026 Virginia selections: verified; checked 2026-11-13T08:02:16Z
 - SAM.gov opportunities API: verified; checked 2026-11-12T11:19:00Z
 
 ## Latest refresh
 
-Compared with: 2026-11-12T19:57:38Z
-0 new records; 0 materially changed records.
+Compared with: 2026-11-13T01:07:16Z
+0 new records; 2 materially changed records.
 No new records discovered in this refresh.
 
-- Annapolis public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Danville public bid board: checked; last attempt 2026-11-13T01:07:16Z
+- Annapolis public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Danville public bid board: checked; last attempt 2026-11-13T08:02:16Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-11-13T01:07:16Z
-- Warrenton public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Frederick County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Lynchburg public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Franklin County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Harford County official open opportunities: checked; last attempt 2026-11-13T01:07:16Z
-- Caroline County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Fredericksburg public bid board: degraded; last attempt 2026-11-12T19:57:38Z
-- Loudoun County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Wicomico County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Hampton public bid board: degraded; last attempt 2026-11-12T19:57:38Z
+- D.C. OCP public solicitations: checked; last attempt 2026-11-13T08:02:16Z
+- Warrenton public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Frederick County public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Lynchburg public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Franklin County public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Harford County official open opportunities: checked; last attempt 2026-11-13T08:02:16Z
+- Caroline County public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Fredericksburg public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Loudoun County public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Wicomico County public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Hampton public bid board: degraded; last attempt 2026-11-13T08:02:16Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-11-12T11:19:00Z
-- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-13T01:07:16Z
-- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-13T01:07:16Z
-- Salem public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Town of La Plata public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Queen Anne’s County public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Suffolk public bid board: checked; last attempt 2026-11-13T01:07:16Z
-- Falls Church public bid board: checked; last attempt 2026-11-13T01:07:16Z
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-13T08:02:16Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-13T08:02:16Z
+- Salem public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Town of La Plata public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Queen Anne’s County public bid board: degraded; last attempt 2026-11-13T08:02:16Z
+- Suffolk public bid board: checked; last attempt 2026-11-13T08:02:16Z
+- Falls Church public bid board: checked; last attempt 2026-11-13T08:02:16Z
+Attention: warrenton-bids: source network failure
+Attention: lynchburg-bids: source network failure
+Attention: franklin-bids: source network failure
 Attention: fredericksburg-bids: source HTTP failure 403
 Attention: hampton-bids: source HTTP failure 403
+Attention: salem-bids: source network failure
+Attention: qac-bids: source network failure
 
 ## Project signals
 
@@ -479,7 +484,7 @@ Status note: No longer present on the checked listing; verify current status at 
 
 ### CSO 70 SEWER IMPROVEMENTS
 
-VA · Open solicitation · verified
+VA · Current status unconfirmed · stale
 
 Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online
 
@@ -489,12 +494,12 @@ Next step: Review the official scope, eligibility, site visits, attachments and 
 
 Source: https://www.lynchburgva.gov/bids.aspx?bidID=249
 
-Status note: Review all official documents and amendments before responding.
+Status note: Latest source check failed. Current bid status is unconfirmed.
 
 
 ### City Hall Fire Escape Lead Paint Removal and Painting
 
-VA · Open solicitation · verified
+VA · Current status unconfirmed · stale
 
 Local procurement notice. CITY OF SALEM, VIRGINIA CITY OF SALEM — PURCHASING DEPARTMENT 114 N. Broad Street Salem, Virginia 24153 CITY HALL FIRE ESCAPE LEAD PAINT REMOVAL AND PAINTING LEGAL NOTICE / INVITATION TO BID General Notice City of Salem (Owner) is requesting Bids for the following: City Hall Fire Escape Lead Paint Removal and Painting (ITB #2027-020). Sealed Bids for this Invitation to Bid will be received at the Salem Purchasing Department located at 114 N. Broad Street, Salem, VA 24153, until Thursday, Novembe
 
@@ -504,7 +509,7 @@ Next step: Review the official scope, eligibility, site visits, attachments and 
 
 Source: https://www.salemva.gov/bids.aspx?bidID=95
 
-Status note: Review all official documents and amendments before responding.
+Status note: Latest source check failed. Current bid status is unconfirmed.
 
 
 ### Environmental, Health and Safety (EHS) Services
