@@ -1,6 +1,6 @@
 # CleanupSignal — environmental project brief
 
-Generated: 2026-11-16T11:27:06Z
+Generated: 2026-11-16T22:08:12Z
 
 Funding signals are announced grant selections, not executed awards, open bids or available contractor funds. Check official notices before acting.
 
@@ -8,44 +8,74 @@ Coverage: Maryland, Virginia and DC. DC may have no verified records.
 
 ## Source health
 
-- EPA FY2026 Maryland selections: verified; checked 2026-11-16T11:27:06Z
-- EPA FY2026 Virginia selections: verified; checked 2026-11-16T11:27:06Z
+- EPA FY2026 Maryland selections: verified; checked 2026-11-16T22:08:12Z
+- EPA FY2026 Virginia selections: verified; checked 2026-11-16T22:08:12Z
 - SAM.gov opportunities API: verified; checked 2026-11-15T22:51:46Z
 
 ## Latest refresh
 
-Compared with: 2026-11-16T02:45:58Z
-0 new records; 0 materially changed records.
-No new records discovered in this refresh.
+Compared with: 2026-11-16T11:27:06Z
+2 new records; 1 materially changed records.
+New records may be administrative or closed postings; review their status.
 
-- Annapolis public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Danville public bid board: checked; last attempt 2026-11-16T11:27:06Z
+- Annapolis public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Danville public bid board: checked; last attempt 2026-11-16T22:08:12Z
 - Maryland eMMA: manual; last attempt manual reference only
 - Virginia eVA: manual; last attempt manual reference only
 - Anne Arundel County / Harbor: manual; last attempt manual reference only
-- D.C. OCP public solicitations: checked; last attempt 2026-11-16T11:27:06Z
-- Warrenton public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Frederick County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Lynchburg public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Franklin County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Harford County official open opportunities: checked; last attempt 2026-11-16T11:27:06Z
-- Caroline County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Fredericksburg public bid board: degraded; last attempt 2026-11-16T11:27:06Z
-- Loudoun County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Wicomico County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Hampton public bid board: degraded; last attempt 2026-11-16T11:27:06Z
+- D.C. OCP public solicitations: checked; last attempt 2026-11-16T22:08:12Z
+- Warrenton public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Frederick County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Lynchburg public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Franklin County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Harford County official open opportunities: checked; last attempt 2026-11-16T22:08:12Z
+- Caroline County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Fredericksburg public bid board: degraded; last attempt 2026-11-16T22:08:12Z
+- Loudoun County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Wicomico County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Hampton public bid board: degraded; last attempt 2026-11-16T22:08:12Z
 - EPA national Brownfields selection discovery: checked; last attempt 2026-11-15T22:51:46Z
-- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-16T11:27:06Z
-- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-16T11:27:06Z
-- Salem public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Town of La Plata public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Queen Anne’s County public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Suffolk public bid board: checked; last attempt 2026-11-16T11:27:06Z
-- Falls Church public bid board: checked; last attempt 2026-11-16T11:27:06Z
+- Montgomery County official active-solicitation feed: checked; last attempt 2026-11-16T22:08:12Z
+- Upper Occoquan Service Authority solicitations: checked; last attempt 2026-11-16T22:08:12Z
+- Salem public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Town of La Plata public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Queen Anne’s County public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Suffolk public bid board: checked; last attempt 2026-11-16T22:08:12Z
+- Falls Church public bid board: checked; last attempt 2026-11-16T22:08:12Z
 Attention: fredericksburg-bids: source HTTP failure 403
 Attention: hampton-bids: source HTTP failure 403
 
 ## Project signals
+
+### First Phase of the Greensboro Stormwater Management, Restoration and Resilience Project
+
+MD · Open solicitation · verified
+
+Local procurement notice. INVITATION TO BID RFP# CCDPC2027-01 The County Commissioners of Caroline County, on behalf of the Caroline County Department of Planning and Codes, are accepting proposals for the engineering design and construction administration and inspection services for the first phase of the Greensboro Stormwater Management, Restoration and Resilience project. This phase includes the relocation of an existing pumping station and the electrical equipment out of floodplain, and demolition of the pump station
+
+Published selection amount: Not stated · Bid deadline: 2026-12-18T10:00:00-05:00
+
+Next step: Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.
+
+Source: https://www.carolinemd.org/bids.aspx?bidID=163
+
+Status note: Review all official documents and amendments before responding.
+
+
+### Second Phase of the Greensboro Stormwater Management, Restoration and Resilience Project.
+
+MD · Open solicitation · verified
+
+Local procurement notice. INVITATION TO BID RFP# CCDPC2027-02 The County Commissioners of Caroline County, on behalf of the Caroline County Department of Planning and Codes, are accepting proposals for the engineering design and construction administration and inspection services for the second phase of the Greensboro Stormwater Management, Restoration and Resilience project. This phase includes implementing stormwater management best management practices (BMPs) at the site, including impervious surface removal, stream a
+
+Published selection amount: Not stated · Bid deadline: 2026-12-18T10:30:00-05:00
+
+Next step: Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.
+
+Source: https://www.carolinemd.org/bids.aspx?bidID=164
+
+Status note: Review all official documents and amendments before responding.
+
 
 ### IFB-26-27-004 AA-Demo 6 Properties Bid Tab
 
