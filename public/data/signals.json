@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-20T12:57:45Z",
+  "generatedAt": "2026-11-20T21:09:14Z",
   "sources": [
     {
       "id": "epa-md-2026",
       "name": "EPA FY2026 Maryland selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-55-million-brownfields-grants-revitalize-communities-maryland",
-      "lastChecked": "2026-11-20T12:57:45Z",
+      "lastChecked": "2026-11-20T21:09:14Z",
       "status": "verified"
     },
     {
       "id": "epa-va-2026",
       "name": "EPA FY2026 Virginia selections",
       "url": "https://www.epa.gov/newsreleases/epa-announces-over-101-million-brownfields-grants-revitalize-communities-virginia",
-      "lastChecked": "2026-11-20T12:57:45Z",
+      "lastChecked": "2026-11-20T21:09:14Z",
       "status": "verified"
     },
     {
@@ -41,7 +41,7 @@
       "sourceUrl": "https://www.carolinemd.org/bids.aspx?bidID=163",
       "summary": "Local procurement notice. INVITATION TO BID RFP# CCDPC2027-01 The County Commissioners of Caroline County, on behalf of the Caroline County Department of Planning and Codes, are accepting proposals for the engineering design and construction administration and inspection services for the first phase of the Greensboro Stormwater Management, Restoration and Resilience project. This phase includes the relocation of an existing pumping station and the electrical equipment out of floodplain, and demolition of the pump station",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -89,7 +89,7 @@
         {
           "url": "https://www.carolinemd.org/DocumentCenter/View/12589",
           "title": "CCDPC2027-01 Bid Affidavit",
-          "checkedAt": "2026-11-20T12:57:45Z",
+          "checkedAt": "2026-11-20T21:09:14Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "ed5dea55c263e5f0b109f6e6b205934d858cb783ce2e2e161138401db000c909",
@@ -138,7 +138,7 @@
         "selected": 1,
         "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-20T12:57:45Z"
+        "checkedAt": "2026-11-20T21:09:14Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -285,7 +285,7 @@
       "sourceUrl": "https://www.carolinemd.org/bids.aspx?bidID=164",
       "summary": "Local procurement notice. INVITATION TO BID RFP# CCDPC2027-02 The County Commissioners of Caroline County, on behalf of the Caroline County Department of Planning and Codes, are accepting proposals for the engineering design and construction administration and inspection services for the second phase of the Greensboro Stormwater Management, Restoration and Resilience project. This phase includes implementing stormwater management best management practices (BMPs) at the site, including impervious surface removal, stream a",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -333,7 +333,7 @@
         {
           "url": "https://www.carolinemd.org/DocumentCenter/View/12607",
           "title": "CCDPC2027-02 Invitation to Bid",
-          "checkedAt": "2026-11-20T12:57:45Z",
+          "checkedAt": "2026-11-20T21:09:14Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "468a34a7594f80ee615adb5c5bb4d27f243ca34cfe3728fecf176a6099edc94b",
@@ -374,7 +374,7 @@
         "selected": 1,
         "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-20T12:57:45Z"
+        "checkedAt": "2026-11-20T21:09:14Z"
       },
       "documentChanges": [],
       "changeHistory": [],
@@ -483,7 +483,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4194",
       "summary": "Administrative procurement activity: IFB-26-27-004 AA-Demo 6 Properties Bid Tab",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -832,7 +832,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4259",
       "summary": "Local procurement notice. Pre Bid Attendee Sheet RFP-26-27-029 RFP-26-27-026-Sludge Press Rehabilitation Project Pre-Bid Friday November 13,2026 at 10:00AM Last Day for Questions Thursday November 19,2026, by 5:00PM Bid Opens Thursday December 3,2026, at 4:00PM",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -860,7 +860,7 @@
         {
           "url": "https://www.danville-va.gov/DocumentCenter/View/40093",
           "title": "RFP-26-27-029-Sludge Press Rehabilitation Project",
-          "checkedAt": "2026-11-20T12:57:45Z",
+          "checkedAt": "2026-11-20T21:09:14Z",
           "status": "extracted",
           "analysisVersion": 3,
           "sha256": "d7278ec3f53658fa21f19f41af38246e1c4b4c75e25c79fa4c1c25511d9153ec",
@@ -951,7 +951,7 @@
         "selected": 1,
         "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-20T12:57:45Z"
+        "checkedAt": "2026-11-20T21:09:14Z"
       },
       "documentChanges": [],
       "changeHistory": [
@@ -1170,7 +1170,7 @@
       "sourceUrl": "https://www.danville-va.gov/bids.aspx?bidID=4263",
       "summary": "Administrative procurement activity: IFB 26-27-016 \"Asnestos Abatement and Demolition - 8 Properties\" Notice of Intent",
       "nextStep": "Confirm current procurement status and remaining scope with the purchasing office; this posting may be a results or responders notice.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Administrative posting or conflicting source labels; not a verified invitation to bid.",
       "noticeType": "Administrative posting",
@@ -1271,7 +1271,7 @@
       "sourceUrl": "https://contracts.ocp.dc.gov/solicitations/details?id=Doc841623",
       "summary": "District procurement notice: FY26 Parkland Stormwater Retrofits - DPR V. Market: Open. Review official procurement documents, registration, eligibility and amendments.",
       "nextStep": "Confirm scope, mandatory meetings, market restrictions and amendments with the contracting office before bidding.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "noticeType": "District procurement notice",
       "statusNote": "Official portal status and closing date checked. Dates are interpreted in America/New_York; review amendments before responding.",
@@ -1292,7 +1292,7 @@
         "selected": 0,
         "extracted": 0,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-20T12:57:45Z"
+        "checkedAt": "2026-11-20T21:09:14Z"
       },
       "documentChanges": [],
       "changeHistory": [
@@ -1570,7 +1570,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the City of Annapolis Department of Public Works site.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Resilience Authority of Annapolis and Anne Arundel County",
@@ -1679,7 +1679,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Danville",
@@ -1790,7 +1790,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia’s Gateway Region, Inc.",
@@ -1897,7 +1897,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Leas & McVitty/New River Tannery.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Giles County",
@@ -1998,7 +1998,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Multipurpose brownfields selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Martinsville",
@@ -2113,7 +2113,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Mount Rogers Planning District Commission",
@@ -2220,7 +2220,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Cleanup selection for the former Pamunkey Community Dump.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pamunkey Indian Tribe",
@@ -2321,7 +2321,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Pittsylvania County",
@@ -2428,7 +2428,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "State brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Virginia Department of Environmental Quality",
@@ -2535,7 +2535,7 @@
       "sourceName": "U.S. EPA · FY2026 Brownfields selections",
       "summary": "Regional brownfields assessment selection.",
       "nextStep": "Check recipient procurement notices and confirm award and contractor selection status.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "evidenceTerms": [
         "Tri-County Council for Western Maryland",
@@ -3357,9 +3357,9 @@
       "sourceId": "lynchburg-bids",
       "sourceName": "Lynchburg public bid board",
       "sourceUrl": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
-      "summary": "Local procurement notice. VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
+      "summary": "Local procurement notice. LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -3367,7 +3367,7 @@
       "contactText": "william.ruberry@lynchburgva.gov",
       "solicitationNumber": "2027-027",
       "prebidMeeting": "11/03/2026 @ 10:00 A.M.",
-      "officialDescription": "VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
+      "officialDescription": "LIVE BID OPENING You can now submit your IFB or RFP response online. Simply click the button below, fill out the form, and attach your documents. Submit Online",
       "documents": [
         {
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS",
@@ -3376,32 +3376,110 @@
         {
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS DRAWINGS",
           "url": "https://www.lynchburgva.gov/DocumentCenter/View/8088"
+        },
+        {
+          "title": "2027-027 CSO 70 SEWER IMPROVEMENTS ADDENDUM 1",
+          "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178"
         }
       ],
       "amendmentNotes": [],
       "requirementNotes": [],
       "prebidAttendance": "not-stated",
-      "documentReview": "0 of 2 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
-      "evidenceFingerprint": "47647a5b0fac3e3b52a4272396e343da6a8c653636c809662c021d03e3dbead0",
+      "documentReview": "1 of 3 linked documents have text excerpts from selected PDFs. Scans, oversized files and unselected attachments still require manual review. Official documents control.",
+      "evidenceFingerprint": "26460ff79b1c1ea99265aaaf0c45e1d953842e944834b3e4ddda42c081d46435",
       "documentAnalysis": [
         {
           "url": "https://www.lynchburgva.gov/DocumentCenter/View/8089",
           "title": "2027-027 CSO 70 SEWER IMPROVEMENTS",
-          "checkedAt": "2026-11-20T12:57:45Z",
+          "checkedAt": "2026-11-20T21:09:14Z",
           "status": "needs-review",
           "note": "Document exceeds the 6 MB extraction limit",
           "lastKnownSha256": null,
           "lastKnownTextSha256": null
+        },
+        {
+          "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+          "title": "2027-027 CSO 70 SEWER IMPROVEMENTS ADDENDUM 1",
+          "checkedAt": "2026-11-20T21:09:14Z",
+          "status": "extracted",
+          "analysisVersion": 3,
+          "sha256": "397440bc0b7cc3409302e98b9a82c90fd8cd7adaf1f77e373bf5777fcda6cebd",
+          "textSha256": "c5f074558316d978b38b7f23ea9ad0d490d10875ccbfe744d7c9479079a810d5",
+          "pageCount": 24,
+          "pagesRead": 24,
+          "truncated": true,
+          "excerpts": {
+            "scope": [
+              {
+                "page": 3,
+                "text": "Bid Item IA-1 Payment terms paragraph one has been revised as follows: Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and provision of as-builts, developing required safety plans;"
+              },
+              {
+                "page": 11,
+                "text": "Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and"
+              },
+              {
+                "page": 2,
+                "text": "4. Reviewed PM-15, Construction Agreement: Work shall be substantially complete within 365 calendar days. Liquidated damages are $1000.00/day. Anticipated Notice to Proceed is Spring 2027."
+              }
+            ],
+            "eligibility": [
+              {
+                "page": 3,
+                "text": "Delete: Railroad Insurance - Bid Item IA-5  Measurement: Railroad Insurance will be measured as a lump sum."
+              },
+              {
+                "page": 3,
+                "text": "Payment: Railroad insurance shall be paid at the contract lump sum price to obtain and maintain required railroad insurance throughout the duration of utility installation and site restoration on railroad."
+              },
+              {
+                "page": 3,
+                "text": "Measurement: The price included in the Bid Form is an allowance for fees associated with the Railroad Occupancy permit. Example fees include railroad insurance, flagging and inspection, and rail monitoring requirements beyond those covered elsewhere. The allowance will cover fees that the Contractor pays and documents directly to the railroad, subject to review and approval by the Engineer. The Contractor shall not apply any markup to these"
+              },
+              {
+                "page": 4,
+                "text": "Answer: Please refer to the response to Question 4. 6. Question: Will the railroad insurance cost be provided to us by the City? Answer: Please refer to the response to Question 4. 7. Question: Will rail monitoring be required? Answer: Please refer to the response to Question 4."
+              },
+              {
+                "page": 4,
+                "text": "Answer: Please refer to the response to Question 4. 8. Question: Other than railroad insurance, none of the above questions have a bid item associated with them. Do you want to add bid items for these? Answer: Please refer to the response to Question 4. 9. Question: Does the minimum thickness for the steel casing pipe of 0.813” shown on the plan sheet CG-003"
+              }
+            ],
+            "meetings": [
+              {
+                "page": 1,
+                "text": "Notes from the Optional Pre-Bid Meeting on November 3, 2026 @ 10:00 a.m.  1. Vendor Attendance Record:"
+              }
+            ],
+            "submission": [
+              {
+                "page": 2,
+                "text": "link to the live bid opening will be available on the City’s website at: https://www.lynchburgva.gov/bids.aspx. If submitting your bid online, please submit as one document.  3. Reviewed PM-4, Bid Form. The sum of the Total Cost of the Bid Items on PM- 7 and PM- 8 make up the Total Base Bid. The project will be awarded to the lowest responsive and responsible Total Base Bid. PLEASE NOTE THE"
+              }
+            ],
+            "deadlineReferences": [
+              {
+                "page": 2,
+                "text": "2. Reviewed PM-3, Advertisement for Bids: The deadline for questions is November 25, 2026 at 3:00 p.m., refer all questions to Will Ruberry: 434-455-3943 or email: william.ruberry@lynchburgva.gov. The deadline for bids is December 8, 2026 by 3:00 p.m.; Bids will be publicly opened in the 1st Floor Conference Room in City Hall and a link to the live bid opening will be available on the City’s website at: https://www.lynchburgva.gov/bids.aspx. If"
+              }
+            ]
+          }
         }
       ],
       "documentCoverage": {
-        "linked": 2,
-        "selected": 1,
-        "extracted": 0,
+        "linked": 3,
+        "selected": 2,
+        "extracted": 1,
         "maximumPagesPerPDF": 80,
-        "checkedAt": "2026-11-20T12:57:45Z"
+        "checkedAt": "2026-11-20T21:09:14Z"
       },
-      "documentChanges": [],
+      "documentChanges": [
+        {
+          "kind": "document-added",
+          "title": "2027-027 CSO 70 SEWER IMPROVEMENTS ADDENDUM 1",
+          "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178"
+        }
+      ],
       "changeHistory": [
         {
           "at": "2026-11-13T08:02:16Z",
@@ -3414,6 +3492,12 @@
           "kind": "status-changed",
           "before": "unconfirmed",
           "after": "open-solicitation"
+        },
+        {
+          "at": "2026-11-20T21:09:14Z",
+          "kind": "document-added",
+          "title": "2027-027 CSO 70 SEWER IMPROVEMENTS ADDENDUM 1",
+          "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178"
         }
       ],
       "serviceTags": [
@@ -3429,20 +3513,77 @@
         {
           "id": "scope",
           "title": "Scope and deliverables",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Bid Item IA-1 Payment terms paragraph one has been revised as follows: Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and provision of as-builts, developing required safety plans;",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            },
+            {
+              "text": "Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 11,
+              "origin": "pdf"
+            },
+            {
+              "text": "4. Reviewed PM-15, Construction Agreement: Work shall be substantially complete within 365 calendar days. Liquidated damages are $1000.00/day. Anticipated Notice to Proceed is Spring 2027.",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 2,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "eligibility",
           "title": "Licenses and eligibility",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Delete: Railroad Insurance - Bid Item IA-5  Measurement: Railroad Insurance will be measured as a lump sum.",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            },
+            {
+              "text": "Payment: Railroad insurance shall be paid at the contract lump sum price to obtain and maintain required railroad insurance throughout the duration of utility installation and site restoration on railroad.",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            },
+            {
+              "text": "Measurement: The price included in the Bid Form is an allowance for fees associated with the Railroad Occupancy permit. Example fees include railroad insurance, flagging and inspection, and rail monitoring requirements beyond those covered elsewhere. The allowance will cover fees that the Contractor pays and documents directly to the railroad, subject to review and approval by the Engineer. The Contractor shall not apply any markup to these",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "bonds",
           "title": "Bonding and insurance",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Bid Item IA-1 Payment terms paragraph one has been revised as follows: Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and provision of as-builts, developing required safety plans;",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            },
+            {
+              "text": "Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 11,
+              "origin": "pdf"
+            },
+            {
+              "text": "Delete: Railroad Insurance - Bid Item IA-5  Measurement: Railroad Insurance will be measured as a lump sum.",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            }
+          ]
         },
         {
           "id": "meetings",
@@ -3450,14 +3591,15 @@
           "state": "evidence-found",
           "evidence": [
             {
-              "text": "VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online.",
+              "text": "11/03/2026 @ 10:00 A.M.",
               "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
               "origin": "listing"
             },
             {
-              "text": "11/03/2026 @ 10:00 A.M.",
-              "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
-              "origin": "listing"
+              "text": "Notes from the Optional Pre-Bid Meeting on November 3, 2026 @ 10:00 a.m.  1. Vendor Attendance Record:",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 1,
+              "origin": "pdf"
             }
           ]
         },
@@ -3467,7 +3609,7 @@
           "state": "evidence-found",
           "evidence": [
             {
-              "text": "VIRTUAL PRE BID MEETING LIVE BID OPENING You can now submit your IFB or RFP response online.",
+              "text": "LIVE BID OPENING You can now submit your IFB or RFP response online.",
               "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
               "origin": "listing"
             },
@@ -3475,14 +3617,27 @@
               "text": "Submit Online",
               "url": "https://www.lynchburgva.gov/bids.aspx?bidID=249",
               "origin": "listing"
+            },
+            {
+              "text": "link to the live bid opening will be available on the City’s website at: https://www.lynchburgva.gov/bids.aspx. If submitting your bid online, please submit as one document.  3. Reviewed PM-4, Bid Form. The sum of the Total Cost of the Bid Items on PM- 7 and PM- 8 make up the Total Base Bid. The project will be awarded to the lowest responsive and responsible Total Base Bid. PLEASE NOTE THE",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 2,
+              "origin": "pdf"
             }
           ]
         },
         {
           "id": "amendments",
           "title": "Amendments and deadline changes",
-          "state": "needs-review",
-          "evidence": []
+          "state": "evidence-found",
+          "evidence": [
+            {
+              "text": "Bid Item IA-1 Payment terms paragraph one has been revised as follows: Payment: Work shall include bonding costs, preconstruction condition assessments; move in of equipment, tools, supplies, material, and personnel to the job site; furnishing and erecting project signs; installing temporary power; water; sanitary; and other utility services; all surveying, construction stakeout and provision of as-builts, developing required safety plans;",
+              "url": "https://www.lynchburgva.gov/DocumentCenter/View/8178",
+              "page": 3,
+              "origin": "pdf"
+            }
+          ]
         }
       ],
       "requiredBusinessCertifications": []
@@ -3503,7 +3658,7 @@
       "sourceUrl": "https://www.salemva.gov/bids.aspx?bidID=95",
       "summary": "Local procurement notice. CITY OF SALEM, VIRGINIA CITY OF SALEM — PURCHASING DEPARTMENT 114 N. Broad Street Salem, Virginia 24153 CITY HALL FIRE ESCAPE LEAD PAINT REMOVAL AND PAINTING LEGAL NOTICE / INVITATION TO BID General Notice City of Salem (Owner) is requesting Bids for the following: City Hall Fire Escape Lead Paint Removal and Painting (ITB #2027-020). Sealed Bids for this Invitation to Bid will be received at the Salem Purchasing Department located at 114 N. Broad Street, Salem, VA 24153, until Thursday, Novembe",
       "nextStep": "Review the official scope, eligibility, site visits, attachments and amendments before deciding whether to bid.",
-      "verifiedAt": "2026-11-20T12:57:45Z",
+      "verifiedAt": "2026-11-20T21:09:14Z",
       "verification": "verified",
       "statusNote": "Review all official documents and amendments before responding.",
       "noticeType": "Local procurement notice",
@@ -4138,7 +4293,7 @@
       "jurisdiction": "VA",
       "locality": "Centreville / Northern Virginia",
       "category": "Water",
-      "status": "closed",
+      "status": "unconfirmed",
       "amount": null,
       "deadline": "2026-11-04T14:00:00-05:00",
       "announcedAt": "2026-08-24",
@@ -4148,10 +4303,10 @@
       "summary": "Wastewater authority public procurement listing: P2NR+. Review the source-listed solicitation and all addenda.",
       "nextStep": "Confirm current status and documents on the authority page and eVA before bidding.",
       "verifiedAt": "2026-11-20T12:57:45Z",
-      "verification": "verified",
+      "verification": "stale",
       "solicitationNumber": "27-02",
       "prebidMeeting": "9/22/2026 10:00 PM",
-      "statusNote": "Official authority listing; expired dates remain closed even when the source still says Issued.",
+      "statusNote": "No longer present on the checked listing; verify current status at the source.",
       "noticeType": "IFB",
       "documentHost": "uosa.org",
       "verificationScope": "official-authority-listing",
@@ -4182,7 +4337,7 @@
       "requirementNotes": [],
       "prebidAttendance": "not-stated",
       "documentReview": "Previously extracted document evidence; this notice is not currently verified open. Review the current official source.",
-      "evidenceFingerprint": "f5520981b20bf9fcdb1371bb48f676f1ff01c7fab1564b9ad3318368de7c9339",
+      "evidenceFingerprint": "e7fe75361b78667ff1b03c417c80606604dbab294623ebd4f87302768c33e7f9",
       "documentAnalysis": [
         {
           "url": "https://uosa.org/wp-content/uploads/2026/08/UOSA-IFB-27-02-P2NR-Construction-Final-Released.pdf",
@@ -4416,7 +4571,13 @@
         "maximumPagesPerPDF": 80,
         "checkedAt": "2026-11-04T18:00:01Z"
       },
-      "documentChanges": [],
+      "documentChanges": [
+        {
+          "kind": "status-changed",
+          "before": "closed",
+          "after": "unconfirmed"
+        }
+      ],
       "changeHistory": [
         {
           "at": "2026-10-27T22:58:25Z",
@@ -4447,6 +4608,12 @@
           "kind": "document-added",
           "title": "NOIA",
           "url": "https://uosa.org/wp-content/uploads/2026/11/UOSA-IFB-27-02-Notice-of-Intent-to-Award.pdf"
+        },
+        {
+          "at": "2026-11-20T21:09:14Z",
+          "kind": "status-changed",
+          "before": "closed",
+          "after": "unconfirmed"
         }
       ],
       "serviceTags": [
@@ -4727,11 +4894,27 @@
     "Federal solicitation discovery requires a free SAM.gov API key."
   ],
   "operations": {
-    "generatedAt": "2026-11-20T12:57:45Z",
+    "generatedAt": "2026-11-20T21:09:14Z",
     "comparison": {
-      "comparedTo": "2026-11-20T03:21:32Z",
+      "comparedTo": "2026-11-20T12:57:45Z",
       "newIds": [],
-      "changed": [],
+      "changed": [
+        {
+          "id": "lynchburg-bids-249",
+          "fields": [
+            "summary",
+            "documents",
+            "evidenceFingerprint"
+          ]
+        },
+        {
+          "id": "uosa-27-02",
+          "fields": [
+            "status",
+            "evidenceFingerprint"
+          ]
+        }
+      ],
       "removedIds": []
     },
     "procurementSources": [
@@ -4743,14 +4926,14 @@
         "locality": "Annapolis",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant detail pages are checked before importing notices.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 3063,
+        "collectionDurationMs": 2447,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4762,14 +4945,14 @@
         "locality": "Danville",
         "mode": "civic",
         "note": "Hourly public-listing scan; responder lists, bid tabs and conflicting statuses are not treated as open bids.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
-        "listingCount": 15,
+        "lastSuccess": "2026-11-20T21:09:14Z",
+        "listingCount": 17,
         "matchingCount": 3,
-        "listingHash": "3fcc83ef5ab37c8e911ae0b68f58b15eea825de2d5047e762797d4412dc7b1f3",
+        "listingHash": "c40638b2b2197c85946db1846060a5b110d3117640ade9fce2db96e61622ce13",
         "checkedEmpty": false,
-        "collectionDurationMs": 3047,
+        "collectionDurationMs": 3372,
         "consecutiveFailures": 0,
         "listingChanged": true
       },
@@ -4821,16 +5004,16 @@
         "locality": "Washington, DC",
         "mode": "dc-api",
         "note": "Public portal search and environmental notice details checked hourly. Coverage is limited to notices returned by OCP; independent agencies may publish elsewhere.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
-        "listingCount": 19,
+        "lastSuccess": "2026-11-20T21:09:14Z",
+        "listingCount": 22,
         "matchingCount": 1,
-        "listingHash": "db2dca4c80cd76dca0cac251041132af4eacc88382aa6b4b086183811f193319",
+        "listingHash": "c35ce2808d6bee2a2115abd1ff4f0424c07d946c6e3953839d5da4365f9d5efc",
         "checkedEmpty": false,
-        "collectionDurationMs": 783,
+        "collectionDurationMs": 789,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "warrenton-bids",
@@ -4840,14 +5023,14 @@
         "locality": "Warrenton",
         "mode": "civic",
         "note": "Hourly public-listing scan; no relevant invitations are inferred from an empty board.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 630,
+        "collectionDurationMs": 738,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4859,14 +5042,14 @@
         "locality": "Frederick County",
         "mode": "civic",
         "note": "Checks this public board only. County links to other procurement platforms are not included.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 919,
+        "collectionDurationMs": 941,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4878,16 +5061,16 @@
         "locality": "Lynchburg",
         "mode": "civic",
         "note": "Hourly public-listing scan; relevant notices and amendments require official review.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
-        "listingCount": 5,
+        "lastSuccess": "2026-11-20T21:09:14Z",
+        "listingCount": 7,
         "matchingCount": 1,
-        "listingHash": "5fbaae270bfe111dae185f4b4f44e46665964942c976cc41356e817abfcb4256",
+        "listingHash": "da8ce9d0aed7183e3127a80e09c73e5405e82d9c6d54492cdc0d45c2b3cfbd3e",
         "checkedEmpty": false,
-        "collectionDurationMs": 1530,
+        "collectionDurationMs": 904,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "franklin-bids",
@@ -4897,14 +5080,14 @@
         "locality": "Franklin County",
         "mode": "civic",
         "note": "Hourly public-listing scan; unrelated notices are excluded.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 590,
+        "collectionDurationMs": 686,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4916,14 +5099,14 @@
         "locality": "Harford County",
         "mode": "harford-listing",
         "note": "Checks the official county open-opportunity listing and its stated closing times. Full Bonfire documents and amendments require bidder review.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 4,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": false,
-        "collectionDurationMs": 892,
+        "collectionDurationMs": 734,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4936,14 +5119,14 @@
         "agency": "Caroline County Government",
         "mode": "civic",
         "note": "Checks relevant notices on this county board; not statewide coverage.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 3,
         "matchingCount": 2,
         "listingHash": "0a8e31b7981d5d7bd410c4b15ed5d4c40e699c8d67ed5ce9c67964e959c97753",
         "checkedEmpty": false,
-        "collectionDurationMs": 2159,
+        "collectionDurationMs": 2468,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4955,12 +5138,12 @@
         "locality": "Fredericksburg",
         "mode": "civic",
         "note": "Checks relevant notices on the public city board; unrelated notices are excluded.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "degraded",
         "lastSuccess": "2026-10-25T04:15:29Z",
         "error": "source HTTP failure 403",
         "consecutiveFailures": 20,
-        "nextRetryAt": "2026-11-20T18:57:45Z"
+        "nextRetryAt": "2026-11-21T03:09:14Z"
       },
       {
         "id": "loudoun-bids",
@@ -4971,14 +5154,14 @@
         "agency": "Loudoun County Government",
         "mode": "civic",
         "note": "Hourly public board scan, including source-stated amendments and document references. Full attachments require bidder review.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 11,
         "matchingCount": 0,
         "listingHash": "3ba915e4105fae49bd06098f85695ec599f4a566b7ebd7aac0e3a5ef4d230613",
         "checkedEmpty": false,
-        "collectionDurationMs": 701,
+        "collectionDurationMs": 724,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -4991,14 +5174,14 @@
         "agency": "Wicomico County Government",
         "mode": "civic",
         "note": "Hourly scan of this board. An empty board does not establish that no county opportunities exist on other platforms.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 0,
         "matchingCount": 0,
         "listingHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "checkedEmpty": true,
-        "collectionDurationMs": 669,
+        "collectionDurationMs": 788,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -5011,12 +5194,12 @@
         "agency": "City of Hampton",
         "mode": "civic",
         "note": "Hourly scan of environmental titles on this board. Other purchasing platforms and unrelated construction are outside coverage.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "degraded",
         "lastSuccess": "2026-10-25T04:15:29Z",
         "error": "source HTTP failure 403",
         "consecutiveFailures": 20,
-        "nextRetryAt": "2026-11-20T18:57:45Z"
+        "nextRetryAt": "2026-11-21T03:09:14Z"
       },
       {
         "id": "epa-discovery",
@@ -5049,16 +5232,16 @@
         "locality": "Montgomery County",
         "mode": "montgomery-open-data",
         "note": "Hourly read of the official active-solicitation open-data API. Date-only closing fields never establish verified open-bid status.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 24,
         "matchingCount": 0,
         "listingHash": "3ccbaaf5b7c4a568835913bdbc0ef6691bbf77fc51449065ec618fbcc646d434",
         "checkedEmpty": false,
-        "collectionDurationMs": 572,
+        "collectionDurationMs": 2638,
         "consecutiveFailures": 0,
-        "listingChanged": true
+        "listingChanged": false
       },
       {
         "id": "uosa-table",
@@ -5068,16 +5251,16 @@
         "locality": "Northern Virginia",
         "mode": "uosa-table",
         "note": "Hourly public authority mirror of its eVA solicitations. Only the current table is scanned; expired dates remain closed.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 1,
-        "matchingCount": 1,
-        "listingHash": "2d79f4c5e07807d93f99d572b9960a2e092a5ef900c09177205a794ebbb2ec4d",
-        "checkedEmpty": false,
-        "collectionDurationMs": 463,
+        "matchingCount": 0,
+        "listingHash": "80770d25d12f2dca9a0a1ceb78da7ac43765e0477647a03aef5a6f418cac8379",
+        "checkedEmpty": true,
+        "collectionDurationMs": 508,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "salem-bids",
@@ -5088,16 +5271,16 @@
         "agency": "City of Salem",
         "mode": "civic",
         "note": "Hourly official bid-board scan, with explicit receipt deadlines from source prose when the summary closing field is generic.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
-        "listingCount": 7,
+        "lastSuccess": "2026-11-20T21:09:14Z",
+        "listingCount": 5,
         "matchingCount": 1,
-        "listingHash": "2b3639ef30e4930ab88cfe8371d88d1f4eddc934c3e827c0dfbebea153fd53ff",
+        "listingHash": "3efba40eae3a6965c56e1a9ddf98309baa421911b44128b20f201e229cd37635",
         "checkedEmpty": false,
-        "collectionDurationMs": 3758,
+        "collectionDurationMs": 4744,
         "consecutiveFailures": 0,
-        "listingChanged": false
+        "listingChanged": true
       },
       {
         "id": "laplata-bids",
@@ -5108,14 +5291,14 @@
         "agency": "Town of La Plata",
         "mode": "civic",
         "note": "Hourly town-owned listing scan; this does not replace eMMA coverage.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 1,
         "matchingCount": 0,
         "listingHash": "35f0cea82aa4d2fb44c04fe184c066d66dbe2ad2a5315f9c31fdfe548b55e0d8",
         "checkedEmpty": false,
-        "collectionDurationMs": 569,
+        "collectionDurationMs": 635,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -5128,14 +5311,14 @@
         "agency": "Queen Anne’s County Government",
         "mode": "civic",
         "note": "Hourly official county listing scan; only relevant environmental titles are followed.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 1,
         "matchingCount": 0,
         "listingHash": "6755d5eb5fea50962ec38ea3d20087e83e12d9fc085bcecaaa7c18be61b27b4e",
         "checkedEmpty": false,
-        "collectionDurationMs": 792,
+        "collectionDurationMs": 1273,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -5148,14 +5331,14 @@
         "agency": "City of Suffolk",
         "mode": "civic",
         "note": "Hourly public city board scan; absence of matching notices is not comprehensive city procurement coverage.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 6,
         "matchingCount": 0,
         "listingHash": "dc572e76caf9a61bafb533cab28474201d49de718af0ca981ede3812425208b1",
         "checkedEmpty": false,
-        "collectionDurationMs": 651,
+        "collectionDurationMs": 756,
         "consecutiveFailures": 0,
         "listingChanged": false
       },
@@ -5168,14 +5351,14 @@
         "agency": "City of Falls Church",
         "mode": "civic",
         "note": "Hourly city-owned board scan; environmental titles are followed to official detail pages. No matching notice was present during the initial check. This is partial city coverage, not an eVA replacement.",
-        "lastChecked": "2026-11-20T12:57:45Z",
+        "lastChecked": "2026-11-20T21:09:14Z",
         "status": "checked",
-        "lastSuccess": "2026-11-20T12:57:45Z",
+        "lastSuccess": "2026-11-20T21:09:14Z",
         "listingCount": 1,
         "matchingCount": 0,
         "listingHash": "df14c7b4478bbdeb67eaeacd2ff66ee4a2da41225b1ffe922ee8ef5aeedf1f9d",
         "checkedEmpty": false,
-        "collectionDurationMs": 825,
+        "collectionDurationMs": 861,
         "consecutiveFailures": 0,
         "listingChanged": false
       }
